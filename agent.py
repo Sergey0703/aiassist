@@ -48,11 +48,47 @@ async def entrypoint(ctx: JobContext):
     # Добавляем инструкцию о том, что нужно озвучивать результаты функций
     enhanced_instructions = AGENT_INSTRUCTION + """
     
-    IMPORTANT: When you call a function/tool:
-    1. Wait for the function result
-    2. Always speak the result out loud to the user
-    3. Format weather results in a natural way, for example: "The weather in London is partly cloudy with a temperature of 21 degrees Celsius"
-    4. Never just say "Roger" or short acknowledgments - always provide the full information
+    CRITICAL RULES FOR FUNCTION CALLS:
+    
+    1. IMMEDIATE ACTION RULE:
+       - When user asks about weather, IMMEDIATELY call get_weather() function
+       - When user asks to search something, IMMEDIATELY call search_web() function  
+       - When user asks to send email, IMMEDIATELY call send_email() function
+       - DO NOT say "I will now get..." and then wait - JUST DO IT IMMEDIATELY
+    
+    2. When you call ANY function/tool (get_weather, search_web, send_email):
+       - Execute the function RIGHT AWAY
+       - Wait for the function to complete
+       - Read the FULL result returned by the function
+       - ALWAYS speak the complete result to the user in a natural, conversational way
+    
+    3. For weather results:
+       - Convert symbols to words (e.g., "⛅️" to "partly cloudy")
+       - Say the full information: "The weather in [city] is [condition] with a temperature of [temp]"
+    
+    4. For web search results:
+       - Summarize the key findings
+       - Mention the most relevant information found
+       - Say something like: "I found the following information about [topic]: [summary of results]"
+    
+    5. For email results:
+       - Confirm if the email was sent successfully or if there was an error
+       - Say: "I've successfully sent the email to [recipient]" or explain the error
+    
+    6. NEVER just say short acknowledgments like "Check!", "Roger", "Done"
+       - Always provide the full information from the function result
+       - Speak in complete, informative sentences
+    
+    7. WORKFLOW:
+       - User asks question → Call function IMMEDIATELY → Get result → Speak result
+       - DO NOT: User asks → Say "I will do it" → Wait → Nothing happens
+    
+    8. If a function returns a long result, summarize the key points naturally
+    
+    9. RESPONSE TIMING:
+       - As soon as you get function results, SPEAK them immediately
+       - Don't wait for user to ask again
+       - Complete the full cycle: Listen → Execute → Speak Result
     """
     
     agent = VoiceAgent(
@@ -60,7 +96,7 @@ async def entrypoint(ctx: JobContext):
         llm=google.beta.realtime.RealtimeModel(
             instructions=enhanced_instructions,
             voice="Aoede",  # Голос для озвучки
-            temperature=0.8,
+            temperature=0.7,  # Снижаем температуру для более предсказуемого поведения
             api_key=google_api_key,  # Передаем API ключ если есть
         ),
         tools=[
@@ -112,6 +148,13 @@ async def entrypoint(ctx: JobContext):
                 if hasattr(event.item, 'role'):
                     if event.item.role == "assistant":
                         print(f"[AGENT]: {event.item.content}")
+                        
+                        # Проверяем, не застрял ли агент после обещания вызвать функцию
+                        content_lower = str(event.item.content).lower()
+                        if any(phrase in content_lower for phrase in ["i will now", "i will get", "let me get", "let me check"]):
+                            logger.warning("[WARNING] Agent promised to call function but may be stuck!")
+                            print("[WARNING] Agent should be calling a function now...")
+                            
                     elif event.item.role == "user":
                         print(f"[USER]: {event.item.content}")
         except Exception as e:
@@ -121,11 +164,20 @@ async def entrypoint(ctx: JobContext):
     def on_tools_executed(event):
         try:
             logger.info(f"[TOOLS] Executed: {event}")
-            print(f"[TOOLS] Function executed successfully")
-            # Форсируем генерацию ответа после выполнения функции
+            print(f"\n[TOOLS] Function executed successfully")
+            
+            # Выводим результаты функций для отладки
             if hasattr(event, 'results') and event.results:
                 for result in event.results:
                     print(f"[FUNCTION RESULT]: {result}")
+                    logger.info(f"[FUNCTION RESULT]: {result}")
+            
+            # Проверяем, что агент получил результаты
+            if hasattr(event, 'tool_results'):
+                for tool_result in event.tool_results:
+                    print(f"[TOOL OUTPUT]: {tool_result}")
+                    logger.info(f"[TOOL OUTPUT]: {tool_result}")
+                    
         except Exception as e:
             logger.error(f"Error in on_tools_executed: {e}")
     

@@ -50,10 +50,18 @@ async def search_web(
     try:
         results = DuckDuckGoSearchRun().run(tool_input=query)
         logger.info(f"Search results for '{query}': {results}")
-        return results
+        
+        # Форматируем результат для лучшего озвучивания
+        if results and len(results) > 100:
+            # Ограничиваем длину и добавляем явное указание
+            formatted_result = f"Web search results for '{query}': {results[:500]}..."
+            return f"I found information about {query}. Here are the search results: {results[:500]}... Would you like me to search for something more specific?"
+        else:
+            return f"I searched for {query} but found limited information: {results}"
+            
     except Exception as e:
         logger.error(f"Error searching the web for '{query}': {e}")
-        return f"An error occurred while searching the web for '{query}'."    
+        return f"I encountered an error while searching for '{query}'. Please try again."    
 
 @function_tool()    
 async def send_email(
@@ -78,6 +86,40 @@ async def send_email(
     logger.info(f"Subject: {subject}")
     logger.info(f"Message: {message[:100]}...")
     logger.info(f"CC: {cc_email}")
+    
+    # Check for DEMO mode
+    demo_mode = os.getenv("EMAIL_DEMO_MODE", "false").lower() == "true"
+    
+    if demo_mode:
+        logger.info("DEMO MODE ENABLED - Simulating email send")
+        
+        # Add timestamp to message
+        timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        full_message = f"{message}\n\n---\nSent via AIAssist at {timestamp}"
+        
+        # Save email locally
+        demo_filename = f"demo_email_{datetime.now().strftime('%Y%m%d_%H%M%S')}.txt"
+        with open(demo_filename, 'w', encoding='utf-8') as f:
+            f.write(f"=== DEMO EMAIL (NOT SENT) ===\n")
+            f.write(f"From: demo@aiassist.local\n")
+            f.write(f"To: {to_email}\n")
+            if cc_email:
+                f.write(f"CC: {cc_email}\n")
+            f.write(f"Subject: {subject}\n")
+            f.write(f"Date: {timestamp}\n")
+            f.write(f"\nMessage:\n{full_message}\n")
+            f.write("="*30 + "\n")
+        
+        logger.info(f"Demo email saved to {demo_filename}")
+        
+        success_msg = f"[DEMO MODE] Email simulated successfully to {to_email}"
+        if cc_email:
+            success_msg += f" (CC: {cc_email})"
+        
+        logger.info(success_msg)
+        logger.info("="*50)
+        
+        return f"Email sent successfully to {to_email} (Demo mode - check {demo_filename})"
     
     try:
         # Email provider configuration
