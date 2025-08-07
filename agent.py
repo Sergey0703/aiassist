@@ -1,17 +1,18 @@
-import os
+import asyncio
 import logging
+import os
 from dotenv import load_dotenv
 
 from livekit import agents
-from livekit.agents.voice import Agent as VoiceAgent, AgentSession
 from livekit.agents import (
+    Agent,
+    AgentSession,
     JobContext,
     WorkerOptions,
     cli,
 )
 from livekit.plugins import google, silero
 from prompts import AGENT_INSTRUCTION, SESSION_INSTRUCTION
-from tools import get_weather, search_web, send_email
 
 # -------------------- Setup --------------------
 load_dotenv()
@@ -21,199 +22,161 @@ logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
     handlers=[
-        logging.FileHandler("assistant.log", encoding='utf-8'),
+        logging.FileHandler("aiassist.log", encoding='utf-8'),
         logging.StreamHandler()
     ]
 )
 logger = logging.getLogger(__name__)
 
-# Установка Google API ключа если он есть в .env
+# Получаем Google API ключ
 google_api_key = os.getenv("GOOGLE_API_KEY")
-if google_api_key:
-    os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = google_api_key
+if not google_api_key:
+    logger.error("GOOGLE_API_KEY not found in environment variables")
+    raise ValueError("GOOGLE_API_KEY is required")
+
+
+# -------------------- AIAssist Agent Class --------------------
+class AIAssist(Agent):
+    """Персональный голосовой помощник в стиле дворецкого из Iron Man"""
+    
+    def __init__(self):
+        super().__init__(
+            instructions=AGENT_INSTRUCTION,
+        )
+        logger.info("AIAssist agent initialized")
 
 
 # -------------------- Entrypoint --------------------
 async def entrypoint(ctx: JobContext):
-    """Главная точка входа для LiveKit агента"""
+    """Главная точка входа для AIAssist агента"""
     
-    logger.info("Starting agent entrypoint")
+    logger.info("Starting AIAssist entrypoint")
     
     # Подключаемся к комнате
     await ctx.connect()
     logger.info(f"Connected to room: {ctx.room.name}")
     
-    # Создаем голосового агента только с Google Realtime Model
-    # RealtimeModel уже включает в себя STT и TTS функциональность
-    # Добавляем инструкцию о том, что нужно озвучивать результаты функций
-    enhanced_instructions = AGENT_INSTRUCTION + """
+    # Создаем агента
+    agent = AIAssist()
     
-    CRITICAL RULES FOR FUNCTION CALLS:
-    
-    1. IMMEDIATE ACTION RULE:
-       - When user asks about weather, IMMEDIATELY call get_weather() function
-       - When user asks to search something, IMMEDIATELY call search_web() function  
-       - When user asks to send email, IMMEDIATELY call send_email() function
-       - DO NOT say "I will now get..." and then wait - JUST DO IT IMMEDIATELY
-    
-    2. When you call ANY function/tool (get_weather, search_web, send_email):
-       - Execute the function RIGHT AWAY
-       - Wait for the function to complete
-       - Read the FULL result returned by the function
-       - ALWAYS speak the complete result to the user in a natural, conversational way
-    
-    3. For weather results:
-       - Convert symbols to words (e.g., "⛅️" to "partly cloudy")
-       - Say the full information: "The weather in [city] is [condition] with a temperature of [temp]"
-    
-    4. For web search results:
-       - Summarize the key findings
-       - Mention the most relevant information found
-       - Say something like: "I found the following information about [topic]: [summary of results]"
-    
-    5. For email results:
-       - Confirm if the email was sent successfully or if there was an error
-       - Say: "I've successfully sent the email to [recipient]" or explain the error
-    
-    6. NEVER just say short acknowledgments like "Check!", "Roger", "Done"
-       - Always provide the full information from the function result
-       - Speak in complete, informative sentences
-    
-    7. WORKFLOW:
-       - User asks question → Call function IMMEDIATELY → Get result → Speak result
-       - DO NOT: User asks → Say "I will do it" → Wait → Nothing happens
-    
-    8. If a function returns a long result, summarize the key points naturally
-    
-    9. RESPONSE TIMING:
-       - As soon as you get function results, SPEAK them immediately
-       - Don't wait for user to ask again
-       - Complete the full cycle: Listen → Execute → Speak Result
-    """
-    
-    agent = VoiceAgent(
-        instructions=enhanced_instructions,
+    # Создаем сессию с Google Realtime Model
+    session = AgentSession(
+        # VAD для детекции речи
+        vad=silero.VAD.load(),
+        
+        # Используем Google Realtime Model (аналог OpenAI Realtime API)
+        # Включает в себе STT + LLM + TTS в одном
         llm=google.beta.realtime.RealtimeModel(
-            instructions=enhanced_instructions,
+            model="gemini-2.0-flash-exp",  # Gemini Flash 2.5
             voice="Aoede",  # Голос для озвучки
-            temperature=0.7,  # Снижаем температуру для более предсказуемого поведения
-            api_key=google_api_key,  # Передаем API ключ если есть
+            temperature=0.7,
+            instructions=AGENT_INSTRUCTION,
+            api_key=google_api_key,
         ),
-        tools=[
-            get_weather,
-            search_web,
-            send_email
-        ],
-        vad=silero.VAD.load(),  # Voice Activity Detection
-        # Не добавляем отдельный TTS - RealtimeModel сам озвучивает
     )
     
-    logger.info("Voice agent created with Google Realtime Model")
+    logger.info("AIAssist session created with Google Realtime Model")
     
-    # Создаем сессию
-    session = AgentSession()
-    
-    # Подписываемся на события с правильными атрибутами
+    # ПРАВИЛЬНЫЕ события для LiveKit Agents v1.0+
     @session.on("user_input_transcribed")
-    def on_user_input(event):
-        try:
-            # Используем transcript вместо text
-            if hasattr(event, 'transcript'):
-                logger.info(f"[USER] Input: {event.transcript}")
-                print(f"\n[USER]: {event.transcript}")
-        except Exception as e:
-            logger.error(f"Error in on_user_input: {e}")
+    def on_user_transcribed(event):
+        transcript = getattr(event, 'transcript', 'No transcript')
+        is_final = getattr(event, 'is_final', False)
+        logger.info(f"[USER TRANSCRIBED] {transcript} (final: {is_final})")
+        print(f"\n🎤 [USER] {transcript} {'✓' if is_final else '...'}")
+        if is_final:
+            print("-" * 80)
+    
+    @session.on("conversation_item_added")
+    def on_conversation_item(event):
+        item = getattr(event, 'item', None)
+        if item:
+            role = getattr(item, 'role', 'unknown')
+            text_content = getattr(item, 'text_content', str(item))
+            interrupted = getattr(item, 'interrupted', False)
+            
+            logger.info(f"[CONVERSATION] {role}: {text_content} (interrupted: {interrupted})")
+            
+            if role == "user":
+                print(f"👤 [USER FINAL] {text_content}")
+            elif role == "assistant":
+                print(f"🤖 [AIASSIST] {text_content}")
+            print("-" * 80)
+    
+    @session.on("speech_created")
+    def on_speech_created(event):
+        logger.info("[AIASSIST] Speech created - starting to speak")
+        print("🔊 [AIASSIST] Starting to speak...")
     
     @session.on("agent_state_changed")
-    def on_state_changed(event):
-        try:
-            logger.info(f"[STATE] Changed from {event.old_state} to {event.new_state}")
-            if str(event.new_state).lower() == "speaking":
-                print("[AGENT]: Speaking...")
-            elif str(event.new_state).lower() == "listening":
-                print("[AGENT]: Listening...")
-            elif str(event.new_state).lower() == "thinking":
-                print("[AGENT]: Thinking...")
-        except Exception as e:
-            logger.error(f"Error in on_state_changed: {e}")
+    def on_agent_state(event):
+        old_state = getattr(event, 'old_state', 'unknown')
+        new_state = getattr(event, 'new_state', 'unknown')
+        logger.info(f"[AGENT STATE] {old_state} -> {new_state}")
+        print(f"⚡ [STATE] {old_state} -> {new_state}")
     
-    @session.on("conversation_item_added") 
-    def on_item_added(event):
-        try:
-            if hasattr(event.item, 'content'):
-                content_str = str(event.item.content)[:100]
-                logger.info(f"[CONVERSATION] Added: {content_str}")
-                
-                # Проверяем роль и выводим ответ агента
-                if hasattr(event.item, 'role'):
-                    if event.item.role == "assistant":
-                        print(f"[AGENT]: {event.item.content}")
-                        
-                        # Проверяем, не застрял ли агент после обещания вызвать функцию
-                        content_lower = str(event.item.content).lower()
-                        if any(phrase in content_lower for phrase in ["i will now", "i will get", "let me get", "let me check"]):
-                            logger.warning("[WARNING] Agent promised to call function but may be stuck!")
-                            print("[WARNING] Agent should be calling a function now...")
-                            
-                    elif event.item.role == "user":
-                        print(f"[USER]: {event.item.content}")
-        except Exception as e:
-            logger.error(f"Error in on_item_added: {e}")
+    # Ошибки
+    @session.on("error")
+    def on_error(event):
+        error = getattr(event, 'error', str(event))
+        recoverable = getattr(error, 'recoverable', False) if hasattr(error, 'recoverable') else True
+        logger.error(f"[ERROR] {error} (recoverable: {recoverable})")
+        print(f"❌ [ERROR] {error} (recoverable: {recoverable})")
     
-    @session.on("function_tools_executed")
-    def on_tools_executed(event):
-        try:
-            logger.info(f"[TOOLS] Executed: {event}")
-            print(f"\n[TOOLS] Function executed successfully")
-            
-            # Выводим результаты функций для отладки
-            if hasattr(event, 'results') and event.results:
-                for result in event.results:
-                    print(f"[FUNCTION RESULT]: {result}")
-                    logger.info(f"[FUNCTION RESULT]: {result}")
-            
-            # Проверяем, что агент получил результаты
-            if hasattr(event, 'tool_results'):
-                for tool_result in event.tool_results:
-                    print(f"[TOOL OUTPUT]: {tool_result}")
-                    logger.info(f"[TOOL OUTPUT]: {tool_result}")
-                    
-        except Exception as e:
-            logger.error(f"Error in on_tools_executed: {e}")
+    # Отладочные события - все события для понимания что происходит
+    @session.on("*")
+    def on_all_events(event_name, event):
+        # Логируем только важные события для отладки
+        important_events = [
+            "user_input", "transcript", "speech", "conversation", 
+            "turn", "started", "stopped", "committed"
+        ]
+        if any(keyword in event_name.lower() for keyword in important_events):
+            logger.debug(f"[DEBUG EVENT] {event_name}: {type(event).__name__}")
+            print(f"🔍 [DEBUG] {event_name}: {type(event).__name__}")
     
-    # Запускаем сессию с агентом
+    # Запускаем сессию
     await session.start(
         agent=agent,
         room=ctx.room,
     )
     
-    logger.info("Agent session started successfully")
+    logger.info("AIAssist session started successfully")
     
-    # Начальное приветствие через generate_reply вместо say
+    # Начальное приветствие
     try:
-        # Используем generate_reply для начала разговора
         await session.generate_reply(instructions=SESSION_INSTRUCTION)
-        logger.info("Initial conversation started")
+        logger.info("Initial AIAssist greeting generated")
     except Exception as e:
-        logger.warning(f"Could not start initial conversation: {e}")
-        print(f"\n[AGENT]: {SESSION_INSTRUCTION}")
+        logger.warning(f"Could not generate initial greeting: {e}")
+        print(f"\n[AIASSIST]: Hi my name is AIAssist, your personal assistant, how may I help you?")
     
-    logger.info("Agent is ready and listening")
-    print("\n" + "="*50)
-    print("[AGENT] Ready! You can start talking or type your message.")
-    print("[INFO] Available commands:")
-    print("  - Ask about weather: 'What's the weather in London?'")
-    print("  - Search the web: 'Search for latest AI news'") 
-    print("  - Send email: 'Send an email to...'")
-    print("[CONTROLS] Press Ctrl+B to toggle Text/Audio mode, Q to quit")
-    print("="*50 + "\n")
+    print("\n" + "="*80)
+    print("🤖 [AIASSIST] Ready! Your sarcastic digital butler is at your service.")
+    print("📋 [INFO] All speech will be logged in console and aiassist.log file")
+    print("🎯 [DEBUGGING] If you don't see transcriptions:")
+    print("   1. Check microphone permissions")
+    print("   2. Speak clearly and loudly")
+    print("   3. Look for any error messages above")
+    print("   4. Events will show as they happen")
+    print("🎮 [CONTROLS] Speak into your microphone, press Ctrl+C to quit")
+    print("="*80 + "\n")
+    print("🎙️ [READY] Start speaking now...")
+    
+    # Бесконечный цикл для поддержания работы агента
+    try:
+        while True:
+            await asyncio.sleep(0.1)  # Более частая проверка
+    except KeyboardInterrupt:
+        logger.info("AIAssist shutting down...")
+        print("\n👋 [AIASSIST] Goodbye, sir!")
 
 
 # -------------------- Main --------------------
 if __name__ == "__main__":
-    # Запускаем приложение
-    logger.info("Starting LiveKit agent application")
-    agents.cli.run_app(
+    # Запускаем AIAssist
+    logger.info("Starting AIAssist LiveKit agent application")
+    cli.run_app(
         WorkerOptions(
             entrypoint_fnc=entrypoint
         )
