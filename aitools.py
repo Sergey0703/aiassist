@@ -8,11 +8,19 @@ from typing import Optional
 from datetime import datetime
 from livekit.agents import function_tool, RunContext
 
-# Настройка логирования
-logger = logging.getLogger(__name__)
+# Настройка логирования для инструментов
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+    handlers=[
+        logging.FileHandler("aitools.log", encoding='utf-8'),
+        logging.StreamHandler()
+    ]
+)
+logger = logging.getLogger("aitools")
 
 
-@function_tool
+@function_tool()
 async def get_weather(
     context: RunContext,
     city: str,
@@ -25,15 +33,26 @@ async def get_weather(
         city: City name (e.g., "London", "New York", "Moscow")
         days: Number of days for forecast (1-3, default 1 for current weather only)
     """
-    logger.info(f"Getting weather for {city}, {days} days")
+    print("=" * 80)
+    print(f"🌤️ [WEATHER TOOL STARTED] Getting weather for '{city}', {days} days")
+    logger.info(f"🌤️ [WEATHER TOOL STARTED] city='{city}', days={days}")
     
     # Get WeatherAPI key from environment
     weather_api_key = os.getenv("WEATHER_API_KEY")
+    print(f"🔑 [WEATHER API KEY] {'Found' if weather_api_key else 'NOT FOUND'}")
+    logger.info(f"🔑 [WEATHER API KEY] {'Found' if weather_api_key else 'NOT FOUND'}")
+    
     if not weather_api_key:
-        return "I'm afraid I cannot get weather information - the weather service is not configured properly, sir."
+        error_msg = "I'm afraid I cannot get weather information - the weather service is not configured properly, sir."
+        print(f"❌ [WEATHER ERROR] {error_msg}")
+        logger.error(f"❌ [WEATHER ERROR] {error_msg}")
+        print("=" * 80)
+        return error_msg
     
     # Limit days to avoid API issues
     days = min(max(days, 1), 3)
+    print(f"📅 [WEATHER DAYS] Adjusted to {days} days")
+    logger.info(f"📅 [WEATHER DAYS] Adjusted to {days} days")
     
     try:
         # WeatherAPI.com endpoint
@@ -46,15 +65,32 @@ async def get_weather(
             "alerts": "no"  # No weather alerts
         }
         
+        print(f"🌐 [WEATHER API] Calling URL: {url}")
+        print(f"🌐 [WEATHER PARAMS] {params}")
+        logger.info(f"🌐 [WEATHER API] URL: {url}, params: {params}")
+        
         async with aiohttp.ClientSession() as session:
+            print("🔄 [WEATHER HTTP] Making HTTP request...")
+            logger.info("🔄 [WEATHER HTTP] Making HTTP request...")
+            
             async with session.get(url, params=params) as response:
+                print(f"📡 [WEATHER RESPONSE] Status: {response.status}")
+                logger.info(f"📡 [WEATHER RESPONSE] Status: {response.status}")
+                
                 if response.status == 200:
                     data = await response.json()
+                    print(f"📊 [WEATHER DATA] Raw response length: {len(str(data))}")
+                    logger.info(f"📊 [WEATHER DATA] Raw response keys: {list(data.keys())}")
                     
                     # Parse current weather
                     current = data["current"]
                     location = data["location"]
                     forecast_days = data["forecast"]["forecastday"]
+                    
+                    print(f"📍 [WEATHER LOCATION] {location['name']}, {location['country']}")
+                    print(f"🌡️ [WEATHER CURRENT] {current['temp_c']}°C, {current['condition']['text']}")
+                    logger.info(f"📍 [WEATHER LOCATION] {location}")
+                    logger.info(f"🌡️ [WEATHER CURRENT] {current}")
                     
                     # Build response
                     result = f"Weather in {location['name']}, {location['country']}: "
@@ -64,10 +100,12 @@ async def get_weather(
                     current_condition = current["condition"]["text"].lower()
                     
                     result += f"Currently {current_temp} degrees Celsius, {current_condition}."
+                    print(f"✅ [WEATHER RESULT] Current: {current_temp}°C, {current_condition}")
                     
                     # Forecast if requested
                     if days > 1:
                         result += " Forecast: "
+                        print(f"📊 [WEATHER FORECAST] Processing {len(forecast_days)} days")
                         
                         for i, day_data in enumerate(forecast_days):
                             if i == 0:  # Skip today (we already have current)
@@ -82,6 +120,8 @@ async def get_weather(
                             rain_chance = day_info["daily_chance_of_rain"]
                             snow_chance = day_info["daily_chance_of_snow"]
                             
+                            print(f"📅 [WEATHER DAY {i+1}] {date}: {min_temp}-{max_temp}°C, {condition}, rain:{rain_chance}%, snow:{snow_chance}%")
+                            
                             # Determine day name
                             day_name = "tomorrow" if i == 1 else f"day {i + 1}"
                             
@@ -95,21 +135,35 @@ async def get_weather(
                             
                             result += "."
                     
-                    logger.info(f"Weather data retrieved successfully for {city}")
+                    print(f"✅ [WEATHER SUCCESS] Final result: {result}")
+                    logger.info(f"✅ [WEATHER SUCCESS] Weather data retrieved successfully for {city}")
+                    logger.info(f"✅ [WEATHER FINAL] {result}")
+                    print("=" * 80)
                     return result
                     
                 elif response.status == 400:
-                    return f"I couldn't find weather information for '{city}', sir. Please check the city name."
+                    error_msg = f"I couldn't find weather information for '{city}', sir. Please check the city name."
+                    print(f"❌ [WEATHER ERROR 400] {error_msg}")
+                    logger.error(f"❌ [WEATHER ERROR 400] {error_msg}")
+                    print("=" * 80)
+                    return error_msg
                 else:
-                    logger.error(f"Weather API error: {response.status}")
-                    return "I'm having trouble accessing the weather service right now, sir."
+                    error_msg = "I'm having trouble accessing the weather service right now, sir."
+                    print(f"❌ [WEATHER ERROR {response.status}] {error_msg}")
+                    logger.error(f"❌ [WEATHER ERROR {response.status}] {error_msg}")
+                    print("=" * 80)
+                    return error_msg
                     
     except Exception as e:
-        logger.error(f"Weather API error for {city}: {e}")
-        return f"I encountered an issue while getting weather for {city}, sir. Please try again."
+        error_msg = f"I encountered an issue while getting weather for {city}, sir. Please try again."
+        print(f"💥 [WEATHER EXCEPTION] {str(e)}")
+        logger.error(f"💥 [WEATHER EXCEPTION] Weather API error for {city}: {e}")
+        logger.exception("Full weather exception traceback:")
+        print("=" * 80)
+        return error_msg
 
 
-@function_tool
+@function_tool()
 async def search_web(
     context: RunContext,
     query: str
@@ -120,12 +174,21 @@ async def search_web(
     Args:
         query: Search query (e.g., "latest news about AI", "how to cook pasta")
     """
-    logger.info(f"Searching web for: {query}")
+    print("=" * 80)
+    print(f"🔍 [SEARCH TOOL STARTED] Searching for: '{query}'")
+    logger.info(f"🔍 [SEARCH TOOL STARTED] query='{query}'")
     
     # Get Tavily API key from environment
     tavily_api_key = os.getenv("TAVILY_API_KEY")
+    print(f"🔑 [TAVILY API KEY] {'Found' if tavily_api_key else 'NOT FOUND'}")
+    logger.info(f"🔑 [TAVILY API KEY] {'Found' if tavily_api_key else 'NOT FOUND'}")
+    
     if not tavily_api_key:
-        return "I'm sorry sir, I cannot search the web - the search service is not properly configured."
+        error_msg = "I'm sorry sir, I cannot search the web - the search service is not properly configured."
+        print(f"❌ [SEARCH ERROR] {error_msg}")
+        logger.error(f"❌ [SEARCH ERROR] {error_msg}")
+        print("=" * 80)
+        return error_msg
     
     try:
         # Tavily AI Search API
@@ -146,33 +209,60 @@ async def search_web(
             "exclude_domains": []     # No domain exclusions
         }
         
+        print(f"🌐 [SEARCH API] Calling URL: {url}")
+        print(f"🌐 [SEARCH PAYLOAD] {payload}")
+        logger.info(f"🌐 [SEARCH API] URL: {url}, payload: {payload}")
+        
         async with aiohttp.ClientSession() as session:
+            print("🔄 [SEARCH HTTP] Making HTTP request...")
+            logger.info("🔄 [SEARCH HTTP] Making HTTP request...")
+            
             async with session.post(url, json=payload, headers=headers) as response:
+                print(f"📡 [SEARCH RESPONSE] Status: {response.status}")
+                logger.info(f"📡 [SEARCH RESPONSE] Status: {response.status}")
+                
                 if response.status == 200:
                     data = await response.json()
+                    print(f"📊 [SEARCH DATA] Raw response length: {len(str(data))}")
+                    logger.info(f"📊 [SEARCH DATA] Raw response keys: {list(data.keys())}")
                     
                     # Get AI-generated answer if available
                     if data.get("answer"):
-                        result = f"I found information about '{query}'. {data['answer']}"
+                        answer = data['answer']
+                        print(f"🤖 [SEARCH ANSWER] Found AI answer: {answer[:100]}...")
+                        logger.info(f"🤖 [SEARCH ANSWER] {answer}")
+                        
+                        result = f"I found information about '{query}'. {answer}"
                         
                         # Add a few top sources for credibility
                         if data.get("results") and len(data["results"]) > 0:
                             sources = []
+                            print(f"📄 [SEARCH SOURCES] Processing {len(data['results'])} results")
+                            
                             for i, result_item in enumerate(data["results"][:2]):  # Top 2 sources
                                 title = result_item.get("title", "")
+                                url_source = result_item.get("url", "")
+                                print(f"📄 [SEARCH SOURCE {i+1}] {title} - {url_source}")
+                                logger.info(f"📄 [SEARCH SOURCE {i+1}] {title} - {url_source}")
+                                
                                 if title and len(title) < 100:  # Keep titles short for voice
                                     sources.append(title)
                             
                             if sources:
                                 result += f" This information comes from sources including: {', '.join(sources)}."
+                                print(f"✅ [SEARCH SOURCES] Added sources: {sources}")
                     
                     # Fallback to search results if no answer
                     elif data.get("results") and len(data["results"]) > 0:
+                        print(f"📄 [SEARCH FALLBACK] No AI answer, using search results")
                         result = f"I found several results for '{query}': "
                         
                         for i, result_item in enumerate(data["results"][:3]):  # Top 3 results
                             title = result_item.get("title", "")
                             snippet = result_item.get("content", "")
+                            
+                            print(f"📄 [SEARCH RESULT {i+1}] {title}: {snippet[:50]}...")
+                            logger.info(f"📄 [SEARCH RESULT {i+1}] {title}: {snippet}")
                             
                             if snippet:
                                 # Limit snippet length for voice
@@ -184,24 +274,44 @@ async def search_web(
                     
                     else:
                         result = f"I searched for '{query}' but found limited information, sir. Would you like me to try a more specific search?"
+                        print(f"⚠️ [SEARCH WARNING] No results found")
+                        logger.warning(f"⚠️ [SEARCH WARNING] No results found for '{query}'")
                     
-                    logger.info(f"Web search completed successfully for: {query}")
+                    print(f"✅ [SEARCH SUCCESS] Final result: {result[:100]}...")
+                    logger.info(f"✅ [SEARCH SUCCESS] Web search completed successfully for: {query}")
+                    logger.info(f"✅ [SEARCH FINAL] {result}")
+                    print("=" * 80)
                     return result
                     
                 elif response.status == 401:
-                    return "I'm having authentication issues with the search service, sir."
+                    error_msg = "I'm having authentication issues with the search service, sir."
+                    print(f"❌ [SEARCH ERROR 401] {error_msg}")
+                    logger.error(f"❌ [SEARCH ERROR 401] {error_msg}")
+                    print("=" * 80)
+                    return error_msg
                 elif response.status == 429:
-                    return "I've reached the search limit for now, sir. Please try again later."
+                    error_msg = "I've reached the search limit for now, sir. Please try again later."
+                    print(f"❌ [SEARCH ERROR 429] {error_msg}")
+                    logger.error(f"❌ [SEARCH ERROR 429] {error_msg}")
+                    print("=" * 80)
+                    return error_msg
                 else:
-                    logger.error(f"Tavily API error: {response.status}")
-                    return "I'm having trouble with the search service right now, sir."
+                    error_msg = "I'm having trouble with the search service right now, sir."
+                    print(f"❌ [SEARCH ERROR {response.status}] {error_msg}")
+                    logger.error(f"❌ [SEARCH ERROR {response.status}] {error_msg}")
+                    print("=" * 80)
+                    return error_msg
                     
     except Exception as e:
-        logger.error(f"Web search error for '{query}': {e}")
-        return f"I encountered an issue while searching for '{query}', sir. Please try again."
+        error_msg = f"I encountered an issue while searching for '{query}', sir. Please try again."
+        print(f"💥 [SEARCH EXCEPTION] {str(e)}")
+        logger.error(f"💥 [SEARCH EXCEPTION] Web search error for '{query}': {e}")
+        logger.exception("Full search exception traceback:")
+        print("=" * 80)
+        return error_msg
 
 
-@function_tool    
+@function_tool()    
 async def send_email(
     context: RunContext,
     to_email: str,

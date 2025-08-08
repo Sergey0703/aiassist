@@ -1,0 +1,669 @@
+2025-08-08 06:44:17,658 - __main__ - INFO - Starting AIAssist LiveKit MultimodalAgent application
+2025-08-08 06:44:17,661 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-08 06:44:17,664 - livekit.agents - INFO - starting worker
+2025-08-08 06:44:17,671 - livekit.agents - INFO - initializing job runner
+2025-08-08 06:44:17,673 - livekit.agents - INFO - job runner initialized
+2025-08-08 06:44:17,673 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-08 06:44:17,747 - __main__ - INFO - Starting AIAssist entrypoint
+2025-08-08 06:44:17,748 - __main__ - INFO - Connected to room: fake_room
+2025-08-08 06:44:17,749 - __main__ - INFO - AIAssist agent initialized
+2025-08-08 06:44:17,749 - livekit.agents - ERROR - unhandled exception while running the job task
+Traceback (most recent call last):
+  File "C:\projects\aiassist\venv\Lib\site-packages\opentelemetry\util\_decorator.py", line 71, in async_wrapper
+    return await func(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\ipc\job_proc_lazy_main.py", line 240, in _traceable_entrypoint
+    await self._job_entrypoint_fnc(job_ctx)
+  File "C:\projects\aiassist\aiagent.py", line 61, in entrypoint
+    llm=google.beta.realtime.RealtimeModel(
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        model="gemini-2.0-flash-exp",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+         tools=[get_weather, search_web, send_email],
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ),
+    ^
+TypeError: RealtimeModel.__init__() got an unexpected keyword argument 'tools'
+2025-08-08 06:47:23,091 - livekit.agents - INFO - shutting down worker
+2025-08-08 06:47:23,093 - livekit.agents - DEBUG - shutting down job task
+2025-08-08 06:47:23,095 - livekit.agents - DEBUG - http_session(): closing the httpclient ctx
+2025-08-08 06:47:23,096 - livekit.agents - DEBUG - http_session(): creating a new httpclient ctx
+2025-08-08 06:47:23,098 - livekit.agents - DEBUG - job exiting
+2025-08-08 06:47:29,315 - __main__ - INFO - Starting AIAssist LiveKit agent application
+2025-08-08 06:47:29,318 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-08 06:47:29,321 - livekit.agents - INFO - starting worker
+2025-08-08 06:47:29,330 - livekit.agents - INFO - initializing job runner
+2025-08-08 06:47:29,331 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-08 06:47:29,332 - livekit.agents - INFO - job runner initialized
+2025-08-08 06:47:29,404 - __main__ - INFO - Starting AIAssist entrypoint
+2025-08-08 06:47:29,405 - __main__ - INFO - Connected to room: fake_room
+2025-08-08 06:47:29,406 - __main__ - INFO - AIAssist agent initialized with tools: weather, search, email
+2025-08-08 06:47:29,634 - __main__ - INFO - AIAssist session created with Google Realtime Model + Tools
+2025-08-08 06:47:31,973 - livekit.plugins.google - DEBUG - connecting to Gemini Realtime API...
+2025-08-08 06:47:31,979 - __main__ - INFO - [AGENT STATE] initializing -> listening
+2025-08-08 06:47:31,980 - livekit.agents - DEBUG - using audio io: `ChatCLI` -> `AgentSession` -> `TranscriptSynchronizer` -> `ChatCLI`
+2025-08-08 06:47:31,981 - livekit.agents - DEBUG - using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `ChatCLI`
+2025-08-08 06:47:31,982 - __main__ - INFO - AIAssist session started successfully
+2025-08-08 06:47:31,983 - __main__ - INFO - [AIASSIST] Speech created - starting to speak
+2025-08-08 06:47:32,319 - google_genai.live - INFO - b'{\n  "setupComplete": {}\n}\n'
+2025-08-08 06:47:32,872 - __main__ - INFO - [AGENT STATE] listening -> speaking
+2025-08-08 06:47:37,176 - __main__ - INFO - [AGENT STATE] speaking -> listening
+2025-08-08 06:47:37,178 - __main__ - INFO - [CONVERSATION] assistant: Hi my name is AIassist, your personal assistant, how may I help you?
+ (interrupted: False)
+2025-08-08 06:47:37,181 - __main__ - INFO - Initial AIAssist greeting generated
+2025-08-08 06:47:41,533 - __main__ - INFO - [AIASSIST] Speech created - starting to speak
+2025-08-08 06:47:41,534 - __main__ - INFO - [USER TRANSCRIBED] Te (final: False)
+2025-08-08 06:47:42,178 - __main__ - INFO - [USER TRANSCRIBED] Tell (final: False)
+2025-08-08 06:47:42,270 - __main__ - INFO - [USER TRANSCRIBED] Tell me (final: False)
+2025-08-08 06:47:42,363 - __main__ - INFO - [USER TRANSCRIBED] Tell me please (final: False)
+2025-08-08 06:47:42,560 - __main__ - INFO - [USER TRANSCRIBED] Tell me please about (final: False)
+2025-08-08 06:47:42,819 - __main__ - INFO - [USER TRANSCRIBED] Tell me please about. (final: False)
+2025-08-08 06:47:43,115 - __main__ - INFO - [AGENT STATE] listening -> speaking
+2025-08-08 06:47:43,123 - __main__ - INFO - [USER TRANSCRIBED] Tell me please about. (final: True)
+2025-08-08 06:47:43,124 - __main__ - INFO - [CONVERSATION] user: Tell me please about. (interrupted: False)
+2025-08-08 06:47:43,135 - livekit.agents - DEBUG - executing tool
+2025-08-08 06:47:43,137 - aitools - INFO - 🌤️ [WEATHER TOOL STARTED] city='Killarney', days=1
+2025-08-08 06:47:43,138 - aitools - INFO - 🔑 [WEATHER API KEY] Found
+2025-08-08 06:47:43,139 - aitools - INFO - 📅 [WEATHER DAYS] Adjusted to 1 days
+2025-08-08 06:47:43,140 - aitools - INFO - 🌐 [WEATHER API] URL: http://api.weatherapi.com/v1/forecast.json, params: {'key': '75225e91714c4104861143421241904', 'q': 'Killarney', 'days': 1, 'aqi': 'no', 'alerts': 'no'}
+2025-08-08 06:47:43,141 - aitools - INFO - 🔄 [WEATHER HTTP] Making HTTP request...
+2025-08-08 06:47:43,146 - __main__ - INFO - [AIASSIST] Speech created - starting to speak
+2025-08-08 06:47:43,148 - __main__ - INFO - [AGENT STATE] speaking -> listening
+2025-08-08 06:47:43,149 - livekit.plugins.google - WARNING - truncate is not supported by the Google Realtime API.
+2025-08-08 06:47:43,150 - __main__ - INFO - [CONVERSATION] assistant: Rog (interrupted: True)
+2025-08-08 06:47:43,152 - livekit.agents - DEBUG - waiting for function call to finish before fully cancelling
+2025-08-08 06:47:43,154 - __main__ - INFO - [AGENT STATE] listening -> speaking
+2025-08-08 06:47:43,360 - aitools - INFO - 📡 [WEATHER RESPONSE] Status: 200
+2025-08-08 06:47:43,364 - aitools - INFO - 📊 [WEATHER DATA] Raw response keys: ['location', 'current', 'forecast']
+2025-08-08 06:47:43,366 - aitools - INFO - 📍 [WEATHER LOCATION] {'name': 'Killarney', 'region': 'Kerry', 'country': 'Ireland', 'lat': 52.05, 'lon': -9.5167, 'tz_id': 'Europe/Dublin', 'localtime_epoch': 1754632155, 'localtime': '2025-08-08 06:49'}
+2025-08-08 06:47:43,367 - aitools - INFO - 🌡️ [WEATHER CURRENT] {'last_updated_epoch': 1754631900, 'last_updated': '2025-08-08 06:45', 'temp_c': 13.0, 'temp_f': 55.3, 'is_day': 1, 'condition': {'text': 'Patchy rain nearby', 'icon': '//cdn.weatherapi.com/weather/64x64/day/176.png', 'code': 1063}, 'wind_mph': 5.8, 'wind_kph': 9.4, 'wind_degree': 213, 'wind_dir': 'SSW', 'pressure_mb': 1017.0, 'pressure_in': 30.03, 'precip_mm': 0.01, 'precip_in': 0.0, 'humidity': 82, 'cloud': 80, 'feelslike_c': 12.3, 'feelslike_f': 54.1, 'windchill_c': 12.3, 'windchill_f': 54.1, 'heatindex_c': 13.0, 'heatindex_f': 55.3, 'dewpoint_c': 10.0, 'dewpoint_f': 50.0, 'vis_km': 10.0, 'vis_miles': 6.0, 'uv': 0.0, 'gust_mph': 9.4, 'gust_kph': 15.2}
+2025-08-08 06:47:43,369 - aitools - INFO - ✅ [WEATHER SUCCESS] Weather data retrieved successfully for Killarney
+2025-08-08 06:47:43,369 - aitools - INFO - ✅ [WEATHER FINAL] Weather in Killarney, Ireland: Currently 13 degrees Celsius, patchy rain nearby.
+2025-08-08 06:47:43,371 - livekit.agents - DEBUG - tools execution completed
+2025-08-08 06:48:15,165 - livekit.agents - INFO - shutting down worker
+2025-08-08 06:48:15,167 - livekit.agents - DEBUG - shutting down job task
+2025-08-08 06:48:15,168 - __main__ - INFO - [AGENT STATE] speaking -> listening
+2025-08-08 06:48:15,168 - livekit.agents - DEBUG - job exiting
+2025-08-08 06:48:15,184 - livekit.plugins.google - WARNING - truncate is not supported by the Google Realtime API.
+2025-08-08 06:48:15,185 - __main__ - INFO - [CONVERSATION] assistant: er that, sir. I will search the web for information about the weather in Killarney.
+ (interrupted: True)
+2025-08-08 06:48:15,188 - livekit.plugins.google - DEBUG - send task finished.
+2025-08-08 06:48:15,789 - livekit.agents - DEBUG - session closed
+2025-08-08 06:48:15,789 - livekit.agents - DEBUG - http_session(): closing the httpclient ctx
+2025-08-08 06:48:15,790 - livekit.agents - DEBUG - http_session(): creating a new httpclient ctx
+2025-08-08 06:56:34,560 - __main__ - INFO - Starting AIAssist LiveKit agent application
+2025-08-08 06:56:34,564 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-08 06:56:34,570 - livekit.agents - INFO - starting worker
+2025-08-08 06:56:34,582 - livekit.agents - INFO - initializing job runner
+2025-08-08 06:56:34,583 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-08 06:56:34,584 - livekit.agents - INFO - job runner initialized
+2025-08-08 06:56:34,666 - __main__ - INFO - Starting AIAssist entrypoint
+2025-08-08 06:56:34,667 - __main__ - INFO - Connected to room: fake_room
+2025-08-08 06:56:34,669 - __main__ - INFO - AIAssist agent initialized with tools: weather, search, email
+2025-08-08 06:56:34,854 - google.auth._default - DEBUG - Checking None for explicit credentials as part of auth process...
+2025-08-08 06:56:34,856 - google.auth._default - DEBUG - Checking Cloud SDK credentials as part of auth process...
+2025-08-08 06:56:34,856 - google.auth._default - DEBUG - Cloud SDK credentials not found on disk; not using them
+2025-08-08 06:56:37,785 - livekit.agents - WARNING - Running <Task finished name='job_user_entrypoint' coro=<_JobProc._run_job_task.<locals>._traceable_entrypoint() done, defined at C:\projects\aiassist\venv\Lib\site-packages\opentelemetry\util\_decorator.py:68> exception=ValueError('Application default credentials must be available when using Google STT without explicitly passing credentials through credentials_info or credentials_file.')> took too long: 3.12 seconds
+2025-08-08 06:56:37,787 - livekit.agents - ERROR - unhandled exception while running the job task
+Traceback (most recent call last):
+  File "C:\projects\aiassist\venv\Lib\site-packages\opentelemetry\util\_decorator.py", line 71, in async_wrapper
+    return await func(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\ipc\job_proc_lazy_main.py", line 240, in _traceable_entrypoint
+    await self._job_entrypoint_fnc(job_ctx)
+  File "C:\projects\aiassist\aiagent2.py", line 71, in entrypoint
+    stt=google.STT(model="chirp"),  # Speech-to-Text
+        ~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\plugins\google\stt.py", line 146, in __init__
+    raise ValueError(
+    ...<3 lines>...
+    ) from None
+ValueError: Application default credentials must be available when using Google STT without explicitly passing credentials through credentials_info or credentials_file.
+2025-08-08 07:01:39,158 - livekit.agents - INFO - shutting down worker
+2025-08-08 07:01:39,160 - livekit.agents - DEBUG - shutting down job task
+2025-08-08 07:01:39,162 - livekit.agents - DEBUG - http_session(): closing the httpclient ctx
+2025-08-08 07:01:39,162 - livekit.agents - DEBUG - http_session(): creating a new httpclient ctx
+2025-08-08 07:01:39,164 - livekit.agents - DEBUG - job exiting
+2025-08-08 07:03:22,695 - __main__ - INFO - Starting AIAssist LiveKit agent application
+2025-08-08 07:03:22,698 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-08 07:03:22,702 - livekit.agents - INFO - starting worker
+2025-08-08 07:03:22,717 - livekit.agents - INFO - initializing job runner
+2025-08-08 07:03:22,718 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-08 07:03:22,719 - livekit.agents - INFO - job runner initialized
+2025-08-08 07:03:22,786 - __main__ - INFO - Starting AIAssist entrypoint
+2025-08-08 07:03:22,787 - __main__ - INFO - Connected to room: fake_room
+2025-08-08 07:03:22,788 - __main__ - INFO - AIAssist agent initialized with tools: weather, search, email
+2025-08-08 07:03:24,190 - livekit.agents - ERROR - unhandled exception while running the job task
+Traceback (most recent call last):
+  File "C:\projects\aiassist\venv\Lib\site-packages\opentelemetry\util\_decorator.py", line 71, in async_wrapper
+    return await func(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\ipc\job_proc_lazy_main.py", line 240, in _traceable_entrypoint
+    await self._job_entrypoint_fnc(job_ctx)
+  File "C:\projects\aiassist\aiagent2.py", line 82, in entrypoint
+    tts=google.TTS(                     # Text-to-Speech
+        ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        voice="en-US-Journey-D",        # Мужской голос
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ),
+    ^
+TypeError: TTS.__init__() got an unexpected keyword argument 'voice'
+2025-08-08 07:04:10,248 - livekit.agents - INFO - shutting down worker
+2025-08-08 07:04:10,250 - livekit.agents - DEBUG - shutting down job task
+2025-08-08 07:04:10,251 - livekit.agents - DEBUG - http_session(): closing the httpclient ctx
+2025-08-08 07:04:10,251 - livekit.agents - DEBUG - http_session(): creating a new httpclient ctx
+2025-08-08 07:04:10,253 - livekit.agents - DEBUG - job exiting
+2025-08-08 07:04:16,544 - __main__ - INFO - Starting AIAssist LiveKit agent application
+2025-08-08 07:04:16,546 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-08 07:04:16,550 - livekit.agents - INFO - starting worker
+2025-08-08 07:04:16,558 - livekit.agents - INFO - initializing job runner
+2025-08-08 07:04:16,559 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-08 07:04:16,559 - livekit.agents - INFO - job runner initialized
+2025-08-08 07:04:16,636 - __main__ - INFO - Starting AIAssist entrypoint
+2025-08-08 07:04:16,637 - __main__ - INFO - Connected to room: fake_room
+2025-08-08 07:04:16,638 - __main__ - INFO - AIAssist agent initialized with tools: weather, search, email
+2025-08-08 07:04:16,799 - livekit.agents - ERROR - unhandled exception while running the job task
+Traceback (most recent call last):
+  File "C:\projects\aiassist\venv\Lib\site-packages\opentelemetry\util\_decorator.py", line 71, in async_wrapper
+    return await func(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\ipc\job_proc_lazy_main.py", line 240, in _traceable_entrypoint
+    await self._job_entrypoint_fnc(job_ctx)
+  File "C:\projects\aiassist\aiagent2.py", line 72, in entrypoint
+    stt=silero.STT(),                   # Silero STT (встроенный, не требует API ключей!)
+        ^^^^^^^^^^
+AttributeError: module 'livekit.plugins.silero' has no attribute 'STT'
+2025-08-08 07:08:31,791 - livekit.agents - INFO - shutting down worker
+2025-08-08 07:08:31,793 - livekit.agents - DEBUG - shutting down job task
+2025-08-08 07:08:31,795 - livekit.agents - DEBUG - http_session(): closing the httpclient ctx
+2025-08-08 07:08:31,796 - livekit.agents - DEBUG - http_session(): creating a new httpclient ctx
+2025-08-08 07:08:31,798 - livekit.agents - DEBUG - job exiting
+2025-08-08 07:08:38,335 - __main__ - INFO - Starting AIAssist LiveKit agent application
+2025-08-08 07:08:38,339 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-08 07:08:38,342 - livekit.agents - INFO - starting worker
+2025-08-08 07:08:38,350 - livekit.agents - INFO - initializing job runner
+2025-08-08 07:08:38,351 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-08 07:08:38,352 - livekit.agents - INFO - job runner initialized
+2025-08-08 07:08:38,429 - __main__ - INFO - Starting AIAssist entrypoint
+2025-08-08 07:08:38,430 - __main__ - INFO - Connected to room: fake_room
+2025-08-08 07:08:38,431 - __main__ - INFO - AIAssist agent initialized with tools: weather, search, email
+2025-08-08 07:08:38,608 - livekit.agents - ERROR - unhandled exception while running the job task
+Traceback (most recent call last):
+  File "C:\projects\aiassist\venv\Lib\site-packages\opentelemetry\util\_decorator.py", line 71, in async_wrapper
+    return await func(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\ipc\job_proc_lazy_main.py", line 240, in _traceable_entrypoint
+    await self._job_entrypoint_fnc(job_ctx)
+  File "C:\projects\aiassist\aiagent2.py", line 72, in entrypoint
+    stt=silero.STT(),                   # Silero STT (встроенный, не требует API ключей!)
+        ^^^^^^^^^^
+AttributeError: module 'livekit.plugins.silero' has no attribute 'STT'
+2025-08-08 07:08:42,714 - livekit.agents - INFO - shutting down worker
+2025-08-08 07:08:42,717 - livekit.agents - DEBUG - shutting down job task
+2025-08-08 07:08:42,718 - livekit.agents - DEBUG - http_session(): closing the httpclient ctx
+2025-08-08 07:08:42,719 - livekit.agents - DEBUG - http_session(): creating a new httpclient ctx
+2025-08-08 07:08:42,721 - livekit.agents - DEBUG - job exiting
+2025-08-08 07:15:30,148 - __main__ - INFO - Starting AIAssist LiveKit agent application
+2025-08-08 07:15:30,151 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-08 07:15:30,154 - livekit.agents - INFO - starting worker
+2025-08-08 07:15:30,161 - livekit.agents - INFO - initializing job runner
+2025-08-08 07:15:30,163 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-08 07:15:30,163 - livekit.agents - INFO - job runner initialized
+2025-08-08 07:15:30,237 - __main__ - INFO - Starting AIAssist entrypoint
+2025-08-08 07:15:30,238 - __main__ - INFO - Connected to room: fake_room
+2025-08-08 07:15:30,239 - __main__ - INFO - AIAssist agent initialized with tools: weather, search, email
+2025-08-08 07:15:31,567 - livekit.agents - ERROR - unhandled exception while running the job task
+Traceback (most recent call last):
+  File "C:\projects\aiassist\venv\Lib\site-packages\opentelemetry\util\_decorator.py", line 71, in async_wrapper
+    return await func(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\ipc\job_proc_lazy_main.py", line 240, in _traceable_entrypoint
+    await self._job_entrypoint_fnc(job_ctx)
+  File "C:\projects\aiassist\aiagent2.py", line 82, in entrypoint
+    tts=google.TTS(                     # Text-to-Speech
+        ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        voice="en-US-Journey-D",        # Мужской голос
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ),
+    ^
+TypeError: TTS.__init__() got an unexpected keyword argument 'voice'
+2025-08-08 07:16:18,757 - livekit.agents - INFO - shutting down worker
+2025-08-08 07:16:18,759 - livekit.agents - DEBUG - shutting down job task
+2025-08-08 07:16:18,760 - livekit.agents - DEBUG - http_session(): closing the httpclient ctx
+2025-08-08 07:16:18,760 - livekit.agents - DEBUG - http_session(): creating a new httpclient ctx
+2025-08-08 07:16:18,762 - livekit.agents - DEBUG - job exiting
+2025-08-08 07:16:24,470 - __main__ - INFO - Starting AIAssist LiveKit agent application
+2025-08-08 07:16:24,473 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-08 07:16:24,476 - livekit.agents - INFO - starting worker
+2025-08-08 07:16:24,483 - livekit.agents - INFO - initializing job runner
+2025-08-08 07:16:24,484 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-08 07:16:24,484 - livekit.agents - INFO - job runner initialized
+2025-08-08 07:16:24,561 - __main__ - INFO - Starting AIAssist entrypoint
+2025-08-08 07:16:24,561 - __main__ - INFO - Connected to room: fake_room
+2025-08-08 07:16:24,562 - __main__ - INFO - AIAssist agent initialized with tools: weather, search, email
+2025-08-08 07:16:25,839 - __main__ - INFO - AIAssist session created with Voice Pipeline (STT + LLM + TTS) + Tools
+2025-08-08 07:16:26,909 - __main__ - INFO - [AGENT STATE] initializing -> listening
+2025-08-08 07:16:26,910 - livekit.agents - DEBUG - using audio io: `ChatCLI` -> `AgentSession` -> `TranscriptSynchronizer` -> `ChatCLI`
+2025-08-08 07:16:26,910 - livekit.agents - DEBUG - using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `ChatCLI`
+2025-08-08 07:16:26,911 - __main__ - INFO - AIAssist session started successfully
+2025-08-08 07:16:26,912 - __main__ - INFO - [AIASSIST] Speech created - starting to speak
+2025-08-08 07:16:26,923 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-08-08 07:16:26,930 - __main__ - INFO - [AGENT STATE] listening -> thinking
+2025-08-08 07:16:27,653 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-08-08 07:16:30,553 - livekit.agents - WARNING - Running <Task finished name='Task-37' coro=<SynthesizeStream._run.<locals>._run_segments() done, defined at C:\projects\aiassist\venv\Lib\site-packages\livekit\plugins\google\tts.py:323> exception=DefaultCredentialsError('Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.')> took too long: 2.89 seconds
+2025-08-08 07:16:30,711 - livekit.agents - ERROR - Error in _tts_inference_task
+Traceback (most recent call last):
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\tts\tts.py", line 529, in __anext__
+    val = await self._event_aiter.__anext__()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+StopAsyncIteration
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
+    return await fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\opentelemetry\util\_decorator.py", line 71, in async_wrapper
+    return await func(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\voice\generation.py", line 212, in _tts_inference_task
+    async for audio_frame in tts_node:
+    ...<3 lines>...
+        audio_ch.send_nowait(audio_frame)
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\voice\agent.py", line 408, in tts_node
+    async for ev in stream:
+        yield ev.frame
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\tts\tts.py", line 532, in __anext__
+    raise exc  # noqa: B904
+    ^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\opentelemetry\util\_decorator.py", line 71, in async_wrapper
+    return await func(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\tts\tts.py", line 357, in _main_task
+    await self._run(output_emitter)
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\plugins\google\tts.py", line 332, in _run
+    await asyncio.gather(*tasks)
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\plugins\google\tts.py", line 325, in _run_segments
+    await self._run_stream(input_stream, output_emitter, streaming_config)
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\plugins\google\tts.py", line 360, in _run_stream
+    stream = await self._tts._ensure_client().streaming_synthesize(
+                   ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\plugins\google\tts.py", line 195, in _ensure_client
+    self._client = texttospeech.TextToSpeechAsyncClient(
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        client_options=ClientOptions(api_endpoint=api_endpoint)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\projects\aiassist\venv\Lib\site-packages\google\cloud\texttospeech_v1\services\text_to_speech\async_client.py", line 264, in __init__
+    self._client = TextToSpeechClient(
+                   ~~~~~~~~~~~~~~~~~~^
+        credentials=credentials,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        client_info=client_info,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\projects\aiassist\venv\Lib\site-packages\google\cloud\texttospeech_v1\services\text_to_speech\client.py", line 679, in __init__
+    self._transport = transport_init(
+                      ~~~~~~~~~~~~~~^
+        credentials=credentials,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+        api_audience=self._client_options.api_audience,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\projects\aiassist\venv\Lib\site-packages\google\cloud\texttospeech_v1\services\text_to_speech\transports\grpc_asyncio.py", line 282, in __init__
+    super().__init__(
+    ~~~~~~~~~~~~~~~~^
+        host=host,
+        ^^^^^^^^^^
+    ...<6 lines>...
+        api_audience=api_audience,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\projects\aiassist\venv\Lib\site-packages\google\cloud\texttospeech_v1\services\text_to_speech\transports\base.py", line 104, in __init__
+    credentials, _ = google.auth.default(
+                     ~~~~~~~~~~~~~~~~~~~^
+        **scopes_kwargs, quota_project_id=quota_project_id
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\projects\aiassist\venv\Lib\site-packages\google\auth\_default.py", line 685, in default
+    raise exceptions.DefaultCredentialsError(_CLOUD_SDK_MISSING_CREDENTIALS)
+google.auth.exceptions.DefaultCredentialsError: Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.
+2025-08-08 07:16:30,791 - __main__ - INFO - [CONVERSATION] assistant: Hi my name is AIassist, your personal assistant, how may I help you?
+ (interrupted: False)
+2025-08-08 07:16:30,794 - __main__ - INFO - [AGENT STATE] thinking -> listening
+2025-08-08 07:16:30,796 - __main__ - INFO - Initial AIAssist greeting generated
+2025-08-08 07:16:40,479 - __main__ - INFO - [AIASSIST] Speech created - starting to speak
+2025-08-08 07:16:40,495 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-08-08 07:16:40,508 - __main__ - INFO - [CONVERSATION] user:  (interrupted: False)
+2025-08-08 07:16:40,510 - __main__ - INFO - [AGENT STATE] listening -> thinking
+2025-08-08 07:16:41,193 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-08-08 07:16:41,211 - __main__ - INFO - [AGENT STATE] thinking -> listening
+2025-08-08 07:16:47,281 - __main__ - INFO - [AIASSIST] Speech created - starting to speak
+2025-08-08 07:16:47,289 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-08-08 07:16:47,293 - __main__ - INFO - [CONVERSATION] user:  (interrupted: False)
+2025-08-08 07:16:47,294 - __main__ - INFO - [AGENT STATE] listening -> thinking
+2025-08-08 07:16:47,834 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-08-08 07:16:47,838 - __main__ - INFO - [AGENT STATE] thinking -> listening
+2025-08-08 07:16:56,134 - livekit.agents - INFO - shutting down worker
+2025-08-08 07:16:56,136 - livekit.agents - DEBUG - shutting down job task
+2025-08-08 07:16:56,138 - livekit.agents - DEBUG - job exiting
+2025-08-08 07:16:56,138 - livekit.agents - DEBUG - session closed
+2025-08-08 07:16:56,139 - livekit.agents - DEBUG - http_session(): closing the httpclient ctx
+2025-08-08 07:16:56,140 - livekit.agents - DEBUG - http_session(): creating a new httpclient ctx
+2025-08-08 07:18:37,744 - __main__ - INFO - Starting AIAssist LiveKit agent application
+2025-08-08 07:18:37,746 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-08 07:18:37,750 - livekit.agents - INFO - starting worker
+2025-08-08 07:18:37,758 - livekit.agents - INFO - initializing job runner
+2025-08-08 07:18:37,759 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-08 07:18:37,760 - livekit.agents - INFO - job runner initialized
+2025-08-08 07:18:37,835 - __main__ - INFO - Starting AIAssist entrypoint
+2025-08-08 07:18:37,836 - __main__ - INFO - Connected to room: fake_room
+2025-08-08 07:18:37,837 - __main__ - INFO - AIAssist agent initialized with tools: weather, search, email
+2025-08-08 07:18:39,387 - __main__ - INFO - AIAssist session created with Voice Pipeline (STT + LLM + TTS) + Tools
+2025-08-08 07:18:40,444 - __main__ - INFO - [AGENT STATE] initializing -> listening
+2025-08-08 07:18:40,445 - livekit.agents - DEBUG - using audio io: `ChatCLI` -> `AgentSession` -> `TranscriptSynchronizer` -> `ChatCLI`
+2025-08-08 07:18:40,446 - livekit.agents - DEBUG - using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `ChatCLI`
+2025-08-08 07:18:40,447 - __main__ - INFO - AIAssist session started successfully
+2025-08-08 07:18:40,448 - __main__ - INFO - [AIASSIST] Speech created - starting to speak
+2025-08-08 07:18:40,461 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-08-08 07:18:40,467 - __main__ - INFO - [AGENT STATE] listening -> thinking
+2025-08-08 07:18:41,405 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-08-08 07:18:44,242 - livekit.agents - WARNING - Running <Task finished name='Task-37' coro=<SynthesizeStream._run.<locals>._run_segments() done, defined at C:\projects\aiassist\venv\Lib\site-packages\livekit\plugins\google\tts.py:323> exception=DefaultCredentialsError('Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.')> took too long: 2.83 seconds
+2025-08-08 07:18:44,284 - livekit.agents - ERROR - Error in _tts_inference_task
+Traceback (most recent call last):
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\tts\tts.py", line 529, in __anext__
+    val = await self._event_aiter.__anext__()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+StopAsyncIteration
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
+    return await fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\opentelemetry\util\_decorator.py", line 71, in async_wrapper
+    return await func(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\voice\generation.py", line 212, in _tts_inference_task
+    async for audio_frame in tts_node:
+    ...<3 lines>...
+        audio_ch.send_nowait(audio_frame)
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\voice\agent.py", line 408, in tts_node
+    async for ev in stream:
+        yield ev.frame
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\tts\tts.py", line 532, in __anext__
+    raise exc  # noqa: B904
+    ^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\opentelemetry\util\_decorator.py", line 71, in async_wrapper
+    return await func(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\tts\tts.py", line 357, in _main_task
+    await self._run(output_emitter)
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\plugins\google\tts.py", line 332, in _run
+    await asyncio.gather(*tasks)
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\plugins\google\tts.py", line 325, in _run_segments
+    await self._run_stream(input_stream, output_emitter, streaming_config)
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\plugins\google\tts.py", line 360, in _run_stream
+    stream = await self._tts._ensure_client().streaming_synthesize(
+                   ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\plugins\google\tts.py", line 195, in _ensure_client
+    self._client = texttospeech.TextToSpeechAsyncClient(
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        client_options=ClientOptions(api_endpoint=api_endpoint)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\projects\aiassist\venv\Lib\site-packages\google\cloud\texttospeech_v1\services\text_to_speech\async_client.py", line 264, in __init__
+    self._client = TextToSpeechClient(
+                   ~~~~~~~~~~~~~~~~~~^
+        credentials=credentials,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        client_info=client_info,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\projects\aiassist\venv\Lib\site-packages\google\cloud\texttospeech_v1\services\text_to_speech\client.py", line 679, in __init__
+    self._transport = transport_init(
+                      ~~~~~~~~~~~~~~^
+        credentials=credentials,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+        api_audience=self._client_options.api_audience,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\projects\aiassist\venv\Lib\site-packages\google\cloud\texttospeech_v1\services\text_to_speech\transports\grpc_asyncio.py", line 282, in __init__
+    super().__init__(
+    ~~~~~~~~~~~~~~~~^
+        host=host,
+        ^^^^^^^^^^
+    ...<6 lines>...
+        api_audience=api_audience,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\projects\aiassist\venv\Lib\site-packages\google\cloud\texttospeech_v1\services\text_to_speech\transports\base.py", line 104, in __init__
+    credentials, _ = google.auth.default(
+                     ~~~~~~~~~~~~~~~~~~~^
+        **scopes_kwargs, quota_project_id=quota_project_id
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\projects\aiassist\venv\Lib\site-packages\google\auth\_default.py", line 685, in default
+    raise exceptions.DefaultCredentialsError(_CLOUD_SDK_MISSING_CREDENTIALS)
+google.auth.exceptions.DefaultCredentialsError: Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.
+2025-08-08 07:18:44,328 - __main__ - INFO - [CONVERSATION] assistant: Hi my name is AIassist, your personal assistant, how may I help you?
+ (interrupted: False)
+2025-08-08 07:18:44,333 - __main__ - INFO - [AGENT STATE] thinking -> listening
+2025-08-08 07:18:44,335 - __main__ - INFO - Initial AIAssist greeting generated
+2025-08-08 07:18:49,619 - __main__ - INFO - [AIASSIST] Speech created - starting to speak
+2025-08-08 07:18:49,628 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-08-08 07:18:49,637 - __main__ - INFO - [CONVERSATION] user:  (interrupted: False)
+2025-08-08 07:18:49,638 - __main__ - INFO - [AGENT STATE] listening -> thinking
+2025-08-08 07:18:50,206 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-08-08 07:18:50,220 - __main__ - INFO - [AGENT STATE] thinking -> listening
+2025-08-08 07:18:56,756 - livekit.agents - INFO - shutting down worker
+2025-08-08 07:18:56,758 - livekit.agents - DEBUG - shutting down job task
+2025-08-08 07:18:56,761 - livekit.agents - DEBUG - session closed
+2025-08-08 07:18:56,762 - livekit.agents - DEBUG - job exiting
+2025-08-08 07:18:56,762 - livekit.agents - DEBUG - http_session(): closing the httpclient ctx
+2025-08-08 07:18:56,763 - livekit.agents - DEBUG - http_session(): creating a new httpclient ctx
+2025-08-08 07:21:24,843 - __main__ - INFO - Starting AIAssist LiveKit agent application
+2025-08-08 07:21:24,847 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-08 07:21:24,850 - livekit.agents - INFO - starting worker
+2025-08-08 07:21:24,858 - livekit.agents - INFO - initializing job runner
+2025-08-08 07:21:24,859 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-08 07:21:24,860 - livekit.agents - INFO - job runner initialized
+2025-08-08 07:21:24,931 - __main__ - INFO - Starting AIAssist entrypoint
+2025-08-08 07:21:24,932 - __main__ - INFO - Connected to room: fake_room
+2025-08-08 07:21:24,933 - __main__ - INFO - AIAssist agent initialized with tools: weather, search, email
+2025-08-08 07:21:26,422 - __main__ - INFO - AIAssist session created with Voice Pipeline (STT + LLM + TTS) + Tools
+2025-08-08 07:21:27,486 - __main__ - INFO - [AGENT STATE] initializing -> listening
+2025-08-08 07:21:27,487 - livekit.agents - DEBUG - using audio io: `ChatCLI` -> `AgentSession` -> `TranscriptSynchronizer` -> `ChatCLI`
+2025-08-08 07:21:27,488 - livekit.agents - DEBUG - using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `ChatCLI`
+2025-08-08 07:21:27,488 - __main__ - INFO - AIAssist session started successfully
+2025-08-08 07:21:27,489 - __main__ - INFO - [AIASSIST] Speech created - starting to speak
+2025-08-08 07:21:27,501 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-08-08 07:21:27,506 - livekit.agents - ERROR - Error in _tts_inference_task
+Traceback (most recent call last):
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
+    return await fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\opentelemetry\util\_decorator.py", line 71, in async_wrapper
+    return await func(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\voice\generation.py", line 212, in _tts_inference_task
+    async for audio_frame in tts_node:
+    ...<3 lines>...
+        audio_ch.send_nowait(audio_frame)
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\voice\agent.py", line 387, in tts_node
+    assert activity.tts is not None, "tts_node called but no TTS node is available"
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: tts_node called but no TTS node is available
+2025-08-08 07:21:27,514 - __main__ - INFO - [AGENT STATE] listening -> thinking
+2025-08-08 07:21:28,503 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-08-08 07:21:28,608 - __main__ - INFO - [CONVERSATION] assistant: Hi my name is AIassist, your personal assistant, how may I help you?
+ (interrupted: False)
+2025-08-08 07:21:28,610 - __main__ - INFO - [AGENT STATE] thinking -> listening
+2025-08-08 07:21:28,610 - __main__ - INFO - Initial AIAssist greeting generated
+2025-08-08 07:21:35,354 - __main__ - INFO - [AIASSIST] Speech created - starting to speak
+2025-08-08 07:21:35,363 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-08-08 07:21:35,366 - livekit.agents - ERROR - Error in _tts_inference_task
+Traceback (most recent call last):
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
+    return await fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\opentelemetry\util\_decorator.py", line 71, in async_wrapper
+    return await func(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\voice\generation.py", line 212, in _tts_inference_task
+    async for audio_frame in tts_node:
+    ...<3 lines>...
+        audio_ch.send_nowait(audio_frame)
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\voice\agent.py", line 387, in tts_node
+    assert activity.tts is not None, "tts_node called but no TTS node is available"
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: tts_node called but no TTS node is available
+2025-08-08 07:21:35,374 - __main__ - INFO - [CONVERSATION] user:  (interrupted: False)
+2025-08-08 07:21:35,375 - __main__ - INFO - [AGENT STATE] listening -> thinking
+2025-08-08 07:21:35,986 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-08-08 07:21:35,990 - __main__ - INFO - [AGENT STATE] thinking -> listening
+2025-08-08 07:21:47,223 - livekit.agents - INFO - shutting down worker
+2025-08-08 07:21:47,225 - livekit.agents - DEBUG - shutting down job task
+2025-08-08 07:21:47,227 - livekit.agents - DEBUG - session closed
+2025-08-08 07:21:47,227 - livekit.agents - DEBUG - job exiting
+2025-08-08 07:21:47,228 - livekit.agents - DEBUG - http_session(): closing the httpclient ctx
+2025-08-08 07:21:47,228 - livekit.agents - DEBUG - http_session(): creating a new httpclient ctx
+2025-08-08 07:31:02,732 - __main__ - INFO - Starting AIAssist LiveKit agent application
+2025-08-08 07:31:02,735 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-08 07:31:02,739 - livekit.agents - INFO - starting worker
+2025-08-08 07:31:02,754 - livekit.agents - INFO - initializing job runner
+2025-08-08 07:31:02,755 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-08 07:31:02,755 - livekit.agents - INFO - job runner initialized
+2025-08-08 07:31:02,822 - __main__ - INFO - Starting AIAssist entrypoint
+2025-08-08 07:31:02,823 - __main__ - INFO - Connected to room: fake_room
+2025-08-08 07:31:02,824 - __main__ - INFO - AIAssist agent initialized with tools: weather, search, email
+2025-08-08 07:31:04,151 - livekit.agents - ERROR - unhandled exception while running the job task
+Traceback (most recent call last):
+  File "C:\projects\aiassist\venv\Lib\site-packages\opentelemetry\util\_decorator.py", line 71, in async_wrapper
+    return await func(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\ipc\job_proc_lazy_main.py", line 240, in _traceable_entrypoint
+    await self._job_entrypoint_fnc(job_ctx)
+  File "C:\projects\aiassist\aiagent2.py", line 82, in entrypoint
+    tts=google.TTS(                     # Google TTS через API key!
+        ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        # Передаем API key явно
+        ^^^^^^^^^^^^^^^^^^^^^^^
+        api_key=google_api_key,
+        ^^^^^^^^^^^^^^^^^^^^^^^
+    ),
+    ^
+TypeError: TTS.__init__() got an unexpected keyword argument 'api_key'
+2025-08-08 07:35:44,995 - livekit.agents - INFO - shutting down worker
+2025-08-08 07:35:44,998 - livekit.agents - DEBUG - shutting down job task
+2025-08-08 07:35:45,000 - livekit.agents - DEBUG - http_session(): closing the httpclient ctx
+2025-08-08 07:35:45,001 - livekit.agents - DEBUG - http_session(): creating a new httpclient ctx
+2025-08-08 07:35:45,003 - livekit.agents - DEBUG - job exiting
+2025-08-08 07:36:28,634 - __main__ - INFO - Starting AIAssist LiveKit agent application
+2025-08-08 07:36:28,638 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-08 07:36:28,647 - livekit.agents - INFO - starting worker
+2025-08-08 07:36:28,655 - livekit.agents - INFO - initializing job runner
+2025-08-08 07:36:28,657 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-08 07:36:28,657 - livekit.agents - INFO - job runner initialized
+2025-08-08 07:36:28,728 - __main__ - INFO - Starting AIAssist entrypoint
+2025-08-08 07:36:28,729 - __main__ - INFO - Connected to room: fake_room
+2025-08-08 07:36:28,730 - __main__ - INFO - AIAssist agent initialized with tools: weather, search, email
+2025-08-08 07:36:30,050 - livekit.agents - ERROR - unhandled exception while running the job task
+Traceback (most recent call last):
+  File "C:\projects\aiassist\venv\Lib\site-packages\opentelemetry\util\_decorator.py", line 71, in async_wrapper
+    return await func(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\ipc\job_proc_lazy_main.py", line 240, in _traceable_entrypoint
+    await self._job_entrypoint_fnc(job_ctx)
+  File "C:\projects\aiassist\aiagent2.py", line 82, in entrypoint
+    tts=elevenlabs.TTS(),               # ElevenLabs TTS - лучшее качество голоса!
+        ~~~~~~~~~~~~~~^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\plugins\elevenlabs\tts.py", line 151, in __init__
+    raise ValueError(
+        "ElevenLabs API key is required, either as argument or set ELEVEN_API_KEY environmental variable"  # noqa: E501
+    )
+ValueError: ElevenLabs API key is required, either as argument or set ELEVEN_API_KEY environmental variable
+2025-08-08 07:37:46,962 - livekit.agents - INFO - shutting down worker
+2025-08-08 07:37:46,964 - livekit.agents - DEBUG - shutting down job task
+2025-08-08 07:37:46,966 - livekit.agents - DEBUG - http_session(): closing the httpclient ctx
+2025-08-08 07:37:46,968 - livekit.agents - DEBUG - http_session(): creating a new httpclient ctx
+2025-08-08 07:37:46,971 - livekit.agents - DEBUG - job exiting
+2025-08-08 07:37:53,782 - __main__ - INFO - Starting AIAssist LiveKit agent application
+2025-08-08 07:37:53,786 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-08 07:37:53,796 - livekit.agents - INFO - starting worker
+2025-08-08 07:37:53,804 - livekit.agents - INFO - initializing job runner
+2025-08-08 07:37:53,806 - livekit.agents - INFO - job runner initialized
+2025-08-08 07:37:53,806 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-08 07:37:53,873 - __main__ - INFO - Starting AIAssist entrypoint
+2025-08-08 07:37:53,874 - __main__ - INFO - Connected to room: fake_room
+2025-08-08 07:37:53,875 - __main__ - INFO - AIAssist agent initialized with tools: weather, search, email
+2025-08-08 07:37:55,192 - __main__ - INFO - AIAssist session created with Voice Pipeline (STT + LLM + TTS) + Tools
+2025-08-08 07:37:56,264 - livekit.agents - DEBUG - http_session(): creating a new httpclient ctx
+2025-08-08 07:37:56,269 - __main__ - INFO - [AGENT STATE] initializing -> listening
+2025-08-08 07:37:56,270 - livekit.agents - DEBUG - using audio io: `ChatCLI` -> `AgentSession` -> `TranscriptSynchronizer` -> `ChatCLI`
+2025-08-08 07:37:56,271 - livekit.agents - DEBUG - using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `ChatCLI`
+2025-08-08 07:37:56,272 - __main__ - INFO - AIAssist session started successfully
+2025-08-08 07:37:56,273 - __main__ - INFO - [AIASSIST] Speech created - starting to speak
+2025-08-08 07:37:56,292 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-08-08 07:37:56,297 - __main__ - INFO - [AGENT STATE] listening -> thinking
+2025-08-08 07:37:56,987 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-08-08 07:37:57,962 - __main__ - INFO - [AGENT STATE] thinking -> speaking
+2025-08-08 07:38:01,765 - __main__ - INFO - [CONVERSATION] assistant: Hi my name is AIassist, your personal assistant, how may I help you?
+ (interrupted: False)
+2025-08-08 07:38:01,767 - __main__ - INFO - [AGENT STATE] speaking -> listening
+2025-08-08 07:38:01,769 - __main__ - INFO - Initial AIAssist greeting generated
+2025-08-08 07:38:05,987 - __main__ - INFO - [USER TRANSCRIBED] Uh, thank (final: False)
+2025-08-08 07:38:06,575 - __main__ - INFO - [USER TRANSCRIBED] Uh, tell me, please, about (final: False)
+2025-08-08 07:38:07,358 - __main__ - INFO - [USER TRANSCRIBED] Uh, tell me please about where the (final: True)
+2025-08-08 07:38:07,359 - livekit.agents - DEBUG - received user transcript
+2025-08-08 07:38:07,360 - __main__ - INFO - [AIASSIST] Speech created - starting to speak
+2025-08-08 07:38:07,369 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-08-08 07:38:07,372 - __main__ - INFO - [CONVERSATION] user: Uh, tell me please about where the (interrupted: False)
+2025-08-08 07:38:07,374 - __main__ - INFO - [AGENT STATE] listening -> thinking
+2025-08-08 07:38:07,761 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-08-08 07:38:08,396 - __main__ - INFO - [AGENT STATE] thinking -> speaking
+2025-08-08 07:38:13,128 - __main__ - INFO - [CONVERSATION] assistant: Sir, please provide a complete sentence, I am not a mind reader, although I wish I was.
+ (interrupted: False)
+2025-08-08 07:38:13,130 - __main__ - INFO - [AGENT STATE] speaking -> listening
+2025-08-08 07:38:17,813 - __main__ - INFO - [USER TRANSCRIBED] Tell me, please. (final: False)
+2025-08-08 07:38:19,122 - __main__ - INFO - [USER TRANSCRIBED] Tell me, please, about (final: True)
+2025-08-08 07:38:19,124 - livekit.agents - DEBUG - received user transcript
+2025-08-08 07:38:19,554 - __main__ - INFO - [USER TRANSCRIBED] there in. (final: False)
+2025-08-08 07:38:19,838 - __main__ - INFO - [AIASSIST] Speech created - starting to speak
+2025-08-08 07:38:19,845 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-08-08 07:38:19,849 - __main__ - INFO - [CONVERSATION] user: Tell me, please, about (interrupted: False)
+2025-08-08 07:38:19,851 - __main__ - INFO - [AGENT STATE] listening -> thinking
+2025-08-08 07:38:20,014 - __main__ - INFO - [USER TRANSCRIBED] there in Killarney. (final: True)
+2025-08-08 07:38:20,015 - livekit.agents - DEBUG - received user transcript
+2025-08-08 07:38:20,017 - __main__ - INFO - [AIASSIST] Speech created - starting to speak
+2025-08-08 07:38:20,026 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-08-08 07:38:20,031 - __main__ - INFO - [CONVERSATION] user: there in Killarney. (interrupted: False)
+2025-08-08 07:38:21,380 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-08-08 07:38:22,078 - __main__ - INFO - [AGENT STATE] thinking -> speaking
+2025-08-08 07:38:27,606 - __main__ - INFO - [CONVERSATION] assistant: I am very sorry sir I am unable to complete this request, could you please provide a coherent sentence?
+ (interrupted: False)
+2025-08-08 07:38:27,609 - __main__ - INFO - [AGENT STATE] speaking -> listening
+2025-08-08 07:38:31,748 - livekit.agents - INFO - shutting down worker
+2025-08-08 07:38:31,749 - livekit.agents - DEBUG - shutting down job task
+2025-08-08 07:38:31,752 - livekit.agents - DEBUG - job exiting
+2025-08-08 07:38:31,757 - livekit.agents - DEBUG - session closed
+2025-08-08 07:38:31,757 - livekit.agents - DEBUG - http_session(): closing the httpclient ctx
+2025-08-08 07:38:31,911 - asyncio - ERROR - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000018EFADC60D0>

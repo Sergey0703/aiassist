@@ -11,7 +11,7 @@ from livekit.agents import (
     WorkerOptions,
     cli,
 )
-from livekit.plugins import google, silero
+from livekit.plugins import google, silero, deepgram, elevenlabs
 from prompts import AGENT_INSTRUCTION, SESSION_INSTRUCTION
 from aitools import get_weather, search_web, send_email
 
@@ -29,11 +29,17 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-# Получаем Google API ключ
+# Получаем API ключи
 google_api_key = os.getenv("GOOGLE_API_KEY")
+assemblyai_api_key = os.getenv("ASSEMBLYAI_API_KEY")
+
 if not google_api_key:
     logger.error("GOOGLE_API_KEY not found in environment variables")
     raise ValueError("GOOGLE_API_KEY is required")
+
+if not assemblyai_api_key:
+    logger.error("ASSEMBLYAI_API_KEY not found in environment variables")
+    raise ValueError("ASSEMBLYAI_API_KEY is required")
 
 
 # -------------------- AIAssist Agent Class --------------------
@@ -62,23 +68,21 @@ async def entrypoint(ctx: JobContext):
     # Создаем агента С ИНСТРУМЕНТАМИ
     agent = AIAssist()
     
-    # Создаем сессию с Google Realtime Model БЕЗ tools (они в Agent!)
+    # Создаем сессию с Voice Pipeline - ПОЛНОЦЕННЫЙ ГОЛОСОВОЙ АГЕНТ
     session = AgentSession(
         # VAD для детекции речи
         vad=silero.VAD.load(),
         
-        # Google Realtime Model БЕЗ tools параметра
-        llm=google.beta.realtime.RealtimeModel(
-            model="gemini-2.0-flash-exp",  # Gemini Flash 2.0
-            voice="Aoede",  # Голос для озвучки
+        # ✅ ПОЛНОЦЕННЫЙ VOICE PIPELINE!
+        stt=deepgram.STT(model="nova-2"),   # Deepgram STT - отличное качество
+        llm=google.LLM(                     # Google LLM с function calling
+            model="gemini-2.0-flash",
             temperature=0.7,
-            instructions=AGENT_INSTRUCTION,
-            api_key=google_api_key,
-            # БЕЗ tools - они в Agent!
         ),
+        tts=elevenlabs.TTS(),               # ElevenLabs TTS - лучшее качество голоса!
     )
     
-    logger.info("AIAssist session created with Google Realtime Model + Tools")
+    logger.info("AIAssist session created with Voice Pipeline (STT + LLM + TTS) + Tools")
     
     # ПРАВИЛЬНЫЕ события для LiveKit Agents v1.0+
     @session.on("user_input_transcribed")
@@ -214,7 +218,10 @@ async def entrypoint(ctx: JobContext):
     
     print("\n" + "="*80)
     print("🤖 [AIASSIST] Ready! Your sarcastic digital butler is at your service.")
-    print("📋 [INFO] Using Google Realtime Model with Function Calling")
+    print("📋 [INFO] Using FULL Voice Pipeline (STT + LLM + TTS) with Function Calling")
+    print("🎤 [SPEECH] Deepgram STT for speech recognition") 
+    print("🧠 [LLM] Google Gemini for intelligence")
+    print("🔊 [VOICE] ElevenLabs TTS for natural speech synthesis")
     print("🛠️ [TOOLS] Available: Weather, Web Search, Email")
     print("🔍 [MONITORING] Function calls will be logged in detail")
     print("📝 [LOGGING] All activity logged to aiassist.log and console")
