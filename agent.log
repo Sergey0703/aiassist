@@ -1221,3 +1221,32 @@
 2025-08-08 17:16:44,235 - openai-assistant - INFO - 💬 [CHAT ASSISTANT] I can't see you, but I'm here to assist you with any information or questions you have.
 2025-08-08 17:16:44,237 - openai-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
 2025-08-08 17:16:53,658 - openai-assistant - INFO - ❌ [SESSION CLOSED] Agent session ended
+2025-08-08 18:44:36,341 - openai-assistant - INFO - 🚀 Starting OpenAI Assistant LiveKit agent application
+2025-08-08 18:44:47,076 - openai-assistant - INFO - 🚀 Starting OpenAI Assistant entrypoint
+2025-08-08 18:44:47,819 - openai-assistant - INFO - ✅ Connected to room: playground-AKYB-1KLL
+2025-08-08 18:44:47,821 - openai-assistant - INFO - OpenAI Assistant agent initialized with weather, search, and email tools
+2025-08-08 18:44:51,854 - openai-assistant - INFO - ✅ Session created: Whisper STT (EN) + GPT-4o-mini + TTS + Weather + Search + Email
+2025-08-08 18:44:51,891 - openai-assistant - INFO - 🔄 [AGENT STATE] initializing -> listening
+2025-08-08 18:44:51,900 - openai-assistant - INFO - ✅ Session started successfully
+2025-08-08 18:44:51,907 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 18:44:52,754 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 18:44:55,435 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-08 18:44:59,934 - openai-assistant - INFO - 💬 [CHAT ASSISTANT] Hello! I'm your helpful voice assistant. How can I assist you today?
+2025-08-08 18:44:59,936 - openai-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-08 18:44:59,941 - openai-assistant - INFO - ✅ Initial greeting generated
+2025-08-08 18:45:04,974 - openai-assistant - INFO - 👤 [USER FINAL] Hi, do you see me?
+2025-08-08 18:45:04,984 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 18:45:05,039 - openai-assistant - INFO - 💬 [CHAT USER] Hi, do you see me?
+2025-08-08 18:45:05,042 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 18:45:09,731 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-08 18:45:17,597 - openai-assistant - INFO - 💬 [CHAT ASSISTANT] I can't see you, but I'm here to assist you with any information or tasks you need help with. What can I do for you?
+2025-08-08 18:45:17,606 - openai-assistant - INFO - ⚠️ [INTERRUPTED] assistant was interrupted
+2025-08-08 18:45:17,615 - openai-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-08 18:45:21,486 - openai-assistant - INFO - 👤 [USER FINAL] You don't see me in the video camera
+2025-08-08 18:45:21,496 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 18:45:21,570 - openai-assistant - INFO - 💬 [CHAT USER] You don't see me in the video camera
+2025-08-08 18:45:21,580 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 18:45:24,448 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-08 18:45:34,589 - openai-assistant - INFO - 💬 [CHAT ASSISTANT] I don’t have the capability to see or use a camera. I can only provide assistance through text. How can I help you today?
+2025-08-08 18:45:34,592 - openai-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-08 18:45:38,581 - openai-assistant - INFO - ❌ [SESSION CLOSED] Agent session ended
