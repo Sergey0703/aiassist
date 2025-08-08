@@ -1250,3 +1250,366 @@
 2025-08-08 18:45:34,589 - openai-assistant - INFO - 💬 [CHAT ASSISTANT] I don’t have the capability to see or use a camera. I can only provide assistance through text. How can I help you today?
 2025-08-08 18:45:34,592 - openai-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
 2025-08-08 18:45:38,581 - openai-assistant - INFO - ❌ [SESSION CLOSED] Agent session ended
+2025-08-08 20:21:31,737 - openai-assistant - INFO - 🚀 Starting OpenAI Assistant LiveKit agent application
+2025-08-08 20:21:48,129 - openai-assistant - INFO - 🚀 Starting OpenAI Assistant entrypoint
+2025-08-08 20:21:49,043 - openai-assistant - INFO - ✅ Connected to room: playground-0qli-avcV
+2025-08-08 20:21:49,044 - openai-assistant - INFO - OpenAI Assistant agent initialized with weather, search, email tools and video support
+2025-08-08 20:21:51,089 - openai-assistant - INFO - ✅ Session created: Whisper STT (EN) + GPT-4o-mini (vision) + TTS + Video + 3 Tools
+2025-08-08 20:21:51,116 - openai-assistant - INFO - 🔄 [AGENT STATE] initializing -> listening
+2025-08-08 20:21:51,120 - openai-assistant - INFO - ✅ Session started successfully
+2025-08-08 20:21:51,126 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 20:21:51,806 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 20:21:54,758 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-08 20:21:58,659 - openai-assistant - INFO - 💬 [CHAT ASSISTANT] Hello! I'm your helpful voice assistant. How can I assist you today?
+2025-08-08 20:21:58,661 - openai-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-08 20:21:58,662 - openai-assistant - INFO - ✅ Initial greeting generated
+2025-08-08 20:22:03,283 - openai-assistant - INFO - 👤 [USER FINAL] Hi
+2025-08-08 20:22:04,008 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 20:22:04,028 - openai-assistant - INFO - 💬 [CHAT USER] Hi
+2025-08-08 20:22:04,029 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 20:22:04,736 - openai-assistant - INFO - 👤 [USER FINAL] Do you see me?
+2025-08-08 20:22:04,741 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 20:22:04,762 - openai-assistant - INFO - 💬 [CHAT USER] Do you see me?
+2025-08-08 20:22:06,631 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-08 20:22:12,747 - openai-assistant - INFO - 💬 [CHAT ASSISTANT] I can't see you directly, but if you show me something through your camera, I can describe what I see.
+2025-08-08 20:22:12,749 - openai-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-08 20:22:18,065 - openai-assistant - INFO - 👤 [USER FINAL] Yes, I saw
+2025-08-08 20:22:18,071 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 20:22:18,092 - openai-assistant - INFO - 💬 [CHAT USER] Yes, I saw
+2025-08-08 20:22:18,093 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 20:22:18,758 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-08 20:22:19,807 - openai-assistant - INFO - 👤 [USER FINAL] In camera?
+2025-08-08 20:22:20,755 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 20:22:20,766 - openai-assistant - INFO - 💬 [CHAT USER] In camera?
+2025-08-08 20:22:20,768 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 20:22:21,418 - openai-assistant - INFO - 👤 [USER FINAL] What I saw in camera.
+2025-08-08 20:22:21,425 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 20:22:21,446 - openai-assistant - INFO - 💬 [CHAT USER] What I saw in camera.
+2025-08-08 20:22:26,072 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-08 20:22:34,814 - openai-assistant - INFO - 💬 [CHAT ASSISTANT] I can't access what you see in your camera without you showing me something specific. If you want to share something, please point the camera at it, and I'll describe what I see.
+2025-08-08 20:22:34,816 - openai-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-08 20:22:44,479 - openai-assistant - INFO - ❌ [SESSION CLOSED] Agent session ended
+2025-08-08 20:26:12,743 - openai-assistant - INFO - 🚀 Starting OpenAI Assistant LiveKit agent application
+2025-08-08 20:26:30,410 - openai-assistant - INFO - 🚀 Starting OpenAI Assistant entrypoint
+2025-08-08 20:30:21,645 - openai-assistant - INFO - 🚀 Starting OpenAI Assistant LiveKit agent application
+2025-08-08 20:30:42,733 - openai-assistant - INFO - 🚀 Starting OpenAI Assistant entrypoint
+2025-08-08 20:30:43,326 - openai-assistant - INFO - ✅ Connected to room: playground-EUTl-N3uG with full auto-subscribe
+2025-08-08 20:30:43,328 - openai-assistant - INFO - OpenAI Assistant agent initialized with weather, search, email tools and video support
+2025-08-08 20:30:45,296 - openai-assistant - INFO - ✅ Session created: Whisper STT (EN) + GPT-4o-mini (vision) + TTS + Video + 3 Tools
+2025-08-08 20:30:45,312 - openai-assistant - INFO - 🔄 [AGENT STATE] initializing -> listening
+2025-08-08 20:30:45,321 - openai-assistant - INFO - ✅ Session started successfully
+2025-08-08 20:30:45,327 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 20:30:45,782 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 20:30:48,033 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-08 20:30:51,642 - openai-assistant - INFO - 💬 [CHAT ASSISTANT] Hello! I'm your helpful voice assistant. How can I assist you today?
+2025-08-08 20:30:51,643 - openai-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-08 20:30:51,645 - openai-assistant - INFO - ✅ Initial greeting generated
+2025-08-08 20:30:51,650 - openai-assistant - INFO - 🏠 [ROOM] 1 remote participants
+2025-08-08 20:30:51,652 - openai-assistant - INFO - 📹 [PARTICIPANT] identity-japZ has 0 video tracks
+2025-08-08 20:30:56,625 - openai-assistant - INFO - 👤 [USER FINAL] Can you see me?
+2025-08-08 20:30:56,630 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 20:30:56,647 - openai-assistant - INFO - 💬 [CHAT USER] Can you see me?
+2025-08-08 20:30:56,652 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 20:30:58,064 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-08 20:31:04,117 - openai-assistant - INFO - 💬 [CHAT ASSISTANT] I can access live video from your camera. If you show me something, I can describe what I see.
+2025-08-08 20:31:04,120 - openai-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-08 20:31:06,345 - openai-assistant - INFO - 👤 [USER FINAL] Привет
+2025-08-08 20:31:06,348 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 20:31:06,370 - openai-assistant - INFO - 💬 [CHAT USER] Привет
+2025-08-08 20:31:06,376 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 20:31:06,908 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-08 20:31:08,967 - openai-assistant - INFO - 👤 [USER FINAL] How many fingers?
+2025-08-08 20:31:08,971 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 20:31:08,989 - openai-assistant - INFO - 💬 [CHAT USER] How many fingers?
+2025-08-08 20:31:08,990 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 20:31:09,393 - openai-assistant - INFO - 👤 [USER FINAL] I have
+2025-08-08 20:31:09,396 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 20:31:09,411 - openai-assistant - INFO - 💬 [CHAT USER] I have
+2025-08-08 20:31:10,538 - openai-assistant - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-08 20:31:10,539 - openai-assistant - INFO - 🛠️ [TOOL RESULT 1] unknown: no result...
+2025-08-08 20:31:12,175 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-08 20:31:16,635 - openai-assistant - INFO - 💬 [CHAT ASSISTANT] I can’t see your fingers, but if you show me, I can describe what I see.
+2025-08-08 20:31:16,637 - openai-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-08 20:31:23,277 - openai-assistant - INFO - 👤 [USER FINAL] How many fingers I show you?
+2025-08-08 20:31:23,281 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 20:31:23,300 - openai-assistant - INFO - 💬 [CHAT USER] How many fingers I show you?
+2025-08-08 20:31:23,302 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 20:31:25,068 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-08 20:31:34,123 - openai-assistant - INFO - 💬 [CHAT ASSISTANT] I don't have the ability to see directly or analyze the video without you showing something specific. If you show me your hand, I can describe what I see.
+2025-08-08 20:31:34,125 - openai-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-08 20:31:35,393 - openai-assistant - INFO - ❌ [SESSION CLOSED] Agent session ended
+2025-08-08 20:44:29,797 - openai-assistant - INFO - 🚀 Starting OpenAI Assistant LiveKit agent application with manual video processing
+2025-08-08 20:44:45,264 - openai-assistant - INFO - 🚀 Starting OpenAI Assistant entrypoint with video support
+2025-08-08 20:44:46,033 - openai-assistant - INFO - ✅ Connected to room: playground-Gztc-QHhK with full auto-subscribe
+2025-08-08 20:44:46,035 - openai-assistant - INFO - ✅ OpenAI Assistant agent initialized with weather, search, email tools and manual video processing
+2025-08-08 20:44:47,825 - openai-assistant - INFO - ✅ Session created: Whisper STT (EN) + GPT-4o-mini (vision) + TTS + Manual Video Processing + 3 Tools
+2025-08-08 20:44:47,841 - openai-assistant - INFO - 🚀 [AGENT] Agent entered room, setting up video processing...
+2025-08-08 20:44:47,845 - openai-assistant - INFO - 👤 [PARTICIPANT] Checking identity-moIu for video tracks
+2025-08-08 20:44:47,847 - openai-assistant - INFO - 📹 [VIDEO] Found existing video track from identity-moIu
+2025-08-08 20:44:47,855 - openai-assistant - INFO - 📹 [VIDEO] Created new video stream
+2025-08-08 20:44:47,856 - openai-assistant - INFO - ✅ [VIDEO] Video stream processing started
+2025-08-08 20:44:47,865 - openai-assistant - INFO - 🎬 [VIDEO FRAMES] Starting frame processing loop
+2025-08-08 20:44:47,867 - openai-assistant - INFO - 🔄 [AGENT STATE] initializing -> listening
+2025-08-08 20:44:47,871 - openai-assistant - INFO - ✅ Session started successfully with manual video processing
+2025-08-08 20:44:47,872 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 20:44:48,718 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 20:44:50,748 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 30 frames, latest: 320x180
+2025-08-08 20:44:50,762 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 30
+2025-08-08 20:44:50,955 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-08 20:44:53,385 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 60 frames, latest: 320x180
+2025-08-08 20:44:53,399 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 60
+2025-08-08 20:44:56,145 - openai-assistant - INFO - 💬 [CHAT ASSISTANT] Hello! I'm your helpful voice assistant, and I can see through your camera. How can I assist you today?
+2025-08-08 20:44:56,147 - openai-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-08 20:44:56,150 - openai-assistant - INFO - ✅ Initial greeting generated
+2025-08-08 20:44:56,155 - openai-assistant - INFO - 🏠 [ROOM] 1 remote participants
+2025-08-08 20:44:56,156 - openai-assistant - INFO - 📹 [PARTICIPANT] identity-moIu has 0 video tracks
+2025-08-08 20:44:56,314 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 90 frames, latest: 320x180
+2025-08-08 20:44:56,324 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 90
+2025-08-08 20:44:59,178 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 120 frames, latest: 320x180
+2025-08-08 20:44:59,191 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 120
+2025-08-08 20:45:02,050 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 150 frames, latest: 640x360
+2025-08-08 20:45:02,069 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 150
+2025-08-08 20:45:02,317 - openai-assistant - INFO - 👤 [USER FINAL] How many fingers I show you?
+2025-08-08 20:45:02,322 - openai-assistant - INFO - 📹 [TURN COMPLETED] Added video frame to user message (frame age: 0.1s)
+2025-08-08 20:45:02,323 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 20:45:02,348 - openai-assistant - INFO - 💬 [CHAT USER] How many fingers I show you?
+2025-08-08 20:45:02,349 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 20:45:04,970 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 180 frames, latest: 640x360
+2025-08-08 20:45:04,994 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 180
+2025-08-08 20:45:07,543 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-08 20:45:07,583 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 210 frames, latest: 320x180
+2025-08-08 20:45:07,627 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 210
+2025-08-08 20:45:10,359 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 240 frames, latest: 320x180
+2025-08-08 20:45:10,387 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 240
+2025-08-08 20:45:10,907 - openai-assistant - INFO - 💬 [CHAT ASSISTANT] I see four fingers being shown in the image.
+2025-08-08 20:45:10,910 - openai-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-08 20:45:13,292 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 270 frames, latest: 320x180
+2025-08-08 20:45:13,320 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 270
+2025-08-08 20:45:16,066 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 300 frames, latest: 640x360
+2025-08-08 20:45:16,096 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 300
+2025-08-08 20:45:16,379 - openai-assistant - INFO - 👤 [USER FINAL] Ok, and now?
+2025-08-08 20:45:16,384 - openai-assistant - INFO - 📹 [TURN COMPLETED] Added video frame to user message (frame age: 0.0s)
+2025-08-08 20:45:16,386 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 20:45:16,428 - openai-assistant - INFO - 💬 [CHAT USER] Ok, and now?
+2025-08-08 20:45:16,432 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 20:45:18,798 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 330 frames, latest: 640x360
+2025-08-08 20:45:18,821 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 330
+2025-08-08 20:45:20,121 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-08 20:45:21,582 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 360 frames, latest: 640x360
+2025-08-08 20:45:21,601 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 360
+2025-08-08 20:45:22,946 - openai-assistant - INFO - 💬 [CHAT ASSISTANT] I see two fingers being shown in this image.
+2025-08-08 20:45:22,948 - openai-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-08 20:45:24,311 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 390 frames, latest: 640x360
+2025-08-08 20:45:24,332 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 390
+2025-08-08 20:45:27,084 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 420 frames, latest: 640x360
+2025-08-08 20:45:27,107 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 420
+2025-08-08 20:45:27,366 - openai-assistant - INFO - 👤 [USER FINAL] Okay.
+2025-08-08 20:45:29,401 - openai-assistant - INFO - 📹 [TURN COMPLETED] Added video frame to user message (frame age: 0.0s)
+2025-08-08 20:45:29,402 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 20:45:29,420 - openai-assistant - INFO - 💬 [CHAT USER] Okay.
+2025-08-08 20:45:29,422 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 20:45:29,845 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 450 frames, latest: 640x360
+2025-08-08 20:45:29,867 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 450
+2025-08-08 20:45:29,892 - openai-assistant - INFO - 👤 [USER FINAL] What I have
+2025-08-08 20:45:29,895 - openai-assistant - INFO - 📹 [TURN COMPLETED] Added video frame to user message (frame age: 0.0s)
+2025-08-08 20:45:29,897 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 20:45:29,929 - openai-assistant - INFO - 💬 [CHAT USER] What I have
+2025-08-08 20:45:30,685 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-08 20:45:32,602 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 480 frames, latest: 640x360
+2025-08-08 20:45:32,646 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 480
+2025-08-08 20:45:32,701 - openai-assistant - INFO - 👤 [USER FINAL] In my hand now.
+2025-08-08 20:45:32,747 - openai-assistant - INFO - 📹 [TURN COMPLETED] Added video frame to user message (frame age: 0.0s)
+2025-08-08 20:45:32,749 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 20:45:32,945 - openai-assistant - INFO - 💬 [CHAT USER] In my hand now.
+2025-08-08 20:45:32,947 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 20:45:35,357 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 510 frames, latest: 640x360
+2025-08-08 20:45:35,389 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 510
+2025-08-08 20:45:36,806 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-08 20:45:37,478 - openai-assistant - INFO - 👤 [USER FINAL] Matizvis.
+2025-08-08 20:45:37,562 - openai-assistant - INFO - 📹 [TURN COMPLETED] Added video frame to user message (frame age: 0.0s)
+2025-08-08 20:45:37,567 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 20:45:37,783 - openai-assistant - INFO - 💬 [CHAT USER] Matizvis.
+2025-08-08 20:45:37,791 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 20:45:38,336 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 540 frames, latest: 640x360
+2025-08-08 20:45:38,379 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 540
+2025-08-08 20:45:40,974 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 570 frames, latest: 320x180
+2025-08-08 20:45:40,996 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 570
+2025-08-08 20:45:42,070 - openai-assistant - ERROR - ❌ [ERROR] type='tts_error' timestamp=1754682342.0679183 label='livekit.plugins.openai.tts.TTS' error=APIStatusError("Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 200000, Used 200000, Requested 19. Please try again in 5ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}") recoverable=True (recoverable: True)
+2025-08-08 20:45:42,368 - openai-assistant - ERROR - ❌ [ERROR] type='tts_error' timestamp=1754682342.3682563 label='livekit.plugins.openai.tts.TTS' error=APIStatusError("Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 200000, Used 200000, Requested 19. Please try again in 5ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}") recoverable=True (recoverable: True)
+2025-08-08 20:45:43,893 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 600 frames, latest: 320x180
+2025-08-08 20:45:43,932 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 600
+2025-08-08 20:45:44,584 - openai-assistant - ERROR - ❌ [ERROR] type='tts_error' timestamp=1754682344.5842228 label='livekit.plugins.openai.tts.TTS' error=APIStatusError("Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 200000, Used 200000, Requested 19. Please try again in 5ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}") recoverable=True (recoverable: True)
+2025-08-08 20:45:46,481 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 630 frames, latest: 320x180
+2025-08-08 20:45:46,496 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 630
+2025-08-08 20:45:46,792 - openai-assistant - ERROR - ❌ [ERROR] type='tts_error' timestamp=1754682346.7920082 label='livekit.plugins.openai.tts.TTS' error=APIStatusError("Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 200000, Used 200000, Requested 19. Please try again in 5ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}") recoverable=False (recoverable: False)
+2025-08-08 20:45:46,900 - openai-assistant - INFO - 💬 [CHAT ASSISTANT] It looks like you are holding a black device, possibly a smartphone or tablet. The screen is partially visible, but I can't see the details clearly.
+2025-08-08 20:45:46,902 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-08 20:45:49,228 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 660 frames, latest: 320x180
+2025-08-08 20:45:49,241 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 660
+2025-08-08 20:45:50,174 - openai-assistant - INFO - 👤 [USER FINAL] What is this?
+2025-08-08 20:45:50,179 - openai-assistant - INFO - 📹 [TURN COMPLETED] Added video frame to user message (frame age: 0.0s)
+2025-08-08 20:45:50,181 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 20:45:50,211 - openai-assistant - INFO - 💬 [CHAT USER] What is this?
+2025-08-08 20:45:50,212 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 20:45:51,097 - openai-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754682351.0967193 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 200000, Used 200000, Requested 5775. Please try again in 1.732s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}") recoverable=True (recoverable: True)
+2025-08-08 20:45:51,696 - openai-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754682351.6967084 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 200000, Used 200000, Requested 5775. Please try again in 1.732s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}") recoverable=True (recoverable: True)
+2025-08-08 20:45:51,974 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 690 frames, latest: 320x180
+2025-08-08 20:45:51,987 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 690
+2025-08-08 20:45:54,516 - openai-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754682354.5166411 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 200000, Used 200000, Requested 5775. Please try again in 1.732s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}") recoverable=True (recoverable: True)
+2025-08-08 20:45:54,919 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 720 frames, latest: 640x360
+2025-08-08 20:45:54,943 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 720
+2025-08-08 20:45:57,286 - openai-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754682357.2859604 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 200000, Used 200000, Requested 5775. Please try again in 1.732s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}") recoverable=False (recoverable: False)
+2025-08-08 20:45:57,358 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-08 20:45:57,581 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 750 frames, latest: 640x360
+2025-08-08 20:45:57,634 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 750
+2025-08-08 20:46:00,330 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 780 frames, latest: 640x360
+2025-08-08 20:46:00,367 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 780
+2025-08-08 20:46:00,466 - openai-assistant - INFO - 👤 [USER FINAL] Are you here?
+2025-08-08 20:46:00,518 - openai-assistant - INFO - 📹 [TURN COMPLETED] Added video frame to user message (frame age: 0.0s)
+2025-08-08 20:46:00,522 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 20:46:00,588 - openai-assistant - INFO - 💬 [CHAT USER] Are you here?
+2025-08-08 20:46:00,592 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 20:46:01,315 - openai-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754682361.314461 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 200000, Used 197562, Requested 6544. Please try again in 1.231s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}") recoverable=True (recoverable: True)
+2025-08-08 20:46:02,428 - openai-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754682362.4283774 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 200000, Used 193775, Requested 6544. Please try again in 95ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}") recoverable=True (recoverable: True)
+2025-08-08 20:46:02,840 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 810 frames, latest: 640x360
+2025-08-08 20:46:02,891 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 810
+2025-08-08 20:46:05,519 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 840 frames, latest: 640x360
+2025-08-08 20:46:05,554 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 840
+2025-08-08 20:46:08,292 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 870 frames, latest: 640x360
+2025-08-08 20:46:08,320 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 870
+2025-08-08 20:46:09,092 - openai-assistant - ERROR - ❌ [ERROR] type='tts_error' timestamp=1754682369.0918448 label='livekit.plugins.openai.tts.TTS' error=APIStatusError("Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 200000, Used 200000, Requested 24. Please try again in 7ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}") recoverable=True (recoverable: True)
+2025-08-08 20:46:09,643 - openai-assistant - ERROR - ❌ [ERROR] type='tts_error' timestamp=1754682369.643527 label='livekit.plugins.openai.tts.TTS' error=APIStatusError("Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 200000, Used 200000, Requested 24. Please try again in 7ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}") recoverable=True (recoverable: True)
+2025-08-08 20:46:11,034 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 900 frames, latest: 640x360
+2025-08-08 20:46:11,067 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 900
+2025-08-08 20:46:11,895 - openai-assistant - ERROR - ❌ [ERROR] type='tts_error' timestamp=1754682371.8951197 label='livekit.plugins.openai.tts.TTS' error=APIStatusError("Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 200000, Used 200000, Requested 24. Please try again in 7ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}") recoverable=True (recoverable: True)
+2025-08-08 20:46:13,809 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 930 frames, latest: 640x360
+2025-08-08 20:46:13,825 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 930
+2025-08-08 20:46:14,078 - openai-assistant - ERROR - ❌ [ERROR] type='tts_error' timestamp=1754682374.0787075 label='livekit.plugins.openai.tts.TTS' error=APIStatusError("Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 200000, Used 200000, Requested 24. Please try again in 7ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}") recoverable=False (recoverable: False)
+2025-08-08 20:46:14,113 - openai-assistant - INFO - 💬 [CHAT ASSISTANT] Yes, I'm here! In the previous image, you were showing a device with the time displayed as 8:45. How can I assist you further?
+2025-08-08 20:46:14,117 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-08 20:46:16,250 - openai-assistant - INFO - ❌ [SESSION CLOSED] Agent session ended
+2025-08-08 20:50:40,657 - openai-assistant - INFO - 🚀 Starting OpenAI Assistant LiveKit agent application with manual video processing
+2025-08-08 20:51:01,327 - openai-assistant - INFO - 🚀 Starting OpenAI Assistant entrypoint with video support
+2025-08-08 20:51:01,914 - openai-assistant - INFO - ✅ Connected to room: playground-IZOm-Fxe0 with full auto-subscribe
+2025-08-08 20:51:01,917 - openai-assistant - INFO - ✅ OpenAI Assistant agent initialized with weather, search, email tools and manual video processing
+2025-08-08 20:51:03,726 - openai-assistant - INFO - ✅ Session created: Whisper STT (EN) + GPT-4o (vision + higher limits) + TTS + Manual Video Processing + 3 Tools
+2025-08-08 20:51:03,739 - openai-assistant - INFO - 🚀 [AGENT] Agent entered room, setting up video processing...
+2025-08-08 20:51:03,740 - openai-assistant - INFO - 👤 [PARTICIPANT] Checking identity-jgfD for video tracks
+2025-08-08 20:51:03,741 - openai-assistant - INFO - 📹 [VIDEO] Found existing video track from identity-jgfD
+2025-08-08 20:51:03,743 - openai-assistant - INFO - 📹 [VIDEO] Created new video stream
+2025-08-08 20:51:03,744 - openai-assistant - INFO - ✅ [VIDEO] Video stream processing started
+2025-08-08 20:51:03,747 - openai-assistant - INFO - 🎬 [VIDEO FRAMES] Starting frame processing loop with frame skipping
+2025-08-08 20:51:03,750 - openai-assistant - INFO - 🔄 [AGENT STATE] initializing -> listening
+2025-08-08 20:51:03,758 - openai-assistant - INFO - ✅ Session started successfully with manual video processing
+2025-08-08 20:51:03,760 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 20:51:04,251 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 20:51:06,463 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-08 20:51:07,594 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 30 frames, latest: 640x360
+2025-08-08 20:51:07,618 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 30 (skipping 9/10 frames)
+2025-08-08 20:51:10,289 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 60 frames, latest: 640x360
+2025-08-08 20:51:10,307 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 60 (skipping 9/10 frames)
+2025-08-08 20:51:12,075 - openai-assistant - INFO - 💬 [CHAT ASSISTANT] Hello! I'm a helpful voice assistant, and I can see through the camera to assist you. How can I help you today?
+2025-08-08 20:51:12,077 - openai-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-08 20:51:12,079 - openai-assistant - INFO - ✅ Initial greeting generated
+2025-08-08 20:51:12,086 - openai-assistant - INFO - 🏠 [ROOM] 1 remote participants
+2025-08-08 20:51:12,088 - openai-assistant - INFO - 📹 [PARTICIPANT] identity-jgfD has 0 video tracks
+2025-08-08 20:51:13,146 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 90 frames, latest: 640x360
+2025-08-08 20:51:13,167 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 90 (skipping 9/10 frames)
+2025-08-08 20:51:15,874 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 120 frames, latest: 640x360
+2025-08-08 20:51:15,899 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 120 (skipping 9/10 frames)
+2025-08-08 20:51:18,496 - openai-assistant - INFO - 👤 [USER FINAL] How many fingers I show you?
+2025-08-08 20:51:18,500 - openai-assistant - INFO - 📹 [TURN COMPLETED] Added video frame to user message (frame age: 0.7s)
+2025-08-08 20:51:18,503 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 20:51:18,536 - openai-assistant - INFO - 💬 [CHAT USER] How many fingers I show you?
+2025-08-08 20:51:18,541 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 20:51:18,778 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 150 frames, latest: 640x360
+2025-08-08 20:51:18,802 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 150 (skipping 9/10 frames)
+2025-08-08 20:51:20,580 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-08 20:51:21,526 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 180 frames, latest: 640x360
+2025-08-08 20:51:21,545 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 180 (skipping 9/10 frames)
+2025-08-08 20:51:21,824 - openai-assistant - INFO - 💬 [CHAT ASSISTANT] You're showing two fingers.
+2025-08-08 20:51:21,827 - openai-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-08 20:51:24,318 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 210 frames, latest: 640x360
+2025-08-08 20:51:24,342 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 210 (skipping 9/10 frames)
+2025-08-08 20:51:25,332 - openai-assistant - INFO - 👤 [USER FINAL] Okay.
+2025-08-08 20:51:25,338 - openai-assistant - INFO - 📹 [TURN COMPLETED] Added video frame to user message (frame age: 0.1s)
+2025-08-08 20:51:25,340 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 20:51:25,361 - openai-assistant - INFO - 💬 [CHAT USER] Okay.
+2025-08-08 20:51:25,362 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 20:51:26,491 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-08 20:51:27,075 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 240 frames, latest: 640x360
+2025-08-08 20:51:27,094 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 240 (skipping 9/10 frames)
+2025-08-08 20:51:29,851 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 270 frames, latest: 640x360
+2025-08-08 20:51:29,871 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 270 (skipping 9/10 frames)
+2025-08-08 20:51:29,956 - openai-assistant - INFO - 👤 [USER FINAL] What exactly now I show you?
+2025-08-08 20:51:29,959 - openai-assistant - INFO - 📹 [TURN COMPLETED] Added video frame to user message (frame age: 0.1s)
+2025-08-08 20:51:29,960 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 20:51:29,982 - openai-assistant - INFO - 💬 [CHAT USER] What exactly now I show you?
+2025-08-08 20:51:29,984 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 20:51:32,624 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 300 frames, latest: 640x360
+2025-08-08 20:51:32,649 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 300 (skipping 9/10 frames)
+2025-08-08 20:51:35,393 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-08 20:51:35,955 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 330 frames, latest: 320x180
+2025-08-08 20:51:35,968 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 330 (skipping 9/10 frames)
+2025-08-08 20:51:36,040 - openai-assistant - INFO - 💬 [CHAT ASSISTANT] You're showing
+2025-08-08 20:51:36,041 - openai-assistant - INFO - ⚠️ [INTERRUPTED] assistant was interrupted
+2025-08-08 20:51:36,043 - openai-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-08 20:51:36,985 - openai-assistant - INFO - 👤 [USER FINAL] Did you see?
+2025-08-08 20:51:36,989 - openai-assistant - INFO - 📹 [TURN COMPLETED] Added video frame to user message (frame age: 0.1s)
+2025-08-08 20:51:36,991 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 20:51:37,022 - openai-assistant - INFO - 💬 [CHAT USER] Did you see?
+2025-08-08 20:51:37,024 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 20:51:38,770 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 360 frames, latest: 320x180
+2025-08-08 20:51:38,783 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 360 (skipping 9/10 frames)
+2025-08-08 20:51:41,522 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 390 frames, latest: 320x180
+2025-08-08 20:51:41,534 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 390 (skipping 9/10 frames)
+2025-08-08 20:51:42,691 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-08 20:51:43,604 - openai-assistant - INFO - 👤 [USER FINAL] Did you see?
+2025-08-08 20:51:43,608 - openai-assistant - INFO - 📹 [TURN COMPLETED] Added video frame to user message (frame age: 0.2s)
+2025-08-08 20:51:43,609 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 20:51:43,720 - openai-assistant - INFO - 💬 [CHAT USER] Did you see?
+2025-08-08 20:51:43,721 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 20:51:44,849 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 420 frames, latest: 320x180
+2025-08-08 20:51:44,863 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 420 (skipping 9/10 frames)
+2025-08-08 20:51:48,048 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 450 frames, latest: 320x180
+2025-08-08 20:51:48,060 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 450 (skipping 9/10 frames)
+2025-08-08 20:51:49,298 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-08 20:51:50,796 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 480 frames, latest: 320x180
+2025-08-08 20:51:50,808 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 480 (skipping 9/10 frames)
+2025-08-08 20:51:52,896 - openai-assistant - INFO - 💬 [CHAT ASSISTANT] Yes, I see a phone displaying the time as 8:51.
+2025-08-08 20:51:52,898 - openai-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-08 20:51:53,557 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 510 frames, latest: 320x180
+2025-08-08 20:51:53,570 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 510 (skipping 9/10 frames)
+2025-08-08 20:51:56,315 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 540 frames, latest: 320x180
+2025-08-08 20:51:56,336 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 540 (skipping 9/10 frames)
+2025-08-08 20:51:58,383 - openai-assistant - INFO - 👤 [USER FINAL] Very good.
+2025-08-08 20:51:58,389 - openai-assistant - INFO - 📹 [TURN COMPLETED] Added video frame to user message (frame age: 0.2s)
+2025-08-08 20:51:58,391 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 20:51:58,421 - openai-assistant - INFO - 💬 [CHAT USER] Very good.
+2025-08-08 20:51:58,422 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 20:51:59,131 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 570 frames, latest: 640x360
+2025-08-08 20:51:59,151 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 570 (skipping 9/10 frames)
+2025-08-08 20:51:59,401 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-08 20:52:01,497 - openai-assistant - INFO - 👤 [USER FINAL] How many fingers I show you?
+2025-08-08 20:52:01,502 - openai-assistant - INFO - 📹 [TURN COMPLETED] Added video frame to user message (frame age: 0.5s)
+2025-08-08 20:52:01,504 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 20:52:01,539 - openai-assistant - INFO - 💬 [CHAT USER] How many fingers I show you?
+2025-08-08 20:52:01,540 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 20:52:01,913 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 600 frames, latest: 640x360
+2025-08-08 20:52:01,933 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 600 (skipping 9/10 frames)
+2025-08-08 20:52:04,684 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 630 frames, latest: 640x360
+2025-08-08 20:52:04,704 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 630 (skipping 9/10 frames)
+2025-08-08 20:52:06,865 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-08 20:52:07,451 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 660 frames, latest: 640x360
+2025-08-08 20:52:07,468 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 660 (skipping 9/10 frames)
+2025-08-08 20:52:09,718 - openai-assistant - INFO - 💬 [CHAT ASSISTANT] You're showing five fingers.
+2025-08-08 20:52:09,721 - openai-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-08 20:52:10,704 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 690 frames, latest: 320x180
+2025-08-08 20:52:10,723 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 690 (skipping 9/10 frames)
+2025-08-08 20:52:12,633 - openai-assistant - INFO - 👤 [USER FINAL] Ok, thank you very much.
+2025-08-08 20:52:12,639 - openai-assistant - INFO - 📹 [TURN COMPLETED] Added video frame to user message (frame age: 0.1s)
+2025-08-08 20:52:12,641 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 20:52:12,675 - openai-assistant - INFO - 💬 [CHAT USER] Ok, thank you very much.
+2025-08-08 20:52:12,676 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 20:52:13,287 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-08 20:52:13,310 - openai-assistant - INFO - ❌ [SESSION CLOSED] Agent session ended

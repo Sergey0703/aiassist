@@ -2154,3 +2154,744 @@ client_session: <aiohttp.client.ClientSession object at 0x0000018EFADC60D0>
 2025-08-08 18:45:48,487 - livekit.agents - DEBUG - job exiting
 2025-08-08 18:45:48,750 - livekit.agents - DEBUG - http_session(): closing the httpclient ctx
 2025-08-08 18:45:48,752 - livekit.agents - DEBUG - http_session(): creating a new httpclient ctx
+2025-08-08 20:21:31,737 - openai-assistant - INFO - 🚀 Starting OpenAI Assistant LiveKit agent application
+2025-08-08 20:21:31,760 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-08 20:21:31,767 - livekit.agents - DEV - Watching C:\projects\aiassist
+2025-08-08 20:21:34,687 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-08 20:21:34,699 - livekit.agents - INFO - starting worker
+2025-08-08 20:21:34,941 - livekit.agents - INFO - registered worker
+2025-08-08 20:21:48,086 - livekit.agents - INFO - received job request
+2025-08-08 20:21:48,120 - livekit.agents - INFO - initializing job runner
+2025-08-08 20:21:48,123 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-08 20:21:48,123 - livekit.agents - INFO - job runner initialized
+2025-08-08 20:21:48,129 - openai-assistant - INFO - 🚀 Starting OpenAI Assistant entrypoint
+2025-08-08 20:21:49,043 - openai-assistant - INFO - ✅ Connected to room: playground-0qli-avcV
+2025-08-08 20:21:49,044 - openai-assistant - INFO - OpenAI Assistant agent initialized with weather, search, email tools and video support
+2025-08-08 20:21:51,089 - openai-assistant - INFO - ✅ Session created: Whisper STT (EN) + GPT-4o-mini (vision) + TTS + Video + 3 Tools
+2025-08-08 20:21:51,092 - livekit.agents - WARNING - Running <Task pending name='job_user_entrypoint' coro=<_JobProc._run_job_task.<locals>._traceable_entrypoint() running at C:\projects\aiassist\venv\Lib\site-packages\opentelemetry\util\_decorator.py:71> wait_for=<_GatheringFuture pending cb=[Task.task_wakeup()]> cb=[_JobProc._run_job_task.<locals>.<lambda>() at C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\ipc\job_proc_lazy_main.py:258, _JobProc._run_job_task.<locals>.log_exception() at C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\ipc\job_proc_lazy_main.py:260]> took too long: 2.05 seconds
+2025-08-08 20:21:51,095 - livekit.agents - DEBUG - input stream attached
+2025-08-08 20:21:51,113 - livekit.agents - DEBUG - start reading stream
+2025-08-08 20:21:51,116 - openai-assistant - INFO - 🔄 [AGENT STATE] initializing -> listening
+2025-08-08 20:21:51,118 - livekit.agents - DEBUG - using audio io: `RoomIO` -> `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+2025-08-08 20:21:51,119 - livekit.agents - DEBUG - using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+2025-08-08 20:21:51,120 - openai-assistant - INFO - ✅ Session started successfully
+2025-08-08 20:21:51,126 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 20:21:51,806 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 20:21:54,758 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-08 20:21:58,659 - openai-assistant - INFO - 💬 [CHAT ASSISTANT] Hello! I'm your helpful voice assistant. How can I assist you today?
+2025-08-08 20:21:58,661 - openai-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-08 20:21:58,662 - openai-assistant - INFO - ✅ Initial greeting generated
+2025-08-08 20:22:03,283 - openai-assistant - INFO - 👤 [USER FINAL] Hi
+2025-08-08 20:22:03,284 - livekit.agents - DEBUG - received user transcript
+2025-08-08 20:22:04,008 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 20:22:04,028 - openai-assistant - INFO - 💬 [CHAT USER] Hi
+2025-08-08 20:22:04,029 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 20:22:04,736 - openai-assistant - INFO - 👤 [USER FINAL] Do you see me?
+2025-08-08 20:22:04,737 - livekit.agents - DEBUG - received user transcript
+2025-08-08 20:22:04,741 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 20:22:04,762 - openai-assistant - INFO - 💬 [CHAT USER] Do you see me?
+2025-08-08 20:22:06,631 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-08 20:22:12,747 - openai-assistant - INFO - 💬 [CHAT ASSISTANT] I can't see you directly, but if you show me something through your camera, I can describe what I see.
+2025-08-08 20:22:12,749 - openai-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-08 20:22:18,065 - openai-assistant - INFO - 👤 [USER FINAL] Yes, I saw
+2025-08-08 20:22:18,067 - livekit.agents - DEBUG - received user transcript
+2025-08-08 20:22:18,071 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 20:22:18,092 - openai-assistant - INFO - 💬 [CHAT USER] Yes, I saw
+2025-08-08 20:22:18,093 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 20:22:18,758 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-08 20:22:19,807 - openai-assistant - INFO - 👤 [USER FINAL] In camera?
+2025-08-08 20:22:19,809 - livekit.agents - DEBUG - received user transcript
+2025-08-08 20:22:20,755 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 20:22:20,766 - openai-assistant - INFO - 💬 [CHAT USER] In camera?
+2025-08-08 20:22:20,768 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 20:22:21,418 - openai-assistant - INFO - 👤 [USER FINAL] What I saw in camera.
+2025-08-08 20:22:21,420 - livekit.agents - DEBUG - received user transcript
+2025-08-08 20:22:21,425 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 20:22:21,446 - openai-assistant - INFO - 💬 [CHAT USER] What I saw in camera.
+2025-08-08 20:22:26,072 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-08 20:22:34,814 - openai-assistant - INFO - 💬 [CHAT ASSISTANT] I can't access what you see in your camera without you showing me something specific. If you want to share something, please point the camera at it, and I'll describe what I see.
+2025-08-08 20:22:34,816 - openai-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-08 20:22:44,465 - livekit.agents - INFO - closing agent session due to participant disconnect (disable via `RoomInputOptions.close_on_disconnect=False`)
+2025-08-08 20:22:44,469 - livekit.agents - DEBUG - stream closed
+2025-08-08 20:22:44,472 - livekit.agents - DEBUG - input stream detached
+2025-08-08 20:22:44,479 - openai-assistant - INFO - ❌ [SESSION CLOSED] Agent session ended
+2025-08-08 20:22:44,482 - livekit.agents - DEBUG - session closed
+2025-08-08 20:22:52,133 - livekit.agents - INFO - shutting down worker
+2025-08-08 20:22:52,137 - livekit.agents - DEBUG - shutting down job task
+2025-08-08 20:22:52,139 - livekit.agents - DEBUG - job exiting
+2025-08-08 20:22:52,292 - livekit.agents - DEBUG - http_session(): closing the httpclient ctx
+2025-08-08 20:22:52,293 - livekit.agents - DEBUG - http_session(): creating a new httpclient ctx
+2025-08-08 20:26:12,743 - openai-assistant - INFO - 🚀 Starting OpenAI Assistant LiveKit agent application
+2025-08-08 20:26:12,757 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-08 20:26:12,761 - livekit.agents - DEV - Watching C:\projects\aiassist
+2025-08-08 20:26:15,546 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-08 20:26:15,566 - livekit.agents - INFO - starting worker
+2025-08-08 20:26:16,847 - livekit.agents - INFO - registered worker
+2025-08-08 20:26:30,309 - livekit.agents - INFO - received job request
+2025-08-08 20:26:30,403 - livekit.agents - INFO - initializing job runner
+2025-08-08 20:26:30,405 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-08 20:26:30,406 - livekit.agents - INFO - job runner initialized
+2025-08-08 20:26:30,410 - openai-assistant - INFO - 🚀 Starting OpenAI Assistant entrypoint
+2025-08-08 20:26:30,411 - livekit.agents - ERROR - unhandled exception while running the job task
+Traceback (most recent call last):
+  File "C:\projects\aiassist\venv\Lib\site-packages\opentelemetry\util\_decorator.py", line 71, in async_wrapper
+    return await func(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\ipc\job_proc_lazy_main.py", line 240, in _traceable_entrypoint
+    await self._job_entrypoint_fnc(job_ctx)
+  File "C:\projects\aiassist\agentopenai.py", line 78, in entrypoint
+    await ctx.connect(auto_subscribe=AutoSubscribe.AUDIO_VIDEO)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'AutoSubscribe' has no attribute 'AUDIO_VIDEO'
+2025-08-08 20:27:08,397 - livekit.agents - INFO - shutting down worker
+2025-08-08 20:27:08,400 - livekit.agents - DEBUG - shutting down job task
+2025-08-08 20:27:08,402 - livekit.agents - DEBUG - http_session(): closing the httpclient ctx
+2025-08-08 20:27:08,403 - livekit.agents - DEBUG - http_session(): creating a new httpclient ctx
+2025-08-08 20:27:08,405 - livekit.agents - DEBUG - job exiting
+2025-08-08 20:30:21,645 - openai-assistant - INFO - 🚀 Starting OpenAI Assistant LiveKit agent application
+2025-08-08 20:30:21,658 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-08 20:30:21,664 - livekit.agents - DEV - Watching C:\projects\aiassist
+2025-08-08 20:30:24,488 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-08 20:30:24,511 - livekit.agents - INFO - starting worker
+2025-08-08 20:30:24,729 - livekit.agents - INFO - registered worker
+2025-08-08 20:30:42,669 - livekit.agents - INFO - received job request
+2025-08-08 20:30:42,727 - livekit.agents - INFO - initializing job runner
+2025-08-08 20:30:42,729 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-08 20:30:42,729 - livekit.agents - INFO - job runner initialized
+2025-08-08 20:30:42,733 - openai-assistant - INFO - 🚀 Starting OpenAI Assistant entrypoint
+2025-08-08 20:30:43,326 - openai-assistant - INFO - ✅ Connected to room: playground-EUTl-N3uG with full auto-subscribe
+2025-08-08 20:30:43,328 - openai-assistant - INFO - OpenAI Assistant agent initialized with weather, search, email tools and video support
+2025-08-08 20:30:45,296 - openai-assistant - INFO - ✅ Session created: Whisper STT (EN) + GPT-4o-mini (vision) + TTS + Video + 3 Tools
+2025-08-08 20:30:45,299 - livekit.agents - DEBUG - input stream attached
+2025-08-08 20:30:45,308 - livekit.agents - DEBUG - start reading stream
+2025-08-08 20:30:45,312 - openai-assistant - INFO - 🔄 [AGENT STATE] initializing -> listening
+2025-08-08 20:30:45,314 - livekit.agents - DEBUG - using audio io: `RoomIO` -> `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+2025-08-08 20:30:45,315 - livekit.agents - DEBUG - using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+2025-08-08 20:30:45,321 - openai-assistant - INFO - ✅ Session started successfully
+2025-08-08 20:30:45,327 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 20:30:45,782 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 20:30:48,033 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-08 20:30:51,642 - openai-assistant - INFO - 💬 [CHAT ASSISTANT] Hello! I'm your helpful voice assistant. How can I assist you today?
+2025-08-08 20:30:51,643 - openai-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-08 20:30:51,645 - openai-assistant - INFO - ✅ Initial greeting generated
+2025-08-08 20:30:51,650 - openai-assistant - INFO - 🏠 [ROOM] 1 remote participants
+2025-08-08 20:30:51,652 - openai-assistant - INFO - 📹 [PARTICIPANT] identity-japZ has 0 video tracks
+2025-08-08 20:30:56,625 - openai-assistant - INFO - 👤 [USER FINAL] Can you see me?
+2025-08-08 20:30:56,627 - livekit.agents - DEBUG - received user transcript
+2025-08-08 20:30:56,630 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 20:30:56,647 - openai-assistant - INFO - 💬 [CHAT USER] Can you see me?
+2025-08-08 20:30:56,652 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 20:30:58,064 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-08 20:31:04,117 - openai-assistant - INFO - 💬 [CHAT ASSISTANT] I can access live video from your camera. If you show me something, I can describe what I see.
+2025-08-08 20:31:04,120 - openai-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-08 20:31:06,345 - openai-assistant - INFO - 👤 [USER FINAL] Привет
+2025-08-08 20:31:06,346 - livekit.agents - DEBUG - received user transcript
+2025-08-08 20:31:06,348 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 20:31:06,370 - openai-assistant - INFO - 💬 [CHAT USER] Привет
+2025-08-08 20:31:06,376 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 20:31:06,908 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-08 20:31:08,967 - openai-assistant - INFO - 👤 [USER FINAL] How many fingers?
+2025-08-08 20:31:08,968 - livekit.agents - DEBUG - received user transcript
+2025-08-08 20:31:08,971 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 20:31:08,989 - openai-assistant - INFO - 💬 [CHAT USER] How many fingers?
+2025-08-08 20:31:08,990 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 20:31:09,393 - openai-assistant - INFO - 👤 [USER FINAL] I have
+2025-08-08 20:31:09,394 - livekit.agents - DEBUG - received user transcript
+2025-08-08 20:31:09,396 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 20:31:09,411 - openai-assistant - INFO - 💬 [CHAT USER] I have
+2025-08-08 20:31:10,276 - livekit.agents - DEBUG - executing tool
+2025-08-08 20:31:10,277 - aitools - INFO - 🌤️ [WEATHER TOOL STARTED] city='London', days=1
+2025-08-08 20:31:10,278 - aitools - INFO - 🔑 [WEATHER API KEY] Found
+2025-08-08 20:31:10,278 - aitools - INFO - 📅 [WEATHER DAYS] Adjusted to 1 days
+2025-08-08 20:31:10,279 - aitools - INFO - 🌐 [WEATHER API] URL: http://api.weatherapi.com/v1/forecast.json, params: {'key': '75225e91714c4104861143421241904', 'q': 'London', 'days': 1, 'aqi': 'no', 'alerts': 'no'}
+2025-08-08 20:31:10,280 - aitools - INFO - 🔄 [WEATHER HTTP] Making HTTP request...
+2025-08-08 20:31:10,525 - aitools - INFO - 📡 [WEATHER RESPONSE] Status: 200
+2025-08-08 20:31:10,527 - aitools - INFO - 📊 [WEATHER DATA] Raw response keys: ['location', 'current', 'forecast']
+2025-08-08 20:31:10,528 - aitools - INFO - 📍 [WEATHER LOCATION] {'name': 'London', 'region': 'City of London, Greater London', 'country': 'United Kingdom', 'lat': 51.5171, 'lon': -0.1062, 'tz_id': 'Europe/London', 'localtime_epoch': 1754681585, 'localtime': '2025-08-08 20:33'}
+2025-08-08 20:31:10,529 - aitools - INFO - 🌡️ [WEATHER CURRENT] {'last_updated_epoch': 1754681400, 'last_updated': '2025-08-08 20:30', 'temp_c': 19.1, 'temp_f': 66.4, 'is_day': 1, 'condition': {'text': 'Sunny', 'icon': '//cdn.weatherapi.com/weather/64x64/day/113.png', 'code': 1000}, 'wind_mph': 6.5, 'wind_kph': 10.4, 'wind_degree': 230, 'wind_dir': 'SW', 'pressure_mb': 1020.0, 'pressure_in': 30.12, 'precip_mm': 0.0, 'precip_in': 0.0, 'humidity': 68, 'cloud': 0, 'feelslike_c': 19.1, 'feelslike_f': 66.4, 'windchill_c': 21.1, 'windchill_f': 70.0, 'heatindex_c': 24.2, 'heatindex_f': 75.5, 'dewpoint_c': 9.1, 'dewpoint_f': 48.4, 'vis_km': 10.0, 'vis_miles': 6.0, 'uv': 0.0, 'gust_mph': 10.3, 'gust_kph': 16.5}
+2025-08-08 20:31:10,530 - aitools - INFO - ✅ [WEATHER SUCCESS] Weather data retrieved successfully for London
+2025-08-08 20:31:10,532 - aitools - INFO - ✅ [WEATHER FINAL] Weather in London, United Kingdom: Currently 19 degrees Celsius, sunny.
+2025-08-08 20:31:10,536 - livekit.agents - DEBUG - tools execution completed
+2025-08-08 20:31:10,538 - openai-assistant - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-08 20:31:10,539 - openai-assistant - INFO - 🛠️ [TOOL RESULT 1] unknown: no result...
+2025-08-08 20:31:12,175 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-08 20:31:16,635 - openai-assistant - INFO - 💬 [CHAT ASSISTANT] I can’t see your fingers, but if you show me, I can describe what I see.
+2025-08-08 20:31:16,637 - openai-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-08 20:31:23,277 - openai-assistant - INFO - 👤 [USER FINAL] How many fingers I show you?
+2025-08-08 20:31:23,278 - livekit.agents - DEBUG - received user transcript
+2025-08-08 20:31:23,281 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 20:31:23,300 - openai-assistant - INFO - 💬 [CHAT USER] How many fingers I show you?
+2025-08-08 20:31:23,302 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 20:31:25,068 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-08 20:31:34,123 - openai-assistant - INFO - 💬 [CHAT ASSISTANT] I don't have the ability to see directly or analyze the video without you showing something specific. If you show me your hand, I can describe what I see.
+2025-08-08 20:31:34,125 - openai-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-08 20:31:35,378 - livekit.agents - DEBUG - stream closed
+2025-08-08 20:31:35,382 - livekit.agents - INFO - closing agent session due to participant disconnect (disable via `RoomInputOptions.close_on_disconnect=False`)
+2025-08-08 20:31:35,385 - livekit.agents - DEBUG - input stream detached
+2025-08-08 20:31:35,393 - openai-assistant - INFO - ❌ [SESSION CLOSED] Agent session ended
+2025-08-08 20:31:35,397 - livekit.agents - DEBUG - session closed
+2025-08-08 20:31:41,279 - livekit.agents - INFO - shutting down worker
+2025-08-08 20:31:41,281 - livekit.agents - DEBUG - shutting down job task
+2025-08-08 20:31:41,283 - livekit.agents - DEBUG - job exiting
+2025-08-08 20:31:41,378 - livekit.agents - DEBUG - http_session(): closing the httpclient ctx
+2025-08-08 20:31:41,379 - livekit.agents - DEBUG - http_session(): creating a new httpclient ctx
+2025-08-08 20:44:29,797 - openai-assistant - INFO - 🚀 Starting OpenAI Assistant LiveKit agent application with manual video processing
+2025-08-08 20:44:29,808 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-08 20:44:29,814 - livekit.agents - DEV - Watching C:\projects\aiassist
+2025-08-08 20:44:32,330 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-08 20:44:32,341 - livekit.agents - INFO - starting worker
+2025-08-08 20:44:32,517 - livekit.agents - INFO - registered worker
+2025-08-08 20:44:45,208 - livekit.agents - INFO - received job request
+2025-08-08 20:44:45,250 - livekit.agents - INFO - initializing job runner
+2025-08-08 20:44:45,251 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-08 20:44:45,251 - livekit.agents - INFO - job runner initialized
+2025-08-08 20:44:45,264 - openai-assistant - INFO - 🚀 Starting OpenAI Assistant entrypoint with video support
+2025-08-08 20:44:46,033 - openai-assistant - INFO - ✅ Connected to room: playground-Gztc-QHhK with full auto-subscribe
+2025-08-08 20:44:46,035 - openai-assistant - INFO - ✅ OpenAI Assistant agent initialized with weather, search, email tools and manual video processing
+2025-08-08 20:44:47,825 - openai-assistant - INFO - ✅ Session created: Whisper STT (EN) + GPT-4o-mini (vision) + TTS + Manual Video Processing + 3 Tools
+2025-08-08 20:44:47,832 - livekit.agents - DEBUG - input stream attached
+2025-08-08 20:44:47,841 - openai-assistant - INFO - 🚀 [AGENT] Agent entered room, setting up video processing...
+2025-08-08 20:44:47,845 - openai-assistant - INFO - 👤 [PARTICIPANT] Checking identity-moIu for video tracks
+2025-08-08 20:44:47,847 - openai-assistant - INFO - 📹 [VIDEO] Found existing video track from identity-moIu
+2025-08-08 20:44:47,855 - openai-assistant - INFO - 📹 [VIDEO] Created new video stream
+2025-08-08 20:44:47,856 - openai-assistant - INFO - ✅ [VIDEO] Video stream processing started
+2025-08-08 20:44:47,862 - livekit.agents - DEBUG - start reading stream
+2025-08-08 20:44:47,865 - openai-assistant - INFO - 🎬 [VIDEO FRAMES] Starting frame processing loop
+2025-08-08 20:44:47,867 - openai-assistant - INFO - 🔄 [AGENT STATE] initializing -> listening
+2025-08-08 20:44:47,869 - livekit.agents - DEBUG - using audio io: `RoomIO` -> `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+2025-08-08 20:44:47,870 - livekit.agents - DEBUG - using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+2025-08-08 20:44:47,871 - openai-assistant - INFO - ✅ Session started successfully with manual video processing
+2025-08-08 20:44:47,872 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 20:44:48,718 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 20:44:50,748 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 30 frames, latest: 320x180
+2025-08-08 20:44:50,762 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 30
+2025-08-08 20:44:50,955 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-08 20:44:53,385 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 60 frames, latest: 320x180
+2025-08-08 20:44:53,399 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 60
+2025-08-08 20:44:56,145 - openai-assistant - INFO - 💬 [CHAT ASSISTANT] Hello! I'm your helpful voice assistant, and I can see through your camera. How can I assist you today?
+2025-08-08 20:44:56,147 - openai-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-08 20:44:56,150 - openai-assistant - INFO - ✅ Initial greeting generated
+2025-08-08 20:44:56,155 - openai-assistant - INFO - 🏠 [ROOM] 1 remote participants
+2025-08-08 20:44:56,156 - openai-assistant - INFO - 📹 [PARTICIPANT] identity-moIu has 0 video tracks
+2025-08-08 20:44:56,314 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 90 frames, latest: 320x180
+2025-08-08 20:44:56,324 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 90
+2025-08-08 20:44:59,178 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 120 frames, latest: 320x180
+2025-08-08 20:44:59,191 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 120
+2025-08-08 20:45:02,050 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 150 frames, latest: 640x360
+2025-08-08 20:45:02,069 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 150
+2025-08-08 20:45:02,317 - openai-assistant - INFO - 👤 [USER FINAL] How many fingers I show you?
+2025-08-08 20:45:02,319 - livekit.agents - DEBUG - received user transcript
+2025-08-08 20:45:02,322 - openai-assistant - INFO - 📹 [TURN COMPLETED] Added video frame to user message (frame age: 0.1s)
+2025-08-08 20:45:02,323 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 20:45:02,348 - openai-assistant - INFO - 💬 [CHAT USER] How many fingers I show you?
+2025-08-08 20:45:02,349 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 20:45:04,970 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 180 frames, latest: 640x360
+2025-08-08 20:45:04,994 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 180
+2025-08-08 20:45:07,543 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-08 20:45:07,583 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 210 frames, latest: 320x180
+2025-08-08 20:45:07,627 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 210
+2025-08-08 20:45:10,359 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 240 frames, latest: 320x180
+2025-08-08 20:45:10,387 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 240
+2025-08-08 20:45:10,907 - openai-assistant - INFO - 💬 [CHAT ASSISTANT] I see four fingers being shown in the image.
+2025-08-08 20:45:10,910 - openai-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-08 20:45:13,292 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 270 frames, latest: 320x180
+2025-08-08 20:45:13,320 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 270
+2025-08-08 20:45:16,066 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 300 frames, latest: 640x360
+2025-08-08 20:45:16,096 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 300
+2025-08-08 20:45:16,379 - openai-assistant - INFO - 👤 [USER FINAL] Ok, and now?
+2025-08-08 20:45:16,381 - livekit.agents - DEBUG - received user transcript
+2025-08-08 20:45:16,384 - openai-assistant - INFO - 📹 [TURN COMPLETED] Added video frame to user message (frame age: 0.0s)
+2025-08-08 20:45:16,386 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 20:45:16,428 - openai-assistant - INFO - 💬 [CHAT USER] Ok, and now?
+2025-08-08 20:45:16,432 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 20:45:18,798 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 330 frames, latest: 640x360
+2025-08-08 20:45:18,821 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 330
+2025-08-08 20:45:20,121 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-08 20:45:21,582 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 360 frames, latest: 640x360
+2025-08-08 20:45:21,601 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 360
+2025-08-08 20:45:22,946 - openai-assistant - INFO - 💬 [CHAT ASSISTANT] I see two fingers being shown in this image.
+2025-08-08 20:45:22,948 - openai-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-08 20:45:24,311 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 390 frames, latest: 640x360
+2025-08-08 20:45:24,332 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 390
+2025-08-08 20:45:27,084 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 420 frames, latest: 640x360
+2025-08-08 20:45:27,107 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 420
+2025-08-08 20:45:27,366 - openai-assistant - INFO - 👤 [USER FINAL] Okay.
+2025-08-08 20:45:27,367 - livekit.agents - DEBUG - received user transcript
+2025-08-08 20:45:29,401 - openai-assistant - INFO - 📹 [TURN COMPLETED] Added video frame to user message (frame age: 0.0s)
+2025-08-08 20:45:29,402 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 20:45:29,420 - openai-assistant - INFO - 💬 [CHAT USER] Okay.
+2025-08-08 20:45:29,422 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 20:45:29,845 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 450 frames, latest: 640x360
+2025-08-08 20:45:29,867 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 450
+2025-08-08 20:45:29,892 - openai-assistant - INFO - 👤 [USER FINAL] What I have
+2025-08-08 20:45:29,893 - livekit.agents - DEBUG - received user transcript
+2025-08-08 20:45:29,895 - openai-assistant - INFO - 📹 [TURN COMPLETED] Added video frame to user message (frame age: 0.0s)
+2025-08-08 20:45:29,897 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 20:45:29,929 - openai-assistant - INFO - 💬 [CHAT USER] What I have
+2025-08-08 20:45:30,685 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-08 20:45:32,602 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 480 frames, latest: 640x360
+2025-08-08 20:45:32,646 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 480
+2025-08-08 20:45:32,701 - openai-assistant - INFO - 👤 [USER FINAL] In my hand now.
+2025-08-08 20:45:32,703 - livekit.agents - DEBUG - received user transcript
+2025-08-08 20:45:32,747 - openai-assistant - INFO - 📹 [TURN COMPLETED] Added video frame to user message (frame age: 0.0s)
+2025-08-08 20:45:32,749 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 20:45:32,945 - openai-assistant - INFO - 💬 [CHAT USER] In my hand now.
+2025-08-08 20:45:32,947 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 20:45:35,357 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 510 frames, latest: 640x360
+2025-08-08 20:45:35,389 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 510
+2025-08-08 20:45:36,806 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-08 20:45:37,478 - openai-assistant - INFO - 👤 [USER FINAL] Matizvis.
+2025-08-08 20:45:37,484 - livekit.agents - DEBUG - received user transcript
+2025-08-08 20:45:37,562 - openai-assistant - INFO - 📹 [TURN COMPLETED] Added video frame to user message (frame age: 0.0s)
+2025-08-08 20:45:37,567 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 20:45:37,783 - openai-assistant - INFO - 💬 [CHAT USER] Matizvis.
+2025-08-08 20:45:37,791 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 20:45:38,336 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 540 frames, latest: 640x360
+2025-08-08 20:45:38,379 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 540
+2025-08-08 20:45:40,974 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 570 frames, latest: 320x180
+2025-08-08 20:45:40,996 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 570
+2025-08-08 20:45:42,070 - openai-assistant - ERROR - ❌ [ERROR] type='tts_error' timestamp=1754682342.0679183 label='livekit.plugins.openai.tts.TTS' error=APIStatusError("Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 200000, Used 200000, Requested 19. Please try again in 5ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}") recoverable=True (recoverable: True)
+2025-08-08 20:45:42,076 - livekit.agents - WARNING - failed to synthesize speech, retrying in 0.1s
+Traceback (most recent call last):
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\tts\tts.py", line 231, in _main_task
+    await self._run(output_emitter)
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\plugins\openai\tts.py", line 230, in _run
+    raise APIStatusError(
+        e.message, status_code=e.status_code, request_id=e.request_id, body=e.body
+    ) from None
+livekit.agents._exceptions.APIStatusError: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 200000, Used 200000, Requested 19. Please try again in 5ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}} (status_code=429, request_id=req_f8aae5c2e2a44597b48dbcf7502a26be, body={'message': 'Rate limit reached for gpt-4o-mini in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 200000, Used 200000, Requested 19. Please try again in 5ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}, retryable=False)
+2025-08-08 20:45:42,368 - openai-assistant - ERROR - ❌ [ERROR] type='tts_error' timestamp=1754682342.3682563 label='livekit.plugins.openai.tts.TTS' error=APIStatusError("Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 200000, Used 200000, Requested 19. Please try again in 5ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}") recoverable=True (recoverable: True)
+2025-08-08 20:45:42,372 - livekit.agents - WARNING - failed to synthesize speech, retrying in 2.0s
+Traceback (most recent call last):
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\tts\tts.py", line 231, in _main_task
+    await self._run(output_emitter)
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\plugins\openai\tts.py", line 230, in _run
+    raise APIStatusError(
+        e.message, status_code=e.status_code, request_id=e.request_id, body=e.body
+    ) from None
+livekit.agents._exceptions.APIStatusError: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 200000, Used 200000, Requested 19. Please try again in 5ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}} (status_code=429, request_id=req_9b8b963ab7d14799ac8f711d1cf7f241, body={'message': 'Rate limit reached for gpt-4o-mini in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 200000, Used 200000, Requested 19. Please try again in 5ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}, retryable=False)
+2025-08-08 20:45:43,893 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 600 frames, latest: 320x180
+2025-08-08 20:45:43,932 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 600
+2025-08-08 20:45:44,584 - openai-assistant - ERROR - ❌ [ERROR] type='tts_error' timestamp=1754682344.5842228 label='livekit.plugins.openai.tts.TTS' error=APIStatusError("Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 200000, Used 200000, Requested 19. Please try again in 5ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}") recoverable=True (recoverable: True)
+2025-08-08 20:45:44,587 - livekit.agents - WARNING - failed to synthesize speech, retrying in 2.0s
+Traceback (most recent call last):
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\tts\tts.py", line 231, in _main_task
+    await self._run(output_emitter)
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\plugins\openai\tts.py", line 230, in _run
+    raise APIStatusError(
+        e.message, status_code=e.status_code, request_id=e.request_id, body=e.body
+    ) from None
+livekit.agents._exceptions.APIStatusError: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 200000, Used 200000, Requested 19. Please try again in 5ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}} (status_code=429, request_id=req_f148003f1bbd4a46ac3b3f8c3c271f86, body={'message': 'Rate limit reached for gpt-4o-mini in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 200000, Used 200000, Requested 19. Please try again in 5ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}, retryable=False)
+2025-08-08 20:45:46,481 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 630 frames, latest: 320x180
+2025-08-08 20:45:46,496 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 630
+2025-08-08 20:45:46,792 - openai-assistant - ERROR - ❌ [ERROR] type='tts_error' timestamp=1754682346.7920082 label='livekit.plugins.openai.tts.TTS' error=APIStatusError("Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 200000, Used 200000, Requested 19. Please try again in 5ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}") recoverable=False (recoverable: False)
+2025-08-08 20:45:46,819 - livekit.agents - ERROR - Error in _tts_inference_task
+Traceback (most recent call last):
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
+    return await fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\opentelemetry\util\_decorator.py", line 71, in async_wrapper
+    return await func(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\voice\generation.py", line 212, in _tts_inference_task
+    async for audio_frame in tts_node:
+    ...<3 lines>...
+        audio_ch.send_nowait(audio_frame)
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\voice\agent.py", line 408, in tts_node
+    async for ev in stream:
+        yield ev.frame
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\tts\tts.py", line 532, in __anext__
+    raise exc  # noqa: B904
+    ^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\opentelemetry\util\_decorator.py", line 71, in async_wrapper
+    return await func(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\tts\tts.py", line 357, in _main_task
+    await self._run(output_emitter)
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\tts\stream_adapter.py", line 131, in _run
+    await asyncio.gather(*tasks)
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\tts\stream_adapter.py", line 121, in _synthesize
+    async for audio in tts_stream:
+        output_emitter.push(audio.frame.data.tobytes())
+        duration += audio.frame.duration
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\tts\tts.py", line 291, in __anext__
+    raise exc  # noqa: B904
+    ^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\opentelemetry\util\_decorator.py", line 71, in async_wrapper
+    return await func(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\tts\tts.py", line 231, in _main_task
+    await self._run(output_emitter)
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\plugins\openai\tts.py", line 230, in _run
+    raise APIStatusError(
+        e.message, status_code=e.status_code, request_id=e.request_id, body=e.body
+    ) from None
+livekit.agents._exceptions.APIStatusError: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 200000, Used 200000, Requested 19. Please try again in 5ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}} (status_code=429, request_id=req_5e323e85a74c453ca104022c3305e323, body={'message': 'Rate limit reached for gpt-4o-mini in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 200000, Used 200000, Requested 19. Please try again in 5ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}, retryable=False)
+2025-08-08 20:45:46,900 - openai-assistant - INFO - 💬 [CHAT ASSISTANT] It looks like you are holding a black device, possibly a smartphone or tablet. The screen is partially visible, but I can't see the details clearly.
+2025-08-08 20:45:46,902 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-08 20:45:49,228 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 660 frames, latest: 320x180
+2025-08-08 20:45:49,241 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 660
+2025-08-08 20:45:50,174 - openai-assistant - INFO - 👤 [USER FINAL] What is this?
+2025-08-08 20:45:50,176 - livekit.agents - DEBUG - received user transcript
+2025-08-08 20:45:50,179 - openai-assistant - INFO - 📹 [TURN COMPLETED] Added video frame to user message (frame age: 0.0s)
+2025-08-08 20:45:50,181 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 20:45:50,211 - openai-assistant - INFO - 💬 [CHAT USER] What is this?
+2025-08-08 20:45:50,212 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 20:45:51,097 - openai-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754682351.0967193 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 200000, Used 200000, Requested 5775. Please try again in 1.732s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}") recoverable=True (recoverable: True)
+2025-08-08 20:45:51,099 - livekit.agents - WARNING - failed to generate LLM completion, retrying in 0.1s
+Traceback (most recent call last):
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\llm\llm.py", line 177, in _main_task
+    return await self._run()
+           ^^^^^^^^^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\plugins\openai\llm.py", line 691, in _run
+    raise APIStatusError(
+    ...<5 lines>...
+    ) from None
+livekit.agents._exceptions.APIStatusError: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 200000, Used 200000, Requested 5775. Please try again in 1.732s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}} (status_code=429, request_id=req_d561d7a5a7334e909b81ded701d4dd08, body={'message': 'Rate limit reached for gpt-4o-mini in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 200000, Used 200000, Requested 5775. Please try again in 1.732s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}, retryable=True)
+2025-08-08 20:45:51,696 - openai-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754682351.6967084 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 200000, Used 200000, Requested 5775. Please try again in 1.732s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}") recoverable=True (recoverable: True)
+2025-08-08 20:45:51,699 - livekit.agents - WARNING - failed to generate LLM completion, retrying in 2.0s
+Traceback (most recent call last):
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\llm\llm.py", line 177, in _main_task
+    return await self._run()
+           ^^^^^^^^^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\plugins\openai\llm.py", line 691, in _run
+    raise APIStatusError(
+    ...<5 lines>...
+    ) from None
+livekit.agents._exceptions.APIStatusError: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 200000, Used 200000, Requested 5775. Please try again in 1.732s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}} (status_code=429, request_id=req_651e557ea74342f49dec4324d145cf25, body={'message': 'Rate limit reached for gpt-4o-mini in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 200000, Used 200000, Requested 5775. Please try again in 1.732s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}, retryable=True)
+2025-08-08 20:45:51,974 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 690 frames, latest: 320x180
+2025-08-08 20:45:51,987 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 690
+2025-08-08 20:45:54,516 - openai-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754682354.5166411 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 200000, Used 200000, Requested 5775. Please try again in 1.732s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}") recoverable=True (recoverable: True)
+2025-08-08 20:45:54,518 - livekit.agents - WARNING - failed to generate LLM completion, retrying in 2.0s
+Traceback (most recent call last):
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\llm\llm.py", line 177, in _main_task
+    return await self._run()
+           ^^^^^^^^^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\plugins\openai\llm.py", line 691, in _run
+    raise APIStatusError(
+    ...<5 lines>...
+    ) from None
+livekit.agents._exceptions.APIStatusError: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 200000, Used 200000, Requested 5775. Please try again in 1.732s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}} (status_code=429, request_id=req_ee79a73af63a9fb7bc944d46e7a7493a, body={'message': 'Rate limit reached for gpt-4o-mini in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 200000, Used 200000, Requested 5775. Please try again in 1.732s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}, retryable=True)
+2025-08-08 20:45:54,919 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 720 frames, latest: 640x360
+2025-08-08 20:45:54,943 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 720
+2025-08-08 20:45:57,286 - openai-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754682357.2859604 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 200000, Used 200000, Requested 5775. Please try again in 1.732s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}") recoverable=False (recoverable: False)
+2025-08-08 20:45:57,324 - livekit.agents - ERROR - Error in _llm_inference_task
+Traceback (most recent call last):
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\llm\llm.py", line 177, in _main_task
+    return await self._run()
+           ^^^^^^^^^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\plugins\openai\llm.py", line 691, in _run
+    raise APIStatusError(
+    ...<5 lines>...
+    ) from None
+livekit.agents._exceptions.APIStatusError: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 200000, Used 200000, Requested 5775. Please try again in 1.732s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}} (status_code=429, request_id=req_0d60c5f979dd4f4bb479a47add76fe07, body={'message': 'Rate limit reached for gpt-4o-mini in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 200000, Used 200000, Requested 5775. Please try again in 1.732s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}, retryable=True)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
+    return await fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\opentelemetry\util\_decorator.py", line 71, in async_wrapper
+    return await func(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\voice\generation.py", line 124, in _llm_inference_task
+    async for chunk in llm_node:
+    ...<29 lines>...
+            )
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\voice\agent.py", line 378, in llm_node
+    async for chunk in stream:
+        yield chunk
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\llm\llm.py", line 326, in __anext__
+    raise exc  # noqa: B904
+    ^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\opentelemetry\util\_decorator.py", line 71, in async_wrapper
+    return await func(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\llm\llm.py", line 189, in _main_task
+    raise APIConnectionError(
+        f"failed to generate LLM completion after {self._conn_options.max_retry + 1} attempts",  # noqa: E501
+    ) from e
+livekit.agents._exceptions.APIConnectionError: failed to generate LLM completion after 4 attempts (body=None, retryable=True)
+2025-08-08 20:45:57,358 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-08 20:45:57,581 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 750 frames, latest: 640x360
+2025-08-08 20:45:57,634 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 750
+2025-08-08 20:46:00,330 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 780 frames, latest: 640x360
+2025-08-08 20:46:00,367 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 780
+2025-08-08 20:46:00,466 - openai-assistant - INFO - 👤 [USER FINAL] Are you here?
+2025-08-08 20:46:00,470 - livekit.agents - DEBUG - received user transcript
+2025-08-08 20:46:00,518 - openai-assistant - INFO - 📹 [TURN COMPLETED] Added video frame to user message (frame age: 0.0s)
+2025-08-08 20:46:00,522 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 20:46:00,588 - openai-assistant - INFO - 💬 [CHAT USER] Are you here?
+2025-08-08 20:46:00,592 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 20:46:01,315 - openai-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754682361.314461 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 200000, Used 197562, Requested 6544. Please try again in 1.231s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}") recoverable=True (recoverable: True)
+2025-08-08 20:46:01,321 - livekit.agents - WARNING - failed to generate LLM completion, retrying in 0.1s
+Traceback (most recent call last):
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\llm\llm.py", line 177, in _main_task
+    return await self._run()
+           ^^^^^^^^^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\plugins\openai\llm.py", line 691, in _run
+    raise APIStatusError(
+    ...<5 lines>...
+    ) from None
+livekit.agents._exceptions.APIStatusError: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 200000, Used 197562, Requested 6544. Please try again in 1.231s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}} (status_code=429, request_id=req_591b74859f44491cb7048b719e585c28, body={'message': 'Rate limit reached for gpt-4o-mini in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 200000, Used 197562, Requested 6544. Please try again in 1.231s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}, retryable=True)
+2025-08-08 20:46:02,428 - openai-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754682362.4283774 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 200000, Used 193775, Requested 6544. Please try again in 95ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}") recoverable=True (recoverable: True)
+2025-08-08 20:46:02,449 - livekit.agents - WARNING - failed to generate LLM completion, retrying in 2.0s
+Traceback (most recent call last):
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\llm\llm.py", line 177, in _main_task
+    return await self._run()
+           ^^^^^^^^^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\plugins\openai\llm.py", line 691, in _run
+    raise APIStatusError(
+    ...<5 lines>...
+    ) from None
+livekit.agents._exceptions.APIStatusError: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 200000, Used 193775, Requested 6544. Please try again in 95ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}} (status_code=429, request_id=req_0cd084997dd8464baebeaa1cea843219, body={'message': 'Rate limit reached for gpt-4o-mini in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 200000, Used 193775, Requested 6544. Please try again in 95ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}, retryable=True)
+2025-08-08 20:46:02,840 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 810 frames, latest: 640x360
+2025-08-08 20:46:02,891 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 810
+2025-08-08 20:46:05,519 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 840 frames, latest: 640x360
+2025-08-08 20:46:05,554 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 840
+2025-08-08 20:46:08,292 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 870 frames, latest: 640x360
+2025-08-08 20:46:08,320 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 870
+2025-08-08 20:46:09,092 - openai-assistant - ERROR - ❌ [ERROR] type='tts_error' timestamp=1754682369.0918448 label='livekit.plugins.openai.tts.TTS' error=APIStatusError("Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 200000, Used 200000, Requested 24. Please try again in 7ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}") recoverable=True (recoverable: True)
+2025-08-08 20:46:09,096 - livekit.agents - WARNING - failed to synthesize speech, retrying in 0.1s
+Traceback (most recent call last):
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\tts\tts.py", line 231, in _main_task
+    await self._run(output_emitter)
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\plugins\openai\tts.py", line 230, in _run
+    raise APIStatusError(
+        e.message, status_code=e.status_code, request_id=e.request_id, body=e.body
+    ) from None
+livekit.agents._exceptions.APIStatusError: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 200000, Used 200000, Requested 24. Please try again in 7ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}} (status_code=429, request_id=req_a27d86e163664793af774117f82d5566, body={'message': 'Rate limit reached for gpt-4o-mini in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 200000, Used 200000, Requested 24. Please try again in 7ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}, retryable=False)
+2025-08-08 20:46:09,643 - openai-assistant - ERROR - ❌ [ERROR] type='tts_error' timestamp=1754682369.643527 label='livekit.plugins.openai.tts.TTS' error=APIStatusError("Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 200000, Used 200000, Requested 24. Please try again in 7ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}") recoverable=True (recoverable: True)
+2025-08-08 20:46:09,647 - livekit.agents - WARNING - failed to synthesize speech, retrying in 2.0s
+Traceback (most recent call last):
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\tts\tts.py", line 231, in _main_task
+    await self._run(output_emitter)
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\plugins\openai\tts.py", line 230, in _run
+    raise APIStatusError(
+        e.message, status_code=e.status_code, request_id=e.request_id, body=e.body
+    ) from None
+livekit.agents._exceptions.APIStatusError: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 200000, Used 200000, Requested 24. Please try again in 7ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}} (status_code=429, request_id=req_78a3a636235947828aa5657bf3f3ac59, body={'message': 'Rate limit reached for gpt-4o-mini in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 200000, Used 200000, Requested 24. Please try again in 7ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}, retryable=False)
+2025-08-08 20:46:11,034 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 900 frames, latest: 640x360
+2025-08-08 20:46:11,067 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 900
+2025-08-08 20:46:11,895 - openai-assistant - ERROR - ❌ [ERROR] type='tts_error' timestamp=1754682371.8951197 label='livekit.plugins.openai.tts.TTS' error=APIStatusError("Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 200000, Used 200000, Requested 24. Please try again in 7ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}") recoverable=True (recoverable: True)
+2025-08-08 20:46:11,897 - livekit.agents - WARNING - failed to synthesize speech, retrying in 2.0s
+Traceback (most recent call last):
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\tts\tts.py", line 231, in _main_task
+    await self._run(output_emitter)
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\plugins\openai\tts.py", line 230, in _run
+    raise APIStatusError(
+        e.message, status_code=e.status_code, request_id=e.request_id, body=e.body
+    ) from None
+livekit.agents._exceptions.APIStatusError: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 200000, Used 200000, Requested 24. Please try again in 7ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}} (status_code=429, request_id=req_ad934b4ebc9d40d380f4c937113af416, body={'message': 'Rate limit reached for gpt-4o-mini in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 200000, Used 200000, Requested 24. Please try again in 7ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}, retryable=False)
+2025-08-08 20:46:13,809 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 930 frames, latest: 640x360
+2025-08-08 20:46:13,825 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 930
+2025-08-08 20:46:14,078 - openai-assistant - ERROR - ❌ [ERROR] type='tts_error' timestamp=1754682374.0787075 label='livekit.plugins.openai.tts.TTS' error=APIStatusError("Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 200000, Used 200000, Requested 24. Please try again in 7ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}") recoverable=False (recoverable: False)
+2025-08-08 20:46:14,101 - livekit.agents - ERROR - Error in _tts_inference_task
+Traceback (most recent call last):
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
+    return await fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\opentelemetry\util\_decorator.py", line 71, in async_wrapper
+    return await func(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\voice\generation.py", line 212, in _tts_inference_task
+    async for audio_frame in tts_node:
+    ...<3 lines>...
+        audio_ch.send_nowait(audio_frame)
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\voice\agent.py", line 408, in tts_node
+    async for ev in stream:
+        yield ev.frame
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\tts\tts.py", line 532, in __anext__
+    raise exc  # noqa: B904
+    ^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\opentelemetry\util\_decorator.py", line 71, in async_wrapper
+    return await func(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\tts\tts.py", line 357, in _main_task
+    await self._run(output_emitter)
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\tts\stream_adapter.py", line 131, in _run
+    await asyncio.gather(*tasks)
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\tts\stream_adapter.py", line 121, in _synthesize
+    async for audio in tts_stream:
+        output_emitter.push(audio.frame.data.tobytes())
+        duration += audio.frame.duration
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\tts\tts.py", line 291, in __anext__
+    raise exc  # noqa: B904
+    ^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\opentelemetry\util\_decorator.py", line 71, in async_wrapper
+    return await func(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\tts\tts.py", line 231, in _main_task
+    await self._run(output_emitter)
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\plugins\openai\tts.py", line 230, in _run
+    raise APIStatusError(
+        e.message, status_code=e.status_code, request_id=e.request_id, body=e.body
+    ) from None
+livekit.agents._exceptions.APIStatusError: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 200000, Used 200000, Requested 24. Please try again in 7ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}} (status_code=429, request_id=req_4d8c4d2648454c84b02e9313e0c36c9b, body={'message': 'Rate limit reached for gpt-4o-mini in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 200000, Used 200000, Requested 24. Please try again in 7ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}, retryable=False)
+2025-08-08 20:46:14,113 - openai-assistant - INFO - 💬 [CHAT ASSISTANT] Yes, I'm here! In the previous image, you were showing a device with the time displayed as 8:45. How can I assist you further?
+2025-08-08 20:46:14,117 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-08 20:46:16,184 - livekit.agents - INFO - shutting down worker
+2025-08-08 20:46:16,187 - livekit.agents - DEBUG - shutting down job task
+2025-08-08 20:46:16,189 - livekit.agents - DEBUG - job exiting
+2025-08-08 20:46:16,191 - livekit.agents - DEBUG - stream closed
+2025-08-08 20:46:16,248 - livekit.agents - DEBUG - input stream detached
+2025-08-08 20:46:16,250 - openai-assistant - INFO - ❌ [SESSION CLOSED] Agent session ended
+2025-08-08 20:46:16,251 - livekit.agents - DEBUG - session closed
+2025-08-08 20:46:16,252 - livekit.agents - DEBUG - http_session(): closing the httpclient ctx
+2025-08-08 20:46:16,253 - livekit.agents - DEBUG - http_session(): creating a new httpclient ctx
+2025-08-08 20:50:40,657 - openai-assistant - INFO - 🚀 Starting OpenAI Assistant LiveKit agent application with manual video processing
+2025-08-08 20:50:40,675 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-08 20:50:40,684 - livekit.agents - DEV - Watching C:\projects\aiassist
+2025-08-08 20:50:43,455 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-08 20:50:43,468 - livekit.agents - INFO - starting worker
+2025-08-08 20:50:43,666 - livekit.agents - INFO - registered worker
+2025-08-08 20:51:01,242 - livekit.agents - INFO - received job request
+2025-08-08 20:51:01,321 - livekit.agents - INFO - initializing job runner
+2025-08-08 20:51:01,322 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-08 20:51:01,322 - livekit.agents - INFO - job runner initialized
+2025-08-08 20:51:01,327 - openai-assistant - INFO - 🚀 Starting OpenAI Assistant entrypoint with video support
+2025-08-08 20:51:01,914 - openai-assistant - INFO - ✅ Connected to room: playground-IZOm-Fxe0 with full auto-subscribe
+2025-08-08 20:51:01,917 - openai-assistant - INFO - ✅ OpenAI Assistant agent initialized with weather, search, email tools and manual video processing
+2025-08-08 20:51:03,726 - openai-assistant - INFO - ✅ Session created: Whisper STT (EN) + GPT-4o (vision + higher limits) + TTS + Manual Video Processing + 3 Tools
+2025-08-08 20:51:03,729 - livekit.agents - DEBUG - input stream attached
+2025-08-08 20:51:03,739 - openai-assistant - INFO - 🚀 [AGENT] Agent entered room, setting up video processing...
+2025-08-08 20:51:03,740 - openai-assistant - INFO - 👤 [PARTICIPANT] Checking identity-jgfD for video tracks
+2025-08-08 20:51:03,741 - openai-assistant - INFO - 📹 [VIDEO] Found existing video track from identity-jgfD
+2025-08-08 20:51:03,743 - openai-assistant - INFO - 📹 [VIDEO] Created new video stream
+2025-08-08 20:51:03,744 - openai-assistant - INFO - ✅ [VIDEO] Video stream processing started
+2025-08-08 20:51:03,746 - livekit.agents - DEBUG - start reading stream
+2025-08-08 20:51:03,747 - openai-assistant - INFO - 🎬 [VIDEO FRAMES] Starting frame processing loop with frame skipping
+2025-08-08 20:51:03,750 - openai-assistant - INFO - 🔄 [AGENT STATE] initializing -> listening
+2025-08-08 20:51:03,753 - livekit.agents - DEBUG - using audio io: `RoomIO` -> `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+2025-08-08 20:51:03,754 - livekit.agents - DEBUG - using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+2025-08-08 20:51:03,758 - openai-assistant - INFO - ✅ Session started successfully with manual video processing
+2025-08-08 20:51:03,760 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 20:51:04,251 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 20:51:06,463 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-08 20:51:07,594 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 30 frames, latest: 640x360
+2025-08-08 20:51:07,618 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 30 (skipping 9/10 frames)
+2025-08-08 20:51:10,289 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 60 frames, latest: 640x360
+2025-08-08 20:51:10,307 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 60 (skipping 9/10 frames)
+2025-08-08 20:51:12,075 - openai-assistant - INFO - 💬 [CHAT ASSISTANT] Hello! I'm a helpful voice assistant, and I can see through the camera to assist you. How can I help you today?
+2025-08-08 20:51:12,077 - openai-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-08 20:51:12,079 - openai-assistant - INFO - ✅ Initial greeting generated
+2025-08-08 20:51:12,086 - openai-assistant - INFO - 🏠 [ROOM] 1 remote participants
+2025-08-08 20:51:12,088 - openai-assistant - INFO - 📹 [PARTICIPANT] identity-jgfD has 0 video tracks
+2025-08-08 20:51:13,146 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 90 frames, latest: 640x360
+2025-08-08 20:51:13,167 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 90 (skipping 9/10 frames)
+2025-08-08 20:51:15,874 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 120 frames, latest: 640x360
+2025-08-08 20:51:15,899 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 120 (skipping 9/10 frames)
+2025-08-08 20:51:18,496 - openai-assistant - INFO - 👤 [USER FINAL] How many fingers I show you?
+2025-08-08 20:51:18,498 - livekit.agents - DEBUG - received user transcript
+2025-08-08 20:51:18,500 - openai-assistant - INFO - 📹 [TURN COMPLETED] Added video frame to user message (frame age: 0.7s)
+2025-08-08 20:51:18,503 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 20:51:18,536 - openai-assistant - INFO - 💬 [CHAT USER] How many fingers I show you?
+2025-08-08 20:51:18,541 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 20:51:18,778 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 150 frames, latest: 640x360
+2025-08-08 20:51:18,802 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 150 (skipping 9/10 frames)
+2025-08-08 20:51:20,580 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-08 20:51:21,526 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 180 frames, latest: 640x360
+2025-08-08 20:51:21,545 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 180 (skipping 9/10 frames)
+2025-08-08 20:51:21,824 - openai-assistant - INFO - 💬 [CHAT ASSISTANT] You're showing two fingers.
+2025-08-08 20:51:21,827 - openai-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-08 20:51:24,318 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 210 frames, latest: 640x360
+2025-08-08 20:51:24,342 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 210 (skipping 9/10 frames)
+2025-08-08 20:51:25,332 - openai-assistant - INFO - 👤 [USER FINAL] Okay.
+2025-08-08 20:51:25,334 - livekit.agents - DEBUG - received user transcript
+2025-08-08 20:51:25,338 - openai-assistant - INFO - 📹 [TURN COMPLETED] Added video frame to user message (frame age: 0.1s)
+2025-08-08 20:51:25,340 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 20:51:25,361 - openai-assistant - INFO - 💬 [CHAT USER] Okay.
+2025-08-08 20:51:25,362 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 20:51:26,491 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-08 20:51:27,075 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 240 frames, latest: 640x360
+2025-08-08 20:51:27,094 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 240 (skipping 9/10 frames)
+2025-08-08 20:51:29,851 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 270 frames, latest: 640x360
+2025-08-08 20:51:29,871 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 270 (skipping 9/10 frames)
+2025-08-08 20:51:29,956 - openai-assistant - INFO - 👤 [USER FINAL] What exactly now I show you?
+2025-08-08 20:51:29,957 - livekit.agents - DEBUG - received user transcript
+2025-08-08 20:51:29,959 - openai-assistant - INFO - 📹 [TURN COMPLETED] Added video frame to user message (frame age: 0.1s)
+2025-08-08 20:51:29,960 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 20:51:29,982 - openai-assistant - INFO - 💬 [CHAT USER] What exactly now I show you?
+2025-08-08 20:51:29,984 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 20:51:32,624 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 300 frames, latest: 640x360
+2025-08-08 20:51:32,649 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 300 (skipping 9/10 frames)
+2025-08-08 20:51:35,393 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-08 20:51:35,955 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 330 frames, latest: 320x180
+2025-08-08 20:51:35,968 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 330 (skipping 9/10 frames)
+2025-08-08 20:51:36,040 - openai-assistant - INFO - 💬 [CHAT ASSISTANT] You're showing
+2025-08-08 20:51:36,041 - openai-assistant - INFO - ⚠️ [INTERRUPTED] assistant was interrupted
+2025-08-08 20:51:36,043 - openai-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-08 20:51:36,985 - openai-assistant - INFO - 👤 [USER FINAL] Did you see?
+2025-08-08 20:51:36,986 - livekit.agents - DEBUG - received user transcript
+2025-08-08 20:51:36,989 - openai-assistant - INFO - 📹 [TURN COMPLETED] Added video frame to user message (frame age: 0.1s)
+2025-08-08 20:51:36,991 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 20:51:37,022 - openai-assistant - INFO - 💬 [CHAT USER] Did you see?
+2025-08-08 20:51:37,024 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 20:51:38,770 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 360 frames, latest: 320x180
+2025-08-08 20:51:38,783 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 360 (skipping 9/10 frames)
+2025-08-08 20:51:41,522 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 390 frames, latest: 320x180
+2025-08-08 20:51:41,534 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 390 (skipping 9/10 frames)
+2025-08-08 20:51:42,691 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-08 20:51:43,604 - openai-assistant - INFO - 👤 [USER FINAL] Did you see?
+2025-08-08 20:51:43,606 - livekit.agents - DEBUG - received user transcript
+2025-08-08 20:51:43,608 - openai-assistant - INFO - 📹 [TURN COMPLETED] Added video frame to user message (frame age: 0.2s)
+2025-08-08 20:51:43,609 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 20:51:43,720 - openai-assistant - INFO - 💬 [CHAT USER] Did you see?
+2025-08-08 20:51:43,721 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 20:51:44,849 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 420 frames, latest: 320x180
+2025-08-08 20:51:44,863 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 420 (skipping 9/10 frames)
+2025-08-08 20:51:48,048 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 450 frames, latest: 320x180
+2025-08-08 20:51:48,060 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 450 (skipping 9/10 frames)
+2025-08-08 20:51:49,298 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-08 20:51:50,796 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 480 frames, latest: 320x180
+2025-08-08 20:51:50,808 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 480 (skipping 9/10 frames)
+2025-08-08 20:51:52,896 - openai-assistant - INFO - 💬 [CHAT ASSISTANT] Yes, I see a phone displaying the time as 8:51.
+2025-08-08 20:51:52,898 - openai-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-08 20:51:53,557 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 510 frames, latest: 320x180
+2025-08-08 20:51:53,570 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 510 (skipping 9/10 frames)
+2025-08-08 20:51:56,315 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 540 frames, latest: 320x180
+2025-08-08 20:51:56,336 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 540 (skipping 9/10 frames)
+2025-08-08 20:51:58,383 - openai-assistant - INFO - 👤 [USER FINAL] Very good.
+2025-08-08 20:51:58,385 - livekit.agents - DEBUG - received user transcript
+2025-08-08 20:51:58,389 - openai-assistant - INFO - 📹 [TURN COMPLETED] Added video frame to user message (frame age: 0.2s)
+2025-08-08 20:51:58,391 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 20:51:58,421 - openai-assistant - INFO - 💬 [CHAT USER] Very good.
+2025-08-08 20:51:58,422 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 20:51:59,131 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 570 frames, latest: 640x360
+2025-08-08 20:51:59,151 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 570 (skipping 9/10 frames)
+2025-08-08 20:51:59,401 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-08 20:52:01,497 - openai-assistant - INFO - 👤 [USER FINAL] How many fingers I show you?
+2025-08-08 20:52:01,500 - livekit.agents - DEBUG - received user transcript
+2025-08-08 20:52:01,502 - openai-assistant - INFO - 📹 [TURN COMPLETED] Added video frame to user message (frame age: 0.5s)
+2025-08-08 20:52:01,504 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 20:52:01,539 - openai-assistant - INFO - 💬 [CHAT USER] How many fingers I show you?
+2025-08-08 20:52:01,540 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 20:52:01,913 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 600 frames, latest: 640x360
+2025-08-08 20:52:01,933 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 600 (skipping 9/10 frames)
+2025-08-08 20:52:04,684 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 630 frames, latest: 640x360
+2025-08-08 20:52:04,704 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 630 (skipping 9/10 frames)
+2025-08-08 20:52:06,865 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-08 20:52:07,451 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 660 frames, latest: 640x360
+2025-08-08 20:52:07,468 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 660 (skipping 9/10 frames)
+2025-08-08 20:52:09,718 - openai-assistant - INFO - 💬 [CHAT ASSISTANT] You're showing five fingers.
+2025-08-08 20:52:09,721 - openai-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-08 20:52:10,704 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 690 frames, latest: 320x180
+2025-08-08 20:52:10,723 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 690 (skipping 9/10 frames)
+2025-08-08 20:52:12,633 - openai-assistant - INFO - 👤 [USER FINAL] Ok, thank you very much.
+2025-08-08 20:52:12,635 - livekit.agents - DEBUG - received user transcript
+2025-08-08 20:52:12,639 - openai-assistant - INFO - 📹 [TURN COMPLETED] Added video frame to user message (frame age: 0.1s)
+2025-08-08 20:52:12,641 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 20:52:12,675 - openai-assistant - INFO - 💬 [CHAT USER] Ok, thank you very much.
+2025-08-08 20:52:12,676 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 20:52:13,268 - livekit.agents - DEBUG - stream closed
+2025-08-08 20:52:13,273 - livekit.agents - INFO - closing agent session due to participant disconnect (disable via `RoomInputOptions.close_on_disconnect=False`)
+2025-08-08 20:52:13,287 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-08 20:52:13,300 - livekit.agents - DEBUG - input stream detached
+2025-08-08 20:52:13,310 - openai-assistant - INFO - ❌ [SESSION CLOSED] Agent session ended
+2025-08-08 20:52:13,322 - livekit.agents - DEBUG - session closed
+2025-08-08 20:52:32,829 - livekit.agents - INFO - shutting down worker
+2025-08-08 20:52:32,833 - livekit.agents - DEBUG - shutting down job task
+2025-08-08 20:52:32,835 - livekit.agents - DEBUG - job exiting
+2025-08-08 20:52:32,892 - livekit.agents - DEBUG - http_session(): closing the httpclient ctx
+2025-08-08 20:52:32,893 - livekit.agents - DEBUG - http_session(): creating a new httpclient ctx
