@@ -175,3 +175,57 @@
 2025-08-09 12:11:09,730 - livekit.agents - DEBUG - session closed
 2025-08-09 12:11:09,732 - livekit.agents - DEBUG - http_session(): closing the httpclient ctx
 2025-08-09 12:11:09,733 - livekit.agents - DEBUG - http_session(): creating a new httpclient ctx
+2025-08-09 13:09:08,993 - cerebras-assistant - INFO - 🎬 [CONFIG] Video processing: ENABLED
+2025-08-09 13:09:08,994 - cerebras-assistant - INFO - 🚀 Starting Cerebras Assistant application
+2025-08-09 13:09:08,997 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-09 13:09:09,001 - livekit.agents - INFO - starting worker
+2025-08-09 13:09:09,010 - livekit.agents - INFO - initializing job runner
+2025-08-09 13:09:09,012 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-09 13:09:09,012 - livekit.agents - INFO - job runner initialized
+2025-08-09 13:09:09,084 - cerebras-assistant - INFO - 🚀 Starting Cerebras Assistant entrypoint
+2025-08-09 13:09:09,086 - cerebras-assistant - INFO - ✅ Connected to room: fake_room
+2025-08-09 13:09:09,087 - cerebras-assistant - INFO - ✅ Cerebras Assistant initialized (Video: ON)
+2025-08-09 13:09:10,670 - cerebras-assistant - INFO - ✅ Session created: Whisper STT + OpenAI LLM + Gemini (video analysis) + TTS + 3 Tools
+2025-08-09 13:09:11,808 - cerebras-assistant - INFO - 🚀 [AGENT] Agent entered room
+2025-08-09 13:09:11,809 - cerebras-assistant - INFO - 📹 [VIDEO] Setting up video processing...
+2025-08-09 13:09:12,977 - cerebras-assistant - INFO - ✅ [GEMINI] LLM created for video analysis
+2025-08-09 13:09:12,978 - cerebras-assistant - INFO - 👤 [PARTICIPANT] Checking fake_human for video tracks
+2025-08-09 13:09:12,980 - cerebras-assistant - INFO - 📹 [VIDEO] No existing video tracks found, waiting for new ones...
+2025-08-09 13:09:12,999 - cerebras-assistant - INFO - 🔄 [AGENT STATE] initializing -> listening
+2025-08-09 13:09:13,001 - livekit.agents - DEBUG - using audio io: `ChatCLI` -> `AgentSession` -> `TranscriptSynchronizer` -> `ChatCLI`
+2025-08-09 13:09:13,002 - livekit.agents - DEBUG - using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `ChatCLI`
+2025-08-09 13:09:13,003 - cerebras-assistant - INFO - ✅ Session started successfully
+2025-08-09 13:09:13,005 - cerebras-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 13:09:13,361 - livekit.plugins.silero - WARNING - inference is slower than realtime
+2025-08-09 13:09:13,368 - cerebras-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 13:09:15,552 - cerebras-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 13:09:19,019 - cerebras-assistant - INFO - 💬 [CHAT ASSISTANT] Hello, I'm a voice assistant with live video analysis capabilities.
+2025-08-09 13:09:19,020 - cerebras-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 13:09:19,022 - cerebras-assistant - INFO - ✅ Initial greeting generated
+2025-08-09 13:09:27,332 - cerebras-assistant - INFO - 👤 [USER FINAL] Окей, tell me please about.
+2025-08-09 13:09:27,334 - livekit.agents - DEBUG - received user transcript
+2025-08-09 13:09:27,877 - cerebras-assistant - INFO - 📹 [HYBRID] No video description available
+2025-08-09 13:09:27,879 - cerebras-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 13:09:27,895 - cerebras-assistant - INFO - 💬 [CHAT USER] Окей, tell me please about.
+2025-08-09 13:09:27,896 - cerebras-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 13:09:28,341 - cerebras-assistant - INFO - 👤 [USER FINAL] In Cork.
+2025-08-09 13:09:28,342 - livekit.agents - DEBUG - received user transcript
+2025-08-09 13:09:28,343 - cerebras-assistant - INFO - 📹 [HYBRID] No video description available
+2025-08-09 13:09:28,344 - cerebras-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 13:09:28,352 - cerebras-assistant - INFO - 💬 [CHAT USER] In Cork.
+2025-08-09 13:09:30,663 - cerebras-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 13:09:34,660 - cerebras-assistant - INFO - 💬 [CHAT ASSISTANT] I'm analyzing live video feed from Cork. It's a cloudy day with light drizzle.
+2025-08-09 13:09:34,662 - cerebras-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 13:09:39,302 - cerebras-assistant - INFO - 👤 [USER FINAL] OK, thank you.
+2025-08-09 13:09:39,303 - livekit.agents - DEBUG - received user transcript
+2025-08-09 13:09:39,304 - cerebras-assistant - INFO - 📹 [HYBRID] No video description available
+2025-08-09 13:09:39,304 - cerebras-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 13:09:39,310 - cerebras-assistant - INFO - 💬 [CHAT USER] OK, thank you.
+2025-08-09 13:09:39,311 - cerebras-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 13:09:39,315 - livekit.agents - INFO - shutting down worker
+2025-08-09 13:09:39,317 - livekit.agents - DEBUG - shutting down job task
+2025-08-09 13:09:39,320 - livekit.agents - DEBUG - job exiting
+2025-08-09 13:09:39,323 - cerebras-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-09 13:09:39,326 - livekit.agents - DEBUG - session closed
+2025-08-09 13:09:39,327 - livekit.agents - DEBUG - http_session(): closing the httpclient ctx
+2025-08-09 13:09:39,328 - livekit.agents - DEBUG - http_session(): creating a new httpclient ctx

@@ -97,7 +97,7 @@ class CerebrasHybridAssistant(Agent):
                 "Be specific when describing what you see. "
                 "Do NOT add phrases like 'How can I help' - just answer directly and stop."
             ),
-            tools=[get_weather, search_web, send_email, test_cerebras],
+            tools=[] #tools=[get_weather, search_web, send_email, test_cerebras],
         )
         
         # Видео обработка (опционально)
@@ -297,17 +297,17 @@ async def entrypoint(ctx: JobContext):
         #stt=assemblyai.STT(),
         
         # Пока оставляем OpenAI LLM (позже заменим на Cerebras)
-        llm=openai.LLM(
-            model="gpt-4o-mini",
+        #llm=openai.LLM(
+        #    model="gpt-4o-mini",
+        #    temperature=0.2,
+        #),
+       llm=openai.LLM(
+            model="llama-3.1-8b",
             temperature=0.2,
+            base_url="https://api.cerebras.ai/v1",  # Cerebras endpoint
+            api_key=os.getenv("CEREBRAS_API_KEY"),
+            #tool_choice="auto",
         ),
-       # llm=openai.LLM(
-       #     model="llama-3.1-8b",
-       #     temperature=0.2,
-       #     base_url="https://api.cerebras.ai/v1",  # Cerebras endpoint
-       #     api_key=os.getenv("CEREBRAS_API_KEY"),
-       #     tool_choice="auto",
-       # ),
         
         tts=openai.TTS(
             voice="alloy",
