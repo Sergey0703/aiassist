@@ -1,0 +1,103 @@
+2025-08-09 20:36:27,014 - n8n-assistant - INFO - 🚀 Starting N8N Assistant LiveKit agent application
+2025-08-09 20:36:27,125 - n8n-assistant - INFO - 🚀 Starting N8N Assistant entrypoint
+2025-08-09 20:36:27,127 - n8n-assistant - INFO - 🧪 [N8N TEST] Testing connection to https://auto2025system.duckdns.org/webhook-test/smart-weather
+2025-08-09 20:36:28,524 - n8n-assistant - ERROR - ❌ [N8N TEST] HTTP error 404
+2025-08-09 20:36:28,528 - n8n-assistant - WARNING - ⚠️ [WARNING] n8n weather service test failed, but continuing...
+2025-08-09 20:36:28,529 - n8n-assistant - INFO - ✅ Connected to room: fake_room
+2025-08-09 20:36:28,531 - n8n-assistant - INFO - N8N Assistant agent initialized with n8n weather, search, and email tools
+2025-08-09 20:36:30,089 - n8n-assistant - INFO - ✅ Session created: Whisper STT (EN) + GPT-4o-mini + TTS + N8N Weather + Search + Email
+2025-08-09 20:36:31,383 - n8n-assistant - INFO - 🔄 [AGENT STATE] initializing -> listening
+2025-08-09 20:36:31,386 - n8n-assistant - INFO - ✅ Session started successfully
+2025-08-09 20:36:31,387 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 20:36:31,872 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 20:36:36,565 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 20:36:42,787 - n8n-assistant - INFO - 💬 [CHAT ASSISTANT] Hello! I am a helpful voice assistant with access to weather information. How can I assist you today?
+2025-08-09 20:36:42,788 - n8n-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 20:36:42,789 - n8n-assistant - INFO - ✅ Initial greeting generated
+2025-08-09 20:36:55,689 - n8n-assistant - INFO - ❌ [SESSION CLOSED] Agent session ended
+2025-08-09 20:38:05,153 - n8n-assistant - INFO - 🚀 Starting N8N Assistant LiveKit agent application
+2025-08-09 20:38:05,244 - n8n-assistant - INFO - 🚀 Starting N8N Assistant entrypoint
+2025-08-09 20:38:05,245 - n8n-assistant - INFO - 🧪 [N8N TEST] Testing connection to https://auto2025system.duckdns.org/webhook-test/smart-weather
+2025-08-09 20:38:05,681 - n8n-assistant - INFO - ✅ [N8N TEST] Connection successful
+2025-08-09 20:38:05,683 - n8n-assistant - INFO - ✅ Connected to room: fake_room
+2025-08-09 20:38:05,685 - n8n-assistant - INFO - N8N Assistant agent initialized with n8n weather, search, and email tools
+2025-08-09 20:38:07,252 - n8n-assistant - INFO - ✅ Session created: Whisper STT (EN) + GPT-4o-mini + TTS + N8N Weather + Search + Email
+2025-08-09 20:38:08,338 - n8n-assistant - INFO - 🔄 [AGENT STATE] initializing -> listening
+2025-08-09 20:38:08,342 - n8n-assistant - INFO - ✅ Session started successfully
+2025-08-09 20:38:08,343 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 20:38:08,643 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 20:38:11,218 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 20:38:16,793 - n8n-assistant - INFO - 💬 [CHAT ASSISTANT] Hello! I'm your helpful voice assistant with access to weather information. How can I assist you today?
+2025-08-09 20:38:16,796 - n8n-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 20:38:16,797 - n8n-assistant - INFO - ✅ Initial greeting generated
+2025-08-09 20:38:24,470 - n8n-assistant - INFO - 👤 [USER FINAL] Tell me please about weather in
+2025-08-09 20:38:24,473 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 20:38:24,490 - n8n-assistant - INFO - 💬 [CHAT USER] Tell me please about weather in
+2025-08-09 20:38:24,492 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 20:38:24,863 - n8n-assistant - INFO - 👤 [USER FINAL] Қорқ.
+2025-08-09 20:38:24,865 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 20:38:24,877 - n8n-assistant - INFO - 💬 [CHAT USER] Қорқ.
+2025-08-09 20:38:25,947 - n8n-assistant - INFO - 🌤️ [N8N WEATHER] Getting weather for 'Қорқ' in celsius
+2025-08-09 20:38:25,948 - n8n-assistant - INFO - 🌐 [N8N REQUEST] Sending to https://auto2025system.duckdns.org/webhook-test/smart-weather
+2025-08-09 20:38:25,949 - n8n-assistant - INFO - 🌐 [N8N PAYLOAD] {'action': 'weather', 'city': 'Қорқ', 'units': 'celsius', 'date': 'today', 'user_id': 'livekit_user'}
+2025-08-09 20:38:26,182 - n8n-assistant - INFO - 📡 [N8N RESPONSE] Status: 404
+2025-08-09 20:38:26,183 - n8n-assistant - ERROR - ❌ [N8N HTTP ERROR] Status 404: {"code":404,"message":"The requested webhook \"smart-weather\" is not registered.","hint":"Click the 'Execute workflow' button on the canvas, then try again. (In test mode, the webhook only works for 
+2025-08-09 20:38:26,194 - n8n-assistant - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-09 20:38:26,195 - n8n-assistant - INFO - 🛠️ [TOOL RESULT 1] unknown: no result...
+2025-08-09 20:38:29,784 - n8n-assistant - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-09 20:38:29,785 - n8n-assistant - INFO - 🛠️ [TOOL RESULT 1] unknown: no result...
+2025-08-09 20:38:31,516 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 20:38:32,445 - n8n-assistant - INFO - 💬 [CHAT ASSISTANT] It seems that
+2025-08-09 20:38:32,446 - n8n-assistant - INFO - ⚠️ [INTERRUPTED] assistant was interrupted
+2025-08-09 20:38:32,448 - n8n-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 20:38:32,451 - n8n-assistant - INFO - ❌ [SESSION CLOSED] Agent session ended
+2025-08-09 20:44:11,702 - n8n-assistant - INFO - 🚀 Starting N8N Assistant LiveKit agent application
+2025-08-09 20:44:11,832 - n8n-assistant - INFO - 🚀 Starting N8N Assistant entrypoint
+2025-08-09 20:44:11,834 - n8n-assistant - INFO - 🧪 [N8N TEST] Testing connection to https://auto2025system.duckdns.org/webhook/smart-weather
+2025-08-09 20:44:12,238 - n8n-assistant - INFO - ✅ [N8N TEST] Connection successful
+2025-08-09 20:44:12,240 - n8n-assistant - INFO - ✅ Connected to room: fake_room
+2025-08-09 20:44:12,242 - n8n-assistant - INFO - N8N Assistant agent initialized with n8n weather, search, and email tools
+2025-08-09 20:44:13,761 - n8n-assistant - INFO - ✅ Session created: Whisper STT (EN) + GPT-4o-mini + TTS + N8N Weather + Search + Email
+2025-08-09 20:44:14,850 - n8n-assistant - INFO - 🔄 [AGENT STATE] initializing -> listening
+2025-08-09 20:44:14,852 - n8n-assistant - INFO - ✅ Session started successfully
+2025-08-09 20:44:14,853 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 20:44:15,158 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 20:44:17,177 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 20:44:24,601 - n8n-assistant - INFO - 💬 [CHAT ASSISTANT] Hello! I’m a helpful voice assistant with access to weather information, web search, and email sending. How can I assist you today?
+2025-08-09 20:44:24,609 - n8n-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 20:44:24,611 - n8n-assistant - INFO - ✅ Initial greeting generated
+2025-08-09 20:44:29,287 - n8n-assistant - INFO - 👤 [USER FINAL] Tell me about weather in Cork.
+2025-08-09 20:44:29,290 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 20:44:29,301 - n8n-assistant - INFO - 💬 [CHAT USER] Tell me about weather in Cork.
+2025-08-09 20:44:29,303 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 20:44:30,342 - n8n-assistant - INFO - 🌤️ [N8N WEATHER] Getting weather for 'Cork' in celsius
+2025-08-09 20:44:30,343 - n8n-assistant - INFO - 🌐 [N8N REQUEST] Sending to https://auto2025system.duckdns.org/webhook/smart-weather
+2025-08-09 20:44:30,344 - n8n-assistant - INFO - 🌐 [N8N PAYLOAD] {'action': 'weather', 'city': 'Cork', 'units': 'celsius', 'date': 'today', 'user_id': 'livekit_user'}
+2025-08-09 20:44:30,825 - n8n-assistant - INFO - 📡 [N8N RESPONSE] Status: 200
+2025-08-09 20:44:30,826 - n8n-assistant - INFO - 📊 [N8N DATA] Success: True
+2025-08-09 20:44:30,827 - n8n-assistant - INFO - 📊 [N8N MESSAGE] Weather in Cork, Ireland: Currently 17 degrees Celsius, partly cloudy. Humid at 77%....
+2025-08-09 20:44:30,827 - n8n-assistant - INFO - ✅ [N8N SUCCESS] Weather retrieved for Cork
+2025-08-09 20:44:30,829 - n8n-assistant - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-09 20:44:30,830 - n8n-assistant - INFO - 🛠️ [TOOL RESULT 1] unknown: no result...
+2025-08-09 20:44:33,702 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 20:44:41,813 - n8n-assistant - INFO - 💬 [CHAT ASSISTANT] The current weather in Cork, Ireland is 17 degrees Celsius, partly cloudy, with a humidity level of 77%.
+2025-08-09 20:44:41,816 - n8n-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 20:44:49,381 - n8n-assistant - INFO - ❌ [SESSION CLOSED] Agent session ended
+2025-08-09 20:49:56,572 - n8n-assistant - INFO - 🚀 Starting N8N Assistant LiveKit agent application
+2025-08-09 20:49:56,682 - n8n-assistant - INFO - 🚀 Starting N8N Assistant entrypoint
+2025-08-09 20:49:56,684 - n8n-assistant - INFO - 🧪 [N8N TEST] Testing connection to https://auto2025system.duckdns.org/webhook/smart-weather
+2025-08-09 20:49:57,316 - n8n-assistant - INFO - ✅ [N8N TEST] Connection successful
+2025-08-09 20:49:57,319 - n8n-assistant - INFO - ✅ Connected to room: fake_room
+2025-08-09 20:49:57,321 - n8n-assistant - INFO - N8N Assistant agent initialized with n8n weather, search, and email tools
+2025-08-09 20:49:58,868 - n8n-assistant - INFO - ✅ Session created: Whisper STT (EN) + GPT-4o-mini + TTS + N8N Weather + Search + Email
+2025-08-09 20:50:00,040 - n8n-assistant - INFO - 🔄 [AGENT STATE] initializing -> listening
+2025-08-09 20:50:00,043 - n8n-assistant - INFO - ✅ Session started successfully
+2025-08-09 20:50:00,044 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 20:50:00,423 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 20:50:00,947 - n8n-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754769000.9474876 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 400 - {'message': 'Lists of types are not supported in JSON schema. If you are trying to make a field Optional, use anyOf with a null type.', 'type': 'invalid_request_error', 'param': 'response_format', 'code': 'wrong_api_format'}") recoverable=True (recoverable: True)
+2025-08-09 20:50:01,349 - n8n-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754769001.348931 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 400 - {'message': 'Lists of types are not supported in JSON schema. If you are trying to make a field Optional, use anyOf with a null type.', 'type': 'invalid_request_error', 'param': 'response_format', 'code': 'wrong_api_format'}") recoverable=True (recoverable: True)
+2025-08-09 20:50:03,650 - n8n-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754769003.6500866 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 400 - {'message': 'Lists of types are not supported in JSON schema. If you are trying to make a field Optional, use anyOf with a null type.', 'type': 'invalid_request_error', 'param': 'response_format', 'code': 'wrong_api_format'}") recoverable=True (recoverable: True)
+2025-08-09 20:50:05,926 - n8n-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754769005.92587 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 400 - {'message': 'Lists of types are not supported in JSON schema. If you are trying to make a field Optional, use anyOf with a null type.', 'type': 'invalid_request_error', 'param': 'response_format', 'code': 'wrong_api_format'}") recoverable=False (recoverable: False)
+2025-08-09 20:50:06,029 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-09 20:50:06,031 - n8n-assistant - INFO - ✅ Initial greeting generated
+2025-08-09 20:52:35,320 - n8n-assistant - INFO - ❌ [SESSION CLOSED] Agent session ended
