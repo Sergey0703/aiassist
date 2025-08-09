@@ -1,0 +1,177 @@
+2025-08-09 12:01:03,482 - cerebras-assistant - INFO - 🎬 [CONFIG] Video processing: ENABLED
+2025-08-09 12:01:03,484 - cerebras-assistant - INFO - 🚀 Starting Cerebras Assistant application
+2025-08-09 12:01:03,489 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-09 12:01:03,495 - livekit.agents - INFO - starting worker
+2025-08-09 12:01:03,511 - livekit.agents - INFO - initializing job runner
+2025-08-09 12:01:03,514 - livekit.agents - INFO - job runner initialized
+2025-08-09 12:01:03,514 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-09 12:01:03,631 - cerebras-assistant - INFO - 🚀 Starting Cerebras Assistant entrypoint
+2025-08-09 12:01:03,639 - cerebras-assistant - INFO - ✅ Connected to room: fake_room
+2025-08-09 12:01:03,641 - cerebras-assistant - INFO - ✅ Cerebras Assistant initialized (Video: ON)
+2025-08-09 12:01:06,388 - cerebras-assistant - INFO - ✅ Session created: Whisper STT + OpenAI LLM + Gemini (video analysis) + TTS + 3 Tools
+2025-08-09 12:01:06,447 - livekit.agents - WARNING - Running <Task pending name='job_user_entrypoint' coro=<_JobProc._run_job_task.<locals>._traceable_entrypoint() running at C:\projects\aiassist\venv\Lib\site-packages\opentelemetry\util\_decorator.py:71> wait_for=<_GatheringFuture pending cb=[Task.task_wakeup()]> cb=[_JobProc._run_job_task.<locals>.<lambda>() at C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\ipc\job_proc_lazy_main.py:258, _JobProc._run_job_task.<locals>.log_exception() at C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\ipc\job_proc_lazy_main.py:260]> took too long: 2.82 seconds
+2025-08-09 12:01:07,787 - cerebras-assistant - INFO - 🚀 [AGENT] Agent entered room
+2025-08-09 12:01:07,789 - cerebras-assistant - INFO - 📹 [VIDEO] Setting up video processing...
+2025-08-09 12:01:09,789 - cerebras-assistant - INFO - ✅ [GEMINI] LLM created for video analysis
+2025-08-09 12:01:09,791 - cerebras-assistant - INFO - 👤 [PARTICIPANT] Checking fake_human for video tracks
+2025-08-09 12:01:09,796 - cerebras-assistant - INFO - 📹 [VIDEO] No existing video tracks found, waiting for new ones...
+2025-08-09 12:01:09,800 - livekit.agents - WARNING - Running <Task finished name='AgentTask_on_enter' coro=<AgentActivity.start.<locals>._traceable_on_enter() done, defined at C:\projects\aiassist\venv\Lib\site-packages\opentelemetry\util\_decorator.py:68> result=None> took too long: 2.01 seconds
+2025-08-09 12:01:09,845 - cerebras-assistant - INFO - 🔄 [AGENT STATE] initializing -> listening
+2025-08-09 12:01:09,850 - livekit.agents - DEBUG - using audio io: `ChatCLI` -> `AgentSession` -> `TranscriptSynchronizer` -> `ChatCLI`
+2025-08-09 12:01:09,852 - livekit.agents - DEBUG - using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `ChatCLI`
+2025-08-09 12:01:09,855 - cerebras-assistant - INFO - ✅ Session started successfully
+2025-08-09 12:01:09,857 - cerebras-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 12:01:10,539 - livekit.plugins.silero - WARNING - inference is slower than realtime
+2025-08-09 12:01:10,552 - cerebras-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 12:01:13,490 - cerebras-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 12:01:20,450 - cerebras-assistant - INFO - 💬 [CHAT ASSISTANT] {"type": "function", "name": "test_cerebras", "parameters": {"test_message": "Hello, I am Pantheon Core, your AI assistant with video vision."}}
+2025-08-09 12:01:20,457 - cerebras-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 12:01:20,464 - cerebras-assistant - INFO - ✅ Initial greeting generated
+2025-08-09 12:01:24,907 - cerebras-assistant - INFO - 👤 [USER FINAL] Ok.
+2025-08-09 12:01:24,911 - livekit.agents - DEBUG - received user transcript
+2025-08-09 12:01:25,761 - cerebras-assistant - INFO - 📹 [HYBRID] No video description available
+2025-08-09 12:01:25,767 - cerebras-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 12:01:25,930 - cerebras-assistant - INFO - 💬 [CHAT USER] Ok.
+2025-08-09 12:01:25,933 - cerebras-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 12:01:26,281 - cerebras-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-09 12:01:26,422 - cerebras-assistant - INFO - 👤 [USER FINAL] Tell me please about weather in
+2025-08-09 12:01:26,424 - livekit.agents - DEBUG - received user transcript
+2025-08-09 12:01:26,429 - cerebras-assistant - INFO - 📹 [HYBRID] No video description available
+2025-08-09 12:01:26,432 - cerebras-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 12:01:26,465 - cerebras-assistant - INFO - 💬 [CHAT USER] Tell me please about weather in
+2025-08-09 12:01:26,469 - cerebras-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 12:01:26,895 - cerebras-assistant - INFO - 👤 [USER FINAL] kilavnya.
+2025-08-09 12:01:26,898 - livekit.agents - DEBUG - received user transcript
+2025-08-09 12:01:26,900 - cerebras-assistant - INFO - 📹 [HYBRID] No video description available
+2025-08-09 12:01:26,902 - cerebras-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 12:01:26,935 - cerebras-assistant - INFO - 💬 [CHAT USER] kilavnya.
+2025-08-09 12:01:29,633 - cerebras-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 12:01:33,331 - cerebras-assistant - INFO - 💬 [CHAT ASSISTANT] {"type": "function", "name": "get_weather", "parameters": {"city": "kilavnya"}}
+2025-08-09 12:01:33,335 - cerebras-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 12:02:06,052 - cerebras-assistant - INFO - 👤 [USER FINAL] Уильям Пресабаоот Вебе.
+2025-08-09 12:02:06,058 - livekit.agents - DEBUG - received user transcript
+2025-08-09 12:02:06,068 - cerebras-assistant - INFO - 📹 [HYBRID] No video description available
+2025-08-09 12:02:06,072 - cerebras-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 12:02:06,130 - cerebras-assistant - INFO - 💬 [CHAT USER] Уильям Пресабаоот Вебе.
+2025-08-09 12:02:06,134 - cerebras-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 12:02:06,900 - cerebras-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-09 12:02:07,318 - cerebras-assistant - INFO - 👤 [USER FINAL] Nguyen.
+2025-08-09 12:02:07,322 - livekit.agents - DEBUG - received user transcript
+2025-08-09 12:02:07,327 - cerebras-assistant - INFO - 📹 [HYBRID] No video description available
+2025-08-09 12:02:07,330 - cerebras-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 12:02:07,383 - cerebras-assistant - INFO - 💬 [CHAT USER] Nguyen.
+2025-08-09 12:02:07,389 - cerebras-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 12:02:09,798 - cerebras-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 12:02:13,329 - cerebras-assistant - INFO - 💬 [CHAT ASSISTANT] {"type": "function", "name": "search_web", "parameters": {"query": "Nguyen"}}
+2025-08-09 12:02:13,333 - cerebras-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 12:02:17,931 - livekit.agents - INFO - shutting down worker
+2025-08-09 12:02:17,935 - livekit.agents - DEBUG - shutting down job task
+2025-08-09 12:02:17,939 - livekit.agents - DEBUG - job exiting
+2025-08-09 12:02:17,947 - livekit.agents - DEBUG - session closed
+2025-08-09 12:02:17,950 - livekit.agents - DEBUG - http_session(): closing the httpclient ctx
+2025-08-09 12:02:17,952 - livekit.agents - DEBUG - http_session(): creating a new httpclient ctx
+2025-08-09 12:10:03,905 - cerebras-assistant - INFO - 🎬 [CONFIG] Video processing: ENABLED
+2025-08-09 12:10:03,908 - cerebras-assistant - INFO - 🚀 Starting Cerebras Assistant application
+2025-08-09 12:10:03,914 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-09 12:10:03,921 - livekit.agents - INFO - starting worker
+2025-08-09 12:10:03,934 - livekit.agents - INFO - initializing job runner
+2025-08-09 12:10:03,937 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-09 12:10:03,937 - livekit.agents - INFO - job runner initialized
+2025-08-09 12:10:04,087 - cerebras-assistant - INFO - 🚀 Starting Cerebras Assistant entrypoint
+2025-08-09 12:10:04,089 - cerebras-assistant - INFO - ✅ Connected to room: fake_room
+2025-08-09 12:10:04,091 - cerebras-assistant - INFO - ✅ Cerebras Assistant initialized (Video: ON)
+2025-08-09 12:10:06,687 - cerebras-assistant - INFO - ✅ Session created: Whisper STT + OpenAI LLM + Gemini (video analysis) + TTS + 3 Tools
+2025-08-09 12:10:06,694 - livekit.agents - WARNING - Running <Task pending name='job_user_entrypoint' coro=<_JobProc._run_job_task.<locals>._traceable_entrypoint() running at C:\projects\aiassist\venv\Lib\site-packages\opentelemetry\util\_decorator.py:71> wait_for=<_GatheringFuture pending cb=[Task.task_wakeup()]> cb=[_JobProc._run_job_task.<locals>.<lambda>() at C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\ipc\job_proc_lazy_main.py:258, _JobProc._run_job_task.<locals>.log_exception() at C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\ipc\job_proc_lazy_main.py:260]> took too long: 2.61 seconds
+2025-08-09 12:10:07,902 - cerebras-assistant - INFO - 🚀 [AGENT] Agent entered room
+2025-08-09 12:10:07,904 - cerebras-assistant - INFO - 📹 [VIDEO] Setting up video processing...
+2025-08-09 12:10:10,070 - cerebras-assistant - INFO - ✅ [GEMINI] LLM created for video analysis
+2025-08-09 12:10:10,072 - cerebras-assistant - INFO - 👤 [PARTICIPANT] Checking fake_human for video tracks
+2025-08-09 12:10:10,076 - cerebras-assistant - INFO - 📹 [VIDEO] No existing video tracks found, waiting for new ones...
+2025-08-09 12:10:10,078 - livekit.agents - WARNING - Running <Task finished name='AgentTask_on_enter' coro=<AgentActivity.start.<locals>._traceable_on_enter() done, defined at C:\projects\aiassist\venv\Lib\site-packages\opentelemetry\util\_decorator.py:68> result=None> took too long: 2.18 seconds
+2025-08-09 12:10:10,118 - cerebras-assistant - INFO - 🔄 [AGENT STATE] initializing -> listening
+2025-08-09 12:10:10,121 - livekit.agents - DEBUG - using audio io: `ChatCLI` -> `AgentSession` -> `TranscriptSynchronizer` -> `ChatCLI`
+2025-08-09 12:10:10,123 - livekit.agents - DEBUG - using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `ChatCLI`
+2025-08-09 12:10:10,125 - cerebras-assistant - INFO - ✅ Session started successfully
+2025-08-09 12:10:10,128 - cerebras-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 12:10:10,667 - livekit.plugins.silero - WARNING - inference is slower than realtime
+2025-08-09 12:10:10,680 - cerebras-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 12:10:13,610 - cerebras-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 12:10:16,104 - cerebras-assistant - INFO - 💬 [CHAT ASSISTANT] Hello! I can see and assist you with various tasks.
+2025-08-09 12:10:16,108 - cerebras-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 12:10:16,111 - cerebras-assistant - INFO - ✅ Initial greeting generated
+2025-08-09 12:10:24,148 - cerebras-assistant - INFO - 👤 [USER FINAL] Oktonguples about the war in
+2025-08-09 12:10:24,150 - livekit.agents - DEBUG - received user transcript
+2025-08-09 12:10:24,153 - cerebras-assistant - INFO - 📹 [HYBRID] No video description available
+2025-08-09 12:10:24,155 - cerebras-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 12:10:24,188 - cerebras-assistant - INFO - 💬 [CHAT USER] Oktonguples about the war in
+2025-08-09 12:10:24,192 - cerebras-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 12:10:24,583 - cerebras-assistant - INFO - 👤 [USER FINAL] Корк.
+2025-08-09 12:10:24,585 - livekit.agents - DEBUG - received user transcript
+2025-08-09 12:10:24,587 - cerebras-assistant - INFO - 📹 [HYBRID] No video description available
+2025-08-09 12:10:24,589 - cerebras-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 12:10:24,608 - cerebras-assistant - INFO - 💬 [CHAT USER] Корк.
+2025-08-09 12:10:25,845 - livekit.agents - DEBUG - executing tool
+2025-08-09 12:10:25,848 - toolscerebras - INFO - 🔍 [SEARCH TOOL STARTED] query='war in Cork'
+2025-08-09 12:10:25,849 - toolscerebras - INFO - 🔑 [TAVILY API KEY] Found
+2025-08-09 12:10:25,850 - toolscerebras - INFO - 🌐 [SEARCH API] URL: https://api.tavily.com/search
+2025-08-09 12:10:25,852 - toolscerebras - INFO - 🔄 [SEARCH HTTP] Making HTTP request...
+2025-08-09 12:10:27,486 - toolscerebras - INFO - 📡 [SEARCH RESPONSE] Status: 200
+2025-08-09 12:10:27,489 - toolscerebras - INFO - 📊 [SEARCH DATA] Raw response keys: ['query', 'follow_up_questions', 'answer', 'images', 'results', 'response_time']
+2025-08-09 12:10:27,491 - toolscerebras - INFO - 🤖 [SEARCH ANSWER] Cork experienced significant conflict during the Williamite War in Ireland in 1690 and the Irish War of Independence in 1920. The city was besieged in 1690 and burned by British forces in 1920.
+2025-08-09 12:10:27,494 - toolscerebras - INFO - ✅ [SEARCH SUCCESS] Web search completed successfully for: war in Cork
+2025-08-09 12:10:27,495 - toolscerebras - INFO - ✅ [SEARCH FINAL] Search results for 'war in Cork': Cork experienced significant conflict during the Williamite War in Ireland in 1690 and the Irish War of Independence in 1920. The city was besieged in 1690 and burned by British forces in 1920. Source: Siege of Cork - Wikipedia.
+2025-08-09 12:10:27,506 - livekit.agents - DEBUG - tools execution completed
+2025-08-09 12:10:27,509 - cerebras-assistant - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-09 12:10:30,133 - cerebras-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 12:10:36,832 - cerebras-assistant - INFO - 💬 [CHAT ASSISTANT] Cork faced major conflicts during the Williamite War in 1690 and the Irish War of Independence in 1920.
+2025-08-09 12:10:36,835 - cerebras-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 12:10:41,788 - cerebras-assistant - INFO - 👤 [USER FINAL] No, I mean weather.
+2025-08-09 12:10:41,792 - livekit.agents - DEBUG - received user transcript
+2025-08-09 12:10:41,796 - cerebras-assistant - INFO - 📹 [HYBRID] No video description available
+2025-08-09 12:10:41,799 - cerebras-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 12:10:41,839 - cerebras-assistant - INFO - 💬 [CHAT USER] No, I mean weather.
+2025-08-09 12:10:41,844 - cerebras-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 12:10:42,587 - livekit.agents - DEBUG - executing tool
+2025-08-09 12:10:42,591 - toolscerebras - INFO - 🌤️ [WEATHER TOOL STARTED] city='Cork'
+2025-08-09 12:10:42,592 - toolscerebras - INFO - 🔑 [WEATHER API KEY] Found
+2025-08-09 12:10:42,593 - toolscerebras - INFO - 🌐 [WEATHER API] URL: http://api.weatherapi.com/v1/current.json, params: {'key': '75225e91714c4104861143421241904', 'q': 'Cork', 'aqi': 'no'}
+2025-08-09 12:10:42,595 - toolscerebras - INFO - 🔄 [WEATHER HTTP] Making HTTP request...
+2025-08-09 12:10:42,835 - toolscerebras - INFO - 📡 [WEATHER RESPONSE] Status: 200
+2025-08-09 12:10:42,836 - toolscerebras - INFO - 📊 [WEATHER DATA] Raw response keys: ['location', 'current']
+2025-08-09 12:10:42,838 - toolscerebras - INFO - 📍 [WEATHER LOCATION] {'name': 'Cork', 'region': 'Cork', 'country': 'Ireland', 'lat': 51.8986, 'lon': -8.4958, 'tz_id': 'Europe/Dublin', 'localtime_epoch': 1754737847, 'localtime': '2025-08-09 12:10'}
+2025-08-09 12:10:42,840 - toolscerebras - INFO - 🌡️ [WEATHER CURRENT] {'last_updated_epoch': 1754737200, 'last_updated': '2025-08-09 12:00', 'temp_c': 18.1, 'temp_f': 64.6, 'is_day': 1, 'condition': {'text': 'Partly cloudy', 'icon': '//cdn.weatherapi.com/weather/64x64/day/116.png', 'code': 1003}, 'wind_mph': 13.9, 'wind_kph': 22.3, 'wind_degree': 258, 'wind_dir': 'WSW', 'pressure_mb': 1020.0, 'pressure_in': 30.12, 'precip_mm': 0.07, 'precip_in': 0.0, 'humidity': 68, 'cloud': 75, 'feelslike_c': 18.1, 'feelslike_f': 64.6, 'windchill_c': 20.4, 'windchill_f': 68.8, 'heatindex_c': 20.4, 'heatindex_f': 68.8, 'dewpoint_c': 11.8, 'dewpoint_f': 53.3, 'vis_km': 10.0, 'vis_miles': 6.0, 'uv': 4.5, 'gust_mph': 15.9, 'gust_kph': 25.7}
+2025-08-09 12:10:42,845 - toolscerebras - INFO - ✅ [WEATHER SUCCESS] Weather data retrieved successfully for Cork
+2025-08-09 12:10:42,846 - toolscerebras - INFO - ✅ [WEATHER FINAL] Weather in Cork, Ireland: Currently 18°C, partly cloudy. Feels like 18°C. Humidity 68%, wind 22.3 km/h.
+2025-08-09 12:10:42,852 - livekit.agents - DEBUG - tools execution completed
+2025-08-09 12:10:42,855 - cerebras-assistant - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-09 12:10:45,749 - cerebras-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 12:10:50,263 - cerebras-assistant - INFO - 💬 [CHAT ASSISTANT] Cork's weather: 18°C, partly cloudy, humidity 68%, wind at 22.3 km/h.
+2025-08-09 12:10:50,270 - cerebras-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 12:10:57,178 - cerebras-assistant - INFO - 👤 [USER FINAL] Tell me about weather in Trelly.
+2025-08-09 12:10:57,180 - livekit.agents - DEBUG - received user transcript
+2025-08-09 12:10:57,184 - cerebras-assistant - INFO - 📹 [HYBRID] No video description available
+2025-08-09 12:10:57,186 - cerebras-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 12:10:57,212 - cerebras-assistant - INFO - 💬 [CHAT USER] Tell me about weather in Trelly.
+2025-08-09 12:10:57,214 - cerebras-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 12:10:58,262 - livekit.agents - DEBUG - executing tool
+2025-08-09 12:10:58,266 - toolscerebras - INFO - 🌤️ [WEATHER TOOL STARTED] city='Trelly'
+2025-08-09 12:10:58,268 - toolscerebras - INFO - 🔑 [WEATHER API KEY] Found
+2025-08-09 12:10:58,271 - toolscerebras - INFO - 🌐 [WEATHER API] URL: http://api.weatherapi.com/v1/current.json, params: {'key': '75225e91714c4104861143421241904', 'q': 'Trelly', 'aqi': 'no'}
+2025-08-09 12:10:58,274 - toolscerebras - INFO - 🔄 [WEATHER HTTP] Making HTTP request...
+2025-08-09 12:10:58,404 - toolscerebras - INFO - 📡 [WEATHER RESPONSE] Status: 200
+2025-08-09 12:10:58,407 - toolscerebras - INFO - 📊 [WEATHER DATA] Raw response keys: ['location', 'current']
+2025-08-09 12:10:58,409 - toolscerebras - INFO - 📍 [WEATHER LOCATION] {'name': 'Trelly', 'region': 'Basse-Normandie', 'country': 'France', 'lat': 48.9667, 'lon': -1.4333, 'tz_id': 'Europe/Paris', 'localtime_epoch': 1754737862, 'localtime': '2025-08-09 13:11'}
+2025-08-09 12:10:58,411 - toolscerebras - INFO - 🌡️ [WEATHER CURRENT] {'last_updated_epoch': 1754737200, 'last_updated': '2025-08-09 13:00', 'temp_c': 20.3, 'temp_f': 68.5, 'is_day': 1, 'condition': {'text': 'Partly cloudy', 'icon': '//cdn.weatherapi.com/weather/64x64/day/116.png', 'code': 1003}, 'wind_mph': 8.1, 'wind_kph': 13.0, 'wind_degree': 319, 'wind_dir': 'NW', 'pressure_mb': 1023.0, 'pressure_in': 30.21, 'precip_mm': 0.0, 'precip_in': 0.0, 'humidity': 60, 'cloud': 50, 'feelslike_c': 20.3, 'feelslike_f': 68.5, 'windchill_c': 24.0, 'windchill_f': 75.1, 'heatindex_c': 24.7, 'heatindex_f': 76.4, 'dewpoint_c': 8.9, 'dewpoint_f': 48.1, 'vis_km': 10.0, 'vis_miles': 6.0, 'uv': 6.7, 'gust_mph': 9.3, 'gust_kph': 14.9}
+2025-08-09 12:10:58,413 - toolscerebras - INFO - ✅ [WEATHER SUCCESS] Weather data retrieved successfully for Trelly
+2025-08-09 12:10:58,414 - toolscerebras - INFO - ✅ [WEATHER FINAL] Weather in Trelly, France: Currently 20°C, partly cloudy. Feels like 20°C. Humidity 60%, wind 13.0 km/h.
+2025-08-09 12:10:58,418 - livekit.agents - DEBUG - tools execution completed
+2025-08-09 12:10:58,420 - cerebras-assistant - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-09 12:11:00,919 - cerebras-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 12:11:05,550 - cerebras-assistant - INFO - 💬 [CHAT ASSISTANT] Trelly's weather: 20°C, partly cloudy, humidity 60%, wind at 13.0 km/h.
+2025-08-09 12:11:05,554 - cerebras-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 12:11:09,719 - livekit.agents - INFO - shutting down worker
+2025-08-09 12:11:09,724 - livekit.agents - DEBUG - shutting down job task
+2025-08-09 12:11:09,729 - livekit.agents - DEBUG - job exiting
+2025-08-09 12:11:09,730 - livekit.agents - DEBUG - session closed
+2025-08-09 12:11:09,732 - livekit.agents - DEBUG - http_session(): closing the httpclient ctx
+2025-08-09 12:11:09,733 - livekit.agents - DEBUG - http_session(): creating a new httpclient ctx

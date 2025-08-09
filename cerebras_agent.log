@@ -1,0 +1,471 @@
+2025-08-09 10:39:17,046 - cerebras-hybrid-assistant - INFO - 🎬 [CONFIG] Video processing: ENABLED
+2025-08-09 10:39:17,048 - cerebras-hybrid-assistant - INFO - 🚀 Starting Cerebras Hybrid Assistant LiveKit agent application
+2025-08-09 10:39:17,169 - cerebras-hybrid-assistant - INFO - 🚀 Starting Cerebras Hybrid Assistant entrypoint
+2025-08-09 10:39:17,170 - cerebras-hybrid-assistant - INFO - ✅ Connected to room: fake_room with full auto-subscribe
+2025-08-09 10:39:17,172 - cerebras-hybrid-assistant - INFO - ✅ Cerebras Hybrid Assistant initialized (Video: ON)
+2025-08-09 10:39:18,246 - cerebras-hybrid-assistant - INFO - ✅ [CEREBRAS] Initialized with model: llama-3.1-8b-instant
+2025-08-09 10:39:19,248 - cerebras-hybrid-assistant - INFO - ✅ Session created: Whisper STT (EN) + Cerebras Llama 3.1 8B (text+tools) + Gemini (video analysis) + TTS + 3 Tools
+2025-08-09 10:39:20,483 - cerebras-hybrid-assistant - INFO - 🚀 [CEREBRAS AGENT] Agent entered room
+2025-08-09 10:39:20,484 - cerebras-hybrid-assistant - INFO - 📹 [VIDEO] Setting up video processing...
+2025-08-09 10:39:21,627 - cerebras-hybrid-assistant - INFO - ✅ [GEMINI] LLM created for video analysis
+2025-08-09 10:39:21,629 - cerebras-hybrid-assistant - INFO - 👤 [PARTICIPANT] Checking fake_human for video tracks
+2025-08-09 10:39:21,632 - cerebras-hybrid-assistant - INFO - 📹 [VIDEO] No existing video tracks found, waiting for new ones...
+2025-08-09 10:39:21,653 - cerebras-hybrid-assistant - INFO - 🔄 [AGENT STATE] initializing -> listening
+2025-08-09 10:39:21,657 - cerebras-hybrid-assistant - INFO - ✅ Session started successfully with Cerebras + optional Gemini processing
+2025-08-09 10:39:21,660 - cerebras-hybrid-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 10:39:34,027 - cerebras-hybrid-assistant - INFO - 👤 [USER FINAL] Hai.
+2025-08-09 10:39:34,032 - cerebras-hybrid-assistant - INFO - 📹 [HYBRID] No video description available from Gemini
+2025-08-09 10:39:34,033 - cerebras-hybrid-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 10:39:41,770 - cerebras-hybrid-assistant - INFO - 👤 [USER FINAL] Where are you?
+2025-08-09 10:39:41,773 - cerebras-hybrid-assistant - INFO - 📹 [HYBRID] No video description available from Gemini
+2025-08-09 10:39:41,774 - cerebras-hybrid-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 10:40:19,036 - cerebras-hybrid-assistant - INFO - 🎬 [CONFIG] Video processing: ENABLED
+2025-08-09 10:40:19,038 - cerebras-hybrid-assistant - INFO - 🚀 Starting Cerebras Hybrid Assistant LiveKit agent application
+2025-08-09 10:40:24,130 - cerebras-hybrid-assistant - INFO - 🎬 [CONFIG] Video processing: ENABLED
+2025-08-09 10:40:29,745 - cerebras-hybrid-assistant - INFO - 🚀 Starting Cerebras Hybrid Assistant entrypoint
+2025-08-09 10:40:30,677 - cerebras-hybrid-assistant - INFO - ✅ Connected to room: playground-bgRW-VdSh with full auto-subscribe
+2025-08-09 10:40:30,680 - cerebras-hybrid-assistant - INFO - ✅ Cerebras Hybrid Assistant initialized (Video: ON)
+2025-08-09 10:40:31,698 - cerebras-hybrid-assistant - INFO - ✅ [CEREBRAS] Initialized with model: llama-3.1-8b-instant
+2025-08-09 10:40:33,014 - cerebras-hybrid-assistant - INFO - ✅ Session created: Whisper STT (EN) + Cerebras Llama 3.1 8B (text+tools) + Gemini (video analysis) + TTS + 3 Tools
+2025-08-09 10:40:33,028 - cerebras-hybrid-assistant - INFO - 🚀 [CEREBRAS AGENT] Agent entered room
+2025-08-09 10:40:33,031 - cerebras-hybrid-assistant - INFO - 📹 [VIDEO] Setting up video processing...
+2025-08-09 10:40:34,760 - cerebras-hybrid-assistant - INFO - ✅ [GEMINI] LLM created for video analysis
+2025-08-09 10:40:34,761 - cerebras-hybrid-assistant - INFO - 👤 [PARTICIPANT] Checking identity-dn2V for video tracks
+2025-08-09 10:40:34,761 - cerebras-hybrid-assistant - INFO - 📹 [VIDEO] Found existing video track from identity-dn2V
+2025-08-09 10:40:34,770 - cerebras-hybrid-assistant - INFO - 📹 [VIDEO] Created new video stream
+2025-08-09 10:40:34,772 - cerebras-hybrid-assistant - INFO - ✅ [VIDEO] Video stream processing started
+2025-08-09 10:40:34,776 - cerebras-hybrid-assistant - INFO - 🎬 [VIDEO] Starting Gemini video analysis loop
+2025-08-09 10:40:34,797 - cerebras-hybrid-assistant - INFO - 🔄 [AGENT STATE] initializing -> listening
+2025-08-09 10:40:34,801 - cerebras-hybrid-assistant - INFO - ✅ Session started successfully with Cerebras + optional Gemini processing
+2025-08-09 10:40:34,802 - cerebras-hybrid-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 10:40:37,897 - cerebras-hybrid-assistant - INFO - 📸 [VIDEO] Processing frame 60 through Gemini: 320x180
+2025-08-09 10:40:38,082 - cerebras-hybrid-assistant - INFO - ✅ [VIDEO] Sent frame 60 to Gemini for analysis
+2025-08-09 10:40:38,083 - cerebras-hybrid-assistant - ERROR - ❌ [GEMINI] Error in Gemini video analysis: 'ChatContext' object has no attribute 'append'
+2025-08-09 10:40:40,852 - cerebras-hybrid-assistant - INFO - 📸 [VIDEO] Processing frame 120 through Gemini: 320x180
+2025-08-09 10:40:40,861 - cerebras-hybrid-assistant - INFO - ✅ [VIDEO] Sent frame 120 to Gemini for analysis
+2025-08-09 10:40:40,863 - cerebras-hybrid-assistant - ERROR - ❌ [GEMINI] Error in Gemini video analysis: 'ChatContext' object has no attribute 'append'
+2025-08-09 10:40:43,816 - cerebras-hybrid-assistant - INFO - 📸 [VIDEO] Processing frame 180 through Gemini: 320x180
+2025-08-09 10:40:43,825 - cerebras-hybrid-assistant - INFO - ✅ [VIDEO] Sent frame 180 to Gemini for analysis
+2025-08-09 10:40:43,827 - cerebras-hybrid-assistant - ERROR - ❌ [GEMINI] Error in Gemini video analysis: 'ChatContext' object has no attribute 'append'
+2025-08-09 10:40:43,993 - cerebras-hybrid-assistant - INFO - 👤 [USER FINAL] Hi, how are you?
+2025-08-09 10:40:44,007 - cerebras-hybrid-assistant - INFO - 📹 [HYBRID] No video description available from Gemini
+2025-08-09 10:40:44,011 - cerebras-hybrid-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 10:41:00,757 - cerebras-hybrid-assistant - INFO - 🎬 [CONFIG] Video processing: ENABLED
+2025-08-09 10:41:00,758 - cerebras-hybrid-assistant - INFO - 🚀 Starting Cerebras Hybrid Assistant LiveKit agent application
+2025-08-09 10:41:00,851 - cerebras-hybrid-assistant - INFO - 🚀 Starting Cerebras Hybrid Assistant entrypoint
+2025-08-09 10:41:00,854 - cerebras-hybrid-assistant - INFO - ✅ Connected to room: fake_room with full auto-subscribe
+2025-08-09 10:41:00,855 - cerebras-hybrid-assistant - INFO - ✅ Cerebras Hybrid Assistant initialized (Video: ON)
+2025-08-09 10:41:02,026 - cerebras-hybrid-assistant - INFO - ✅ [CEREBRAS] Initialized with model: llama-3.1-8b-instant
+2025-08-09 10:41:02,948 - cerebras-hybrid-assistant - INFO - ✅ Session created: Whisper STT (EN) + Cerebras Llama 3.1 8B (text+tools) + Gemini (video analysis) + TTS + 3 Tools
+2025-08-09 10:41:03,992 - cerebras-hybrid-assistant - INFO - 🚀 [CEREBRAS AGENT] Agent entered room
+2025-08-09 10:41:03,993 - cerebras-hybrid-assistant - INFO - 📹 [VIDEO] Setting up video processing...
+2025-08-09 10:41:05,147 - cerebras-hybrid-assistant - INFO - ✅ [GEMINI] LLM created for video analysis
+2025-08-09 10:41:05,148 - cerebras-hybrid-assistant - INFO - 👤 [PARTICIPANT] Checking fake_human for video tracks
+2025-08-09 10:41:05,151 - cerebras-hybrid-assistant - INFO - 📹 [VIDEO] No existing video tracks found, waiting for new ones...
+2025-08-09 10:41:05,166 - cerebras-hybrid-assistant - INFO - 🔄 [AGENT STATE] initializing -> listening
+2025-08-09 10:41:05,172 - cerebras-hybrid-assistant - INFO - ✅ Session started successfully with Cerebras + optional Gemini processing
+2025-08-09 10:41:05,174 - cerebras-hybrid-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 10:41:10,512 - cerebras-hybrid-assistant - INFO - 👤 [USER FINAL] Hi, how are you?
+2025-08-09 10:41:10,516 - cerebras-hybrid-assistant - INFO - 📹 [HYBRID] No video description available from Gemini
+2025-08-09 10:41:10,518 - cerebras-hybrid-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 10:41:16,029 - cerebras-hybrid-assistant - INFO - 👤 [USER FINAL] Sorry, where is the answer?
+2025-08-09 10:41:16,030 - cerebras-hybrid-assistant - INFO - 📹 [HYBRID] No video description available from Gemini
+2025-08-09 10:41:16,031 - cerebras-hybrid-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 10:45:50,059 - cerebras-assistant - INFO - 🎬 [CONFIG] Video processing: ENABLED
+2025-08-09 10:45:50,060 - cerebras-assistant - INFO - 🚀 Starting Cerebras Assistant application
+2025-08-09 10:45:50,155 - cerebras-assistant - INFO - 🚀 Starting Cerebras Assistant entrypoint
+2025-08-09 10:45:50,156 - cerebras-assistant - INFO - ✅ Connected to room: fake_room
+2025-08-09 10:45:50,157 - cerebras-assistant - INFO - ✅ Cerebras Assistant initialized (Video: ON)
+2025-08-09 10:45:51,495 - cerebras-assistant - INFO - ✅ Session created: Whisper STT + OpenAI LLM + Gemini (video analysis) + TTS + 3 Tools
+2025-08-09 10:45:52,575 - cerebras-assistant - INFO - 🚀 [AGENT] Agent entered room
+2025-08-09 10:45:52,576 - cerebras-assistant - INFO - 📹 [VIDEO] Setting up video processing...
+2025-08-09 10:45:53,730 - cerebras-assistant - INFO - ✅ [GEMINI] LLM created for video analysis
+2025-08-09 10:45:53,731 - cerebras-assistant - INFO - 👤 [PARTICIPANT] Checking fake_human for video tracks
+2025-08-09 10:45:53,733 - cerebras-assistant - INFO - 📹 [VIDEO] No existing video tracks found, waiting for new ones...
+2025-08-09 10:45:53,747 - cerebras-assistant - INFO - 🔄 [AGENT STATE] initializing -> listening
+2025-08-09 10:45:53,753 - cerebras-assistant - INFO - ✅ Session started successfully
+2025-08-09 10:45:53,754 - cerebras-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 10:45:54,092 - cerebras-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 10:45:57,597 - cerebras-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 10:46:00,005 - cerebras-assistant - INFO - 💬 [CHAT ASSISTANT] Hello! I'm here to assist you with video vision.
+2025-08-09 10:46:00,008 - cerebras-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 10:46:00,012 - cerebras-assistant - INFO - ✅ Initial greeting generated
+2025-08-09 10:46:07,798 - cerebras-assistant - INFO - 👤 [USER FINAL] Ok, tell me please about
+2025-08-09 10:46:08,742 - cerebras-assistant - INFO - 📹 [HYBRID] No video description available
+2025-08-09 10:46:08,744 - cerebras-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 10:46:08,765 - cerebras-assistant - INFO - 💬 [CHAT USER] Ok, tell me please about
+2025-08-09 10:46:08,767 - cerebras-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 10:46:09,115 - cerebras-assistant - INFO - 👤 [USER FINAL] ВВИН.
+2025-08-09 10:46:09,118 - cerebras-assistant - INFO - 📹 [HYBRID] No video description available
+2025-08-09 10:46:09,119 - cerebras-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 10:46:09,131 - cerebras-assistant - INFO - 💬 [CHAT USER] ВВИН.
+2025-08-09 10:46:09,847 - cerebras-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-09 10:46:10,261 - cerebras-assistant - INFO - 👤 [USER FINAL] Korknow.
+2025-08-09 10:46:10,264 - cerebras-assistant - INFO - 📹 [HYBRID] No video description available
+2025-08-09 10:46:10,267 - cerebras-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 10:46:10,283 - cerebras-assistant - INFO - 💬 [CHAT USER] Korknow.
+2025-08-09 10:46:10,284 - cerebras-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 10:46:13,057 - cerebras-assistant - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-09 10:46:16,226 - cerebras-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 10:46:22,699 - cerebras-assistant - INFO - 💬 [CHAT ASSISTANT] Korknow is a YouTube channel focused on knowledge and insights. It may also refer to Kernow, a company in digital print media.
+2025-08-09 10:46:22,702 - cerebras-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 10:46:23,885 - cerebras-assistant - INFO - 👤 [USER FINAL] No, no, no.
+2025-08-09 10:46:23,887 - cerebras-assistant - INFO - 📹 [HYBRID] No video description available
+2025-08-09 10:46:23,888 - cerebras-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 10:46:23,900 - cerebras-assistant - INFO - 💬 [CHAT USER] No, no, no.
+2025-08-09 10:46:23,902 - cerebras-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 10:46:24,345 - cerebras-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-09 10:46:25,008 - cerebras-assistant - INFO - 👤 [USER FINAL] I need
+2025-08-09 10:46:26,144 - cerebras-assistant - INFO - 📹 [HYBRID] No video description available
+2025-08-09 10:46:26,145 - cerebras-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 10:46:26,159 - cerebras-assistant - INFO - 💬 [CHAT USER] I need
+2025-08-09 10:46:26,161 - cerebras-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 10:46:26,558 - cerebras-assistant - INFO - 👤 [USER FINAL] information about
+2025-08-09 10:46:26,650 - cerebras-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-09 10:46:26,937 - cerebras-assistant - INFO - 📹 [HYBRID] No video description available
+2025-08-09 10:46:26,939 - cerebras-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 10:46:26,964 - cerebras-assistant - INFO - 💬 [CHAT USER] information about
+2025-08-09 10:46:26,966 - cerebras-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 10:46:27,349 - cerebras-assistant - INFO - 👤 [USER FINAL] vere.
+2025-08-09 10:46:27,353 - cerebras-assistant - INFO - 📹 [HYBRID] No video description available
+2025-08-09 10:46:27,354 - cerebras-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 10:46:27,379 - cerebras-assistant - INFO - 💬 [CHAT USER] vere.
+2025-08-09 10:46:28,043 - cerebras-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-09 10:46:29,488 - cerebras-assistant - INFO - 👤 [USER FINAL] Ирн корк.
+2025-08-09 10:46:29,490 - cerebras-assistant - INFO - 📹 [HYBRID] No video description available
+2025-08-09 10:46:29,491 - cerebras-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 10:46:29,505 - cerebras-assistant - INFO - 💬 [CHAT USER] Ирн корк.
+2025-08-09 10:46:29,507 - cerebras-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 10:46:33,590 - cerebras-assistant - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-09 10:46:36,267 - cerebras-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 10:46:40,299 - cerebras-assistant - INFO - 💬 [CHAT ASSISTANT] "Irn Cork" seems to relate to Cork, Ireland, and Irn-Bru, a Scottish soft drink.
+2025-08-09 10:46:40,300 - cerebras-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 10:46:49,192 - cerebras-assistant - INFO - 👤 [USER FINAL] I need information about weather.
+2025-08-09 10:46:49,194 - cerebras-assistant - INFO - 📹 [HYBRID] No video description available
+2025-08-09 10:46:49,196 - cerebras-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 10:46:49,215 - cerebras-assistant - INFO - 💬 [CHAT USER] I need information about weather.
+2025-08-09 10:46:49,218 - cerebras-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 10:46:52,847 - cerebras-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 10:46:55,220 - cerebras-assistant - INFO - 💬 [CHAT ASSISTANT] Please provide the city name for the weather information.
+2025-08-09 10:46:55,222 - cerebras-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 10:46:57,366 - cerebras-assistant - INFO - 👤 [USER FINAL] Корк
+2025-08-09 10:46:57,368 - cerebras-assistant - INFO - 📹 [HYBRID] No video description available
+2025-08-09 10:46:57,369 - cerebras-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 10:46:57,388 - cerebras-assistant - INFO - 💬 [CHAT USER] Корк
+2025-08-09 10:46:57,390 - cerebras-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 10:46:58,512 - cerebras-assistant - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-09 10:47:02,450 - cerebras-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 10:47:05,532 - cerebras-assistant - INFO - 💬 [CHAT ASSISTANT] Currently in Cork, it's 17°C with patchy rain nearby.
+2025-08-09 10:47:05,534 - cerebras-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 10:47:09,117 - cerebras-assistant - INFO - 👤 [USER FINAL] Ok
+2025-08-09 10:47:09,119 - cerebras-assistant - INFO - 📹 [HYBRID] No video description available
+2025-08-09 10:47:09,120 - cerebras-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 10:47:09,138 - cerebras-assistant - INFO - 💬 [CHAT USER] Ok
+2025-08-09 10:47:09,140 - cerebras-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 10:47:09,644 - cerebras-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-09 10:47:14,148 - cerebras-assistant - INFO - 👤 [USER FINAL] Thank you very much. Tell me please last news.
+2025-08-09 10:47:14,642 - cerebras-assistant - INFO - 📹 [HYBRID] No video description available
+2025-08-09 10:47:14,644 - cerebras-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 10:47:14,663 - cerebras-assistant - INFO - 💬 [CHAT USER] Thank you very much. Tell me please last news.
+2025-08-09 10:47:14,665 - cerebras-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 10:47:15,194 - cerebras-assistant - INFO - 👤 [USER FINAL] Про Дублин.
+2025-08-09 10:47:15,198 - cerebras-assistant - INFO - 📹 [HYBRID] No video description available
+2025-08-09 10:47:15,200 - cerebras-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 10:47:15,217 - cerebras-assistant - INFO - 💬 [CHAT USER] Про Дублин.
+2025-08-09 10:47:17,986 - cerebras-assistant - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-09 10:47:20,365 - cerebras-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 10:47:25,915 - cerebras-assistant - INFO - 💬 [CHAT ASSISTANT] Recent news from Dublin: Three men arrested after €1.28m cash seizure, and students spoke at the UN.
+2025-08-09 10:47:25,917 - cerebras-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 10:47:36,616 - cerebras-assistant - INFO - 👤 [USER FINAL] Окей.
+2025-08-09 10:47:37,244 - cerebras-assistant - INFO - 📹 [HYBRID] No video description available
+2025-08-09 10:47:37,245 - cerebras-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 10:47:37,264 - cerebras-assistant - INFO - 💬 [CHAT USER] Окей.
+2025-08-09 10:47:37,265 - cerebras-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 10:47:37,820 - cerebras-assistant - INFO - 👤 [USER FINAL] Ah
+2025-08-09 10:47:37,823 - cerebras-assistant - INFO - 📹 [HYBRID] No video description available
+2025-08-09 10:47:37,824 - cerebras-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 10:47:37,843 - cerebras-assistant - INFO - 💬 [CHAT USER] Ah
+2025-08-09 10:47:40,302 - cerebras-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 10:47:42,970 - cerebras-assistant - INFO - 💬 [CHAT ASSISTANT] Please provide more details or a specific request.
+2025-08-09 10:47:42,971 - cerebras-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 10:47:55,028 - cerebras-assistant - INFO - 👤 [USER FINAL] Tell me please last news about
+2025-08-09 10:47:55,030 - cerebras-assistant - INFO - 📹 [HYBRID] No video description available
+2025-08-09 10:47:55,031 - cerebras-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 10:47:55,049 - cerebras-assistant - INFO - 💬 [CHAT USER] Tell me please last news about
+2025-08-09 10:47:55,052 - cerebras-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 10:47:55,946 - cerebras-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-09 10:47:56,466 - cerebras-assistant - INFO - 👤 [USER FINAL] Киев
+2025-08-09 10:47:56,468 - cerebras-assistant - INFO - 📹 [HYBRID] No video description available
+2025-08-09 10:47:56,469 - cerebras-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 10:47:56,488 - cerebras-assistant - INFO - 💬 [CHAT USER] Киев
+2025-08-09 10:47:56,490 - cerebras-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 10:47:58,985 - cerebras-assistant - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-09 10:48:02,051 - cerebras-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 10:48:08,743 - cerebras-assistant - INFO - 💬 [CHAT ASSISTANT] Recent news from Kyiv: Significant drone strikes have caused casualties and damage amid ongoing conflict and military activity.
+2025-08-09 10:48:08,745 - cerebras-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 11:28:20,486 - cerebras-assistant - INFO - 🎬 [CONFIG] Video processing: ENABLED
+2025-08-09 11:28:20,488 - cerebras-assistant - INFO - 🚀 Starting Cerebras Assistant application
+2025-08-09 11:28:20,575 - cerebras-assistant - INFO - 🚀 Starting Cerebras Assistant entrypoint
+2025-08-09 11:28:20,577 - cerebras-assistant - INFO - ✅ Connected to room: fake_room
+2025-08-09 11:28:20,578 - cerebras-assistant - INFO - ✅ Cerebras Assistant initialized (Video: ON)
+2025-08-09 11:28:21,644 - cerebras-assistant - INFO - ✅ Session created: Whisper STT + OpenAI LLM + Gemini (video analysis) + TTS + 3 Tools
+2025-08-09 11:28:22,821 - cerebras-assistant - INFO - 🚀 [AGENT] Agent entered room
+2025-08-09 11:28:22,822 - cerebras-assistant - INFO - 📹 [VIDEO] Setting up video processing...
+2025-08-09 11:28:23,955 - cerebras-assistant - INFO - ✅ [GEMINI] LLM created for video analysis
+2025-08-09 11:28:23,956 - cerebras-assistant - INFO - 👤 [PARTICIPANT] Checking fake_human for video tracks
+2025-08-09 11:28:23,958 - cerebras-assistant - INFO - 📹 [VIDEO] No existing video tracks found, waiting for new ones...
+2025-08-09 11:28:23,982 - cerebras-assistant - INFO - 🔄 [AGENT STATE] initializing -> listening
+2025-08-09 11:28:23,987 - cerebras-assistant - INFO - ✅ Session started successfully
+2025-08-09 11:28:23,989 - cerebras-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 11:28:24,368 - cerebras-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 11:28:24,720 - cerebras-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754735304.7205842 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 404 - {'message': 'Model llama-3.1-8b-instant does not exist or you do not have access to it.', 'type': 'not_found_error', 'param': 'model', 'code': 'model_not_found'}") recoverable=True
+2025-08-09 11:28:25,058 - cerebras-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754735305.0584548 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 404 - {'message': 'Model llama-3.1-8b-instant does not exist or you do not have access to it.', 'type': 'not_found_error', 'param': 'model', 'code': 'model_not_found'}") recoverable=True
+2025-08-09 11:28:27,576 - cerebras-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754735307.5762808 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 404 - {'message': 'Model llama-3.1-8b-instant does not exist or you do not have access to it.', 'type': 'not_found_error', 'param': 'model', 'code': 'model_not_found'}") recoverable=True
+2025-08-09 11:28:29,803 - cerebras-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754735309.8028877 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 404 - {'message': 'Model llama-3.1-8b-instant does not exist or you do not have access to it.', 'type': 'not_found_error', 'param': 'model', 'code': 'model_not_found'}") recoverable=False
+2025-08-09 11:28:29,852 - cerebras-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-09 11:28:29,854 - cerebras-assistant - INFO - ✅ Initial greeting generated
+2025-08-09 11:29:15,890 - cerebras-assistant - INFO - 🎬 [CONFIG] Video processing: ENABLED
+2025-08-09 11:29:15,891 - cerebras-assistant - INFO - 🚀 Starting Cerebras Assistant application
+2025-08-09 11:29:15,977 - cerebras-assistant - INFO - 🚀 Starting Cerebras Assistant entrypoint
+2025-08-09 11:29:15,978 - cerebras-assistant - INFO - ✅ Connected to room: fake_room
+2025-08-09 11:29:15,980 - cerebras-assistant - INFO - ✅ Cerebras Assistant initialized (Video: ON)
+2025-08-09 11:29:17,372 - cerebras-assistant - INFO - ✅ Session created: Whisper STT + OpenAI LLM + Gemini (video analysis) + TTS + 3 Tools
+2025-08-09 11:29:18,459 - cerebras-assistant - INFO - 🚀 [AGENT] Agent entered room
+2025-08-09 11:29:18,460 - cerebras-assistant - INFO - 📹 [VIDEO] Setting up video processing...
+2025-08-09 11:29:19,601 - cerebras-assistant - INFO - ✅ [GEMINI] LLM created for video analysis
+2025-08-09 11:29:19,602 - cerebras-assistant - INFO - 👤 [PARTICIPANT] Checking fake_human for video tracks
+2025-08-09 11:29:19,605 - cerebras-assistant - INFO - 📹 [VIDEO] No existing video tracks found, waiting for new ones...
+2025-08-09 11:29:19,625 - cerebras-assistant - INFO - 🔄 [AGENT STATE] initializing -> listening
+2025-08-09 11:29:19,630 - cerebras-assistant - INFO - ✅ Session started successfully
+2025-08-09 11:29:19,631 - cerebras-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 11:29:19,923 - cerebras-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 11:29:20,264 - cerebras-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754735360.2645655 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 404 - {'message': 'Model llama-3.1-8b-instant does not exist or you do not have access to it.', 'type': 'not_found_error', 'param': 'model', 'code': 'model_not_found'}") recoverable=True
+2025-08-09 11:29:20,641 - cerebras-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754735360.6409054 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 404 - {'message': 'Model llama-3.1-8b-instant does not exist or you do not have access to it.', 'type': 'not_found_error', 'param': 'model', 'code': 'model_not_found'}") recoverable=True
+2025-08-09 11:29:22,953 - cerebras-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754735362.952883 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 404 - {'message': 'Model llama-3.1-8b-instant does not exist or you do not have access to it.', 'type': 'not_found_error', 'param': 'model', 'code': 'model_not_found'}") recoverable=True
+2025-08-09 11:29:25,177 - cerebras-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754735365.1767182 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 404 - {'message': 'Model llama-3.1-8b-instant does not exist or you do not have access to it.', 'type': 'not_found_error', 'param': 'model', 'code': 'model_not_found'}") recoverable=False
+2025-08-09 11:29:25,191 - cerebras-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-09 11:29:25,192 - cerebras-assistant - INFO - ✅ Initial greeting generated
+2025-08-09 11:29:36,195 - cerebras-assistant - INFO - 👤 [USER FINAL] Hi, how are you?
+2025-08-09 11:29:36,198 - cerebras-assistant - INFO - 📹 [HYBRID] No video description available
+2025-08-09 11:29:36,199 - cerebras-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 11:29:36,222 - cerebras-assistant - INFO - 💬 [CHAT USER] Hi, how are you?
+2025-08-09 11:29:36,224 - cerebras-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 11:29:36,446 - cerebras-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754735376.4462602 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 404 - {'message': 'Model llama-3.1-8b-instant does not exist or you do not have access to it.', 'type': 'not_found_error', 'param': 'model', 'code': 'model_not_found'}") recoverable=True
+2025-08-09 11:29:36,785 - cerebras-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754735376.7852483 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 404 - {'message': 'Model llama-3.1-8b-instant does not exist or you do not have access to it.', 'type': 'not_found_error', 'param': 'model', 'code': 'model_not_found'}") recoverable=True
+2025-08-09 11:29:39,079 - cerebras-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754735379.0795918 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 404 - {'message': 'Model llama-3.1-8b-instant does not exist or you do not have access to it.', 'type': 'not_found_error', 'param': 'model', 'code': 'model_not_found'}") recoverable=True
+2025-08-09 11:29:40,287 - cerebras-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-09 11:37:41,983 - cerebras-assistant - INFO - 🎬 [CONFIG] Video processing: ENABLED
+2025-08-09 11:37:41,984 - cerebras-assistant - INFO - 🚀 Starting Cerebras Assistant application
+2025-08-09 11:37:42,073 - cerebras-assistant - INFO - 🚀 Starting Cerebras Assistant entrypoint
+2025-08-09 11:37:42,074 - cerebras-assistant - INFO - ✅ Connected to room: fake_room
+2025-08-09 11:37:42,075 - cerebras-assistant - INFO - ✅ Cerebras Assistant initialized (Video: ON)
+2025-08-09 11:37:43,467 - cerebras-assistant - INFO - ✅ Session created: Whisper STT + OpenAI LLM + Gemini (video analysis) + TTS + 3 Tools
+2025-08-09 11:37:44,577 - cerebras-assistant - INFO - 🚀 [AGENT] Agent entered room
+2025-08-09 11:37:44,578 - cerebras-assistant - INFO - 📹 [VIDEO] Setting up video processing...
+2025-08-09 11:37:45,767 - cerebras-assistant - INFO - ✅ [GEMINI] LLM created for video analysis
+2025-08-09 11:37:45,769 - cerebras-assistant - INFO - 👤 [PARTICIPANT] Checking fake_human for video tracks
+2025-08-09 11:37:45,771 - cerebras-assistant - INFO - 📹 [VIDEO] No existing video tracks found, waiting for new ones...
+2025-08-09 11:37:45,793 - cerebras-assistant - INFO - 🔄 [AGENT STATE] initializing -> listening
+2025-08-09 11:37:45,797 - cerebras-assistant - INFO - ✅ Session started successfully
+2025-08-09 11:37:45,798 - cerebras-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 11:37:46,113 - cerebras-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 11:37:46,519 - cerebras-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754735866.5194411 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 400 - {'message': 'Lists of types are not supported in JSON schema. If you are trying to make a field Optional, use anyOf with a null type.', 'type': 'invalid_request_error', 'param': 'response_format', 'code': 'wrong_api_format'}") recoverable=True
+2025-08-09 11:37:46,912 - cerebras-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754735866.9117947 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 400 - {'message': 'Lists of types are not supported in JSON schema. If you are trying to make a field Optional, use anyOf with a null type.', 'type': 'invalid_request_error', 'param': 'response_format', 'code': 'wrong_api_format'}") recoverable=True
+2025-08-09 11:37:49,354 - cerebras-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754735869.3538961 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 400 - {'message': 'Lists of types are not supported in JSON schema. If you are trying to make a field Optional, use anyOf with a null type.', 'type': 'invalid_request_error', 'param': 'response_format', 'code': 'wrong_api_format'}") recoverable=True
+2025-08-09 11:37:51,679 - cerebras-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754735871.6791084 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 400 - {'message': 'Lists of types are not supported in JSON schema. If you are trying to make a field Optional, use anyOf with a null type.', 'type': 'invalid_request_error', 'param': 'response_format', 'code': 'wrong_api_format'}") recoverable=False
+2025-08-09 11:37:51,693 - cerebras-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-09 11:37:51,695 - cerebras-assistant - INFO - ✅ Initial greeting generated
+2025-08-09 11:42:29,029 - cerebras-assistant - INFO - 🎬 [CONFIG] Video processing: ENABLED
+2025-08-09 11:42:29,030 - cerebras-assistant - INFO - 🚀 Starting Cerebras Assistant application
+2025-08-09 11:42:29,184 - cerebras-assistant - INFO - 🚀 Starting Cerebras Assistant entrypoint
+2025-08-09 11:42:29,187 - cerebras-assistant - INFO - ✅ Connected to room: fake_room
+2025-08-09 11:42:29,189 - cerebras-assistant - INFO - ✅ Cerebras Assistant initialized (Video: ON)
+2025-08-09 11:42:31,761 - cerebras-assistant - INFO - ✅ Session created: Whisper STT + OpenAI LLM + Gemini (video analysis) + TTS + 3 Tools
+2025-08-09 11:42:32,975 - cerebras-assistant - INFO - 🚀 [AGENT] Agent entered room
+2025-08-09 11:42:32,977 - cerebras-assistant - INFO - 📹 [VIDEO] Setting up video processing...
+2025-08-09 11:42:34,983 - cerebras-assistant - INFO - ✅ [GEMINI] LLM created for video analysis
+2025-08-09 11:42:34,985 - cerebras-assistant - INFO - 👤 [PARTICIPANT] Checking fake_human for video tracks
+2025-08-09 11:42:34,991 - cerebras-assistant - INFO - 📹 [VIDEO] No existing video tracks found, waiting for new ones...
+2025-08-09 11:42:35,039 - cerebras-assistant - INFO - 🔄 [AGENT STATE] initializing -> listening
+2025-08-09 11:42:35,054 - cerebras-assistant - INFO - ✅ Session started successfully
+2025-08-09 11:42:35,059 - cerebras-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 11:42:35,676 - cerebras-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 11:42:38,104 - cerebras-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 11:42:41,501 - cerebras-assistant - INFO - 💬 [CHAT ASSISTANT] Hello, I'm a voice assistant with live video analysis capabilities.
+2025-08-09 11:42:41,506 - cerebras-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 11:42:41,509 - cerebras-assistant - INFO - ✅ Initial greeting generated
+2025-08-09 11:42:46,248 - cerebras-assistant - INFO - 👤 [USER FINAL] Okej.
+2025-08-09 11:42:46,599 - cerebras-assistant - INFO - 👤 [USER FINAL] I thinkamish
+2025-08-09 11:42:46,857 - cerebras-assistant - INFO - 📹 [HYBRID] No video description available
+2025-08-09 11:42:46,859 - cerebras-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 11:42:46,879 - cerebras-assistant - INFO - 💬 [CHAT USER] Okej. I thinkamish
+2025-08-09 11:42:46,882 - cerebras-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 11:42:47,759 - cerebras-assistant - INFO - 👤 [USER FINAL] What is your name?
+2025-08-09 11:42:47,768 - cerebras-assistant - INFO - 📹 [HYBRID] No video description available
+2025-08-09 11:42:47,774 - cerebras-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 11:42:47,795 - cerebras-assistant - INFO - 💬 [CHAT USER] What is your name?
+2025-08-09 11:42:50,276 - cerebras-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 11:42:52,941 - cerebras-assistant - INFO - 💬 [CHAT ASSISTANT] I don't have a personal name, I'm a voice assistant.
+2025-08-09 11:42:52,945 - cerebras-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 11:42:55,960 - cerebras-assistant - INFO - 👤 [USER FINAL] Ok.
+2025-08-09 11:42:58,160 - cerebras-assistant - INFO - 📹 [HYBRID] No video description available
+2025-08-09 11:42:58,163 - cerebras-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 11:42:58,194 - cerebras-assistant - INFO - 💬 [CHAT USER] Ok.
+2025-08-09 11:42:58,196 - cerebras-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 11:42:58,744 - cerebras-assistant - INFO - 👤 [USER FINAL] Tell me please about Dublin.
+2025-08-09 11:42:58,755 - cerebras-assistant - INFO - 📹 [HYBRID] No video description available
+2025-08-09 11:42:58,758 - cerebras-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 11:42:58,781 - cerebras-assistant - INFO - 💬 [CHAT USER] Tell me please about Dublin.
+2025-08-09 11:43:01,115 - cerebras-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 11:43:05,530 - cerebras-assistant - INFO - 💬 [CHAT ASSISTANT] Dublin is the capital of Ireland, known for its Trinity College and Temple Bar area.
+2025-08-09 11:43:05,533 - cerebras-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 11:43:08,774 - cerebras-assistant - INFO - 👤 [USER FINAL] Okay, very good.
+2025-08-09 11:46:54,385 - cerebras-assistant - INFO - 🎬 [CONFIG] Video processing: ENABLED
+2025-08-09 11:46:54,387 - cerebras-assistant - INFO - 🚀 Starting Cerebras Assistant application
+2025-08-09 11:46:54,550 - cerebras-assistant - INFO - 🚀 Starting Cerebras Assistant entrypoint
+2025-08-09 11:46:54,552 - cerebras-assistant - INFO - ✅ Connected to room: fake_room
+2025-08-09 11:46:54,554 - cerebras-assistant - INFO - ✅ Cerebras Assistant initialized (Video: ON)
+2025-08-09 11:46:56,954 - cerebras-assistant - INFO - ✅ Session created: Whisper STT + OpenAI LLM + Gemini (video analysis) + TTS + 3 Tools
+2025-08-09 11:46:58,305 - cerebras-assistant - INFO - 🚀 [AGENT] Agent entered room
+2025-08-09 11:46:58,308 - cerebras-assistant - INFO - 📹 [VIDEO] Setting up video processing...
+2025-08-09 11:47:00,400 - cerebras-assistant - INFO - ✅ [GEMINI] LLM created for video analysis
+2025-08-09 11:47:00,402 - cerebras-assistant - INFO - 👤 [PARTICIPANT] Checking fake_human for video tracks
+2025-08-09 11:47:00,409 - cerebras-assistant - INFO - 📹 [VIDEO] No existing video tracks found, waiting for new ones...
+2025-08-09 11:47:00,457 - cerebras-assistant - INFO - 🔄 [AGENT STATE] initializing -> listening
+2025-08-09 11:47:00,465 - cerebras-assistant - INFO - ✅ Session started successfully
+2025-08-09 11:47:00,472 - cerebras-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 11:47:01,151 - cerebras-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 11:47:05,218 - cerebras-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 11:47:08,634 - cerebras-assistant - INFO - 💬 [CHAT ASSISTANT] Hello, I'm a voice assistant with live video analysis capabilities.
+2025-08-09 11:47:08,637 - cerebras-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 11:47:08,639 - cerebras-assistant - INFO - ✅ Initial greeting generated
+2025-08-09 11:48:25,588 - cerebras-assistant - INFO - 🎬 [CONFIG] Video processing: ENABLED
+2025-08-09 11:48:25,590 - cerebras-assistant - INFO - 🚀 Starting Cerebras Assistant application
+2025-08-09 11:48:25,779 - cerebras-assistant - INFO - 🚀 Starting Cerebras Assistant entrypoint
+2025-08-09 11:48:25,781 - cerebras-assistant - INFO - ✅ Connected to room: fake_room
+2025-08-09 11:48:25,782 - cerebras-assistant - INFO - ✅ Cerebras Assistant initialized (Video: ON)
+2025-08-09 11:48:28,426 - cerebras-assistant - INFO - ✅ Session created: Whisper STT + OpenAI LLM + Gemini (video analysis) + TTS + 3 Tools
+2025-08-09 11:48:29,656 - cerebras-assistant - INFO - 🚀 [AGENT] Agent entered room
+2025-08-09 11:48:29,658 - cerebras-assistant - INFO - 📹 [VIDEO] Setting up video processing...
+2025-08-09 11:48:31,870 - cerebras-assistant - INFO - ✅ [GEMINI] LLM created for video analysis
+2025-08-09 11:48:31,871 - cerebras-assistant - INFO - 👤 [PARTICIPANT] Checking fake_human for video tracks
+2025-08-09 11:48:31,875 - cerebras-assistant - INFO - 📹 [VIDEO] No existing video tracks found, waiting for new ones...
+2025-08-09 11:48:31,919 - cerebras-assistant - INFO - 🔄 [AGENT STATE] initializing -> listening
+2025-08-09 11:48:31,931 - cerebras-assistant - INFO - ✅ Session started successfully
+2025-08-09 11:48:31,936 - cerebras-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 11:48:32,502 - cerebras-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 11:48:32,905 - cerebras-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754736512.9054787 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 400 - {'message': 'Lists of types are not supported in JSON schema. If you are trying to make a field Optional, use anyOf with a null type.', 'type': 'invalid_request_error', 'param': 'response_format', 'code': 'wrong_api_format'}") recoverable=True
+2025-08-09 11:48:33,348 - cerebras-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754736513.3476722 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 400 - {'message': 'Lists of types are not supported in JSON schema. If you are trying to make a field Optional, use anyOf with a null type.', 'type': 'invalid_request_error', 'param': 'response_format', 'code': 'wrong_api_format'}") recoverable=True
+2025-08-09 11:48:35,722 - cerebras-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754736515.7222788 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 400 - {'message': 'Lists of types are not supported in JSON schema. If you are trying to make a field Optional, use anyOf with a null type.', 'type': 'invalid_request_error', 'param': 'response_format', 'code': 'wrong_api_format'}") recoverable=True
+2025-08-09 11:48:38,080 - cerebras-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754736518.079999 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 400 - {'message': 'Lists of types are not supported in JSON schema. If you are trying to make a field Optional, use anyOf with a null type.', 'type': 'invalid_request_error', 'param': 'response_format', 'code': 'wrong_api_format'}") recoverable=False
+2025-08-09 11:48:38,136 - cerebras-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-09 11:48:38,140 - cerebras-assistant - INFO - ✅ Initial greeting generated
+2025-08-09 11:48:43,460 - cerebras-assistant - INFO - 👤 [USER FINAL] Hi, how are you?
+2025-08-09 11:48:43,466 - cerebras-assistant - INFO - 📹 [HYBRID] No video description available
+2025-08-09 11:48:43,469 - cerebras-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 11:48:43,518 - cerebras-assistant - INFO - 💬 [CHAT USER] Hi, how are you?
+2025-08-09 11:48:43,523 - cerebras-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 11:48:43,995 - cerebras-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754736523.9942489 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 400 - {'message': 'Lists of types are not supported in JSON schema. If you are trying to make a field Optional, use anyOf with a null type.', 'type': 'invalid_request_error', 'param': 'response_format', 'code': 'wrong_api_format'}") recoverable=True
+2025-08-09 11:48:44,469 - cerebras-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754736524.4688804 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 400 - {'message': 'Lists of types are not supported in JSON schema. If you are trying to make a field Optional, use anyOf with a null type.', 'type': 'invalid_request_error', 'param': 'response_format', 'code': 'wrong_api_format'}") recoverable=True
+2025-08-09 11:48:46,541 - cerebras-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-09 12:01:03,482 - cerebras-assistant - INFO - 🎬 [CONFIG] Video processing: ENABLED
+2025-08-09 12:01:03,484 - cerebras-assistant - INFO - 🚀 Starting Cerebras Assistant application
+2025-08-09 12:01:03,631 - cerebras-assistant - INFO - 🚀 Starting Cerebras Assistant entrypoint
+2025-08-09 12:01:03,639 - cerebras-assistant - INFO - ✅ Connected to room: fake_room
+2025-08-09 12:01:03,641 - cerebras-assistant - INFO - ✅ Cerebras Assistant initialized (Video: ON)
+2025-08-09 12:01:06,388 - cerebras-assistant - INFO - ✅ Session created: Whisper STT + OpenAI LLM + Gemini (video analysis) + TTS + 3 Tools
+2025-08-09 12:01:07,787 - cerebras-assistant - INFO - 🚀 [AGENT] Agent entered room
+2025-08-09 12:01:07,789 - cerebras-assistant - INFO - 📹 [VIDEO] Setting up video processing...
+2025-08-09 12:01:09,789 - cerebras-assistant - INFO - ✅ [GEMINI] LLM created for video analysis
+2025-08-09 12:01:09,791 - cerebras-assistant - INFO - 👤 [PARTICIPANT] Checking fake_human for video tracks
+2025-08-09 12:01:09,796 - cerebras-assistant - INFO - 📹 [VIDEO] No existing video tracks found, waiting for new ones...
+2025-08-09 12:01:09,845 - cerebras-assistant - INFO - 🔄 [AGENT STATE] initializing -> listening
+2025-08-09 12:01:09,855 - cerebras-assistant - INFO - ✅ Session started successfully
+2025-08-09 12:01:09,857 - cerebras-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 12:01:10,552 - cerebras-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 12:01:13,490 - cerebras-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 12:01:20,450 - cerebras-assistant - INFO - 💬 [CHAT ASSISTANT] {"type": "function", "name": "test_cerebras", "parameters": {"test_message": "Hello, I am Pantheon Core, your AI assistant with video vision."}}
+2025-08-09 12:01:20,457 - cerebras-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 12:01:20,464 - cerebras-assistant - INFO - ✅ Initial greeting generated
+2025-08-09 12:01:24,907 - cerebras-assistant - INFO - 👤 [USER FINAL] Ok.
+2025-08-09 12:01:25,761 - cerebras-assistant - INFO - 📹 [HYBRID] No video description available
+2025-08-09 12:01:25,767 - cerebras-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 12:01:25,930 - cerebras-assistant - INFO - 💬 [CHAT USER] Ok.
+2025-08-09 12:01:25,933 - cerebras-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 12:01:26,281 - cerebras-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-09 12:01:26,422 - cerebras-assistant - INFO - 👤 [USER FINAL] Tell me please about weather in
+2025-08-09 12:01:26,429 - cerebras-assistant - INFO - 📹 [HYBRID] No video description available
+2025-08-09 12:01:26,432 - cerebras-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 12:01:26,465 - cerebras-assistant - INFO - 💬 [CHAT USER] Tell me please about weather in
+2025-08-09 12:01:26,469 - cerebras-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 12:01:26,895 - cerebras-assistant - INFO - 👤 [USER FINAL] kilavnya.
+2025-08-09 12:01:26,900 - cerebras-assistant - INFO - 📹 [HYBRID] No video description available
+2025-08-09 12:01:26,902 - cerebras-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 12:01:26,935 - cerebras-assistant - INFO - 💬 [CHAT USER] kilavnya.
+2025-08-09 12:01:29,633 - cerebras-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 12:01:33,331 - cerebras-assistant - INFO - 💬 [CHAT ASSISTANT] {"type": "function", "name": "get_weather", "parameters": {"city": "kilavnya"}}
+2025-08-09 12:01:33,335 - cerebras-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 12:02:06,052 - cerebras-assistant - INFO - 👤 [USER FINAL] Уильям Пресабаоот Вебе.
+2025-08-09 12:02:06,068 - cerebras-assistant - INFO - 📹 [HYBRID] No video description available
+2025-08-09 12:02:06,072 - cerebras-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 12:02:06,130 - cerebras-assistant - INFO - 💬 [CHAT USER] Уильям Пресабаоот Вебе.
+2025-08-09 12:02:06,134 - cerebras-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 12:02:06,900 - cerebras-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-09 12:02:07,318 - cerebras-assistant - INFO - 👤 [USER FINAL] Nguyen.
+2025-08-09 12:02:07,327 - cerebras-assistant - INFO - 📹 [HYBRID] No video description available
+2025-08-09 12:02:07,330 - cerebras-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 12:02:07,383 - cerebras-assistant - INFO - 💬 [CHAT USER] Nguyen.
+2025-08-09 12:02:07,389 - cerebras-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 12:02:09,798 - cerebras-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 12:02:13,329 - cerebras-assistant - INFO - 💬 [CHAT ASSISTANT] {"type": "function", "name": "search_web", "parameters": {"query": "Nguyen"}}
+2025-08-09 12:02:13,333 - cerebras-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 12:10:03,905 - cerebras-assistant - INFO - 🎬 [CONFIG] Video processing: ENABLED
+2025-08-09 12:10:03,908 - cerebras-assistant - INFO - 🚀 Starting Cerebras Assistant application
+2025-08-09 12:10:04,087 - cerebras-assistant - INFO - 🚀 Starting Cerebras Assistant entrypoint
+2025-08-09 12:10:04,089 - cerebras-assistant - INFO - ✅ Connected to room: fake_room
+2025-08-09 12:10:04,091 - cerebras-assistant - INFO - ✅ Cerebras Assistant initialized (Video: ON)
+2025-08-09 12:10:06,687 - cerebras-assistant - INFO - ✅ Session created: Whisper STT + OpenAI LLM + Gemini (video analysis) + TTS + 3 Tools
+2025-08-09 12:10:07,902 - cerebras-assistant - INFO - 🚀 [AGENT] Agent entered room
+2025-08-09 12:10:07,904 - cerebras-assistant - INFO - 📹 [VIDEO] Setting up video processing...
+2025-08-09 12:10:10,070 - cerebras-assistant - INFO - ✅ [GEMINI] LLM created for video analysis
+2025-08-09 12:10:10,072 - cerebras-assistant - INFO - 👤 [PARTICIPANT] Checking fake_human for video tracks
+2025-08-09 12:10:10,076 - cerebras-assistant - INFO - 📹 [VIDEO] No existing video tracks found, waiting for new ones...
+2025-08-09 12:10:10,118 - cerebras-assistant - INFO - 🔄 [AGENT STATE] initializing -> listening
+2025-08-09 12:10:10,125 - cerebras-assistant - INFO - ✅ Session started successfully
+2025-08-09 12:10:10,128 - cerebras-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 12:10:10,680 - cerebras-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 12:10:13,610 - cerebras-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 12:10:16,104 - cerebras-assistant - INFO - 💬 [CHAT ASSISTANT] Hello! I can see and assist you with various tasks.
+2025-08-09 12:10:16,108 - cerebras-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 12:10:16,111 - cerebras-assistant - INFO - ✅ Initial greeting generated
+2025-08-09 12:10:24,148 - cerebras-assistant - INFO - 👤 [USER FINAL] Oktonguples about the war in
+2025-08-09 12:10:24,153 - cerebras-assistant - INFO - 📹 [HYBRID] No video description available
+2025-08-09 12:10:24,155 - cerebras-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 12:10:24,188 - cerebras-assistant - INFO - 💬 [CHAT USER] Oktonguples about the war in
+2025-08-09 12:10:24,192 - cerebras-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 12:10:24,583 - cerebras-assistant - INFO - 👤 [USER FINAL] Корк.
+2025-08-09 12:10:24,587 - cerebras-assistant - INFO - 📹 [HYBRID] No video description available
+2025-08-09 12:10:24,589 - cerebras-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 12:10:24,608 - cerebras-assistant - INFO - 💬 [CHAT USER] Корк.
+2025-08-09 12:10:27,509 - cerebras-assistant - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-09 12:10:30,133 - cerebras-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 12:10:36,832 - cerebras-assistant - INFO - 💬 [CHAT ASSISTANT] Cork faced major conflicts during the Williamite War in 1690 and the Irish War of Independence in 1920.
+2025-08-09 12:10:36,835 - cerebras-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 12:10:41,788 - cerebras-assistant - INFO - 👤 [USER FINAL] No, I mean weather.
+2025-08-09 12:10:41,796 - cerebras-assistant - INFO - 📹 [HYBRID] No video description available
+2025-08-09 12:10:41,799 - cerebras-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 12:10:41,839 - cerebras-assistant - INFO - 💬 [CHAT USER] No, I mean weather.
+2025-08-09 12:10:41,844 - cerebras-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 12:10:42,855 - cerebras-assistant - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-09 12:10:45,749 - cerebras-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 12:10:50,263 - cerebras-assistant - INFO - 💬 [CHAT ASSISTANT] Cork's weather: 18°C, partly cloudy, humidity 68%, wind at 22.3 km/h.
+2025-08-09 12:10:50,270 - cerebras-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 12:10:57,178 - cerebras-assistant - INFO - 👤 [USER FINAL] Tell me about weather in Trelly.
+2025-08-09 12:10:57,184 - cerebras-assistant - INFO - 📹 [HYBRID] No video description available
+2025-08-09 12:10:57,186 - cerebras-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 12:10:57,212 - cerebras-assistant - INFO - 💬 [CHAT USER] Tell me about weather in Trelly.
+2025-08-09 12:10:57,214 - cerebras-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 12:10:58,420 - cerebras-assistant - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-09 12:11:00,919 - cerebras-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 12:11:05,550 - cerebras-assistant - INFO - 💬 [CHAT ASSISTANT] Trelly's weather: 20°C, partly cloudy, humidity 60%, wind at 13.0 km/h.
+2025-08-09 12:11:05,554 - cerebras-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening

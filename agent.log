@@ -1613,3 +1613,1064 @@
 2025-08-08 20:52:12,676 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
 2025-08-08 20:52:13,287 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
 2025-08-08 20:52:13,310 - openai-assistant - INFO - ❌ [SESSION CLOSED] Agent session ended
+2025-08-08 21:01:58,343 - openai-assistant - INFO - 🚀 Starting OpenAI Assistant LiveKit agent application with manual video processing
+2025-08-08 21:02:20,871 - openai-assistant - INFO - 🚀 Starting OpenAI Assistant entrypoint with video support
+2025-08-08 21:02:21,878 - openai-assistant - INFO - ✅ Connected to room: playground-A6XW-ZE3F with full auto-subscribe
+2025-08-08 21:02:21,879 - openai-assistant - INFO - ✅ OpenAI Assistant agent initialized with weather, search, email tools and manual video processing
+2025-08-08 21:05:03,569 - openai-assistant - INFO - 🚀 Starting OpenAI Assistant LiveKit agent application with manual video processing
+2025-08-08 21:05:16,958 - openai-assistant - INFO - 🚀 Starting OpenAI Assistant entrypoint with video support
+2025-08-08 21:05:17,548 - openai-assistant - INFO - ✅ Connected to room: playground-vQYI-7quQ with full auto-subscribe
+2025-08-08 21:05:17,549 - openai-assistant - INFO - ✅ OpenAI Assistant agent initialized with weather, search, email tools and manual video processing
+2025-08-08 21:05:19,397 - openai-assistant - INFO - ✅ Session created: Whisper STT (EN) + GPT-4o (vision + higher limits) + TTS + Manual Video Processing + 3 Tools
+2025-08-08 21:05:19,430 - openai-assistant - INFO - 🚀 [AGENT] Agent entered room, setting up video processing...
+2025-08-08 21:05:19,431 - openai-assistant - INFO - 👤 [PARTICIPANT] Checking identity-bM5d for video tracks
+2025-08-08 21:05:19,433 - openai-assistant - INFO - 📹 [VIDEO] Found existing video track from identity-bM5d
+2025-08-08 21:05:19,436 - openai-assistant - INFO - 📹 [VIDEO] Created new video stream
+2025-08-08 21:05:19,437 - openai-assistant - INFO - ✅ [VIDEO] Video stream processing started
+2025-08-08 21:05:19,444 - openai-assistant - INFO - 🎬 [VIDEO FRAMES] Starting frame processing loop with frame skipping
+2025-08-08 21:05:19,448 - openai-assistant - INFO - 🔄 [AGENT STATE] initializing -> listening
+2025-08-08 21:05:19,451 - openai-assistant - INFO - ✅ Session started successfully with manual video processing
+2025-08-08 21:05:19,454 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 21:05:20,068 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 21:05:22,185 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 30 frames, latest: 320x180
+2025-08-08 21:05:22,301 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 30 (skipping 9/10 frames)
+2025-08-08 21:05:22,364 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-08 21:05:24,971 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 60 frames, latest: 320x180
+2025-08-08 21:05:24,978 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 60 (skipping 9/10 frames)
+2025-08-08 21:05:25,302 - openai-assistant - INFO - 💬 [CHAT ASSISTANT] Hello! I'm your voice assistant. How can I assist you today?
+2025-08-08 21:05:25,303 - openai-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-08 21:05:25,306 - openai-assistant - INFO - ✅ Initial greeting generated
+2025-08-08 21:05:25,319 - openai-assistant - INFO - 🏠 [ROOM] 1 remote participants
+2025-08-08 21:05:25,322 - openai-assistant - INFO - 📹 [PARTICIPANT] identity-bM5d has 0 video tracks
+2025-08-08 21:05:27,823 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 90 frames, latest: 320x180
+2025-08-08 21:05:27,830 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 90 (skipping 9/10 frames)
+2025-08-08 21:05:28,570 - openai-assistant - INFO - 👤 [USER FINAL] Okay
+2025-08-08 21:05:30,584 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 120 frames, latest: 320x180
+2025-08-08 21:05:30,590 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 120 (skipping 9/10 frames)
+2025-08-08 21:05:31,525 - openai-assistant - INFO - 📹 [VIDEO ALWAYS] Added video frame to user message (frame age: 0.9s)
+2025-08-08 21:05:31,526 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 21:05:31,553 - openai-assistant - INFO - 💬 [CHAT USER] Okay
+2025-08-08 21:05:31,555 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 21:05:32,112 - openai-assistant - INFO - 👤 [USER FINAL] How many fingers I show you?
+2025-08-08 21:05:32,115 - openai-assistant - INFO - 📹 [VIDEO ALWAYS] Added video frame to user message (frame age: 1.5s)
+2025-08-08 21:05:32,116 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 21:05:32,132 - openai-assistant - INFO - 💬 [CHAT USER] How many fingers I show you?
+2025-08-08 21:05:33,686 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 150 frames, latest: 320x180
+2025-08-08 21:05:33,692 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 150 (skipping 9/10 frames)
+2025-08-08 21:05:34,699 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-08 21:05:36,135 - openai-assistant - INFO - 💬 [CHAT ASSISTANT] You're showing five fingers.
+2025-08-08 21:05:36,138 - openai-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-08 21:05:36,589 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 180 frames, latest: 320x180
+2025-08-08 21:05:36,598 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 180 (skipping 9/10 frames)
+2025-08-08 21:05:39,084 - openai-assistant - INFO - 👤 [USER FINAL] Okay, sehr gut.
+2025-08-08 21:05:39,092 - openai-assistant - INFO - 📹 [VIDEO ALWAYS] Added video frame to user message (frame age: 2.5s)
+2025-08-08 21:05:39,094 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 21:05:39,117 - openai-assistant - INFO - 💬 [CHAT USER] Okay, sehr gut.
+2025-08-08 21:05:39,119 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 21:05:39,500 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 210 frames, latest: 320x180
+2025-08-08 21:05:39,509 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 210 (skipping 9/10 frames)
+2025-08-08 21:05:39,773 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-08 21:05:40,896 - openai-assistant - INFO - 👤 [USER FINAL] Very good.
+2025-08-08 21:05:42,243 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 240 frames, latest: 320x180
+2025-08-08 21:05:42,249 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 240 (skipping 9/10 frames)
+2025-08-08 21:05:43,374 - openai-assistant - INFO - 📹 [VIDEO ALWAYS] Added video frame to user message (frame age: 1.1s)
+2025-08-08 21:05:43,375 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 21:05:43,400 - openai-assistant - INFO - 💬 [CHAT USER] Very good.
+2025-08-08 21:05:43,401 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 21:05:43,914 - openai-assistant - INFO - 👤 [USER FINAL] What exactly I show you now?
+2025-08-08 21:05:43,917 - openai-assistant - INFO - 📹 [VIDEO ALWAYS] Added video frame to user message (frame age: 1.7s)
+2025-08-08 21:05:43,919 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 21:05:44,044 - openai-assistant - INFO - 💬 [CHAT USER] What exactly I show you now?
+2025-08-08 21:05:45,002 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 270 frames, latest: 320x180
+2025-08-08 21:05:45,009 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 270 (skipping 9/10 frames)
+2025-08-08 21:05:47,747 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 300 frames, latest: 320x180
+2025-08-08 21:05:47,754 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 300 (skipping 9/10 frames)
+2025-08-08 21:05:49,647 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-08 21:05:50,510 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 330 frames, latest: 320x180
+2025-08-08 21:05:50,520 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 330 (skipping 9/10 frames)
+2025-08-08 21:05:52,332 - openai-assistant - INFO - 💬 [CHAT ASSISTANT] It looks like you're holding an object, possibly a phone.
+2025-08-08 21:05:52,334 - openai-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-08 21:05:53,274 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 360 frames, latest: 320x180
+2025-08-08 21:05:53,280 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 360 (skipping 9/10 frames)
+2025-08-08 21:05:56,140 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 390 frames, latest: 320x180
+2025-08-08 21:05:56,146 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 390 (skipping 9/10 frames)
+2025-08-08 21:05:56,654 - openai-assistant - INFO - 👤 [USER FINAL] Окей, thank you very much.
+2025-08-08 21:05:56,659 - openai-assistant - INFO - 📹 [VIDEO ALWAYS] Added video frame to user message (frame age: 0.5s)
+2025-08-08 21:05:56,662 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 21:05:56,689 - openai-assistant - INFO - 💬 [CHAT USER] Окей, thank you very much.
+2025-08-08 21:05:56,691 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 21:05:57,228 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-08 21:05:58,908 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 420 frames, latest: 320x180
+2025-08-08 21:05:58,913 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 420 (skipping 9/10 frames)
+2025-08-08 21:06:00,210 - openai-assistant - INFO - 👤 [USER FINAL] How many fingers I show you now?
+2025-08-08 21:06:00,215 - openai-assistant - INFO - 📹 [VIDEO ALWAYS] Added video frame to user message (frame age: 1.3s)
+2025-08-08 21:06:00,216 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 21:06:00,240 - openai-assistant - INFO - 💬 [CHAT USER] How many fingers I show you now?
+2025-08-08 21:06:00,244 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 21:06:02,027 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 450 frames, latest: 320x180
+2025-08-08 21:06:02,031 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 450 (skipping 9/10 frames)
+2025-08-08 21:06:03,851 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-08 21:06:04,810 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 480 frames, latest: 320x180
+2025-08-08 21:06:04,815 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 480 (skipping 9/10 frames)
+2025-08-08 21:06:05,168 - openai-assistant - INFO - 💬 [CHAT ASSISTANT] You're showing two fingers.
+2025-08-08 21:06:05,170 - openai-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-08 21:06:07,547 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 510 frames, latest: 320x180
+2025-08-08 21:06:07,555 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 510 (skipping 9/10 frames)
+2025-08-08 21:06:07,560 - openai-assistant - INFO - 👤 [USER FINAL] Ok.
+2025-08-08 21:06:08,676 - openai-assistant - INFO - 📹 [VIDEO ALWAYS] Added video frame to user message (frame age: 1.1s)
+2025-08-08 21:06:08,678 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 21:06:08,703 - openai-assistant - INFO - 💬 [CHAT USER] Ok.
+2025-08-08 21:06:08,708 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 21:06:09,221 - openai-assistant - INFO - 👤 [USER FINAL] What?
+2025-08-08 21:06:09,277 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-08 21:06:10,313 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 540 frames, latest: 320x180
+2025-08-08 21:06:10,318 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 540 (skipping 9/10 frames)
+2025-08-08 21:06:11,075 - openai-assistant - INFO - 📹 [VIDEO ALWAYS] Added video frame to user message (frame age: 0.8s)
+2025-08-08 21:06:11,076 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 21:06:11,106 - openai-assistant - INFO - 💬 [CHAT USER] What?
+2025-08-08 21:06:11,108 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 21:06:12,009 - openai-assistant - INFO - 👤 [USER FINAL] You can tell about me, it's interesting.
+2025-08-08 21:06:12,013 - openai-assistant - INFO - 📹 [VIDEO ALWAYS] Added video frame to user message (frame age: 1.7s)
+2025-08-08 21:06:12,015 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 21:06:12,049 - openai-assistant - INFO - 💬 [CHAT USER] You can tell about me, it's interesting.
+2025-08-08 21:06:13,177 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 570 frames, latest: 320x180
+2025-08-08 21:06:13,183 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 570 (skipping 9/10 frames)
+2025-08-08 21:06:15,914 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 600 frames, latest: 320x180
+2025-08-08 21:06:15,919 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 600 (skipping 9/10 frames)
+2025-08-08 21:06:17,485 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-08 21:06:18,870 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 630 frames, latest: 320x180
+2025-08-08 21:06:18,875 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 630 (skipping 9/10 frames)
+2025-08-08 21:06:19,785 - openai-assistant - INFO - 💬 [CHAT ASSISTANT] I can't identify or describe people in images.
+2025-08-08 21:06:19,787 - openai-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-08 21:06:21,652 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 660 frames, latest: 320x180
+2025-08-08 21:06:21,658 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 660 (skipping 9/10 frames)
+2025-08-08 21:06:24,378 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 690 frames, latest: 320x180
+2025-08-08 21:06:24,383 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 690 (skipping 9/10 frames)
+2025-08-08 21:06:24,574 - openai-assistant - INFO - 👤 [USER FINAL] Окей.
+2025-08-08 21:06:24,577 - openai-assistant - INFO - 📹 [VIDEO ALWAYS] Added video frame to user message (frame age: 0.2s)
+2025-08-08 21:06:24,579 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 21:06:24,612 - openai-assistant - INFO - 💬 [CHAT USER] Окей.
+2025-08-08 21:06:24,614 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 21:06:25,124 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-08 21:06:27,131 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 720 frames, latest: 320x180
+2025-08-08 21:06:27,137 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 720 (skipping 9/10 frames)
+2025-08-08 21:06:28,406 - openai-assistant - INFO - 👤 [USER FINAL] Maybe about my age.
+2025-08-08 21:06:28,412 - openai-assistant - INFO - 📹 [VIDEO ALWAYS] Added video frame to user message (frame age: 1.3s)
+2025-08-08 21:06:28,414 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 21:06:28,448 - openai-assistant - INFO - 💬 [CHAT USER] Maybe about my age.
+2025-08-08 21:06:28,452 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 21:06:29,895 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 750 frames, latest: 320x180
+2025-08-08 21:06:29,902 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 750 (skipping 9/10 frames)
+2025-08-08 21:06:33,223 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 780 frames, latest: 320x180
+2025-08-08 21:06:33,227 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 780 (skipping 9/10 frames)
+2025-08-08 21:06:34,430 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-08 21:06:35,519 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 810 frames, latest: 320x180
+2025-08-08 21:06:35,523 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 810 (skipping 9/10 frames)
+2025-08-08 21:06:36,082 - openai-assistant - INFO - 💬 [CHAT ASSISTANT] I can't determine age from images.
+2025-08-08 21:06:36,084 - openai-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-08 21:06:38,373 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 840 frames, latest: 320x180
+2025-08-08 21:06:38,378 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 840 (skipping 9/10 frames)
+2025-08-08 21:06:39,461 - openai-assistant - INFO - 👤 [USER FINAL] Ok.
+2025-08-08 21:06:39,464 - openai-assistant - INFO - 📹 [VIDEO ALWAYS] Added video frame to user message (frame age: 1.1s)
+2025-08-08 21:06:39,467 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 21:06:39,501 - openai-assistant - INFO - 💬 [CHAT USER] Ok.
+2025-08-08 21:06:39,504 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 21:06:40,531 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-08 21:06:40,914 - openai-assistant - INFO - 👤 [USER FINAL] Ok.
+2025-08-08 21:06:40,919 - openai-assistant - INFO - 📹 [VIDEO ALWAYS] Added video frame to user message (frame age: 2.5s)
+2025-08-08 21:06:40,920 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 21:06:40,952 - openai-assistant - INFO - 💬 [CHAT USER] Ok.
+2025-08-08 21:06:40,955 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 21:06:41,118 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 870 frames, latest: 320x180
+2025-08-08 21:06:41,125 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 870 (skipping 9/10 frames)
+2025-08-08 21:06:44,073 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 900 frames, latest: 320x180
+2025-08-08 21:06:44,078 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 900 (skipping 9/10 frames)
+2025-08-08 21:06:45,674 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-08 21:06:46,829 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 930 frames, latest: 320x180
+2025-08-08 21:06:46,835 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 930 (skipping 9/10 frames)
+2025-08-08 21:06:47,696 - openai-assistant - INFO - 👤 [USER FINAL] Tell me please about
+2025-08-08 21:06:48,572 - openai-assistant - INFO - 📹 [VIDEO ALWAYS] Added video frame to user message (frame age: 1.7s)
+2025-08-08 21:06:48,573 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 21:06:48,602 - openai-assistant - INFO - 💬 [CHAT USER] Tell me please about
+2025-08-08 21:06:48,603 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 21:06:49,386 - openai-assistant - INFO - 👤 [USER FINAL] Veve in Cork.
+2025-08-08 21:06:49,389 - openai-assistant - INFO - 📹 [VIDEO ALWAYS] Added video frame to user message (frame age: 2.6s)
+2025-08-08 21:06:49,391 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 21:06:49,423 - openai-assistant - INFO - 💬 [CHAT USER] Veve in Cork.
+2025-08-08 21:06:49,593 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 960 frames, latest: 320x180
+2025-08-08 21:06:49,598 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 960 (skipping 9/10 frames)
+2025-08-08 21:06:50,002 - openai-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754683610.0023293 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 30000, Used 24297, Requested 12535. Please try again in 13.664s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}") recoverable=True (recoverable: True)
+2025-08-08 21:06:52,432 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 990 frames, latest: 320x180
+2025-08-08 21:06:52,437 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 990 (skipping 9/10 frames)
+2025-08-08 21:06:55,205 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 1020 frames, latest: 320x180
+2025-08-08 21:06:55,212 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 1020 (skipping 9/10 frames)
+2025-08-08 21:06:55,475 - openai-assistant - INFO - 👤 [USER FINAL] Outtwever.
+2025-08-08 21:06:55,479 - openai-assistant - INFO - 📹 [VIDEO ALWAYS] Added video frame to user message (frame age: 0.3s)
+2025-08-08 21:06:55,481 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 21:06:55,524 - openai-assistant - INFO - 💬 [CHAT USER] Outtwever.
+2025-08-08 21:06:56,019 - openai-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754683616.0187993 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 30000, Used 25970, Requested 13304. Please try again in 18.548s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}") recoverable=True (recoverable: True)
+2025-08-08 21:06:56,170 - openai-assistant - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-08 21:06:56,172 - openai-assistant - INFO - 🛠️ [TOOL RESULT 1] unknown: no result...
+2025-08-08 21:06:56,612 - openai-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754683616.6120796 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 30000, Used 25676, Requested 13304. Please try again in 17.96s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}") recoverable=True (recoverable: True)
+2025-08-08 21:06:57,238 - openai-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754683617.2380733 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 30000, Used 25359, Requested 12630. Please try again in 15.977s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}") recoverable=True (recoverable: True)
+2025-08-08 21:06:57,803 - openai-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754683617.8033433 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 30000, Used 25107, Requested 12630. Please try again in 15.474s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}") recoverable=True (recoverable: True)
+2025-08-08 21:06:57,955 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 1050 frames, latest: 320x180
+2025-08-08 21:06:57,960 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 1050 (skipping 9/10 frames)
+2025-08-08 21:07:00,567 - openai-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754683620.5670917 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 30000, Used 30000, Requested 12630. Please try again in 25.26s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}") recoverable=True (recoverable: True)
+2025-08-08 21:07:00,732 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 1080 frames, latest: 320x180
+2025-08-08 21:07:00,737 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 1080 (skipping 9/10 frames)
+2025-08-08 21:07:03,050 - openai-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754683623.050453 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 30000, Used 27419, Requested 12630. Please try again in 20.098s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}") recoverable=False (recoverable: False)
+2025-08-08 21:07:03,476 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 1110 frames, latest: 320x180
+2025-08-08 21:07:03,483 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 1110 (skipping 9/10 frames)
+2025-08-08 21:07:04,473 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-08 21:07:06,428 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 1140 frames, latest: 320x180
+2025-08-08 21:07:06,433 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 1140 (skipping 9/10 frames)
+2025-08-08 21:07:08,117 - openai-assistant - INFO - 💬 [CHAT ASSISTANT] Could you please clarify what you mean by "Veve in Cork" or "Outtwever"?
+2025-08-08 21:07:08,119 - openai-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-08 21:07:09,116 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 1170 frames, latest: 640x360
+2025-08-08 21:07:09,132 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 1170 (skipping 9/10 frames)
+2025-08-08 21:07:11,080 - openai-assistant - INFO - 👤 [USER FINAL] Wewe.
+2025-08-08 21:07:11,087 - openai-assistant - INFO - 📹 [VIDEO ALWAYS] Added video frame to user message (frame age: 2.0s)
+2025-08-08 21:07:11,089 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 21:07:11,121 - openai-assistant - INFO - 💬 [CHAT USER] Wewe.
+2025-08-08 21:07:11,122 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 21:07:11,754 - openai-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754683631.75416 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 30000, Used 23071, Requested 14185. Please try again in 14.512s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}") recoverable=True (recoverable: True)
+2025-08-08 21:07:12,093 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 1200 frames, latest: 640x360
+2025-08-08 21:07:12,105 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 1200 (skipping 9/10 frames)
+2025-08-08 21:07:12,325 - openai-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754683632.3251793 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 30000, Used 22778, Requested 14185. Please try again in 13.926s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}") recoverable=True (recoverable: True)
+2025-08-08 21:07:14,820 - openai-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754683634.8201354 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 30000, Used 21521, Requested 14185. Please try again in 11.412s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}") recoverable=True (recoverable: True)
+2025-08-08 21:07:14,839 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 1230 frames, latest: 640x360
+2025-08-08 21:07:14,852 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 1230 (skipping 9/10 frames)
+2025-08-08 21:07:15,621 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-08 21:07:17,576 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 1260 frames, latest: 640x360
+2025-08-08 21:07:17,585 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 1260 (skipping 9/10 frames)
+2025-08-08 21:07:18,510 - openai-assistant - INFO - 👤 [USER FINAL] Temperatura. Temperatura in Cork now.
+2025-08-08 21:07:18,522 - openai-assistant - INFO - 📹 [VIDEO ALWAYS] Added video frame to user message (frame age: 0.9s)
+2025-08-08 21:07:18,527 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 21:07:18,595 - openai-assistant - INFO - 💬 [CHAT USER] Temperatura. Temperatura in Cork now.
+2025-08-08 21:07:18,599 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 21:07:19,117 - openai-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754683639.117471 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 30000, Used 19373, Requested 14960. Please try again in 8.666s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}") recoverable=True (recoverable: True)
+2025-08-08 21:07:19,423 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-08 21:07:19,979 - openai-assistant - INFO - 👤 [USER FINAL] Klimat.
+2025-08-08 21:07:19,983 - openai-assistant - INFO - 📹 [VIDEO ALWAYS] Added video frame to user message (frame age: 2.4s)
+2025-08-08 21:07:19,985 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 21:07:20,021 - openai-assistant - INFO - 💬 [CHAT USER] Klimat.
+2025-08-08 21:07:20,023 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 21:07:20,334 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 1290 frames, latest: 640x360
+2025-08-08 21:07:20,343 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 1290 (skipping 9/10 frames)
+2025-08-08 21:07:20,989 - openai-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754683640.989625 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 30000, Used 18435, Requested 15728. Please try again in 8.326s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}") recoverable=True (recoverable: True)
+2025-08-08 21:07:23,218 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 1320 frames, latest: 640x360
+2025-08-08 21:07:23,227 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 1320 (skipping 9/10 frames)
+2025-08-08 21:07:25,967 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 1350 frames, latest: 640x360
+2025-08-08 21:07:25,980 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 1350 (skipping 9/10 frames)
+2025-08-08 21:07:28,803 - openai-assistant - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-08 21:07:28,805 - openai-assistant - INFO - 🛠️ [TOOL RESULT 1] unknown: no result...
+2025-08-08 21:07:28,861 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 1380 frames, latest: 640x360
+2025-08-08 21:07:28,873 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 1380 (skipping 9/10 frames)
+2025-08-08 21:07:29,510 - openai-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754683649.5103693 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 30000, Used 20077, Requested 15747. Please try again in 11.648s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}") recoverable=True (recoverable: True)
+2025-08-08 21:07:30,290 - openai-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754683650.2900343 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 30000, Used 19683, Requested 15747. Please try again in 10.86s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}") recoverable=True (recoverable: True)
+2025-08-08 21:07:31,572 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 1410 frames, latest: 640x360
+2025-08-08 21:07:31,583 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 1410 (skipping 9/10 frames)
+2025-08-08 21:07:32,903 - openai-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754683652.9026635 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 30000, Used 18367, Requested 15747. Please try again in 8.228s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}") recoverable=True (recoverable: True)
+2025-08-08 21:07:33,673 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-08 21:07:34,523 - openai-assistant - INFO - 👤 [USER FINAL] Aiohēa
+2025-08-08 21:07:34,529 - openai-assistant - INFO - 📹 [VIDEO ALWAYS] Added video frame to user message (frame age: 2.9s)
+2025-08-08 21:07:34,533 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 21:07:34,575 - openai-assistant - INFO - 💬 [CHAT USER] Aiohēa
+2025-08-08 21:07:34,583 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 21:07:34,610 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 1440 frames, latest: 320x180
+2025-08-08 21:07:34,626 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 1440 (skipping 9/10 frames)
+2025-08-08 21:07:35,165 - openai-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754683655.1648164 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 30000, Used 17264, Requested 16515. Please try again in 7.558s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}") recoverable=True (recoverable: True)
+2025-08-08 21:07:35,792 - openai-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754683655.7919073 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 30000, Used 16927, Requested 16515. Please try again in 6.884s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}") recoverable=True (recoverable: True)
+2025-08-08 21:07:37,374 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 1470 frames, latest: 320x180
+2025-08-08 21:07:37,380 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 1470 (skipping 9/10 frames)
+2025-08-08 21:07:40,328 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 1500 frames, latest: 320x180
+2025-08-08 21:07:40,334 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 1500 (skipping 9/10 frames)
+2025-08-08 21:07:43,082 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 1530 frames, latest: 640x360
+2025-08-08 21:07:43,092 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 1530 (skipping 9/10 frames)
+2025-08-08 21:07:45,859 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 1560 frames, latest: 640x360
+2025-08-08 21:07:45,868 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 1560 (skipping 9/10 frames)
+2025-08-08 21:07:47,989 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-08 21:07:48,613 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 1590 frames, latest: 640x360
+2025-08-08 21:07:48,623 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 1590 (skipping 9/10 frames)
+2025-08-08 21:07:51,371 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 1620 frames, latest: 640x360
+2025-08-08 21:07:51,384 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 1620 (skipping 9/10 frames)
+2025-08-08 21:07:51,529 - openai-assistant - INFO - 💬 [CHAT ASSISTANT] I'm not sure what "Aiohēa" refers to. Could you clarify?
+2025-08-08 21:07:51,531 - openai-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-08 21:07:54,105 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 1650 frames, latest: 640x360
+2025-08-08 21:07:54,117 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 1650 (skipping 9/10 frames)
+2025-08-08 21:07:54,940 - openai-assistant - INFO - 👤 [USER FINAL] Ok.
+2025-08-08 21:07:56,854 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 1680 frames, latest: 640x360
+2025-08-08 21:07:56,865 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 1680 (skipping 9/10 frames)
+2025-08-08 21:07:57,372 - openai-assistant - INFO - 📹 [VIDEO ALWAYS] Added video frame to user message (frame age: 0.5s)
+2025-08-08 21:07:57,373 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 21:07:57,414 - openai-assistant - INFO - 💬 [CHAT USER] Ok.
+2025-08-08 21:07:57,453 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 21:07:57,975 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-08 21:07:59,594 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 1710 frames, latest: 640x360
+2025-08-08 21:07:59,603 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 1710 (skipping 9/10 frames)
+2025-08-08 21:08:00,103 - openai-assistant - INFO - 👤 [USER FINAL] Tell me please about
+2025-08-08 21:08:00,110 - openai-assistant - INFO - 📹 [VIDEO ALWAYS] Added video frame to user message (frame age: 0.5s)
+2025-08-08 21:08:00,113 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 21:08:00,164 - openai-assistant - INFO - 💬 [CHAT USER] Tell me please about
+2025-08-08 21:08:00,166 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 21:08:00,729 - openai-assistant - INFO - 👤 [USER FINAL] Last use about
+2025-08-08 21:08:00,975 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-08 21:08:01,773 - openai-assistant - INFO - 📹 [VIDEO ALWAYS] Added video frame to user message (frame age: 2.2s)
+2025-08-08 21:08:01,774 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 21:08:01,811 - openai-assistant - INFO - 💬 [CHAT USER] Last use about
+2025-08-08 21:08:01,813 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 21:08:02,353 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 1740 frames, latest: 640x360
+2025-08-08 21:08:02,365 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 1740 (skipping 9/10 frames)
+2025-08-08 21:08:02,521 - openai-assistant - INFO - 👤 [USER FINAL] Ciao GPT-5.
+2025-08-08 21:08:02,525 - openai-assistant - INFO - 📹 [VIDEO ALWAYS] Added video frame to user message (frame age: 0.2s)
+2025-08-08 21:08:02,527 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 21:08:02,575 - openai-assistant - INFO - 💬 [CHAT USER] Ciao GPT-5.
+2025-08-08 21:08:03,351 - openai-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754683683.3508067 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 30000, Used 27410, Requested 19606. Please try again in 34.032s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}") recoverable=True (recoverable: True)
+2025-08-08 21:08:04,335 - openai-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754683684.3356287 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 30000, Used 26909, Requested 19606. Please try again in 33.03s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}") recoverable=True (recoverable: True)
+2025-08-08 21:08:05,207 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 1770 frames, latest: 640x360
+2025-08-08 21:08:05,217 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 1770 (skipping 9/10 frames)
+2025-08-08 21:08:06,883 - openai-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754683686.8829496 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 30000, Used 25634, Requested 19606. Please try again in 30.48s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}") recoverable=True (recoverable: True)
+2025-08-08 21:08:08,298 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 1800 frames, latest: 320x180
+2025-08-08 21:08:08,303 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 1800 (skipping 9/10 frames)
+2025-08-08 21:08:09,501 - openai-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754683689.5009274 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 30000, Used 24331, Requested 19606. Please try again in 27.874s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}") recoverable=False (recoverable: False)
+2025-08-08 21:08:09,664 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-08 21:08:11,157 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 1830 frames, latest: 320x180
+2025-08-08 21:08:11,163 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 1830 (skipping 9/10 frames)
+2025-08-08 21:08:14,306 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 1860 frames, latest: 320x180
+2025-08-08 21:08:14,310 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 1860 (skipping 9/10 frames)
+2025-08-08 21:08:17,058 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 1890 frames, latest: 320x180
+2025-08-08 21:08:17,063 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 1890 (skipping 9/10 frames)
+2025-08-08 21:08:19,833 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 1920 frames, latest: 320x180
+2025-08-08 21:08:19,837 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 1920 (skipping 9/10 frames)
+2025-08-08 21:08:22,642 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 1950 frames, latest: 320x180
+2025-08-08 21:08:22,647 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 1950 (skipping 9/10 frames)
+2025-08-08 21:08:25,413 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 1980 frames, latest: 320x180
+2025-08-08 21:08:25,653 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 1980 (skipping 9/10 frames)
+2025-08-08 21:08:28,150 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 2010 frames, latest: 320x180
+2025-08-08 21:08:28,155 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 2010 (skipping 9/10 frames)
+2025-08-08 21:08:28,636 - openai-assistant - INFO - ❌ [SESSION CLOSED] Agent session ended
+2025-08-08 21:11:52,280 - openai-assistant - INFO - 🚀 Starting OpenAI Assistant LiveKit agent application with manual video processing
+2025-08-08 21:12:10,329 - openai-assistant - INFO - 🚀 Starting OpenAI Assistant entrypoint with video support
+2025-08-08 21:12:10,993 - openai-assistant - INFO - ✅ Connected to room: playground-n111-FJJ3 with full auto-subscribe
+2025-08-08 21:12:10,995 - openai-assistant - INFO - ✅ OpenAI Assistant agent initialized with weather, search, email tools and manual video processing
+2025-08-08 21:12:13,105 - openai-assistant - INFO - ✅ Session created: Whisper STT (EN) + GPT-4o-mini (higher limits) + TTS + Ultra-Compressed Video + 3 Tools
+2025-08-08 21:12:13,134 - openai-assistant - INFO - 🚀 [AGENT] Agent entered room, setting up video processing...
+2025-08-08 21:12:13,138 - openai-assistant - INFO - 👤 [PARTICIPANT] Checking identity-XsDZ for video tracks
+2025-08-08 21:12:13,141 - openai-assistant - INFO - 📹 [VIDEO] Found existing video track from identity-XsDZ
+2025-08-08 21:12:13,148 - openai-assistant - INFO - 📹 [VIDEO] Created new video stream
+2025-08-08 21:12:13,151 - openai-assistant - INFO - ✅ [VIDEO] Video stream processing started
+2025-08-08 21:12:13,161 - openai-assistant - INFO - 🎬 [VIDEO FRAMES] Starting frame processing loop with frame skipping
+2025-08-08 21:12:13,169 - openai-assistant - INFO - 🔄 [AGENT STATE] initializing -> listening
+2025-08-08 21:12:13,193 - openai-assistant - INFO - ✅ Session started successfully with manual video processing
+2025-08-08 21:12:13,201 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 21:12:13,792 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 21:12:16,498 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-08 21:12:18,701 - openai-assistant - INFO - 💬 [CHAT ASSISTANT] Hello! I can see your surroundings clearly.
+2025-08-08 21:12:18,704 - openai-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-08 21:12:18,707 - openai-assistant - INFO - ✅ Initial greeting generated
+2025-08-08 21:12:18,715 - openai-assistant - INFO - 🏠 [ROOM] 1 remote participants
+2025-08-08 21:12:18,716 - openai-assistant - INFO - 📹 [PARTICIPANT] identity-XsDZ has 0 video tracks
+2025-08-08 21:12:22,453 - openai-assistant - INFO - 👤 [USER FINAL] Kaim.
+2025-08-08 21:12:24,355 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 120 frames, latest: 320x180
+2025-08-08 21:12:24,437 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 120 (skipping 9/10 frames)
+2025-08-08 21:12:25,320 - openai-assistant - INFO - 📹 [VIDEO ALWAYS] Added video frame to user message (frame age: 0.9s)
+2025-08-08 21:12:25,322 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 21:12:25,338 - openai-assistant - INFO - 💬 [CHAT USER] Kaim.
+2025-08-08 21:12:25,340 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 21:12:26,094 - openai-assistant - INFO - 👤 [USER FINAL] Tell me please about weather in Cork.
+2025-08-08 21:12:26,099 - openai-assistant - INFO - 📹 [VIDEO ALWAYS] Added video frame to user message (frame age: 1.7s)
+2025-08-08 21:12:26,102 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 21:12:26,121 - openai-assistant - INFO - 💬 [CHAT USER] Tell me please about weather in Cork.
+2025-08-08 21:12:27,901 - openai-assistant - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-08 21:12:27,902 - openai-assistant - INFO - 🛠️ [TOOL RESULT 1] unknown: no result...
+2025-08-08 21:12:31,002 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-08 21:12:34,766 - openai-assistant - INFO - 💬 [CHAT ASSISTANT] The weather in Cork is currently 15 degrees Celsius and partly cloudy.
+2025-08-08 21:12:34,769 - openai-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-08 21:12:35,561 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 240 frames, latest: 320x180
+2025-08-08 21:12:35,566 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 240 (skipping 9/10 frames)
+2025-08-08 21:12:38,575 - openai-assistant - INFO - 👤 [USER FINAL] Ok
+2025-08-08 21:12:43,576 - openai-assistant - INFO - 📹 [VIDEO ALWAYS] Added video frame to user message (frame age: 8.0s)
+2025-08-08 21:12:43,579 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 21:12:43,610 - openai-assistant - INFO - 💬 [CHAT USER] Ok
+2025-08-08 21:12:43,613 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 21:12:44,472 - openai-assistant - INFO - 👤 [USER FINAL] Tell me please last news about ChatGPT-5.
+2025-08-08 21:12:44,481 - openai-assistant - INFO - 📹 [VIDEO ALWAYS] Added video frame to user message (frame age: 8.9s)
+2025-08-08 21:12:44,484 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 21:12:44,616 - openai-assistant - INFO - 💬 [CHAT USER] Tell me please last news about ChatGPT-5.
+2025-08-08 21:12:46,707 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 360 frames, latest: 320x180
+2025-08-08 21:12:46,712 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 360 (skipping 9/10 frames)
+2025-08-08 21:12:48,470 - openai-assistant - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-08 21:12:48,471 - openai-assistant - INFO - 🛠️ [TOOL RESULT 1] unknown: no result...
+2025-08-08 21:12:53,169 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-08 21:12:57,819 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 480 frames, latest: 320x180
+2025-08-08 21:12:57,822 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 480 (skipping 9/10 frames)
+2025-08-08 21:12:58,660 - openai-assistant - INFO - 💬 [CHAT ASSISTANT] The latest news on ChatGPT-5 indicates it has been released, enhancing capabilities to a "PhD level."
+2025-08-08 21:12:58,663 - openai-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-08 21:13:03,052 - openai-assistant - INFO - 👤 [USER FINAL] Ok.
+2025-08-08 21:13:03,056 - openai-assistant - INFO - 📹 [VIDEO ALWAYS] Added video frame to user message (frame age: 5.2s)
+2025-08-08 21:13:03,059 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 21:13:03,084 - openai-assistant - INFO - 💬 [CHAT USER] Ok.
+2025-08-08 21:13:03,085 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 21:13:03,572 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-08 21:13:06,709 - openai-assistant - INFO - 👤 [USER FINAL] How many fingers I show you?
+2025-08-08 21:13:06,713 - openai-assistant - INFO - 📹 [VIDEO ALWAYS] Added video frame to user message (frame age: 8.9s)
+2025-08-08 21:13:06,720 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 21:13:06,747 - openai-assistant - INFO - 💬 [CHAT USER] How many fingers I show you?
+2025-08-08 21:13:06,749 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 21:13:08,812 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 600 frames, latest: 640x360
+2025-08-08 21:13:08,822 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 600 (skipping 9/10 frames)
+2025-08-08 21:13:10,281 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-08 21:13:12,268 - openai-assistant - INFO - 💬 [CHAT ASSISTANT] I can't see your fingers in the video.
+2025-08-08 21:13:12,269 - openai-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-08 21:13:19,345 - openai-assistant - INFO - 👤 [USER FINAL] Hallo
+2025-08-08 21:13:19,347 - openai-assistant - INFO - 📹 [VIDEO ALWAYS] Added video frame to user message (frame age: 10.5s)
+2025-08-08 21:13:19,349 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 21:13:19,379 - openai-assistant - INFO - 💬 [CHAT USER] Hallo
+2025-08-08 21:13:19,380 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 21:13:20,565 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 720 frames, latest: 320x180
+2025-08-08 21:13:20,570 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 720 (skipping 9/10 frames)
+2025-08-08 21:13:22,371 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-08 21:13:23,670 - openai-assistant - INFO - 👤 [USER FINAL] Ok.
+2025-08-08 21:13:23,676 - openai-assistant - INFO - 📹 [VIDEO ALWAYS] Added video frame to user message (frame age: 3.1s)
+2025-08-08 21:13:23,677 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 21:13:23,702 - openai-assistant - INFO - 💬 [CHAT USER] Ok.
+2025-08-08 21:13:23,705 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 21:13:24,175 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-08 21:13:26,520 - openai-assistant - INFO - 👤 [USER FINAL] Right now, how many fingers I show you?
+2025-08-08 21:13:26,525 - openai-assistant - INFO - 📹 [VIDEO ALWAYS] Added video frame to user message (frame age: 6.0s)
+2025-08-08 21:13:26,527 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 21:13:26,553 - openai-assistant - INFO - 💬 [CHAT USER] Right now, how many fingers I show you?
+2025-08-08 21:13:26,556 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 21:13:30,313 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-08 21:13:31,821 - openai-assistant - INFO - 💬 [CHAT ASSISTANT] You are showing two fingers.
+2025-08-08 21:13:31,824 - openai-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-08 21:13:31,928 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 840 frames, latest: 320x180
+2025-08-08 21:13:31,931 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 840 (skipping 9/10 frames)
+2025-08-08 21:13:35,697 - openai-assistant - INFO - 👤 [USER FINAL] hello
+2025-08-08 21:13:35,700 - openai-assistant - INFO - 📹 [VIDEO ALWAYS] Added video frame to user message (frame age: 3.8s)
+2025-08-08 21:13:35,702 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 21:13:35,730 - openai-assistant - INFO - 💬 [CHAT USER] hello
+2025-08-08 21:13:35,731 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 21:13:39,690 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-08 21:13:41,222 - openai-assistant - INFO - 💬 [CHAT ASSISTANT] Hello! I see your hand raised.
+2025-08-08 21:13:41,224 - openai-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-08 21:13:43,796 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 960 frames, latest: 320x180
+2025-08-08 21:13:43,799 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 960 (skipping 9/10 frames)
+2025-08-08 21:13:47,782 - openai-assistant - INFO - 👤 [USER FINAL] And how many fingers I show you?
+2025-08-08 21:13:47,788 - openai-assistant - INFO - 📹 [VIDEO ALWAYS] Added video frame to user message (frame age: 4.0s)
+2025-08-08 21:13:47,789 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 21:13:47,817 - openai-assistant - INFO - 💬 [CHAT USER] And how many fingers I show you?
+2025-08-08 21:13:47,819 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 21:13:51,398 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-08 21:13:52,954 - openai-assistant - INFO - 💬 [CHAT ASSISTANT] You are showing five fingers.
+2025-08-08 21:13:52,956 - openai-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-08 21:13:55,473 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 1080 frames, latest: 320x180
+2025-08-08 21:13:55,477 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 1080 (skipping 9/10 frames)
+2025-08-08 21:13:56,817 - openai-assistant - INFO - 👤 [USER FINAL] Ok, very good.
+2025-08-08 21:13:56,823 - openai-assistant - INFO - 📹 [VIDEO ALWAYS] Added video frame to user message (frame age: 1.3s)
+2025-08-08 21:13:56,825 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 21:13:56,863 - openai-assistant - INFO - 💬 [CHAT USER] Ok, very good.
+2025-08-08 21:13:56,865 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 21:13:57,066 - openai-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754684037.0660279 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 200000, Used 200000, Requested 9618. Please try again in 2.885s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}") recoverable=True (recoverable: True)
+2025-08-08 21:13:57,371 - openai-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754684037.3715222 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 200000, Used 200000, Requested 9618. Please try again in 2.885s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}") recoverable=True (recoverable: True)
+2025-08-08 21:13:59,597 - openai-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754684039.5966043 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 200000, Used 200000, Requested 9618. Please try again in 2.885s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}") recoverable=True (recoverable: True)
+2025-08-08 21:13:59,724 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-08 21:14:02,003 - openai-assistant - INFO - 👤 [USER FINAL] What exactly I show you now?
+2025-08-08 21:14:02,007 - openai-assistant - INFO - 📹 [VIDEO ALWAYS] Added video frame to user message (frame age: 6.5s)
+2025-08-08 21:14:02,009 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 21:14:02,053 - openai-assistant - INFO - 💬 [CHAT USER] What exactly I show you now?
+2025-08-08 21:14:02,055 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 21:14:02,283 - openai-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754684042.282683 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 200000, Used 191770, Requested 10391. Please try again in 648ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}") recoverable=True (recoverable: True)
+2025-08-08 21:14:02,662 - openai-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754684042.661865 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 200000, Used 200000, Requested 10391. Please try again in 3.117s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}") recoverable=True (recoverable: True)
+2025-08-08 21:14:04,908 - openai-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754684044.9082954 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-E3JNGfXsHO1j9HshTtlHDkZI on tokens per min (TPM): Limit 200000, Used 200000, Requested 10391. Please try again in 3.117s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}") recoverable=True (recoverable: True)
+2025-08-08 21:14:06,782 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 1200 frames, latest: 320x180
+2025-08-08 21:14:06,786 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 1200 (skipping 9/10 frames)
+2025-08-08 21:14:11,410 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-08 21:14:13,423 - openai-assistant - INFO - 💬 [CHAT ASSISTANT] You are showing your hand with five fingers raised.
+2025-08-08 21:14:13,425 - openai-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-08 21:14:17,954 - openai-assistant - INFO - 📸 [VIDEO FRAME] Processed 1320 frames, latest: 640x360
+2025-08-08 21:14:17,962 - openai-assistant - INFO - ✅ [VIDEO FRAME] Successfully encoded frame 1320 (skipping 9/10 frames)
+2025-08-08 21:14:20,275 - openai-assistant - INFO - ❌ [SESSION CLOSED] Agent session ended
+2025-08-08 21:28:37,448 - hybrid-assistant - INFO - 🚀 Starting Hybrid OpenAI+Gemini Assistant LiveKit agent application
+2025-08-08 21:29:25,557 - hybrid-assistant - INFO - 🚀 Starting Hybrid OpenAI+Gemini Assistant entrypoint
+2025-08-08 21:29:26,082 - hybrid-assistant - INFO - ✅ Connected to room: playground-QZAh-9krM with full auto-subscribe
+2025-08-08 21:29:26,083 - hybrid-assistant - INFO - ✅ Hybrid OpenAI+Gemini Assistant initialized with weather, search, email tools and Gemini video analysis
+2025-08-08 21:29:28,092 - hybrid-assistant - INFO - ✅ Session created: Whisper STT (EN) + GPT-4o-mini (text+tools) + Gemini (video analysis) + TTS + 3 Tools
+2025-08-08 21:29:28,112 - hybrid-assistant - INFO - 🚀 [HYBRID AGENT] Agent entered room, setting up hybrid video processing...
+2025-08-08 21:29:29,919 - hybrid-assistant - INFO - 👤 [PARTICIPANT] Checking identity-CMgW for video tracks
+2025-08-08 21:29:29,921 - hybrid-assistant - INFO - 📹 [HYBRID VIDEO] Found existing video track from identity-CMgW
+2025-08-08 21:29:29,925 - hybrid-assistant - INFO - 📹 [HYBRID VIDEO] Created new video stream
+2025-08-08 21:29:29,928 - hybrid-assistant - INFO - ✅ [HYBRID VIDEO] Video stream processing started
+2025-08-08 21:29:29,937 - hybrid-assistant - INFO - 🎬 [HYBRID VIDEO] Starting Gemini video analysis loop
+2025-08-08 21:29:29,964 - hybrid-assistant - INFO - 🔄 [AGENT STATE] initializing -> listening
+2025-08-08 21:29:29,977 - hybrid-assistant - INFO - ✅ Session started successfully with hybrid OpenAI+Gemini processing
+2025-08-08 21:29:29,982 - hybrid-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 21:29:30,616 - hybrid-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 21:29:33,566 - hybrid-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-08 21:29:35,538 - hybrid-assistant - INFO - 📸 [HYBRID VIDEO] Processing frame 60 through Gemini: 640x360
+2025-08-08 21:29:35,594 - hybrid-assistant - INFO - ✅ [HYBRID VIDEO] Sent frame 60 to Gemini for analysis
+2025-08-08 21:29:35,596 - hybrid-assistant - INFO - 🧠 [GEMINI] Sending frame for analysis...
+2025-08-08 21:29:35,596 - hybrid-assistant - ERROR - ❌ [GEMINI] Error in Gemini video analysis: 'LLM' object has no attribute 'generate'
+2025-08-08 21:29:36,347 - hybrid-assistant - INFO - 💬 [CHAT ASSISTANT] Hello! I'm here to assist you with information and tasks.
+2025-08-08 21:29:36,349 - hybrid-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-08 21:29:36,354 - hybrid-assistant - INFO - ✅ Initial greeting generated
+2025-08-08 21:29:36,360 - hybrid-assistant - INFO - 🏠 [ROOM] 1 remote participants
+2025-08-08 21:29:36,363 - hybrid-assistant - INFO - 📹 [PARTICIPANT] identity-CMgW has 0 video tracks
+2025-08-08 21:29:40,831 - hybrid-assistant - INFO - 👤 [USER FINAL] How
+2025-08-08 21:29:41,085 - hybrid-assistant - INFO - 📸 [HYBRID VIDEO] Processing frame 120 through Gemini: 640x360
+2025-08-08 21:29:41,099 - hybrid-assistant - INFO - ✅ [HYBRID VIDEO] Sent frame 120 to Gemini for analysis
+2025-08-08 21:29:41,101 - hybrid-assistant - INFO - 🧠 [GEMINI] Sending frame for analysis...
+2025-08-08 21:29:41,103 - hybrid-assistant - ERROR - ❌ [GEMINI] Error in Gemini video analysis: 'LLM' object has no attribute 'generate'
+2025-08-08 21:29:42,104 - hybrid-assistant - INFO - 📹 [HYBRID] No video description available from Gemini
+2025-08-08 21:29:42,105 - hybrid-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 21:29:42,123 - hybrid-assistant - INFO - 💬 [CHAT USER] How
+2025-08-08 21:29:42,125 - hybrid-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 21:29:42,522 - hybrid-assistant - INFO - 👤 [USER FINAL] Can you see me?
+2025-08-08 21:29:42,525 - hybrid-assistant - INFO - 📹 [HYBRID] No video description available from Gemini
+2025-08-08 21:29:42,526 - hybrid-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 21:29:42,539 - hybrid-assistant - INFO - 💬 [CHAT USER] Can you see me?
+2025-08-08 21:29:45,433 - hybrid-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-08 21:29:46,644 - hybrid-assistant - INFO - 📸 [HYBRID VIDEO] Processing frame 180 through Gemini: 640x360
+2025-08-08 21:29:46,655 - hybrid-assistant - INFO - ✅ [HYBRID VIDEO] Sent frame 180 to Gemini for analysis
+2025-08-08 21:29:46,656 - hybrid-assistant - INFO - 🧠 [GEMINI] Sending frame for analysis...
+2025-08-08 21:29:46,658 - hybrid-assistant - ERROR - ❌ [GEMINI] Error in Gemini video analysis: 'LLM' object has no attribute 'generate'
+2025-08-08 21:29:50,173 - hybrid-assistant - INFO - 💬 [CHAT ASSISTANT] No, I cannot see you. I can only provide information and assistance through text.
+2025-08-08 21:29:50,174 - hybrid-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-08 21:29:52,157 - hybrid-assistant - INFO - 📸 [HYBRID VIDEO] Processing frame 240 through Gemini: 640x360
+2025-08-08 21:29:52,165 - hybrid-assistant - INFO - ✅ [HYBRID VIDEO] Sent frame 240 to Gemini for analysis
+2025-08-08 21:29:52,166 - hybrid-assistant - INFO - 🧠 [GEMINI] Sending frame for analysis...
+2025-08-08 21:29:52,167 - hybrid-assistant - ERROR - ❌ [GEMINI] Error in Gemini video analysis: 'LLM' object has no attribute 'generate'
+2025-08-08 21:29:58,332 - hybrid-assistant - INFO - 📸 [HYBRID VIDEO] Processing frame 300 through Gemini: 320x180
+2025-08-08 21:29:58,338 - hybrid-assistant - INFO - ✅ [HYBRID VIDEO] Sent frame 300 to Gemini for analysis
+2025-08-08 21:29:58,340 - hybrid-assistant - INFO - 🧠 [GEMINI] Sending frame for analysis...
+2025-08-08 21:29:58,341 - hybrid-assistant - ERROR - ❌ [GEMINI] Error in Gemini video analysis: 'LLM' object has no attribute 'generate'
+2025-08-08 21:29:58,798 - hybrid-assistant - INFO - ❌ [SESSION CLOSED] Agent session ended
+2025-08-08 21:32:25,226 - hybrid-assistant - INFO - 🚀 Starting Hybrid OpenAI+Gemini Assistant LiveKit agent application
+2025-08-08 21:32:41,545 - hybrid-assistant - INFO - 🚀 Starting Hybrid OpenAI+Gemini Assistant entrypoint
+2025-08-08 21:32:42,222 - hybrid-assistant - INFO - ✅ Connected to room: playground-b8eT-LLnX with full auto-subscribe
+2025-08-08 21:32:42,224 - hybrid-assistant - INFO - ✅ Hybrid OpenAI+Gemini Assistant initialized with weather, search, email tools and Gemini video analysis
+2025-08-08 21:32:43,980 - hybrid-assistant - INFO - ✅ Session created: Whisper STT (EN) + GPT-4o-mini (text+tools) + Gemini (video analysis) + TTS + 3 Tools
+2025-08-08 21:32:43,999 - hybrid-assistant - INFO - 🚀 [HYBRID AGENT] Agent entered room, setting up hybrid video processing...
+2025-08-08 21:32:45,655 - hybrid-assistant - INFO - 👤 [PARTICIPANT] Checking identity-fibC for video tracks
+2025-08-08 21:32:45,658 - hybrid-assistant - INFO - 📹 [HYBRID VIDEO] Found existing video track from identity-fibC
+2025-08-08 21:32:45,660 - hybrid-assistant - INFO - 📹 [HYBRID VIDEO] Created new video stream
+2025-08-08 21:32:45,661 - hybrid-assistant - INFO - ✅ [HYBRID VIDEO] Video stream processing started
+2025-08-08 21:32:45,664 - hybrid-assistant - INFO - 🎬 [HYBRID VIDEO] Starting Gemini video analysis loop
+2025-08-08 21:32:45,685 - hybrid-assistant - INFO - 🔄 [AGENT STATE] initializing -> listening
+2025-08-08 21:32:45,691 - hybrid-assistant - INFO - ✅ Session started successfully with hybrid OpenAI+Gemini processing
+2025-08-08 21:32:45,694 - hybrid-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 21:32:46,143 - hybrid-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 21:32:49,194 - hybrid-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-08 21:32:51,086 - hybrid-assistant - INFO - 📸 [HYBRID VIDEO] Processing frame 60 through Gemini: 320x180
+2025-08-08 21:32:51,133 - hybrid-assistant - INFO - ✅ [HYBRID VIDEO] Sent frame 60 to Gemini for analysis
+2025-08-08 21:32:51,135 - hybrid-assistant - ERROR - ❌ [GEMINI] Error in Gemini video analysis: 'ChatContext' object has no attribute 'append'
+2025-08-08 21:32:52,147 - hybrid-assistant - INFO - 💬 [CHAT ASSISTANT] Hello! I'm here to assist you with information and tasks.
+2025-08-08 21:32:52,149 - hybrid-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-08 21:32:52,153 - hybrid-assistant - INFO - ✅ Initial greeting generated
+2025-08-08 21:32:52,160 - hybrid-assistant - INFO - 🏠 [ROOM] 1 remote participants
+2025-08-08 21:32:52,161 - hybrid-assistant - INFO - 📹 [PARTICIPANT] identity-fibC has 0 video tracks
+2025-08-08 21:32:55,918 - hybrid-assistant - INFO - 👤 [USER FINAL] Can you see me?
+2025-08-08 21:32:55,921 - hybrid-assistant - INFO - 📹 [HYBRID] No video description available from Gemini
+2025-08-08 21:32:55,923 - hybrid-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 21:32:55,942 - hybrid-assistant - INFO - 💬 [CHAT USER] Can you see me?
+2025-08-08 21:32:55,945 - hybrid-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 21:32:56,918 - hybrid-assistant - INFO - 📸 [HYBRID VIDEO] Processing frame 120 through Gemini: 640x360
+2025-08-08 21:32:56,926 - hybrid-assistant - INFO - ✅ [HYBRID VIDEO] Sent frame 120 to Gemini for analysis
+2025-08-08 21:32:56,927 - hybrid-assistant - ERROR - ❌ [GEMINI] Error in Gemini video analysis: 'ChatContext' object has no attribute 'append'
+2025-08-08 21:32:58,794 - hybrid-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-08 21:33:01,767 - hybrid-assistant - INFO - 💬 [CHAT ASSISTANT] I can't see you, but I can analyze live video if provided.
+2025-08-08 21:33:01,768 - hybrid-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-08 21:33:02,325 - hybrid-assistant - INFO - 📸 [HYBRID VIDEO] Processing frame 180 through Gemini: 640x360
+2025-08-08 21:33:02,334 - hybrid-assistant - INFO - ✅ [HYBRID VIDEO] Sent frame 180 to Gemini for analysis
+2025-08-08 21:33:02,335 - hybrid-assistant - ERROR - ❌ [GEMINI] Error in Gemini video analysis: 'ChatContext' object has no attribute 'append'
+2025-08-08 21:33:07,332 - hybrid-assistant - INFO - 👤 [USER FINAL] Yes, I provided live video.
+2025-08-08 21:33:07,590 - hybrid-assistant - INFO - 📹 [HYBRID] No video description available from Gemini
+2025-08-08 21:33:07,593 - hybrid-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 21:33:07,623 - hybrid-assistant - INFO - 💬 [CHAT USER] Yes, I provided live video.
+2025-08-08 21:33:07,634 - hybrid-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 21:33:08,280 - hybrid-assistant - INFO - 👤 [USER FINAL] Ok
+2025-08-08 21:33:08,283 - hybrid-assistant - INFO - 📹 [HYBRID] No video description available from Gemini
+2025-08-08 21:33:08,285 - hybrid-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 21:33:08,304 - hybrid-assistant - INFO - 💬 [CHAT USER] Ok
+2025-08-08 21:33:08,526 - hybrid-assistant - INFO - 📸 [HYBRID VIDEO] Processing frame 240 through Gemini: 320x180
+2025-08-08 21:33:08,532 - hybrid-assistant - INFO - ✅ [HYBRID VIDEO] Sent frame 240 to Gemini for analysis
+2025-08-08 21:33:08,533 - hybrid-assistant - ERROR - ❌ [GEMINI] Error in Gemini video analysis: 'ChatContext' object has no attribute 'append'
+2025-08-08 21:33:10,778 - hybrid-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-08 21:33:13,818 - hybrid-assistant - INFO - 📸 [HYBRID VIDEO] Processing frame 300 through Gemini: 640x360
+2025-08-08 21:33:13,836 - hybrid-assistant - INFO - ✅ [HYBRID VIDEO] Sent frame 300 to Gemini for analysis
+2025-08-08 21:33:13,839 - hybrid-assistant - ERROR - ❌ [GEMINI] Error in Gemini video analysis: 'ChatContext' object has no attribute 'append'
+2025-08-08 21:33:15,365 - hybrid-assistant - INFO - 💬 [CHAT ASSISTANT] I currently don't have access to the live video feed. Please provide the video for analysis.
+2025-08-08 21:33:15,366 - hybrid-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-08 21:33:19,336 - hybrid-assistant - INFO - 📸 [HYBRID VIDEO] Processing frame 360 through Gemini: 640x360
+2025-08-08 21:33:19,344 - hybrid-assistant - INFO - ✅ [HYBRID VIDEO] Sent frame 360 to Gemini for analysis
+2025-08-08 21:33:19,347 - hybrid-assistant - ERROR - ❌ [GEMINI] Error in Gemini video analysis: 'ChatContext' object has no attribute 'append'
+2025-08-08 21:33:21,195 - hybrid-assistant - INFO - ❌ [SESSION CLOSED] Agent session ended
+2025-08-08 21:43:13,400 - hybrid-assistant - INFO - 🚀 Starting Hybrid OpenAI+Gemini Assistant LiveKit agent application
+2025-08-08 21:48:05,816 - hybrid-assistant - INFO - 🚀 Starting Hybrid OpenAI+Gemini Assistant entrypoint
+2025-08-08 21:48:06,477 - hybrid-assistant - INFO - ✅ Connected to room: playground-LGKA-rAlx with full auto-subscribe
+2025-08-08 21:48:06,479 - hybrid-assistant - INFO - ✅ Hybrid OpenAI+Gemini Assistant initialized
+2025-08-08 21:48:08,309 - hybrid-assistant - INFO - ✅ Session created: Whisper STT (EN) + GPT-4o-mini (text+tools) + Gemini (video analysis) + TTS + 3 Tools
+2025-08-08 21:48:08,323 - hybrid-assistant - INFO - 🚀 [HYBRID AGENT] Agent entered room, setting up hybrid video processing...
+2025-08-08 21:48:09,836 - hybrid-assistant - INFO - ✅ [GEMINI] LLM created successfully
+2025-08-08 21:48:09,837 - hybrid-assistant - INFO - 👤 [PARTICIPANT] Checking identity-WpHn for video tracks
+2025-08-08 21:48:09,838 - hybrid-assistant - INFO - 📹 [HYBRID VIDEO] Found existing video track from identity-WpHn
+2025-08-08 21:48:09,839 - hybrid-assistant - INFO - 📹 [HYBRID VIDEO] Created new video stream
+2025-08-08 21:48:09,840 - hybrid-assistant - INFO - ✅ [HYBRID VIDEO] Video stream processing started
+2025-08-08 21:48:09,844 - hybrid-assistant - INFO - 🎬 [HYBRID VIDEO] Starting Gemini video analysis loop
+2025-08-08 21:48:09,859 - hybrid-assistant - INFO - 🔄 [AGENT STATE] initializing -> listening
+2025-08-08 21:48:09,864 - hybrid-assistant - INFO - ✅ Session started successfully with hybrid OpenAI+Gemini processing
+2025-08-08 21:48:09,865 - hybrid-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 21:48:10,282 - hybrid-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 21:48:12,739 - hybrid-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-08 21:48:15,437 - hybrid-assistant - INFO - 📸 [HYBRID VIDEO] Processing frame 60 through Gemini: 320x180
+2025-08-08 21:48:15,483 - hybrid-assistant - INFO - ✅ [HYBRID VIDEO] Sent frame 60 to Gemini for analysis
+2025-08-08 21:48:15,484 - hybrid-assistant - WARNING - ⚠️ [GEMINI] Video analysis temporarily disabled due to ChatImage import issue
+2025-08-08 21:48:16,319 - hybrid-assistant - INFO - 💬 [CHAT ASSISTANT] Hello! I'm your hybrid voice assistant with video vision capabilities.
+2025-08-08 21:48:16,321 - hybrid-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-08 21:48:16,323 - hybrid-assistant - INFO - ✅ Initial greeting generated
+2025-08-08 21:48:16,335 - hybrid-assistant - INFO - 🏠 [ROOM] 1 remote participants
+2025-08-08 21:48:16,338 - hybrid-assistant - INFO - 📹 [PARTICIPANT] identity-WpHn has 0 video tracks
+2025-08-08 21:48:20,920 - hybrid-assistant - INFO - 📸 [HYBRID VIDEO] Processing frame 120 through Gemini: 640x360
+2025-08-08 21:48:20,934 - hybrid-assistant - INFO - ✅ [HYBRID VIDEO] Sent frame 120 to Gemini for analysis
+2025-08-08 21:48:20,936 - hybrid-assistant - WARNING - ⚠️ [GEMINI] Video analysis temporarily disabled due to ChatImage import issue
+2025-08-08 21:48:21,867 - hybrid-assistant - INFO - 👤 [USER FINAL] Tell me please
+2025-08-08 21:48:22,923 - hybrid-assistant - INFO - 📹 [HYBRID] Added Gemini video description to OpenAI context: 'Video analysis temporarily unavailable' (age: 2.0s)
+2025-08-08 21:48:22,925 - hybrid-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 21:48:22,943 - hybrid-assistant - INFO - 💬 [CHAT USER] Tell me please
+[Video context from camera: Video analysis temporarily unavailable]
+2025-08-08 21:48:22,945 - hybrid-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 21:48:23,378 - hybrid-assistant - INFO - 👤 [USER FINAL] about in Cork
+2025-08-08 21:48:23,381 - hybrid-assistant - INFO - 📹 [HYBRID] Added Gemini video description to OpenAI context: 'Video analysis temporarily unavailable' (age: 2.4s)
+2025-08-08 21:48:23,382 - hybrid-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 21:48:23,399 - hybrid-assistant - INFO - 💬 [CHAT USER] about in Cork
+[Video context from camera: Video analysis temporarily unavailable]
+2025-08-08 21:48:26,193 - hybrid-assistant - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-08 21:48:26,999 - hybrid-assistant - INFO - 📸 [HYBRID VIDEO] Processing frame 180 through Gemini: 640x360
+2025-08-08 21:48:27,010 - hybrid-assistant - INFO - ✅ [HYBRID VIDEO] Sent frame 180 to Gemini for analysis
+2025-08-08 21:48:27,011 - hybrid-assistant - WARNING - ⚠️ [GEMINI] Video analysis temporarily disabled due to ChatImage import issue
+2025-08-08 21:48:29,275 - hybrid-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-08 21:48:32,531 - hybrid-assistant - INFO - 📸 [HYBRID VIDEO] Processing frame 240 through Gemini: 640x360
+2025-08-08 21:48:32,549 - hybrid-assistant - INFO - ✅ [HYBRID VIDEO] Sent frame 240 to Gemini for analysis
+2025-08-08 21:48:32,551 - hybrid-assistant - WARNING - ⚠️ [GEMINI] Video analysis temporarily disabled due to ChatImage import issue
+2025-08-08 21:48:35,665 - hybrid-assistant - INFO - 💬 [CHAT ASSISTANT] Cork has news about a missing 20-year-old man and a major road closure due to a crash. Check local news for updates.
+2025-08-08 21:48:35,667 - hybrid-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-08 21:48:38,046 - hybrid-assistant - INFO - 📸 [HYBRID VIDEO] Processing frame 300 through Gemini: 640x360
+2025-08-08 21:48:38,054 - hybrid-assistant - INFO - ✅ [HYBRID VIDEO] Sent frame 300 to Gemini for analysis
+2025-08-08 21:48:38,055 - hybrid-assistant - WARNING - ⚠️ [GEMINI] Video analysis temporarily disabled due to ChatImage import issue
+2025-08-08 21:48:43,773 - hybrid-assistant - INFO - 📸 [HYBRID VIDEO] Processing frame 360 through Gemini: 640x360
+2025-08-08 21:48:43,780 - hybrid-assistant - INFO - ✅ [HYBRID VIDEO] Sent frame 360 to Gemini for analysis
+2025-08-08 21:48:43,781 - hybrid-assistant - WARNING - ⚠️ [GEMINI] Video analysis temporarily disabled due to ChatImage import issue
+2025-08-08 21:48:49,296 - hybrid-assistant - INFO - 📸 [HYBRID VIDEO] Processing frame 420 through Gemini: 640x360
+2025-08-08 21:48:49,309 - hybrid-assistant - INFO - ✅ [HYBRID VIDEO] Sent frame 420 to Gemini for analysis
+2025-08-08 21:48:49,310 - hybrid-assistant - WARNING - ⚠️ [GEMINI] Video analysis temporarily disabled due to ChatImage import issue
+2025-08-08 21:48:54,263 - hybrid-assistant - INFO - 👤 [USER FINAL] Can you see me?
+2025-08-08 21:48:54,266 - hybrid-assistant - INFO - 📹 [HYBRID] Added Gemini video description to OpenAI context: 'Video analysis temporarily unavailable' (age: 5.0s)
+2025-08-08 21:48:54,268 - hybrid-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 21:48:54,283 - hybrid-assistant - INFO - 💬 [CHAT USER] Can you see me?
+[Video context from camera: Video analysis temporarily unavailable]
+2025-08-08 21:48:54,284 - hybrid-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 21:48:54,820 - hybrid-assistant - INFO - 📸 [HYBRID VIDEO] Processing frame 480 through Gemini: 640x360
+2025-08-08 21:48:54,828 - hybrid-assistant - INFO - ✅ [HYBRID VIDEO] Sent frame 480 to Gemini for analysis
+2025-08-08 21:48:54,830 - hybrid-assistant - WARNING - ⚠️ [GEMINI] Video analysis temporarily disabled due to ChatImage import issue
+2025-08-08 21:48:57,365 - hybrid-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-08 21:49:00,337 - hybrid-assistant - INFO - 📸 [HYBRID VIDEO] Processing frame 540 through Gemini: 640x360
+2025-08-08 21:49:00,345 - hybrid-assistant - INFO - ✅ [HYBRID VIDEO] Sent frame 540 to Gemini for analysis
+2025-08-08 21:49:00,346 - hybrid-assistant - WARNING - ⚠️ [GEMINI] Video analysis temporarily disabled due to ChatImage import issue
+2025-08-08 21:49:01,154 - hybrid-assistant - INFO - 💬 [CHAT ASSISTANT] Video analysis is temporarily unavailable, so I can't see you right now.
+2025-08-08 21:49:01,313 - hybrid-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-08 21:52:26,383 - hybrid-assistant - INFO - 🚀 Starting Hybrid OpenAI+Gemini Assistant LiveKit agent application
+2025-08-08 21:52:38,135 - hybrid-assistant - INFO - 🚀 Starting Hybrid OpenAI+Gemini Assistant entrypoint
+2025-08-08 21:52:39,037 - hybrid-assistant - INFO - ✅ Connected to room: playground-8LW3-nniz with full auto-subscribe
+2025-08-08 21:52:39,038 - hybrid-assistant - INFO - ✅ Hybrid OpenAI+Gemini Assistant initialized
+2025-08-08 21:52:40,841 - hybrid-assistant - INFO - ✅ Session created: Whisper STT (EN) + GPT-4o-mini (text+tools) + Gemini (video analysis) + TTS + 3 Tools
+2025-08-08 21:52:40,853 - hybrid-assistant - INFO - 🚀 [HYBRID AGENT] Agent entered room, setting up hybrid video processing...
+2025-08-08 21:52:42,403 - hybrid-assistant - INFO - ✅ [GEMINI] LLM created successfully
+2025-08-08 21:52:42,404 - hybrid-assistant - INFO - 👤 [PARTICIPANT] Checking identity-OYVz for video tracks
+2025-08-08 21:52:42,405 - hybrid-assistant - INFO - 📹 [HYBRID VIDEO] Found existing video track from identity-OYVz
+2025-08-08 21:52:42,408 - hybrid-assistant - INFO - 📹 [HYBRID VIDEO] Created new video stream
+2025-08-08 21:52:42,409 - hybrid-assistant - INFO - ✅ [HYBRID VIDEO] Video stream processing started
+2025-08-08 21:52:42,413 - hybrid-assistant - INFO - 🎬 [HYBRID VIDEO] Starting Gemini video analysis loop
+2025-08-08 21:52:42,430 - hybrid-assistant - INFO - 🔄 [AGENT STATE] initializing -> listening
+2025-08-08 21:52:42,435 - hybrid-assistant - INFO - ✅ Session started successfully with hybrid OpenAI+Gemini processing
+2025-08-08 21:52:42,436 - hybrid-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 21:52:42,879 - hybrid-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 21:52:46,569 - hybrid-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-08 21:52:48,260 - hybrid-assistant - INFO - 📸 [HYBRID VIDEO] Processing frame 60 through Gemini: 320x180
+2025-08-08 21:52:48,312 - hybrid-assistant - INFO - ✅ [HYBRID VIDEO] Sent frame 60 to Gemini for analysis
+2025-08-08 21:52:48,314 - hybrid-assistant - ERROR - ❌ [GEMINI] Error in Gemini video analysis: 'ChatContext' object has no attribute 'append'
+2025-08-08 21:52:48,315 - hybrid-assistant - ERROR - Full traceback:
+Traceback (most recent call last):
+  File "C:\projects\aiassist\agentopenai.py", line 243, in _analyze_frame_with_gemini
+    video_context.append(
+    ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ChatContext' object has no attribute 'append'
+2025-08-08 21:52:49,213 - hybrid-assistant - INFO - 💬 [CHAT ASSISTANT] Hello! I'm here to assist you with information and tasks.
+2025-08-08 21:52:49,215 - hybrid-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-08 21:52:49,218 - hybrid-assistant - INFO - ✅ Initial greeting generated
+2025-08-08 21:52:49,227 - hybrid-assistant - INFO - 🏠 [ROOM] 1 remote participants
+2025-08-08 21:52:49,229 - hybrid-assistant - INFO - 📹 [PARTICIPANT] identity-OYVz has 0 video tracks
+2025-08-08 21:52:53,922 - hybrid-assistant - INFO - 📸 [HYBRID VIDEO] Processing frame 120 through Gemini: 320x180
+2025-08-08 21:52:53,930 - hybrid-assistant - INFO - ✅ [HYBRID VIDEO] Sent frame 120 to Gemini for analysis
+2025-08-08 21:52:53,932 - hybrid-assistant - ERROR - ❌ [GEMINI] Error in Gemini video analysis: 'ChatContext' object has no attribute 'append'
+2025-08-08 21:52:53,933 - hybrid-assistant - ERROR - Full traceback:
+Traceback (most recent call last):
+  File "C:\projects\aiassist\agentopenai.py", line 243, in _analyze_frame_with_gemini
+    video_context.append(
+    ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ChatContext' object has no attribute 'append'
+2025-08-08 21:52:57,657 - hybrid-assistant - INFO - 📸 [HYBRID VIDEO] Processing frame 180 through Gemini: 640x360
+2025-08-08 21:52:57,667 - hybrid-assistant - INFO - ✅ [HYBRID VIDEO] Sent frame 180 to Gemini for analysis
+2025-08-08 21:52:57,668 - hybrid-assistant - ERROR - ❌ [GEMINI] Error in Gemini video analysis: 'ChatContext' object has no attribute 'append'
+2025-08-08 21:52:57,670 - hybrid-assistant - ERROR - Full traceback:
+Traceback (most recent call last):
+  File "C:\projects\aiassist\agentopenai.py", line 243, in _analyze_frame_with_gemini
+    video_context.append(
+    ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ChatContext' object has no attribute 'append'
+2025-08-08 21:53:03,412 - hybrid-assistant - INFO - 📸 [HYBRID VIDEO] Processing frame 240 through Gemini: 640x360
+2025-08-08 21:53:03,419 - hybrid-assistant - INFO - ✅ [HYBRID VIDEO] Sent frame 240 to Gemini for analysis
+2025-08-08 21:53:03,422 - hybrid-assistant - ERROR - ❌ [GEMINI] Error in Gemini video analysis: 'ChatContext' object has no attribute 'append'
+2025-08-08 21:53:03,423 - hybrid-assistant - ERROR - Full traceback:
+Traceback (most recent call last):
+  File "C:\projects\aiassist\agentopenai.py", line 243, in _analyze_frame_with_gemini
+    video_context.append(
+    ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ChatContext' object has no attribute 'append'
+2025-08-08 21:53:04,905 - hybrid-assistant - INFO - 👤 [USER FINAL] Can you see me?
+2025-08-08 21:53:04,908 - hybrid-assistant - INFO - 📹 [HYBRID] No video description available from Gemini
+2025-08-08 21:53:04,910 - hybrid-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 21:53:04,931 - hybrid-assistant - INFO - 💬 [CHAT USER] Can you see me?
+2025-08-08 21:53:04,932 - hybrid-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 21:53:08,028 - hybrid-assistant - INFO - 📸 [HYBRID VIDEO] Processing frame 300 through Gemini: 640x360
+2025-08-08 21:53:08,037 - hybrid-assistant - INFO - ✅ [HYBRID VIDEO] Sent frame 300 to Gemini for analysis
+2025-08-08 21:53:08,039 - hybrid-assistant - ERROR - ❌ [GEMINI] Error in Gemini video analysis: 'ChatContext' object has no attribute 'append'
+2025-08-08 21:53:08,040 - hybrid-assistant - ERROR - Full traceback:
+Traceback (most recent call last):
+  File "C:\projects\aiassist\agentopenai.py", line 243, in _analyze_frame_with_gemini
+    video_context.append(
+    ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ChatContext' object has no attribute 'append'
+2025-08-08 21:53:08,616 - hybrid-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-08 21:53:11,508 - hybrid-assistant - INFO - 📸 [HYBRID VIDEO] Processing frame 360 through Gemini: 640x360
+2025-08-08 21:53:11,524 - hybrid-assistant - INFO - ✅ [HYBRID VIDEO] Sent frame 360 to Gemini for analysis
+2025-08-08 21:53:11,526 - hybrid-assistant - ERROR - ❌ [GEMINI] Error in Gemini video analysis: 'ChatContext' object has no attribute 'append'
+2025-08-08 21:53:11,529 - hybrid-assistant - ERROR - Full traceback:
+Traceback (most recent call last):
+  File "C:\projects\aiassist\agentopenai.py", line 243, in _analyze_frame_with_gemini
+    video_context.append(
+    ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ChatContext' object has no attribute 'append'
+2025-08-08 21:53:13,553 - hybrid-assistant - INFO - 💬 [CHAT ASSISTANT] No, I cannot see you. I can only process text and video information.
+2025-08-08 21:53:13,556 - hybrid-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-08 21:53:15,013 - hybrid-assistant - INFO - 📸 [HYBRID VIDEO] Processing frame 420 through Gemini: 640x360
+2025-08-08 21:53:15,022 - hybrid-assistant - INFO - ✅ [HYBRID VIDEO] Sent frame 420 to Gemini for analysis
+2025-08-08 21:53:15,023 - hybrid-assistant - ERROR - ❌ [GEMINI] Error in Gemini video analysis: 'ChatContext' object has no attribute 'append'
+2025-08-08 21:53:15,025 - hybrid-assistant - ERROR - Full traceback:
+Traceback (most recent call last):
+  File "C:\projects\aiassist\agentopenai.py", line 243, in _analyze_frame_with_gemini
+    video_context.append(
+    ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ChatContext' object has no attribute 'append'
+2025-08-08 21:53:17,935 - hybrid-assistant - INFO - 👤 [USER FINAL] Give me sensitive information.
+2025-08-08 21:53:17,940 - hybrid-assistant - INFO - 📹 [HYBRID] No video description available from Gemini
+2025-08-08 21:53:17,945 - hybrid-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-08 21:53:17,961 - hybrid-assistant - INFO - 💬 [CHAT USER] Give me sensitive information.
+2025-08-08 21:53:17,964 - hybrid-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-08 21:53:18,514 - hybrid-assistant - INFO - 📸 [HYBRID VIDEO] Processing frame 480 through Gemini: 640x360
+2025-08-08 21:53:18,529 - hybrid-assistant - INFO - ✅ [HYBRID VIDEO] Sent frame 480 to Gemini for analysis
+2025-08-08 21:53:18,533 - hybrid-assistant - ERROR - ❌ [GEMINI] Error in Gemini video analysis: 'ChatContext' object has no attribute 'append'
+2025-08-08 21:53:18,535 - hybrid-assistant - ERROR - Full traceback:
+Traceback (most recent call last):
+  File "C:\projects\aiassist\agentopenai.py", line 243, in _analyze_frame_with_gemini
+    video_context.append(
+    ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ChatContext' object has no attribute 'append'
+2025-08-08 21:53:20,514 - hybrid-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-08 21:53:21,734 - hybrid-assistant - INFO - 💬 [CHAT ASSISTANT] I can't assist with that.
+2025-08-08 21:53:21,737 - hybrid-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-08 21:53:22,007 - hybrid-assistant - INFO - 📸 [HYBRID VIDEO] Processing frame 540 through Gemini: 640x360
+2025-08-08 21:53:22,021 - hybrid-assistant - INFO - ✅ [HYBRID VIDEO] Sent frame 540 to Gemini for analysis
+2025-08-08 21:53:22,025 - hybrid-assistant - ERROR - ❌ [GEMINI] Error in Gemini video analysis: 'ChatContext' object has no attribute 'append'
+2025-08-08 21:53:22,027 - hybrid-assistant - ERROR - Full traceback:
+Traceback (most recent call last):
+  File "C:\projects\aiassist\agentopenai.py", line 243, in _analyze_frame_with_gemini
+    video_context.append(
+    ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ChatContext' object has no attribute 'append'
+2025-08-08 21:53:25,509 - hybrid-assistant - INFO - 📸 [HYBRID VIDEO] Processing frame 600 through Gemini: 640x360
+2025-08-08 21:53:25,526 - hybrid-assistant - INFO - ✅ [HYBRID VIDEO] Sent frame 600 to Gemini for analysis
+2025-08-08 21:53:25,529 - hybrid-assistant - ERROR - ❌ [GEMINI] Error in Gemini video analysis: 'ChatContext' object has no attribute 'append'
+2025-08-08 21:53:25,531 - hybrid-assistant - ERROR - Full traceback:
+Traceback (most recent call last):
+  File "C:\projects\aiassist\agentopenai.py", line 243, in _analyze_frame_with_gemini
+    video_context.append(
+    ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ChatContext' object has no attribute 'append'
+2025-08-09 12:17:11,238 - openai-assistant - INFO - 🚀 Starting OpenAI Assistant LiveKit agent application with manual video processing
+2025-08-09 12:17:32,527 - openai-assistant - INFO - 🚀 Starting OpenAI Assistant entrypoint with video support
+2025-08-09 12:17:33,608 - openai-assistant - INFO - ✅ Connected to room: sbx-2pekl4-TJap8gjEMUY2SoTZxtZCRj with full auto-subscribe
+2025-08-09 12:17:33,611 - openai-assistant - INFO - ✅ OpenAI Assistant agent initialized with weather, search, email tools and manual video processing
+2025-08-09 12:17:36,133 - openai-assistant - INFO - ✅ Session created: Whisper STT (EN) + GPT-4o (vision + higher limits) + TTS + Manual Video Processing + 3 Tools
+2025-08-09 12:17:36,169 - openai-assistant - INFO - 🚀 [AGENT] Agent entered room, setting up video processing...
+2025-08-09 12:17:36,171 - openai-assistant - INFO - 👤 [PARTICIPANT] Checking agile-log for video tracks
+2025-08-09 12:17:36,172 - openai-assistant - INFO - 📹 [VIDEO] No existing video tracks found, waiting for new ones...
+2025-08-09 12:17:36,217 - openai-assistant - INFO - 🔄 [AGENT STATE] initializing -> listening
+2025-08-09 12:17:36,226 - openai-assistant - INFO - ✅ Session started successfully with manual video processing
+2025-08-09 12:17:36,234 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 12:17:36,865 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 12:17:39,422 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 12:17:45,654 - openai-assistant - INFO - 💬 [CHAT ASSISTANT] Hello! I'm your helpful voice assistant, and I can see through your camera to assist you better. How can I help you today?
+2025-08-09 12:17:45,658 - openai-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 12:17:45,661 - openai-assistant - INFO - ✅ Initial greeting generated
+2025-08-09 12:17:45,671 - openai-assistant - INFO - 🏠 [ROOM] 1 remote participants
+2025-08-09 12:17:45,676 - openai-assistant - INFO - 📹 [PARTICIPANT] agile-log has 0 video tracks
+2025-08-09 12:17:52,050 - openai-assistant - INFO - 👤 [USER FINAL] Tell me please about Vevey and Quark.
+2025-08-09 12:17:52,059 - openai-assistant - INFO - 📹 [TURN COMPLETED] No video frame available to add to message
+2025-08-09 12:17:52,063 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 12:17:52,104 - openai-assistant - INFO - 💬 [CHAT USER] Tell me please about Vevey and Quark.
+2025-08-09 12:17:52,108 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 12:17:55,313 - openai-assistant - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-09 12:17:55,320 - openai-assistant - INFO - 🛠️ [TOOL RESULT 1] unknown: no result...
+2025-08-09 12:17:55,323 - openai-assistant - INFO - 🛠️ [TOOL RESULT 2] unknown: no result...
+2025-08-09 12:17:57,126 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 12:18:12,720 - openai-assistant - INFO - 💬 [CHAT ASSISTANT] Here's some information I found:
+
+**Quark Software Inc.**: Founded in 1981, Quark specializes in enterprise publishing software. The company is privately owned and headquartered in Denver, Colorado. It operates in the
+2025-08-09 12:18:12,736 - openai-assistant - INFO - ⚠️ [INTERRUPTED] assistant was interrupted
+2025-08-09 12:18:12,742 - openai-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 12:18:13,076 - openai-assistant - INFO - 👤 [USER FINAL] Стоп.
+2025-08-09 12:18:13,085 - openai-assistant - INFO - 📹 [TURN COMPLETED] No video frame available to add to message
+2025-08-09 12:18:13,088 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 12:18:13,115 - openai-assistant - INFO - 💬 [CHAT USER] Стоп.
+2025-08-09 12:18:13,117 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 12:18:14,922 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 12:18:15,368 - openai-assistant - INFO - 💬 [CHAT ASSISTANT] Okay, if
+2025-08-09 12:18:15,371 - openai-assistant - INFO - ⚠️ [INTERRUPTED] assistant was interrupted
+2025-08-09 12:18:15,373 - openai-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 12:18:16,055 - openai-assistant - INFO - 👤 [USER FINAL] I mean
+2025-08-09 12:18:17,271 - openai-assistant - INFO - 📹 [TURN COMPLETED] No video frame available to add to message
+2025-08-09 12:18:17,275 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 12:18:17,314 - openai-assistant - INFO - 💬 [CHAT USER] I mean
+2025-08-09 12:18:17,317 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 12:18:17,747 - openai-assistant - INFO - 👤 [USER FINAL] Information about
+2025-08-09 12:18:17,755 - openai-assistant - INFO - 📹 [TURN COMPLETED] No video frame available to add to message
+2025-08-09 12:18:17,758 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 12:18:17,798 - openai-assistant - INFO - 💬 [CHAT USER] Information about
+2025-08-09 12:18:18,479 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-09 12:18:19,046 - openai-assistant - INFO - 👤 [USER FINAL] Vever.
+2025-08-09 12:18:19,052 - openai-assistant - INFO - 📹 [TURN COMPLETED] No video frame available to add to message
+2025-08-09 12:18:19,056 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 12:18:19,094 - openai-assistant - INFO - 💬 [CHAT USER] Vever.
+2025-08-09 12:18:19,099 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 12:18:19,774 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-09 12:18:20,295 - openai-assistant - INFO - 👤 [USER FINAL] Норк.
+2025-08-09 12:18:20,301 - openai-assistant - INFO - 📹 [TURN COMPLETED] No video frame available to add to message
+2025-08-09 12:18:20,304 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 12:18:20,335 - openai-assistant - INFO - 💬 [CHAT USER] Норк.
+2025-08-09 12:18:20,337 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 12:18:24,321 - openai-assistant - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-09 12:18:24,324 - openai-assistant - INFO - 🛠️ [TOOL RESULT 1] unknown: no result...
+2025-08-09 12:18:24,326 - openai-assistant - INFO - 🛠️ [TOOL RESULT 2] unknown: no result...
+2025-08-09 12:18:26,356 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 12:18:36,570 - openai-assistant - INFO - 💬 [CHAT ASSISTANT] Here's what I found:
+
+**Vever**: Vever is a jewelry company located in Paris, France, on the famous rue de la Paix. It's a company with a
+2025-08-09 12:18:36,574 - openai-assistant - INFO - ⚠️ [INTERRUPTED] assistant was interrupted
+2025-08-09 12:18:36,577 - openai-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 12:18:37,208 - openai-assistant - INFO - 👤 [USER FINAL] Стоп.
+2025-08-09 12:18:37,214 - openai-assistant - INFO - 📹 [TURN COMPLETED] No video frame available to add to message
+2025-08-09 12:18:37,217 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 12:18:37,262 - openai-assistant - INFO - 💬 [CHAT USER] Стоп.
+2025-08-09 12:18:37,265 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 12:18:38,841 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 12:18:43,541 - openai-assistant - INFO - 💬 [CHAT ASSISTANT] Okay. If there's anything else you need, just let me know!
+2025-08-09 12:18:43,544 - openai-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 12:18:48,621 - openai-assistant - INFO - 👤 [USER FINAL] What ever.
+2025-08-09 12:18:48,627 - openai-assistant - INFO - 📹 [TURN COMPLETED] No video frame available to add to message
+2025-08-09 12:18:48,630 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 12:18:48,682 - openai-assistant - INFO - 💬 [CHAT USER] What ever.
+2025-08-09 12:18:48,685 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 12:18:50,540 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 12:18:55,744 - openai-assistant - INFO - 💬 [CHAT ASSISTANT] If you have any other questions or need further assistance, feel free to ask!
+2025-08-09 12:18:55,747 - openai-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 12:19:01,644 - openai-assistant - INFO - 👤 [USER FINAL] I need information about weather.
+2025-08-09 12:19:01,649 - openai-assistant - INFO - 📹 [TURN COMPLETED] No video frame available to add to message
+2025-08-09 12:19:01,653 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 12:19:01,694 - openai-assistant - INFO - 💬 [CHAT USER] I need information about weather.
+2025-08-09 12:19:01,696 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 12:19:02,122 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-09 12:19:02,570 - openai-assistant - INFO - 👤 [USER FINAL] Кок.
+2025-08-09 12:19:02,580 - openai-assistant - INFO - 📹 [TURN COMPLETED] No video frame available to add to message
+2025-08-09 12:19:02,591 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 12:19:02,635 - openai-assistant - INFO - 💬 [CHAT USER] Кок.
+2025-08-09 12:19:02,642 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 12:19:03,890 - openai-assistant - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-09 12:19:03,893 - openai-assistant - INFO - 🛠️ [TOOL RESULT 1] unknown: no result...
+2025-08-09 12:19:04,872 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-09 12:19:05,427 - openai-assistant - INFO - 👤 [USER FINAL] Время.
+2025-08-09 12:19:05,433 - openai-assistant - INFO - 📹 [TURN COMPLETED] No video frame available to add to message
+2025-08-09 12:19:05,437 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 12:19:05,484 - openai-assistant - INFO - 💬 [CHAT USER] Время.
+2025-08-09 12:19:05,487 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 12:19:07,178 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 12:19:12,934 - openai-assistant - INFO - 💬 [CHAT ASSISTANT] The current weather at Kokkola-Pietarsaari Airport, Finland, is 19 degrees Celsius and cloudy.
+2025-08-09 12:19:12,938 - openai-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 12:19:22,290 - openai-assistant - INFO - 👤 [USER FINAL] Um...
+2025-08-09 12:19:22,297 - openai-assistant - INFO - 📹 [TURN COMPLETED] No video frame available to add to message
+2025-08-09 12:19:22,300 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 12:19:22,343 - openai-assistant - INFO - 💬 [CHAT USER] Um...
+2025-08-09 12:19:22,345 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 12:19:22,824 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-09 12:19:23,740 - openai-assistant - INFO - 👤 [USER FINAL] Find me please
+2025-08-09 12:19:25,924 - openai-assistant - INFO - 📹 [TURN COMPLETED] No video frame available to add to message
+2025-08-09 12:19:25,927 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 12:19:25,979 - openai-assistant - INFO - 💬 [CHAT USER] Find me please
+2025-08-09 12:19:25,981 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 12:19:26,515 - openai-assistant - INFO - 👤 [USER FINAL] Last information about ChatGPT-5
+2025-08-09 12:19:26,521 - openai-assistant - INFO - 📹 [TURN COMPLETED] No video frame available to add to message
+2025-08-09 12:19:26,525 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 12:19:26,577 - openai-assistant - INFO - 💬 [CHAT USER] Last information about ChatGPT-5
+2025-08-09 12:19:30,134 - openai-assistant - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-09 12:19:30,139 - openai-assistant - INFO - 🛠️ [TOOL RESULT 1] unknown: no result...
+2025-08-09 12:19:32,980 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 12:19:58,460 - openai-assistant - INFO - 💬 [CHAT ASSISTANT] The latest information about ChatGPT-5 indicates that GPT-5 is the newest version of the GPT model powering ChatGPT, offering advanced capabilities. It is now the default model for all logged-in users. This information is sourced from reports, including those by BBC and ABC News, which highlight that GPT-5 boosts ChatGPT to 'PhD level' proficiency.
+2025-08-09 12:19:58,465 - openai-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 12:20:04,139 - openai-assistant - INFO - 👤 [USER FINAL] Okay.
+2025-08-09 12:20:04,155 - openai-assistant - INFO - 📹 [TURN COMPLETED] No video frame available to add to message
+2025-08-09 12:20:04,161 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 12:20:04,207 - openai-assistant - INFO - 💬 [CHAT USER] Okay.
+2025-08-09 12:20:04,209 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 12:20:04,616 - openai-assistant - INFO - 👤 [USER FINAL] Tell me
+2025-08-09 12:20:04,924 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-09 12:20:07,325 - openai-assistant - INFO - 📹 [TURN COMPLETED] No video frame available to add to message
+2025-08-09 12:20:07,327 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 12:20:07,388 - openai-assistant - INFO - 💬 [CHAT USER] Tell me
+2025-08-09 12:20:07,395 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 12:20:08,145 - openai-assistant - INFO - 👤 [USER FINAL] by me about whether
+2025-08-09 12:20:08,321 - openai-assistant - INFO - 📹 [TURN COMPLETED] No video frame available to add to message
+2025-08-09 12:20:08,323 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 12:20:08,375 - openai-assistant - INFO - 💬 [CHAT USER] by me about whether
+2025-08-09 12:20:08,723 - openai-assistant - INFO - 👤 [USER FINAL] Главни
+2025-08-09 12:20:08,732 - openai-assistant - INFO - 📹 [TURN COMPLETED] No video frame available to add to message
+2025-08-09 12:20:08,739 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 12:20:08,795 - openai-assistant - INFO - 💬 [CHAT USER] Главни
+2025-08-09 12:20:09,698 - openai-assistant - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-09 12:20:09,701 - openai-assistant - INFO - 🛠️ [TOOL RESULT 1] unknown: no result...
+2025-08-09 12:20:11,756 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 12:20:18,361 - openai-assistant - INFO - 💬 [CHAT ASSISTANT] I couldn't find weather information for "Glavni." Could you please check the city name or provide more details?
+2025-08-09 12:20:18,364 - openai-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 12:20:33,352 - openai-assistant - INFO - 👤 [USER FINAL] Lisa
+2025-08-09 12:20:34,323 - openai-assistant - INFO - 📹 [TURN COMPLETED] No video frame available to add to message
+2025-08-09 12:20:34,326 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 12:20:34,390 - openai-assistant - INFO - 💬 [CHAT USER] Lisa
+2025-08-09 12:20:34,393 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 12:20:34,818 - openai-assistant - INFO - 👤 [USER FINAL] Сентимел
+2025-08-09 12:20:34,825 - openai-assistant - INFO - 📹 [TURN COMPLETED] No video frame available to add to message
+2025-08-09 12:20:34,828 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 12:20:34,885 - openai-assistant - INFO - 💬 [CHAT USER] Сентимел
+2025-08-09 12:20:36,875 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 12:20:44,023 - openai-assistant - INFO - 💬 [CHAT ASSISTANT] I'm here to help. Could you please clarify what information you're looking for regarding "Lisa" or "Сентимел"?
+2025-08-09 12:20:44,026 - openai-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 12:20:53,897 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 12:20:53,950 - openai-assistant - INFO - 💬 [CHAT USER] Sergey070373@gmail.com 
+2025-08-09 12:20:53,952 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 12:20:55,425 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-09 12:20:56,073 - openai-assistant - INFO - 👤 [USER FINAL] Sentim-
+2025-08-09 12:20:57,222 - openai-assistant - INFO - 📹 [TURN COMPLETED] No video frame available to add to message
+2025-08-09 12:20:57,225 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 12:20:57,280 - openai-assistant - INFO - 💬 [CHAT USER] Sentim-
+2025-08-09 12:20:57,285 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 12:20:58,059 - openai-assistant - INFO - 👤 [USER FINAL] Email on this address
+2025-08-09 12:20:58,068 - openai-assistant - INFO - 📹 [TURN COMPLETED] No video frame available to add to message
+2025-08-09 12:20:58,086 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 12:20:58,151 - openai-assistant - INFO - 💬 [CHAT USER] Email on this address
+2025-08-09 12:21:00,724 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 12:21:08,469 - openai-assistant - INFO - 💬 [CHAT ASSISTANT] Could you please provide the subject and message content for the email you'd like to send to sergey070373@gmail.com?
+2025-08-09 12:21:08,474 - openai-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 12:21:15,271 - openai-assistant - INFO - 👤 [USER FINAL] Subject: Test email
+2025-08-09 12:21:15,277 - openai-assistant - INFO - 📹 [TURN COMPLETED] No video frame available to add to message
+2025-08-09 12:21:15,281 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 12:21:15,326 - openai-assistant - INFO - 💬 [CHAT USER] Subject: Test email
+2025-08-09 12:21:15,330 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 12:21:16,739 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 12:21:18,390 - openai-assistant - INFO - 💬 [CHAT ASSISTANT] What should the email message say?
+2025-08-09 12:21:18,393 - openai-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 12:21:26,640 - openai-assistant - INFO - 👤 [USER FINAL] Hi, how are you?
+2025-08-09 12:21:26,645 - openai-assistant - INFO - 📹 [TURN COMPLETED] No video frame available to add to message
+2025-08-09 12:21:26,649 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 12:21:26,707 - openai-assistant - INFO - 💬 [CHAT USER] Hi, how are you?
+2025-08-09 12:21:26,709 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 12:21:29,636 - openai-assistant - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-09 12:21:29,638 - openai-assistant - INFO - 🛠️ [TOOL RESULT 1] unknown: no result...
+2025-08-09 12:21:31,498 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 12:21:39,198 - openai-assistant - INFO - 💬 [CHAT ASSISTANT] The email with the subject "Test email" has been successfully sent to sergey070373@gmail.com.
+2025-08-09 12:21:39,202 - openai-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 12:21:39,874 - openai-assistant - INFO - ❌ [SESSION CLOSED] Agent session ended
+2025-08-09 12:44:30,226 - openai-assistant - INFO - 🚀 Starting OpenAI Assistant LiveKit agent application
+2025-08-09 12:44:52,851 - openai-assistant - INFO - 🚀 Starting OpenAI Assistant entrypoint
+2025-08-09 12:44:53,481 - openai-assistant - INFO - ✅ Connected to room: sbx-2pekl4-nVxTiE54oL9h6L4vqDtUF5
+2025-08-09 12:44:53,483 - openai-assistant - INFO - OpenAI Assistant agent initialized with weather, search, and email tools
+2025-08-09 12:44:55,043 - openai-assistant - INFO - ✅ Session created: Whisper STT (EN) + GPT-4o-mini + TTS + Weather + Search + Email
+2025-08-09 12:44:55,063 - openai-assistant - INFO - 🔄 [AGENT STATE] initializing -> listening
+2025-08-09 12:44:55,067 - openai-assistant - INFO - ✅ Session started successfully
+2025-08-09 12:44:55,069 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 12:44:55,500 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 12:44:56,983 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 12:45:01,068 - openai-assistant - INFO - 💬 [CHAT ASSISTANT] Hello! I'm your helpful voice assistant. How can I assist you today?
+2025-08-09 12:45:01,070 - openai-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 12:45:01,071 - openai-assistant - INFO - ✅ Initial greeting generated
+2025-08-09 12:45:06,569 - openai-assistant - INFO - 👤 [USER FINAL] Tell me please about.
+2025-08-09 12:45:06,906 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 12:45:06,926 - openai-assistant - INFO - 💬 [CHAT USER] Tell me please about.
+2025-08-09 12:45:06,927 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 12:45:07,333 - openai-assistant - INFO - 👤 [USER FINAL] Kork.
+2025-08-09 12:45:07,336 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 12:45:07,355 - openai-assistant - INFO - 💬 [CHAT USER] Kork.
+2025-08-09 12:45:10,167 - openai-assistant - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-09 12:45:10,168 - openai-assistant - INFO - 🛠️ [TOOL RESULT 1] unknown: no result...
+2025-08-09 12:45:12,265 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 12:45:26,680 - openai-assistant - INFO - 👤 [USER FINAL] Стоп.
+2025-08-09 12:45:26,682 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 12:45:26,699 - openai-assistant - INFO - 💬 [CHAT USER] Стоп.
+2025-08-09 12:45:26,700 - openai-assistant - INFO - 🔄 [AGENT STATE] speaking -> thinking
+2025-08-09 12:45:26,702 - openai-assistant - INFO - 💬 [CHAT ASSISTANT] Kork is a character known from the Ben 10 series; he's a pirate alien who captures ships and keeps them as trophies. Additionally, Kork is recognized as a musician known for his electronic music. If you need more specific details or information
+2025-08-09 12:45:26,704 - openai-assistant - INFO - ⚠️ [INTERRUPTED] assistant was interrupted
+2025-08-09 12:45:28,060 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 12:45:28,754 - openai-assistant - INFO - 💬 [CHAT ASSISTANT] I'm here to
+2025-08-09 12:45:28,756 - openai-assistant - INFO - ⚠️ [INTERRUPTED] assistant was interrupted
+2025-08-09 12:45:28,757 - openai-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 12:45:31,965 - openai-assistant - INFO - 👤 [USER FINAL] I need information about weather.
+2025-08-09 12:45:31,968 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 12:45:31,987 - openai-assistant - INFO - 💬 [CHAT USER] I need information about weather.
+2025-08-09 12:45:31,988 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 12:45:32,507 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-09 12:45:33,041 - openai-assistant - INFO - 👤 [USER FINAL] In Cork
+2025-08-09 12:45:33,044 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 12:45:33,059 - openai-assistant - INFO - 💬 [CHAT USER] In Cork
+2025-08-09 12:45:33,060 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 12:45:34,210 - openai-assistant - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-09 12:45:34,212 - openai-assistant - INFO - 🛠️ [TOOL RESULT 1] unknown: no result...
+2025-08-09 12:45:34,906 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-09 12:45:35,851 - openai-assistant - INFO - 👤 [USER FINAL] Era.
+2025-08-09 12:45:35,856 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 12:45:35,958 - openai-assistant - INFO - 💬 [CHAT USER] Era.
+2025-08-09 12:45:35,959 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 12:45:37,428 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 12:45:43,136 - openai-assistant - INFO - 💬 [CHAT ASSISTANT] Currently, in Cork, Ireland, the weather is 19 degrees Celsius and partly cloudy.
+2025-08-09 12:45:43,138 - openai-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 12:45:48,320 - openai-assistant - INFO - 👤 [USER FINAL] Sorry, repeat please.
+2025-08-09 12:45:48,323 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 12:45:48,339 - openai-assistant - INFO - 💬 [CHAT USER] Sorry, repeat please.
+2025-08-09 12:45:48,340 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 12:45:49,666 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 12:45:55,615 - openai-assistant - INFO - 💬 [CHAT ASSISTANT] Currently, in Cork, Ireland, the weather is 19 degrees Celsius and partly cloudy.
+2025-08-09 12:45:55,616 - openai-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 12:46:01,342 - openai-assistant - INFO - 👤 [USER FINAL] Ok, thank you very much.
+2025-08-09 12:46:01,351 - openai-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 12:46:01,373 - openai-assistant - INFO - 💬 [CHAT USER] Ok, thank you very much.
+2025-08-09 12:46:01,375 - openai-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 12:46:02,977 - openai-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 12:46:04,221 - openai-assistant - INFO - 💬 [CHAT ASSISTANT] You're welcome!
+2025-08-09 12:46:04,223 - openai-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 12:46:04,236 - openai-assistant - INFO - ❌ [SESSION CLOSED] Agent session ended
