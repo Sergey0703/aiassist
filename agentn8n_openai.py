@@ -12,8 +12,8 @@ from livekit.agents import (
 )
 from livekit.plugins import openai, silero
 
-# Импортируем инструменты из отдельного файла
-from toolsn8n import AVAILABLE_TOOLS, test_n8n_connection
+# Импортируем инструменты из модульной системы
+from tools import AVAILABLE_TOOLS, validate_all_tools, get_package_info
 
 # -------------------- Setup --------------------
 load_dotenv()
@@ -46,25 +46,41 @@ if not openai_api_key:
 
 # -------------------- Agent Class --------------------
 class N8NAssistant(Agent):
-    """Голосовой помощник с n8n интеграцией для погоды + OpenAI инструменты для поиска и email"""
+    """Голосовой помощник с модульной системой инструментов: n8n + веб + email"""
     
     def __init__(self):
+        # Получаем информацию о доступных инструментах
+        tools_info = get_package_info()
+        tools_count = tools_info['active_tools']
+        categories = ', '.join(tools_info['categories'])
+        
         super().__init__(
             instructions=(
                 "You are a helpful voice assistant with access to weather information, web search, and email sending. "
                 "ALWAYS respond in English only, regardless of what language the user speaks. "
                 "You understand all languages but respond ONLY in English. "
                 "Do NOT mention the language issue - just answer naturally in English. "
-                "When users ask about weather, use the get_weather_n8n tool and provide the exact information returned. "
-                "When users ask for information you don't know, use the search_web tool to find current information. "
-                "When users ask to send email, use the send_email tool with the information they provide. "
-                "Do NOT make up information - only use data from your tools. "
-                "Be clear, concise, and direct. Do NOT add phrases like 'If you have any other questions' or 'Let me know if you need more help' - just give the information requested."
+                "\n"
+                "Available tools:\n"
+                "- Weather: Use get_weather_n8n for current weather and forecasts through n8n workflow\n"
+                "- Web Search: Use search_web to find current information on the internet\n"
+                "- Email: Use send_email to send messages via SMTP\n"
+                "\n"
+                "Guidelines:\n"
+                "- When users ask about weather, use get_weather_n8n and provide the exact information returned\n"
+                "- When users ask for information you don't know, use search_web to find current information\n"
+                "- When users ask to send email, use send_email with the information they provide\n"
+                "- Do NOT make up information - only use data from your tools\n"
+                "- Be clear, concise, and direct\n"
+                "- Do NOT add phrases like 'If you have any other questions' or 'Let me know if you need more help'\n"
+                "- Just give the information requested professionally and helpfully"
             ),
-            # Используем все доступные инструменты из toolsn8n.py
+            # Используем все доступные инструменты из модульной системы
             tools=AVAILABLE_TOOLS,
         )
-        logger.info("N8N Assistant agent initialized with n8n weather, search, and email tools")
+        
+        logger.info(f"✅ [AGENT INIT] N8N Assistant initialized with {tools_count} tools")
+        logger.info(f"📂 [AGENT INIT] Tool categories: {categories}")
 
 # -------------------- Event Handlers --------------------
 def setup_session_events(session: AgentSession):
@@ -194,51 +210,107 @@ def create_agent_session():
         ),
     )
     
-    logger.info("✅ Session created: Whisper STT (EN) + GPT-4o-mini + TTS + N8N Weather + Search + Email")
+    logger.info("✅ [SESSION] Created: Whisper STT (EN) + GPT-4o-mini + TTS + Modular Tools")
     return session
 
+# -------------------- Tools Validation --------------------
+async def startup_tools_validation():
+    """Проверка работоспособности всех инструментов при запуске"""
+    print("🧪 [STARTUP] Validating all tools...")
+    logger.info("🧪 [STARTUP] Starting comprehensive tool validation...")
+    
+    try:
+        validation_results = await validate_all_tools()
+        
+        # Выводим результаты валидации
+        total_tools = validation_results['summary']['total_tools']
+        working_tools = validation_results['summary']['working_tools']
+        failed_tools = validation_results['summary']['failed_tools']
+        
+        print(f"📊 [VALIDATION] Results: {working_tools}/{total_tools} tools working")
+        logger.info(f"📊 [VALIDATION] Complete: {working_tools} working, {failed_tools} failed")
+        
+        # Детали по категориям
+        if validation_results.get('n8n_tools'):
+            n8n_status = validation_results['n8n_tools'].get('weather_service', False)
+            status_emoji = "✅" if n8n_status else "❌"
+            print(f"   {status_emoji} N8N Weather: {'Working' if n8n_status else 'Failed'}")
+            
+        if validation_results.get('web_tools'):
+            web_status = validation_results['web_tools'].get('search_web', False)
+            status_emoji = "✅" if web_status else "❌" 
+            print(f"   {status_emoji} Web Search: {'Working' if web_status else 'Failed'}")
+            
+        if validation_results.get('email_tools'):
+            email_status = validation_results['email_tools'].get('send_email', False)
+            status_emoji = "✅" if email_status else "❌"
+            print(f"   {status_emoji} Email Send: {'Working' if email_status else 'Failed'}")
+        
+        # Предупреждения если что-то не работает
+        if failed_tools > 0:
+            print(f"⚠️ [WARNING] {failed_tools} tools have configuration issues but agent will continue")
+            logger.warning(f"⚠️ [WARNING] {failed_tools} tools failed validation")
+        else:
+            print("✅ [VALIDATION] All tools are working properly!")
+            logger.info("✅ [VALIDATION] All tools validated successfully")
+            
+        return validation_results
+        
+    except Exception as e:
+        print(f"❌ [VALIDATION ERROR] Tool validation failed: {e}")
+        logger.error(f"❌ [VALIDATION ERROR] {e}")
+        return None
+
 # -------------------- Info Display --------------------
-def display_startup_info():
+def display_startup_info(validation_results=None):
     """Отображение информации о запуске агента"""
+    tools_info = get_package_info()
+    
     print("\n" + "="*80)
     print("🤖 [N8N ASSISTANT] Ready for conversation!")
-    print("📋 [INFO] OpenAI Whisper STT (ENGLISH ONLY) + GPT-4o-mini + TTS + N8N Weather")
+    print(f"📦 [TOOLS] {tools_info['package']} v{tools_info['version']}")
+    print("📋 [STACK] OpenAI Whisper STT (ENGLISH ONLY) + GPT-4o-mini + TTS")
     print("🔍 [VAD] Silero VAD for speech detection")
     print("💰 [COST] ~$0.02 per minute (very affordable!)")
     print("🌍 [STT] Treats ALL speech as English (no language detection)")
-    print("🌤️ [WEATHER] Weather via n8n workflow (auto2025system.duckdns.org)")
-    print("🛠️ [TOOLS] N8N Weather + OpenAI Search + OpenAI Email")
+    print("")
+    print("🛠️ [TOOLS] Available instruments:")
+    for category, tool_names in tools_info['tools_by_category'].items():
+        print(f"   📂 {category}: {', '.join(tool_names)}")
+    print("")
     print("📝 [LOGGING] All activity logged to agent_n8n.log and console")
     print("")
     print("🎯 [TEST COMMANDS] (ALL speech treated as English):")
     print("   • 'What's the weather in London?' → n8n weather tool") 
     print("   • 'Weather in Paris in Fahrenheit?' → n8n weather with units")
-    print("   • 'Search for latest AI news' → OpenAI search tool")
-    print("   • 'Send email to test@example.com' → OpenAI email tool")
+    print("   • 'Search for latest AI news' → Tavily web search")
+    print("   • 'Send email to test@example.com about meeting' → SMTP email")
     print("")
+    
+    # Показываем статус инструментов если доступен
+    if validation_results:
+        working = validation_results['summary']['working_tools']
+        total = validation_results['summary']['total_tools']
+        print(f"⚡ [STATUS] {working}/{total} tools operational")
+    
     print("🎮 [CONTROLS] Speak into your microphone, press Ctrl+C to quit")
     print("="*80 + "\n")
     print("🎙️ [LISTENING] Start speaking now...")
 
 # -------------------- Entrypoint --------------------
 async def entrypoint(ctx: JobContext):
-    """Главная точка входа для N8N агента"""
+    """Главная точка входа для N8N агента с модульной системой инструментов"""
     
-    logger.info("🚀 Starting N8N Assistant entrypoint")
+    logger.info("🚀 [ENTRYPOINT] Starting N8N Assistant with modular tools")
     
-    # Тестируем подключение к n8n перед запуском
-    print("🧪 [STARTUP] Testing n8n weather service...")
-    n8n_working = await test_n8n_connection()
-    
-    if not n8n_working:
-        print("⚠️ [WARNING] n8n weather service is not responding, but continuing anyway...")
-        logger.warning("⚠️ [WARNING] n8n weather service test failed, but continuing...")
+    # Валидируем все инструменты при запуске
+    validation_results = await startup_tools_validation()
     
     # Подключаемся к комнате LiveKit
     await ctx.connect()
-    logger.info(f"✅ Connected to room: {ctx.room.name}")
+    logger.info(f"✅ [LIVEKIT] Connected to room: {ctx.room.name}")
     
-    # Создаем агента с инструментами
+    # Создаем агента с модульными инструментами
     agent = N8NAssistant()
     
     # Создаем сессию с OpenAI компонентами
@@ -253,20 +325,20 @@ async def entrypoint(ctx: JobContext):
         room=ctx.room,
     )
     
-    logger.info("✅ Session started successfully")
+    logger.info("✅ [SESSION] Started successfully")
     
     # Начальное приветствие
     try:
         await session.generate_reply(
-            instructions="Say hello and introduce yourself as a helpful voice assistant with weather information."
+            instructions="Say hello and introduce yourself as a helpful voice assistant with weather, search, and email capabilities."
         )
-        logger.info("✅ Initial greeting generated")
+        logger.info("✅ [GREETING] Initial greeting generated")
     except Exception as e:
-        logger.warning(f"⚠️ Could not generate initial greeting: {e}")
+        logger.warning(f"⚠️ [GREETING] Could not generate initial greeting: {e}")
         print("🤖 [ASSISTANT] Hello! I'm your voice assistant with weather, search, and email capabilities!")
     
     # Отображаем информацию о запуске
-    display_startup_info()
+    display_startup_info(validation_results)
     
     # Бесконечный цикл для поддержания работы агента
     try:
@@ -278,7 +350,17 @@ async def entrypoint(ctx: JobContext):
 
 # -------------------- Main --------------------
 if __name__ == "__main__":
-    logger.info("🚀 Starting N8N Assistant LiveKit agent application")
+    logger.info("🚀 [MAIN] Starting N8N Assistant LiveKit agent application")
+    
+    # Показываем информацию о модульной системе при запуске
+    try:
+        tools_info = get_package_info()
+        logger.info(f"📦 [TOOLS] Loading {tools_info['package']} v{tools_info['version']}")
+        logger.info(f"🔧 [TOOLS] {tools_info['active_tools']} active tools in {len(tools_info['categories'])} categories")
+    except Exception as e:
+        logger.error(f"❌ [TOOLS] Failed to load tools info: {e}")
+    
+    # Запускаем LiveKit агент
     cli.run_app(
         WorkerOptions(
             entrypoint_fnc=entrypoint

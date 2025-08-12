@@ -521,3 +521,212 @@
 2025-08-12 19:50:03,248 - n8n-assistant - INFO - 💬 [CHAT ASSISTANT] The latest news about GPT is that GPT-5 has been released, showing significant improvements in accuracy and reasoning. It is now the only available model, replacing older versions. Microsoft is integrating GPT-5 into various products.
 2025-08-12 19:50:03,249 - n8n-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
 2025-08-12 19:50:07,156 - n8n-assistant - INFO - ❌ [SESSION CLOSED] Agent session ended
+2025-08-12 21:45:10,153 - n8n-assistant - INFO - 🚀 [MAIN] Starting N8N Assistant LiveKit agent application
+2025-08-12 21:45:10,154 - n8n-assistant - INFO - 📦 [TOOLS] Loading N8N Tools v1.1.0
+2025-08-12 21:45:10,154 - n8n-assistant - INFO - 🔧 [TOOLS] 4 active tools in 6 categories
+2025-08-12 21:45:10,254 - n8n-assistant - INFO - 🚀 [ENTRYPOINT] Starting N8N Assistant with modular tools
+2025-08-12 21:45:10,255 - n8n-assistant - INFO - 🧪 [STARTUP] Starting comprehensive tool validation...
+2025-08-12 21:45:26,341 - n8n-assistant - INFO - 📊 [VALIDATION] Complete: 3 working, 1 failed
+2025-08-12 21:45:26,343 - n8n-assistant - WARNING - ⚠️ [WARNING] 1 tools failed validation
+2025-08-12 21:45:26,344 - n8n-assistant - INFO - ✅ [LIVEKIT] Connected to room: fake_room
+2025-08-12 21:45:26,346 - n8n-assistant - INFO - ✅ [AGENT INIT] N8N Assistant initialized with 4 tools
+2025-08-12 21:45:26,347 - n8n-assistant - INFO - 📂 [AGENT INIT] Tool categories: weather, analytics, communication, information, n8n_integrated, web_services
+2025-08-12 21:45:27,817 - n8n-assistant - INFO - ✅ [SESSION] Created: Whisper STT (EN) + GPT-4o-mini + TTS + Modular Tools
+2025-08-12 21:45:28,957 - n8n-assistant - INFO - 🔄 [AGENT STATE] initializing -> listening
+2025-08-12 21:45:28,958 - n8n-assistant - INFO - ✅ [SESSION] Started successfully
+2025-08-12 21:45:28,959 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-12 21:45:29,343 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-12 21:45:32,935 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-12 21:45:42,470 - n8n-assistant - INFO - 💬 [CHAT ASSISTANT] Hello! I'm your helpful voice assistant, here to provide you with weather information, search the web for current information, and send emails. How can I assist you today?
+2025-08-12 21:45:42,471 - n8n-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-12 21:45:42,472 - n8n-assistant - INFO - ✅ [GREETING] Initial greeting generated
+2025-08-12 21:45:47,903 - n8n-assistant - INFO - 👤 [USER FINAL] Tell me please about
+2025-08-12 21:45:48,224 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-12 21:45:48,242 - n8n-assistant - INFO - 💬 [CHAT USER] Tell me please about
+2025-08-12 21:45:48,243 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-12 21:45:48,758 - n8n-assistant - INFO - 👤 [USER FINAL] Результат.
+2025-08-12 21:45:48,760 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-12 21:45:48,775 - n8n-assistant - INFO - 💬 [CHAT USER] Результат.
+2025-08-12 21:45:51,486 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-12 21:46:00,039 - n8n-assistant - INFO - 💬 [CHAT ASSISTANT] Could you please provide more details about what you would like to know regarding "results"? Are you looking for specific information or a particular type of results?
+2025-08-12 21:46:00,042 - n8n-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-12 21:46:04,584 - n8n-assistant - INFO - 👤 [USER FINAL] Show me trade results.
+2025-08-12 21:46:04,586 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-12 21:46:04,605 - n8n-assistant - INFO - 💬 [CHAT USER] Show me trade results.
+2025-08-12 21:46:04,606 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-12 21:46:06,639 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-12 21:46:18,237 - n8n-assistant - INFO - 💬 [CHAT ASSISTANT] How many days would you like to analyze for the trade results? You can specify up to 365 days. Additionally, would you like to see the "top," "worst," or "both" types of analysis?
+2025-08-12 21:46:18,238 - n8n-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-12 21:46:20,960 - n8n-assistant - INFO - 👤 [USER FINAL] Boftaifo.
+2025-08-12 21:46:21,521 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-12 21:46:21,629 - n8n-assistant - INFO - 💬 [CHAT USER] Boftaifo.
+2025-08-12 21:46:21,630 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-12 21:46:22,052 - n8n-assistant - INFO - 👤 [USER FINAL] Аванализис.
+2025-08-12 21:46:22,054 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-12 21:46:22,069 - n8n-assistant - INFO - 💬 [CHAT USER] Аванализис.
+2025-08-12 21:46:23,524 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-12 21:46:24,263 - n8n-assistant - INFO - 👤 [USER FINAL] For today's
+2025-08-12 21:46:24,266 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-12 21:46:24,281 - n8n-assistant - INFO - 💬 [CHAT USER] For today's
+2025-08-12 21:46:24,283 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-12 21:46:27,457 - n8n-assistant - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-12 21:46:27,458 - n8n-assistant - INFO - 🛠️ [TOOL RESULT 1] unknown: no result...
+2025-08-12 21:46:30,771 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-12 21:46:41,588 - n8n-assistant - INFO - 💬 [CHAT ASSISTANT] The trade analysis for today returned no data, indicating that there were no sales in this period. If you need further assistance or want to analyze a different timeframe, just let me know!
+2025-08-12 21:46:41,590 - n8n-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-12 21:46:54,284 - n8n-assistant - INFO - ❌ [SESSION CLOSED] Agent session ended
+2025-08-12 21:52:44,618 - n8n-assistant - INFO - 🚀 [MAIN] Starting N8N Assistant LiveKit agent application
+2025-08-12 21:52:44,619 - n8n-assistant - INFO - 📦 [TOOLS] Loading N8N Tools v1.1.0
+2025-08-12 21:52:44,619 - n8n-assistant - INFO - 🔧 [TOOLS] 4 active tools in 6 categories
+2025-08-12 21:52:44,717 - n8n-assistant - INFO - 🚀 [ENTRYPOINT] Starting N8N Assistant with modular tools
+2025-08-12 21:52:44,719 - n8n-assistant - INFO - 🧪 [STARTUP] Starting comprehensive tool validation...
+2025-08-12 21:52:48,314 - n8n-assistant - INFO - 📊 [VALIDATION] Complete: 4 working, 0 failed
+2025-08-12 21:52:48,315 - n8n-assistant - INFO - ✅ [VALIDATION] All tools validated successfully
+2025-08-12 21:52:48,316 - n8n-assistant - INFO - ✅ [LIVEKIT] Connected to room: fake_room
+2025-08-12 21:52:48,317 - n8n-assistant - INFO - ✅ [AGENT INIT] N8N Assistant initialized with 4 tools
+2025-08-12 21:52:48,318 - n8n-assistant - INFO - 📂 [AGENT INIT] Tool categories: weather, analytics, communication, information, n8n_integrated, web_services
+2025-08-12 21:52:49,731 - n8n-assistant - INFO - ✅ [SESSION] Created: Whisper STT (EN) + GPT-4o-mini + TTS + Modular Tools
+2025-08-12 21:52:50,805 - n8n-assistant - INFO - 🔄 [AGENT STATE] initializing -> listening
+2025-08-12 21:52:50,807 - n8n-assistant - INFO - ✅ [SESSION] Started successfully
+2025-08-12 21:52:50,808 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-12 21:52:51,133 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-12 21:52:52,809 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-12 21:53:02,027 - n8n-assistant - INFO - 💬 [CHAT ASSISTANT] Hello! I'm your helpful voice assistant, equipped with capabilities to provide weather information, conduct web searches, and send emails. How can I assist you today?
+2025-08-12 21:53:02,028 - n8n-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-12 21:53:02,029 - n8n-assistant - INFO - ✅ [GREETING] Initial greeting generated
+2025-08-12 21:53:07,606 - n8n-assistant - INFO - 👤 [USER FINAL] Tell me please about
+2025-08-12 21:53:07,609 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-12 21:53:07,624 - n8n-assistant - INFO - 💬 [CHAT USER] Tell me please about
+2025-08-12 21:53:07,625 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-12 21:53:08,095 - n8n-assistant - INFO - 👤 [USER FINAL] Taitin.
+2025-08-12 21:53:08,096 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-12 21:53:08,110 - n8n-assistant - INFO - 💬 [CHAT USER] Taitin.
+2025-08-12 21:53:11,416 - n8n-assistant - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-12 21:53:11,416 - n8n-assistant - INFO - 🛠️ [TOOL RESULT 1] unknown: no result...
+2025-08-12 21:53:13,238 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-12 21:53:26,889 - n8n-assistant - INFO - 💬 [CHAT ASSISTANT] Taitin is a Tai Phake term meaning "corridor." Additionally, it refers to a company in Taiwan that specializes in manufacturing RF broadband equipment. The term also appears in a Finnish dictionary as "refractor."
+2025-08-12 21:53:26,890 - n8n-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-12 21:53:33,324 - n8n-assistant - INFO - 👤 [USER FINAL] Tell me please about
+2025-08-12 21:53:34,271 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-12 21:53:34,371 - n8n-assistant - INFO - 💬 [CHAT USER] Tell me please about
+2025-08-12 21:53:34,373 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-12 21:53:34,874 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-12 21:53:34,999 - n8n-assistant - INFO - 👤 [USER FINAL] Aovetrait.
+2025-08-12 21:53:35,773 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-12 21:53:35,787 - n8n-assistant - INFO - 💬 [CHAT USER] Aovetrait.
+2025-08-12 21:53:35,788 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-12 21:53:36,429 - n8n-assistant - INFO - 👤 [USER FINAL] Trade information.
+2025-08-12 21:53:36,432 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-12 21:53:36,447 - n8n-assistant - INFO - 💬 [CHAT USER] Trade information.
+2025-08-12 21:53:39,511 - n8n-assistant - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-12 21:53:39,513 - n8n-assistant - INFO - 🛠️ [TOOL RESULT 1] unknown: no result...
+2025-08-12 21:53:41,644 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-12 21:54:04,550 - n8n-assistant - INFO - 💬 [CHAT ASSISTANT] Aovetrait seems to refer to trade information related to the Soviet Union's foreign trade, which was a state monopoly primarily focused on interactions with the Third World and Western countries. The trade dynamics fluctuated based on political relations and the needs of the Soviet Union, and it was regulated by the Commissariat for Trade.
+2025-08-12 21:54:04,551 - n8n-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-12 21:54:06,942 - n8n-assistant - INFO - 👤 [USER FINAL] Stop.
+2025-08-12 21:54:06,944 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-12 21:54:06,963 - n8n-assistant - INFO - 💬 [CHAT USER] Stop.
+2025-08-12 21:54:06,965 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-12 21:54:08,272 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-12 21:54:09,977 - n8n-assistant - INFO - 👤 [USER FINAL] Show me trade results.
+2025-08-12 21:54:09,978 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-12 21:54:09,995 - n8n-assistant - INFO - 💬 [CHAT USER] Show me trade results.
+2025-08-12 21:54:09,996 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-12 21:54:12,163 - n8n-assistant - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-12 21:54:12,166 - n8n-assistant - INFO - 🛠️ [TOOL RESULT 1] unknown: no result...
+2025-08-12 21:54:14,329 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-12 21:54:18,792 - n8n-assistant - INFO - 💬 [CHAT ASSISTANT] No sales data has been found for the last 30 days.
+2025-08-12 21:54:18,793 - n8n-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-12 21:54:24,289 - n8n-assistant - INFO - ❌ [SESSION CLOSED] Agent session ended
+2025-08-12 22:11:01,108 - n8n-assistant - INFO - 🚀 [MAIN] Starting N8N Assistant LiveKit agent application
+2025-08-12 22:11:01,108 - n8n-assistant - INFO - 📦 [TOOLS] Loading N8N Tools v1.1.0
+2025-08-12 22:11:01,109 - n8n-assistant - INFO - 🔧 [TOOLS] 4 active tools in 6 categories
+2025-08-12 22:11:01,194 - n8n-assistant - INFO - 🚀 [ENTRYPOINT] Starting N8N Assistant with modular tools
+2025-08-12 22:11:01,195 - n8n-assistant - INFO - 🧪 [STARTUP] Starting comprehensive tool validation...
+2025-08-12 22:11:14,696 - n8n-assistant - INFO - 📊 [VALIDATION] Complete: 4 working, 0 failed
+2025-08-12 22:11:14,699 - n8n-assistant - INFO - ✅ [VALIDATION] All tools validated successfully
+2025-08-12 22:11:14,700 - n8n-assistant - INFO - ✅ [LIVEKIT] Connected to room: fake_room
+2025-08-12 22:11:14,701 - n8n-assistant - INFO - ✅ [AGENT INIT] N8N Assistant initialized with 4 tools
+2025-08-12 22:11:14,701 - n8n-assistant - INFO - 📂 [AGENT INIT] Tool categories: weather, analytics, communication, information, n8n_integrated, web_services
+2025-08-12 22:11:16,080 - n8n-assistant - INFO - ✅ [SESSION] Created: Whisper STT (EN) + GPT-4o-mini + TTS + Modular Tools
+2025-08-12 22:11:17,168 - n8n-assistant - INFO - 🔄 [AGENT STATE] initializing -> listening
+2025-08-12 22:11:17,170 - n8n-assistant - INFO - ✅ [SESSION] Started successfully
+2025-08-12 22:11:17,171 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-12 22:11:17,503 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-12 22:11:19,749 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-12 22:11:28,328 - n8n-assistant - INFO - 💬 [CHAT ASSISTANT] Hello! I'm your helpful voice assistant, ready to assist you with weather information, web searches, and sending emails. How can I help you today?
+2025-08-12 22:11:28,329 - n8n-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-12 22:11:28,330 - n8n-assistant - INFO - ✅ [GREETING] Initial greeting generated
+2025-08-12 22:11:32,645 - n8n-assistant - INFO - 👤 [USER FINAL] Tell me please about
+2025-08-12 22:11:33,438 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-12 22:11:33,457 - n8n-assistant - INFO - 💬 [CHAT USER] Tell me please about
+2025-08-12 22:11:33,458 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-12 22:11:33,873 - n8n-assistant - INFO - 👤 [USER FINAL] Trade results.
+2025-08-12 22:11:33,876 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-12 22:11:33,892 - n8n-assistant - INFO - 💬 [CHAT USER] Trade results.
+2025-08-12 22:11:35,992 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-12 22:11:46,146 - n8n-assistant - INFO - 💬 [CHAT ASSISTANT] Could you please specify the number of days you'd like to analyze (up to 365) and the type of analysis you're interested in (top, worst, or both)?
+2025-08-12 22:11:46,147 - n8n-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-12 22:11:48,152 - n8n-assistant - INFO - 👤 [USER FINAL] Bos.
+2025-08-12 22:11:48,154 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-12 22:11:48,171 - n8n-assistant - INFO - 💬 [CHAT USER] Bos.
+2025-08-12 22:11:48,172 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-12 22:11:49,833 - n8n-assistant - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-12 22:11:49,834 - n8n-assistant - INFO - 🛠️ [TOOL RESULT 1] unknown: no result...
+2025-08-12 22:11:51,927 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-12 22:12:00,519 - n8n-assistant - INFO - 💬 [CHAT ASSISTANT] There is no sales data found for the last 30 days. If you need information from a different timeframe or specific details, please let me know!
+2025-08-12 22:12:00,520 - n8n-assistant - INFO - ⚠️ [INTERRUPTED] assistant was interrupted
+2025-08-12 22:12:00,521 - n8n-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-12 22:12:00,527 - n8n-assistant - INFO - ❌ [SESSION CLOSED] Agent session ended
+2025-08-12 22:16:36,504 - n8n-assistant - INFO - 🚀 [MAIN] Starting N8N Assistant LiveKit agent application
+2025-08-12 22:16:36,504 - n8n-assistant - INFO - 📦 [TOOLS] Loading N8N Tools v1.1.0
+2025-08-12 22:16:36,504 - n8n-assistant - INFO - 🔧 [TOOLS] 4 active tools in 6 categories
+2025-08-12 22:16:36,590 - n8n-assistant - INFO - 🚀 [ENTRYPOINT] Starting N8N Assistant with modular tools
+2025-08-12 22:16:36,591 - n8n-assistant - INFO - 🧪 [STARTUP] Starting comprehensive tool validation...
+2025-08-12 22:16:47,836 - n8n-assistant - INFO - 📊 [VALIDATION] Complete: 4 working, 0 failed
+2025-08-12 22:16:47,837 - n8n-assistant - INFO - ✅ [VALIDATION] All tools validated successfully
+2025-08-12 22:16:47,838 - n8n-assistant - INFO - ✅ [LIVEKIT] Connected to room: fake_room
+2025-08-12 22:16:47,839 - n8n-assistant - INFO - ✅ [AGENT INIT] N8N Assistant initialized with 4 tools
+2025-08-12 22:16:47,840 - n8n-assistant - INFO - 📂 [AGENT INIT] Tool categories: weather, analytics, communication, information, n8n_integrated, web_services
+2025-08-12 22:16:49,250 - n8n-assistant - INFO - ✅ [SESSION] Created: Whisper STT (EN) + GPT-4o-mini + TTS + Modular Tools
+2025-08-12 22:16:50,317 - n8n-assistant - INFO - 🔄 [AGENT STATE] initializing -> listening
+2025-08-12 22:16:50,319 - n8n-assistant - INFO - ✅ [SESSION] Started successfully
+2025-08-12 22:16:50,320 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-12 22:16:50,638 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-12 22:16:52,730 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-12 22:17:01,724 - n8n-assistant - INFO - 💬 [CHAT ASSISTANT] Hello! I'm your helpful voice assistant, capable of providing weather information, conducting web searches, and sending emails. How can I assist you today?
+2025-08-12 22:17:01,725 - n8n-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-12 22:17:01,726 - n8n-assistant - INFO - ✅ [GREETING] Initial greeting generated
+2025-08-12 22:17:08,147 - n8n-assistant - INFO - 👤 [USER FINAL] Show me please trade results.
+2025-08-12 22:17:08,149 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-12 22:17:08,166 - n8n-assistant - INFO - 💬 [CHAT USER] Show me please trade results.
+2025-08-12 22:17:08,167 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-12 22:17:10,295 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-12 22:17:19,061 - n8n-assistant - INFO - 💬 [CHAT ASSISTANT] Please specify the number of days you'd like to analyze (up to 365) and the type of analysis you want (top, worst, or both).
+2025-08-12 22:17:19,062 - n8n-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-12 22:17:20,741 - n8n-assistant - INFO - 👤 [USER FINAL] Bov
+2025-08-12 22:17:20,743 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-12 22:17:20,755 - n8n-assistant - INFO - 💬 [CHAT USER] Bov
+2025-08-12 22:17:20,756 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-12 22:17:22,581 - n8n-assistant - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-12 22:17:22,582 - n8n-assistant - INFO - 🛠️ [TOOL RESULT 1] unknown: no result...
+2025-08-12 22:17:24,390 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-12 22:18:11,873 - n8n-assistant - INFO - 💬 [CHAT ASSISTANT] Here's the sales analysis for the last 30 days:
+
+- **Top Seller**: Murphy's Irish Stout with 1000.0 units sold.
+- **Worst Performer**: Magners Irish Cider with 0.0 units sold.
+
+**Total Products Analyzed**: 6 
+**Total Units Sold**: 1780.0
+
+**Top 3 Selling Products**:
+1. Murphy's Irish Stout: 1000.0 units
+2. Teeling Small Batch Whiskey: 420.0 units
+3. Redbreast 12 Year Single Pot Still: 360.0 units
+
+**3 Worst Selling Products**:
+1. Magners Irish Cider: 0.0 units
+2. Jameson Irish Whiskey: 0.0 units
+3. Harp Lager: 0.0 units
+2025-08-12 22:18:11,879 - n8n-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-12 22:18:14,585 - n8n-assistant - INFO - ❌ [SESSION CLOSED] Agent session ended
