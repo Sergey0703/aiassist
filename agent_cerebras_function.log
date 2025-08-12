@@ -1,0 +1,93 @@
+2025-08-09 21:22:41,031 - cerebras-function - INFO - 🚀 Starting Cerebras Function Assistant LiveKit agent application
+2025-08-09 21:22:41,128 - cerebras-function - INFO - 🚀 Starting Cerebras Function Assistant entrypoint
+2025-08-09 21:22:41,130 - cerebras-function - INFO - 🧪 [N8N TEST] Testing connection to https://auto2025system.duckdns.org/webhook/smart-weather
+2025-08-09 21:22:41,599 - cerebras-function - INFO - ✅ [N8N TEST] Connection successful
+2025-08-09 21:22:41,601 - cerebras-function - INFO - ✅ Connected to room: fake_room
+2025-08-09 21:22:41,602 - cerebras-function - INFO - Cerebras Function Agent initialized with function calling tools
+2025-08-09 21:22:43,235 - cerebras-function - INFO - ✅ Session created: Whisper STT + Cerebras llama-3.3-70b + TTS + N8N Weather + Function Calling
+2025-08-09 21:22:44,366 - cerebras-function - INFO - 🔄 [AGENT STATE] initializing -> listening
+2025-08-09 21:22:44,368 - cerebras-function - INFO - ✅ Session started successfully
+2025-08-09 21:22:44,369 - cerebras-function - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 21:22:44,767 - cerebras-function - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 21:22:46,384 - cerebras-function - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 21:22:55,853 - cerebras-function - INFO - 💬 [CHAT ASSISTANT] Hello, I'm a voice assistant with capabilities to provide weather information, search the web, and send emails. I'm here to help you with any questions or tasks you may have.
+2025-08-09 21:22:55,854 - cerebras-function - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 21:22:55,855 - cerebras-function - INFO - ✅ Initial greeting generated
+2025-08-09 21:23:01,101 - cerebras-function - INFO - 👤 [USER FINAL] Tell me please about weather in Cork.
+2025-08-09 21:23:01,103 - cerebras-function - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 21:23:01,116 - cerebras-function - INFO - 💬 [CHAT USER] Tell me please about weather in Cork.
+2025-08-09 21:23:01,117 - cerebras-function - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 21:23:01,898 - cerebras-function - INFO - 🌤️ [N8N WEATHER] Getting weather for 'Cork' in celsius
+2025-08-09 21:23:01,899 - cerebras-function - INFO - 🌐 [N8N REQUEST] Sending to https://auto2025system.duckdns.org/webhook/smart-weather
+2025-08-09 21:23:01,900 - cerebras-function - INFO - 🌐 [N8N PAYLOAD] {'action': 'weather', 'city': 'Cork', 'units': 'celsius', 'date': 'today', 'user_id': 'cerebras_function_user'}
+2025-08-09 21:23:02,269 - cerebras-function - INFO - 📡 [N8N RESPONSE] Status: 200
+2025-08-09 21:23:02,271 - cerebras-function - INFO - 📊 [N8N DATA] Success: True
+2025-08-09 21:23:02,272 - cerebras-function - INFO - 📊 [N8N MESSAGE] Weather in Cork, Ireland: Currently 15 degrees Celsius, partly cloudy. Very humid at 88%....
+2025-08-09 21:23:02,274 - cerebras-function - INFO - ✅ [N8N SUCCESS] Weather retrieved for Cork
+2025-08-09 21:23:02,278 - cerebras-function - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-09 21:23:02,280 - cerebras-function - INFO - 🛠️ [TOOL RESULT 1] unknown: no result...
+2025-08-09 21:23:02,621 - cerebras-function - INFO - 🌤️ [N8N WEATHER] Getting weather for 'Cork' in celsius
+2025-08-09 21:23:02,621 - cerebras-function - INFO - 🌐 [N8N REQUEST] Sending to https://auto2025system.duckdns.org/webhook/smart-weather
+2025-08-09 21:23:02,622 - cerebras-function - INFO - 🌐 [N8N PAYLOAD] {'action': 'weather', 'city': 'Cork', 'units': 'celsius', 'date': 'today', 'user_id': 'cerebras_function_user'}
+2025-08-09 21:23:02,940 - cerebras-function - INFO - 📡 [N8N RESPONSE] Status: 200
+2025-08-09 21:23:02,941 - cerebras-function - INFO - 📊 [N8N DATA] Success: True
+2025-08-09 21:23:02,942 - cerebras-function - INFO - 📊 [N8N MESSAGE] Weather in Cork, Ireland: Currently 15 degrees Celsius, partly cloudy. Very humid at 88%....
+2025-08-09 21:23:02,943 - cerebras-function - INFO - ✅ [N8N SUCCESS] Weather retrieved for Cork
+2025-08-09 21:23:02,946 - cerebras-function - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-09 21:23:02,946 - cerebras-function - INFO - 🛠️ [TOOL RESULT 1] unknown: no result...
+2025-08-09 21:23:03,300 - cerebras-function - INFO - 🌤️ [N8N WEATHER] Getting weather for 'Cork' in celsius
+2025-08-09 21:23:03,301 - cerebras-function - INFO - 🌐 [N8N REQUEST] Sending to https://auto2025system.duckdns.org/webhook/smart-weather
+2025-08-09 21:23:03,302 - cerebras-function - INFO - 🌐 [N8N PAYLOAD] {'action': 'weather', 'city': 'Cork', 'units': 'celsius', 'date': 'today', 'user_id': 'cerebras_function_user'}
+2025-08-09 21:23:03,644 - cerebras-function - INFO - 📡 [N8N RESPONSE] Status: 200
+2025-08-09 21:23:03,645 - cerebras-function - INFO - 📊 [N8N DATA] Success: True
+2025-08-09 21:23:03,646 - cerebras-function - INFO - 📊 [N8N MESSAGE] Weather in Cork, Ireland: Currently 15 degrees Celsius, partly cloudy. Very humid at 88%....
+2025-08-09 21:23:03,647 - cerebras-function - INFO - ✅ [N8N SUCCESS] Weather retrieved for Cork
+2025-08-09 21:23:03,648 - cerebras-function - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-09 21:23:03,649 - cerebras-function - INFO - 🛠️ [TOOL RESULT 1] unknown: no result...
+2025-08-09 21:23:03,980 - cerebras-function - INFO - 🌤️ [N8N WEATHER] Getting weather for 'Cork' in celsius
+2025-08-09 21:23:03,981 - cerebras-function - INFO - 🌐 [N8N REQUEST] Sending to https://auto2025system.duckdns.org/webhook/smart-weather
+2025-08-09 21:23:03,982 - cerebras-function - INFO - 🌐 [N8N PAYLOAD] {'action': 'weather', 'city': 'Cork', 'units': 'celsius', 'date': 'today', 'user_id': 'cerebras_function_user'}
+2025-08-09 21:23:04,296 - cerebras-function - INFO - 📡 [N8N RESPONSE] Status: 200
+2025-08-09 21:23:04,297 - cerebras-function - INFO - 📊 [N8N DATA] Success: True
+2025-08-09 21:23:04,297 - cerebras-function - INFO - 📊 [N8N MESSAGE] Weather in Cork, Ireland: Currently 15 degrees Celsius, partly cloudy. Very humid at 88%....
+2025-08-09 21:23:04,298 - cerebras-function - INFO - ✅ [N8N SUCCESS] Weather retrieved for Cork
+2025-08-09 21:23:04,300 - cerebras-function - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-09 21:23:21,534 - cerebras-function - INFO - 👤 [USER FINAL] Tell me please about where in Cork.
+2025-08-09 21:23:21,536 - cerebras-function - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 21:23:21,564 - cerebras-function - INFO - 💬 [CHAT USER] Tell me please about where in Cork.
+2025-08-09 21:23:21,565 - cerebras-function - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 21:23:21,917 - cerebras-function - INFO - 🌤️ [N8N WEATHER] Getting weather for 'Cork' in celsius
+2025-08-09 21:23:21,917 - cerebras-function - INFO - 🌐 [N8N REQUEST] Sending to https://auto2025system.duckdns.org/webhook/smart-weather
+2025-08-09 21:23:21,918 - cerebras-function - INFO - 🌐 [N8N PAYLOAD] {'action': 'weather', 'city': 'Cork', 'units': 'celsius', 'date': 'today', 'user_id': 'cerebras_function_user'}
+2025-08-09 21:23:22,498 - cerebras-function - INFO - 📡 [N8N RESPONSE] Status: 200
+2025-08-09 21:23:22,499 - cerebras-function - INFO - 📊 [N8N DATA] Success: True
+2025-08-09 21:23:22,499 - cerebras-function - INFO - 📊 [N8N MESSAGE] Weather in Cork, Ireland: Currently 15 degrees Celsius, partly cloudy. Very humid at 88%....
+2025-08-09 21:23:22,500 - cerebras-function - INFO - ✅ [N8N SUCCESS] Weather retrieved for Cork
+2025-08-09 21:23:22,502 - cerebras-function - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-09 21:23:22,502 - cerebras-function - INFO - 🛠️ [TOOL RESULT 1] unknown: no result...
+2025-08-09 21:23:22,985 - cerebras-function - INFO - 🌤️ [N8N WEATHER] Getting weather for 'Cork' in celsius
+2025-08-09 21:23:22,986 - cerebras-function - INFO - 🌐 [N8N REQUEST] Sending to https://auto2025system.duckdns.org/webhook/smart-weather
+2025-08-09 21:23:22,986 - cerebras-function - INFO - 🌐 [N8N PAYLOAD] {'action': 'weather', 'city': 'Cork', 'units': 'celsius', 'date': 'today', 'user_id': 'cerebras_function_user'}
+2025-08-09 21:23:23,330 - cerebras-function - INFO - 📡 [N8N RESPONSE] Status: 200
+2025-08-09 21:23:23,331 - cerebras-function - INFO - 📊 [N8N DATA] Success: True
+2025-08-09 21:23:23,332 - cerebras-function - INFO - 📊 [N8N MESSAGE] Weather in Cork, Ireland: Currently 15 degrees Celsius, partly cloudy. Very humid at 88%....
+2025-08-09 21:23:23,333 - cerebras-function - INFO - ✅ [N8N SUCCESS] Weather retrieved for Cork
+2025-08-09 21:23:23,337 - cerebras-function - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-09 21:23:23,339 - cerebras-function - INFO - 🛠️ [TOOL RESULT 1] unknown: no result...
+2025-08-09 21:23:23,690 - cerebras-function - INFO - 🌤️ [N8N WEATHER] Getting weather for 'Cork' in celsius
+2025-08-09 21:23:23,691 - cerebras-function - INFO - 🌐 [N8N REQUEST] Sending to https://auto2025system.duckdns.org/webhook/smart-weather
+2025-08-09 21:23:23,692 - cerebras-function - INFO - 🌐 [N8N PAYLOAD] {'action': 'weather', 'city': 'Cork', 'units': 'celsius', 'date': 'today', 'user_id': 'cerebras_function_user'}
+2025-08-09 21:23:24,051 - cerebras-function - INFO - 📡 [N8N RESPONSE] Status: 200
+2025-08-09 21:23:24,052 - cerebras-function - INFO - 📊 [N8N DATA] Success: True
+2025-08-09 21:23:24,053 - cerebras-function - INFO - 📊 [N8N MESSAGE] Weather in Cork, Ireland: Currently 15 degrees Celsius, partly cloudy. Very humid at 88%....
+2025-08-09 21:23:24,053 - cerebras-function - INFO - ✅ [N8N SUCCESS] Weather retrieved for Cork
+2025-08-09 21:23:24,055 - cerebras-function - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-09 21:23:24,056 - cerebras-function - INFO - 🛠️ [TOOL RESULT 1] unknown: no result...
+2025-08-09 21:23:24,439 - cerebras-function - INFO - 🌤️ [N8N WEATHER] Getting weather for 'Cork' in celsius
+2025-08-09 21:23:24,440 - cerebras-function - INFO - 🌐 [N8N REQUEST] Sending to https://auto2025system.duckdns.org/webhook/smart-weather
+2025-08-09 21:23:24,441 - cerebras-function - INFO - 🌐 [N8N PAYLOAD] {'action': 'weather', 'city': 'Cork', 'units': 'celsius', 'date': 'today', 'user_id': 'cerebras_function_user'}
+2025-08-09 21:23:24,771 - cerebras-function - INFO - 📡 [N8N RESPONSE] Status: 200
+2025-08-09 21:23:24,772 - cerebras-function - INFO - 📊 [N8N DATA] Success: True
+2025-08-09 21:23:24,773 - cerebras-function - INFO - 📊 [N8N MESSAGE] Weather in Cork, Ireland: Currently 15 degrees Celsius, partly cloudy. Very humid at 88%....
+2025-08-09 21:23:24,774 - cerebras-function - INFO - ✅ [N8N SUCCESS] Weather retrieved for Cork
+2025-08-09 21:23:24,777 - cerebras-function - INFO - 🔄 [AGENT STATE] thinking -> listening

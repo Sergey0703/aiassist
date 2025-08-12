@@ -1,0 +1,197 @@
+2025-08-09 20:55:55,842 - cerebras-simple - INFO - 🚀 Starting Cerebras Simple Assistant LiveKit agent application
+2025-08-09 20:55:55,932 - cerebras-simple - INFO - 🚀 Starting Cerebras Simple Assistant entrypoint
+2025-08-09 20:55:55,933 - cerebras-simple - INFO - 🧪 [N8N TEST] Testing connection to https://auto2025system.duckdns.org/webhook/smart-weather
+2025-08-09 20:55:56,323 - cerebras-simple - INFO - ✅ [N8N TEST] Connection successful
+2025-08-09 20:55:56,324 - cerebras-simple - INFO - ✅ Connected to room: fake_room
+2025-08-09 20:55:56,326 - cerebras-simple - INFO - Cerebras Simple Assistant initialized WITHOUT function calling
+2025-08-09 20:55:57,919 - cerebras-simple - INFO - ✅ Session created: Whisper STT + Cerebras LLM (NO TOOLS) + TTS + N8N Weather
+2025-08-09 20:55:59,021 - cerebras-simple - INFO - 🔄 [AGENT STATE] initializing -> listening
+2025-08-09 20:55:59,023 - cerebras-simple - INFO - ✅ Session started successfully
+2025-08-09 20:55:59,024 - cerebras-simple - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 20:55:59,317 - cerebras-simple - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 20:56:00,744 - cerebras-simple - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 20:56:14,668 - cerebras-simple - INFO - 💬 [CHAT ASSISTANT] Hello, I'm an AI voice assistant. I'm here to provide you with information and help answer your questions. I can offer details on various topics, but if you're looking for weather updates, please be specific about the location.
+2025-08-09 20:56:14,671 - cerebras-simple - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 20:56:14,673 - cerebras-simple - INFO - ✅ Initial greeting generated
+2025-08-09 20:56:19,663 - cerebras-simple - INFO - 👤 [USER FINAL] Tell me about weather in Cork.
+2025-08-09 20:56:19,665 - cerebras-simple - INFO - 🧠 [MESSAGE HANDLER] Processing: Tell me about weather in Cork....
+2025-08-09 20:56:19,666 - cerebras-simple - INFO - 🌤️ [WEATHER DETECTED] Processing weather request
+2025-08-09 20:56:19,667 - cerebras-simple - INFO - 🏙️ [CITY EXTRACT] Found city: Cork from text: Tell me about weather in Cork....
+2025-08-09 20:56:19,668 - cerebras-simple - INFO - 🌤️ [N8N WEATHER] Getting weather for 'Cork' in celsius
+2025-08-09 20:56:19,669 - cerebras-simple - INFO - 🌐 [N8N REQUEST] Sending to https://auto2025system.duckdns.org/webhook/smart-weather
+2025-08-09 20:56:19,669 - cerebras-simple - INFO - 🌐 [N8N PAYLOAD] {'action': 'weather', 'city': 'Cork', 'units': 'celsius', 'date': 'today', 'user_id': 'cerebras_user'}
+2025-08-09 20:56:19,671 - cerebras-simple - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 20:56:19,683 - cerebras-simple - INFO - 💬 [CHAT USER] Tell me about weather in Cork.
+2025-08-09 20:56:19,685 - cerebras-simple - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 20:56:20,137 - cerebras-simple - INFO - 📡 [N8N RESPONSE] Status: 200
+2025-08-09 20:56:20,138 - cerebras-simple - INFO - 📊 [N8N DATA] Success: True
+2025-08-09 20:56:20,139 - cerebras-simple - INFO - 📊 [N8N MESSAGE] Weather in Cork, Ireland: Currently 17 degrees Celsius, partly cloudy. Humid at 77%....
+2025-08-09 20:56:20,139 - cerebras-simple - INFO - ✅ [N8N SUCCESS] Weather retrieved for Cork
+2025-08-09 20:56:20,141 - cerebras-simple - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 20:56:20,742 - cerebras-simple - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 20:56:34,331 - cerebras-simple - INFO - 💬 [CHAT ASSISTANT] I'm not aware of your specific question about Cork. Could you please be more precise? What would you like to know about the weather in Cork? Would you like to know the current temperature, forecast for a specific day, or something else?
+2025-08-09 20:56:34,334 - cerebras-simple - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 20:56:34,673 - cerebras-simple - INFO - 🔄 [AGENT STATE] listening -> speaking
+2025-08-09 20:56:43,049 - cerebras-simple - INFO - 💬 [CHAT ASSISTANT] The weather in Cork, Ireland is currently 17 degrees Celsius, partly cloudy, with a humidity level of 77%.
+2025-08-09 20:56:43,051 - cerebras-simple - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 20:56:43,053 - cerebras-simple - INFO - ✅ [WEATHER COMPLETE] Sent weather response for Cork
+2025-08-09 21:13:59,355 - cerebras-simple - INFO - 🚀 Starting Cerebras Simple Assistant LiveKit agent application
+2025-08-09 21:13:59,438 - cerebras-simple - INFO - 🚀 Starting Cerebras Simple Assistant entrypoint
+2025-08-09 21:13:59,440 - cerebras-simple - INFO - 🧪 [N8N TEST] Testing connection to https://auto2025system.duckdns.org/webhook/smart-weather
+2025-08-09 21:14:00,288 - cerebras-simple - INFO - ✅ [N8N TEST] Connection successful
+2025-08-09 21:14:00,291 - cerebras-simple - INFO - ✅ Connected to room: fake_room
+2025-08-09 21:14:00,292 - cerebras-simple - INFO - Cerebras Simple Assistant initialized WITHOUT function calling
+2025-08-09 21:14:01,671 - cerebras-simple - INFO - ✅ Session created: Whisper STT + Cerebras LLM (NO TOOLS) + TTS + N8N Weather
+2025-08-09 21:14:02,762 - cerebras-simple - INFO - 🔄 [AGENT STATE] initializing -> listening
+2025-08-09 21:14:02,764 - cerebras-simple - INFO - ✅ Session started successfully
+2025-08-09 21:14:02,765 - cerebras-simple - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 21:14:03,053 - cerebras-simple - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 21:14:04,491 - cerebras-simple - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 21:14:09,527 - cerebras-simple - INFO - 💬 [CHAT ASSISTANT] Hello, I'm a voice assistant, here to provide you with weather information and more.
+2025-08-09 21:14:09,529 - cerebras-simple - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 21:14:09,533 - cerebras-simple - INFO - ✅ Initial greeting generated
+2025-08-09 21:14:15,242 - cerebras-simple - INFO - 👤 [USER FINAL] Elaeplisabautveve inqur.
+2025-08-09 21:14:15,244 - cerebras-simple - INFO - 🧠 [MESSAGE HANDLER] Processing: Elaeplisabautveve inqur....
+2025-08-09 21:14:15,245 - cerebras-simple - INFO - 💬 [NORMAL CHAT] Processing with Cerebras LLM
+2025-08-09 21:14:15,246 - cerebras-simple - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 21:14:15,251 - cerebras-simple - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 21:14:15,262 - cerebras-simple - INFO - 💬 [CHAT USER] Elaeplisabautveve inqur.
+2025-08-09 21:14:15,263 - cerebras-simple - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 21:14:15,267 - cerebras-simple - INFO - ✅ [NORMAL COMPLETE] Sent normal response
+2025-08-09 21:14:16,559 - cerebras-simple - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 21:14:28,964 - cerebras-simple - INFO - 💬 [CHAT ASSISTANT] I don't understand what you're saying. Please speak clearly and ask a specific question, and I'll do my best to help. If you're looking for weather information, try asking something like "What's the weather in London?"
+2025-08-09 21:14:28,965 - cerebras-simple - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 21:14:32,835 - cerebras-simple - INFO - 👤 [USER FINAL] Watsewender ik kw.
+2025-08-09 21:14:32,838 - cerebras-simple - INFO - 🧠 [MESSAGE HANDLER] Processing: Watsewender ik kw....
+2025-08-09 21:14:32,839 - cerebras-simple - INFO - 💬 [NORMAL CHAT] Processing with Cerebras LLM
+2025-08-09 21:14:32,840 - cerebras-simple - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 21:14:32,844 - cerebras-simple - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 21:14:32,859 - cerebras-simple - INFO - 💬 [CHAT USER] Watsewender ik kw.
+2025-08-09 21:14:32,860 - cerebras-simple - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 21:14:32,867 - cerebras-simple - INFO - ✅ [NORMAL COMPLETE] Sent normal response
+2025-08-09 21:14:33,199 - cerebras-simple - INFO - 👤 [USER FINAL] of Eighkork.
+2025-08-09 21:14:33,201 - cerebras-simple - INFO - 🧠 [MESSAGE HANDLER] Processing: of Eighkork....
+2025-08-09 21:14:33,202 - cerebras-simple - INFO - 💬 [NORMAL CHAT] Processing with Cerebras LLM
+2025-08-09 21:14:33,202 - cerebras-simple - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 21:14:33,204 - cerebras-simple - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 21:14:33,213 - cerebras-simple - INFO - 💬 [CHAT USER] of Eighkork.
+2025-08-09 21:14:34,640 - cerebras-simple - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 21:14:46,826 - cerebras-simple - INFO - 💬 [CHAT ASSISTANT] It seems like there's a language barrier. If you're trying to ask about the weather, please try again with a specific location, like "What's the weather in New York?" or any other city you're interested in.
+2025-08-09 21:14:46,830 - cerebras-simple - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 21:14:46,833 - cerebras-simple - INFO - ✅ [NORMAL COMPLETE] Sent normal response
+2025-08-09 21:14:47,178 - cerebras-simple - INFO - 🔄 [AGENT STATE] listening -> speaking
+2025-08-09 21:14:51,612 - cerebras-simple - INFO - 👤 [USER FINAL] Stop.
+2025-08-09 21:14:51,614 - cerebras-simple - INFO - 🧠 [MESSAGE HANDLER] Processing: Stop....
+2025-08-09 21:14:51,614 - cerebras-simple - INFO - 💬 [NORMAL CHAT] Processing with Cerebras LLM
+2025-08-09 21:14:51,615 - cerebras-simple - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 21:14:51,617 - cerebras-simple - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 21:14:51,714 - cerebras-simple - INFO - 💬 [CHAT ASSISTANT] It seems like there's a language barrier. To get the weather information,
+2025-08-09 21:14:51,717 - cerebras-simple - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 21:14:51,719 - cerebras-simple - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 21:14:51,722 - cerebras-simple - INFO - 💬 [CHAT USER] Stop.
+2025-08-09 21:14:52,909 - cerebras-simple - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 21:14:57,435 - cerebras-simple - INFO - 💬 [CHAT ASSISTANT] I'll do my best to provide a helpful response if you ask a clear question in English.
+2025-08-09 21:14:57,436 - cerebras-simple - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 21:14:57,437 - cerebras-simple - INFO - ✅ [NORMAL COMPLETE] Sent normal response
+2025-08-09 21:14:57,660 - cerebras-simple - INFO - 🔄 [AGENT STATE] listening -> speaking
+2025-08-09 21:14:57,666 - cerebras-simple - INFO - 💬 [CHAT ASSISTANT] I've
+2025-08-09 21:14:57,667 - cerebras-simple - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 21:14:58,379 - cerebras-simple - INFO - 👤 [USER FINAL] Tell me
+2025-08-09 21:14:58,381 - cerebras-simple - INFO - 🧠 [MESSAGE HANDLER] Processing: Tell me...
+2025-08-09 21:14:58,381 - cerebras-simple - INFO - 💬 [NORMAL CHAT] Processing with Cerebras LLM
+2025-08-09 21:14:58,382 - cerebras-simple - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 21:14:58,384 - cerebras-simple - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 21:14:58,399 - cerebras-simple - INFO - 💬 [CHAT USER] Tell me
+2025-08-09 21:14:58,400 - cerebras-simple - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 21:14:58,403 - cerebras-simple - INFO - ✅ [NORMAL COMPLETE] Sent normal response
+2025-08-09 21:14:59,237 - cerebras-simple - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-09 21:15:01,521 - cerebras-simple - INFO - 👤 [USER FINAL] Tell me about weather in Cork.
+2025-08-09 21:15:01,522 - cerebras-simple - INFO - 🧠 [MESSAGE HANDLER] Processing: Tell me about weather in Cork....
+2025-08-09 21:15:01,523 - cerebras-simple - INFO - 🌤️ [WEATHER DETECTED] Processing weather request
+2025-08-09 21:15:01,525 - cerebras-simple - INFO - 🏙️ [CITY EXTRACT] Found city: Cork from text: Tell me about weather in Cork....
+2025-08-09 21:15:01,526 - cerebras-simple - INFO - 🌤️ [N8N WEATHER] Getting weather for 'Cork' in celsius
+2025-08-09 21:15:01,528 - cerebras-simple - INFO - 🌐 [N8N REQUEST] Sending to https://auto2025system.duckdns.org/webhook/smart-weather
+2025-08-09 21:15:01,529 - cerebras-simple - INFO - 🌐 [N8N PAYLOAD] {'action': 'weather', 'city': 'Cork', 'units': 'celsius', 'date': 'today', 'user_id': 'cerebras_user'}
+2025-08-09 21:15:01,531 - cerebras-simple - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 21:15:01,543 - cerebras-simple - INFO - 💬 [CHAT USER] Tell me about weather in Cork.
+2025-08-09 21:15:01,544 - cerebras-simple - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 21:15:01,943 - cerebras-simple - INFO - 📡 [N8N RESPONSE] Status: 200
+2025-08-09 21:15:01,945 - cerebras-simple - INFO - 📊 [N8N DATA] Success: True
+2025-08-09 21:15:01,946 - cerebras-simple - INFO - 📊 [N8N MESSAGE] Weather in Cork, Ireland: Currently 17 degrees Celsius, partly cloudy. Humid at 77%....
+2025-08-09 21:15:01,946 - cerebras-simple - INFO - ✅ [N8N SUCCESS] Weather retrieved for Cork
+2025-08-09 21:15:01,948 - cerebras-simple - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 21:15:02,854 - cerebras-simple - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 21:15:17,937 - cerebras-simple - INFO - 💬 [CHAT ASSISTANT] Cork is a city located in Ireland, and its weather is generally mild and temperate, influenced by the Atlantic Ocean. Cork experiences a maritime climate, with significant rainfall throughout the year. The average temperature ranges
+2025-08-09 21:15:17,938 - cerebras-simple - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 21:15:18,211 - cerebras-simple - INFO - 🔄 [AGENT STATE] listening -> speaking
+2025-08-09 21:15:18,597 - cerebras-simple - INFO - 👤 [USER FINAL] Коп.
+2025-08-09 21:15:18,599 - cerebras-simple - INFO - 🧠 [MESSAGE HANDLER] Processing: Коп....
+2025-08-09 21:15:18,600 - cerebras-simple - INFO - 💬 [NORMAL CHAT] Processing with Cerebras LLM
+2025-08-09 21:15:18,601 - cerebras-simple - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 21:15:18,603 - cerebras-simple - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 21:15:18,615 - cerebras-simple - INFO - 💬 [CHAT ASSISTANT] The
+2025-08-09 21:15:18,617 - cerebras-simple - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 21:15:18,619 - cerebras-simple - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 21:15:18,622 - cerebras-simple - INFO - 💬 [CHAT USER] Коп.
+2025-08-09 21:15:18,625 - cerebras-simple - INFO - ✅ [WEATHER COMPLETE] Sent weather response for Cork
+2025-08-09 21:15:19,943 - cerebras-simple - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 21:15:27,237 - cerebras-simple - INFO - 💬 [CHAT ASSISTANT] Cork is a city located in Ireland, and its weather is generally mild and temperate, influenced by the
+2025-08-09 21:15:27,238 - cerebras-simple - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 21:15:27,241 - cerebras-simple - INFO - ✅ [NORMAL COMPLETE] Sent normal response
+2025-08-09 21:15:27,621 - cerebras-simple - INFO - 🔄 [AGENT STATE] listening -> speaking
+2025-08-09 21:15:27,947 - cerebras-simple - INFO - 👤 [USER FINAL] Оп
+2025-08-09 21:15:27,948 - cerebras-simple - INFO - 🧠 [MESSAGE HANDLER] Processing: Оп...
+2025-08-09 21:15:27,949 - cerebras-simple - INFO - 💬 [NORMAL CHAT] Processing with Cerebras LLM
+2025-08-09 21:15:27,950 - cerebras-simple - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 21:15:27,952 - cerebras-simple - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 21:15:27,966 - cerebras-simple - INFO - 💬 [CHAT ASSISTANT] It seems
+2025-08-09 21:15:27,968 - cerebras-simple - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 21:15:27,969 - cerebras-simple - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 21:15:27,972 - cerebras-simple - INFO - 💬 [CHAT USER] Оп
+2025-08-09 21:15:29,253 - cerebras-simple - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 21:15:32,847 - cerebras-simple - INFO - 💬 [CHAT ASSISTANT] Cork is a city located in Ireland, and its weather
+2025-08-09 21:15:32,848 - cerebras-simple - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 21:15:32,849 - cerebras-simple - INFO - ✅ [NORMAL COMPLETE] Sent normal response
+2025-08-09 21:15:33,337 - cerebras-simple - INFO - 🔄 [AGENT STATE] listening -> speaking
+2025-08-09 21:15:33,352 - cerebras-simple - INFO - 👤 [USER FINAL] Poka
+2025-08-09 21:15:33,355 - cerebras-simple - INFO - 🧠 [MESSAGE HANDLER] Processing: Poka...
+2025-08-09 21:15:33,357 - cerebras-simple - INFO - 💬 [NORMAL CHAT] Processing with Cerebras LLM
+2025-08-09 21:15:33,360 - cerebras-simple - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 21:15:33,366 - cerebras-simple - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 21:15:33,434 - cerebras-simple - INFO - 🔄 [AGENT STATE] speaking -> thinking
+2025-08-09 21:15:33,450 - cerebras-simple - INFO - 💬 [CHAT USER] Poka
+2025-08-09 21:15:33,461 - cerebras-simple - INFO - 💬 [CHAT ASSISTANT] To
+2025-08-09 21:15:34,709 - cerebras-simple - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 21:15:50,602 - cerebras-simple - INFO - 💬 [CHAT ASSISTANT] To provide you with accurate weather information, I would recommend checking the current weather forecast for Cork, Ireland. If you'd like to know more, please ask a specific question like "What's the current temperature in Cork?" or "What's the forecast for Cork this week?"
+2025-08-09 21:15:50,605 - cerebras-simple - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 21:15:50,607 - cerebras-simple - INFO - ✅ [NORMAL COMPLETE] Sent normal response
+2025-08-09 21:15:50,928 - cerebras-simple - INFO - 🔄 [AGENT STATE] listening -> speaking
+2025-08-09 21:15:58,322 - cerebras-simple - INFO - 💬 [CHAT ASSISTANT] To get information about the weather, please ask a specific question in English, such as "What's the weather like
+2025-08-09 21:15:58,324 - cerebras-simple - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 21:15:59,485 - cerebras-simple - INFO - 👤 [USER FINAL] Lwatlws.
+2025-08-09 21:15:59,487 - cerebras-simple - INFO - 🧠 [MESSAGE HANDLER] Processing: Lwatlws....
+2025-08-09 21:15:59,488 - cerebras-simple - INFO - 💬 [NORMAL CHAT] Processing with Cerebras LLM
+2025-08-09 21:15:59,490 - cerebras-simple - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 21:15:59,500 - cerebras-simple - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 21:15:59,822 - cerebras-simple - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 21:15:59,840 - cerebras-simple - INFO - 💬 [CHAT USER] Lwatlws.
+2025-08-09 21:15:59,847 - cerebras-simple - INFO - ✅ [NORMAL COMPLETE] Sent normal response
+2025-08-09 21:16:00,285 - cerebras-simple - INFO - 👤 [USER FINAL] Стоп.
+2025-08-09 21:16:00,287 - cerebras-simple - INFO - 🧠 [MESSAGE HANDLER] Processing: Стоп....
+2025-08-09 21:16:00,287 - cerebras-simple - INFO - 💬 [NORMAL CHAT] Processing with Cerebras LLM
+2025-08-09 21:16:00,289 - cerebras-simple - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 21:16:00,291 - cerebras-simple - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 21:16:00,316 - cerebras-simple - INFO - 💬 [CHAT USER] Стоп.
+2025-08-09 21:16:01,326 - cerebras-simple - INFO - ✅ [NORMAL COMPLETE] Sent normal response
+2025-08-09 21:16:01,330 - cerebras-simple - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-09 21:16:02,746 - cerebras-simple - INFO - 👤 [USER FINAL] Whatsoever in Cork.
+2025-08-09 21:16:02,747 - cerebras-simple - INFO - 🧠 [MESSAGE HANDLER] Processing: Whatsoever in Cork....
+2025-08-09 21:16:02,748 - cerebras-simple - INFO - 💬 [NORMAL CHAT] Processing with Cerebras LLM
+2025-08-09 21:16:02,749 - cerebras-simple - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 21:16:02,751 - cerebras-simple - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 21:16:02,778 - cerebras-simple - INFO - 💬 [CHAT USER] Whatsoever in Cork.
+2025-08-09 21:16:02,779 - cerebras-simple - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 21:16:02,781 - cerebras-simple - INFO - ✅ [NORMAL COMPLETE] Sent normal response
+2025-08-09 21:16:04,036 - cerebras-simple - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 21:16:13,595 - cerebras-simple - INFO - 💬 [CHAT ASSISTANT] Cork, Ireland typically experiences a mild oceanic climate, with frequent rainfall and overcast skies. The city's weather is influenced by
+2025-08-09 21:16:13,597 - cerebras-simple - INFO - 🔄 [AGENT STATE] speaking -> listening

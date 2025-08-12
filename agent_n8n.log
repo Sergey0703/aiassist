@@ -101,3 +101,423 @@
 2025-08-09 20:50:06,029 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
 2025-08-09 20:50:06,031 - n8n-assistant - INFO - ✅ Initial greeting generated
 2025-08-09 20:52:35,320 - n8n-assistant - INFO - ❌ [SESSION CLOSED] Agent session ended
+2025-08-09 21:38:05,829 - n8n-assistant - INFO - 🚀 Starting N8N Assistant LiveKit agent application
+2025-08-09 21:38:05,932 - n8n-assistant - INFO - 🚀 Starting N8N Assistant entrypoint
+2025-08-09 21:38:05,933 - n8n-assistant - INFO - 🧪 [N8N TEST] Testing connection to https://auto2025system.duckdns.org/webhook/smart-weather
+2025-08-09 21:38:06,495 - n8n-assistant - INFO - ✅ [N8N TEST] Connection successful
+2025-08-09 21:38:06,497 - n8n-assistant - INFO - ✅ Connected to room: fake_room
+2025-08-09 21:38:06,498 - n8n-assistant - INFO - N8N Assistant agent initialized with n8n weather, search, and email tools
+2025-08-09 21:38:08,018 - n8n-assistant - INFO - ✅ Session created: Whisper STT (EN) + Cerebras Llama3.1-70B + TTS + N8N Weather + Search + Email
+2025-08-09 21:38:09,175 - n8n-assistant - INFO - 🔄 [AGENT STATE] initializing -> listening
+2025-08-09 21:38:09,178 - n8n-assistant - INFO - ✅ Session started successfully
+2025-08-09 21:38:09,179 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 21:38:09,698 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 21:38:10,050 - n8n-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754771890.049847 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 404 - {'message': 'Model llama3.1-70b does not exist or you do not have access to it.', 'type': 'not_found_error', 'param': 'model', 'code': 'model_not_found'}") recoverable=True (recoverable: True)
+2025-08-09 21:38:10,419 - n8n-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754771890.4190671 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 404 - {'message': 'Model llama3.1-70b does not exist or you do not have access to it.', 'type': 'not_found_error', 'param': 'model', 'code': 'model_not_found'}") recoverable=True (recoverable: True)
+2025-08-09 21:38:12,689 - n8n-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754771892.6893766 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 404 - {'message': 'Model llama3.1-70b does not exist or you do not have access to it.', 'type': 'not_found_error', 'param': 'model', 'code': 'model_not_found'}") recoverable=True (recoverable: True)
+2025-08-09 21:38:14,963 - n8n-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754771894.9635358 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 404 - {'message': 'Model llama3.1-70b does not exist or you do not have access to it.', 'type': 'not_found_error', 'param': 'model', 'code': 'model_not_found'}") recoverable=False (recoverable: False)
+2025-08-09 21:38:14,981 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-09 21:38:14,983 - n8n-assistant - INFO - ✅ Initial greeting generated
+2025-08-09 21:38:26,912 - n8n-assistant - INFO - ❌ [SESSION CLOSED] Agent session ended
+2025-08-09 21:43:23,125 - n8n-assistant - INFO - 🚀 Starting N8N Assistant LiveKit agent application
+2025-08-09 21:43:23,222 - n8n-assistant - INFO - 🚀 Starting N8N Assistant entrypoint
+2025-08-09 21:43:23,223 - n8n-assistant - INFO - 🧪 [N8N TEST] Testing connection to https://auto2025system.duckdns.org/webhook/smart-weather
+2025-08-09 21:43:23,892 - n8n-assistant - INFO - ✅ [N8N TEST] Connection successful
+2025-08-09 21:43:23,896 - n8n-assistant - INFO - ✅ Connected to room: fake_room
+2025-08-09 21:43:23,898 - n8n-assistant - INFO - N8N Assistant agent initialized with n8n weather, search, and email tools
+2025-08-09 21:43:25,326 - n8n-assistant - INFO - ✅ Session created: Whisper STT (EN) + Cerebras Llama3.1-70B + TTS + N8N Weather + Search + Email
+2025-08-09 21:43:26,483 - n8n-assistant - INFO - 🔄 [AGENT STATE] initializing -> listening
+2025-08-09 21:43:26,487 - n8n-assistant - INFO - ✅ Session started successfully
+2025-08-09 21:43:26,489 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 21:43:26,842 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 21:43:28,964 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 21:43:35,525 - n8n-assistant - INFO - 💬 [CHAT ASSISTANT] Hello, I'm a helpful voice assistant. I can provide you with weather information and assist you with various tasks.
+2025-08-09 21:43:35,527 - n8n-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 21:43:35,529 - n8n-assistant - INFO - ✅ Initial greeting generated
+2025-08-09 21:43:41,166 - n8n-assistant - INFO - 👤 [USER FINAL] Tell me please about weather in Cork.
+2025-08-09 21:43:41,169 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 21:43:41,180 - n8n-assistant - INFO - 💬 [CHAT USER] Tell me please about weather in Cork.
+2025-08-09 21:43:41,182 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 21:43:41,501 - n8n-assistant - INFO - 🌤️ [N8N WEATHER] Getting weather for 'Cork' in celsius
+2025-08-09 21:43:41,503 - n8n-assistant - INFO - 🌐 [N8N REQUEST] Sending to https://auto2025system.duckdns.org/webhook/smart-weather
+2025-08-09 21:43:41,504 - n8n-assistant - INFO - 🌐 [N8N PAYLOAD] {'action': 'weather', 'city': 'Cork', 'units': 'celsius', 'date': 'today', 'user_id': 'livekit_user'}
+2025-08-09 21:43:41,846 - n8n-assistant - INFO - 📡 [N8N RESPONSE] Status: 200
+2025-08-09 21:43:41,847 - n8n-assistant - INFO - 📊 [N8N DATA] Success: True
+2025-08-09 21:43:41,848 - n8n-assistant - INFO - 📊 [N8N MESSAGE] Weather in Cork, Ireland: Currently 15 degrees Celsius, partly cloudy. Very humid at 88%....
+2025-08-09 21:43:41,850 - n8n-assistant - INFO - ✅ [N8N SUCCESS] Weather retrieved for Cork
+2025-08-09 21:43:41,856 - n8n-assistant - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-09 21:43:41,858 - n8n-assistant - INFO - 🛠️ [TOOL SUCCESS] unknown: id='item_59a16b668858' type='function_call_output' name='get_weather_n8n' call_id='902dc15b4' output='Weather in Cork, Ireland: Currently 15 degrees Celsius, partly cloudy. Very humid at 88%.' is_erro...
+2025-08-09 21:43:42,282 - n8n-assistant - INFO - 🌤️ [N8N WEATHER] Getting weather for 'Cork' in celsius
+2025-08-09 21:43:42,283 - n8n-assistant - INFO - 🌐 [N8N REQUEST] Sending to https://auto2025system.duckdns.org/webhook/smart-weather
+2025-08-09 21:43:42,284 - n8n-assistant - INFO - 🌐 [N8N PAYLOAD] {'action': 'weather', 'city': 'Cork', 'units': 'celsius', 'date': 'today', 'user_id': 'livekit_user'}
+2025-08-09 21:43:42,693 - n8n-assistant - INFO - 📡 [N8N RESPONSE] Status: 200
+2025-08-09 21:43:42,695 - n8n-assistant - INFO - 📊 [N8N DATA] Success: True
+2025-08-09 21:43:42,696 - n8n-assistant - INFO - 📊 [N8N MESSAGE] Weather in Cork, Ireland: Currently 15 degrees Celsius, partly cloudy. Very humid at 88%....
+2025-08-09 21:43:42,697 - n8n-assistant - INFO - ✅ [N8N SUCCESS] Weather retrieved for Cork
+2025-08-09 21:43:42,700 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-09 21:43:51,998 - n8n-assistant - INFO - ❌ [SESSION CLOSED] Agent session ended
+2025-08-09 21:46:06,260 - n8n-assistant - INFO - 🚀 Starting N8N Assistant LiveKit agent application
+2025-08-09 21:46:06,359 - n8n-assistant - INFO - 🚀 Starting N8N Assistant entrypoint
+2025-08-09 21:46:06,360 - n8n-assistant - INFO - 🧪 [N8N TEST] Testing connection to https://auto2025system.duckdns.org/webhook/smart-weather
+2025-08-09 21:46:06,871 - n8n-assistant - INFO - ✅ [N8N TEST] Connection successful
+2025-08-09 21:46:06,874 - n8n-assistant - INFO - ✅ Connected to room: fake_room
+2025-08-09 21:46:06,875 - n8n-assistant - INFO - N8N Assistant agent initialized with n8n weather, search, and email tools
+2025-08-09 21:46:08,301 - n8n-assistant - INFO - ✅ Session created: Whisper STT (EN) + Cerebras GPT-OSS-120B + TTS + N8N Weather + Search + Email
+2025-08-09 21:46:09,407 - n8n-assistant - INFO - 🔄 [AGENT STATE] initializing -> listening
+2025-08-09 21:46:09,411 - n8n-assistant - INFO - ✅ Session started successfully
+2025-08-09 21:46:09,413 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 21:46:09,789 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 21:46:10,164 - n8n-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754772370.1646435 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 400 - {'message': 'Tools with strict=True are not supported by this model.', 'type': 'invalid_request_error', 'param': 'tools', 'code': 'wrong_api_format'}") recoverable=True (recoverable: True)
+2025-08-09 21:46:10,580 - n8n-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754772370.5804756 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 400 - {'message': 'Tools with strict=True are not supported by this model.', 'type': 'invalid_request_error', 'param': 'tools', 'code': 'wrong_api_format'}") recoverable=True (recoverable: True)
+2025-08-09 21:46:13,694 - n8n-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754772373.6938808 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 400 - {'message': 'Tools with strict=True are not supported by this model.', 'type': 'invalid_request_error', 'param': 'tools', 'code': 'wrong_api_format'}") recoverable=True (recoverable: True)
+2025-08-09 21:46:16,050 - n8n-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754772376.0495636 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 400 - {'message': 'Tools with strict=True are not supported by this model.', 'type': 'invalid_request_error', 'param': 'tools', 'code': 'wrong_api_format'}") recoverable=False (recoverable: False)
+2025-08-09 21:46:16,072 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-09 21:46:16,074 - n8n-assistant - INFO - ✅ Initial greeting generated
+2025-08-09 21:46:19,682 - n8n-assistant - INFO - ❌ [SESSION CLOSED] Agent session ended
+2025-08-09 21:48:03,987 - n8n-assistant - INFO - 🚀 Starting N8N Assistant LiveKit agent application
+2025-08-09 21:48:04,087 - n8n-assistant - INFO - 🚀 Starting N8N Assistant entrypoint
+2025-08-09 21:48:04,088 - n8n-assistant - INFO - 🧪 [N8N TEST] Testing connection to https://auto2025system.duckdns.org/webhook/smart-weather
+2025-08-09 21:48:05,108 - n8n-assistant - INFO - ✅ [N8N TEST] Connection successful
+2025-08-09 21:48:05,112 - n8n-assistant - INFO - ✅ Connected to room: fake_room
+2025-08-09 21:48:05,114 - n8n-assistant - INFO - N8N Assistant agent initialized with n8n weather, search, and email tools
+2025-08-09 21:48:06,726 - n8n-assistant - INFO - ✅ Session created: Whisper STT (EN) + Cerebras Llama-3.3-70B + TTS + N8N Weather + Search + Email
+2025-08-09 21:48:07,866 - n8n-assistant - INFO - 🔄 [AGENT STATE] initializing -> listening
+2025-08-09 21:48:07,869 - n8n-assistant - INFO - ✅ Session started successfully
+2025-08-09 21:48:07,870 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 21:48:08,254 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 21:48:09,936 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 21:48:25,014 - n8n-assistant - INFO - 💬 [CHAT ASSISTANT] Hello, I'm a helpful voice assistant with access to weather information and other tools to assist you. I can provide you with the current weather in various cities, help you find information on the web, and even send emails. What can I help you with today?
+2025-08-09 21:48:25,016 - n8n-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 21:48:25,017 - n8n-assistant - INFO - ✅ Initial greeting generated
+2025-08-09 21:48:29,411 - n8n-assistant - INFO - 👤 [USER FINAL] Tell me about Vevé in Cork.
+2025-08-09 21:48:29,414 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 21:48:29,427 - n8n-assistant - INFO - 💬 [CHAT USER] Tell me about Vevé in Cork.
+2025-08-09 21:48:29,429 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 21:48:31,936 - n8n-assistant - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-09 21:48:31,937 - n8n-assistant - INFO - 🛠️ [TOOL SUCCESS] unknown: id='item_7b67ee792ff8' type='function_call_output' name='search_web' call_id='d7c7c7ecc' output="I found information about 'Vevé in Cork'. Vibe Cork was a popular bar in Cork, but it has reportedly cl...
+2025-08-09 21:48:33,880 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-09 21:48:45,342 - n8n-assistant - INFO - 👤 [USER FINAL] Преоме и бавот.
+2025-08-09 21:48:45,344 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 21:48:45,355 - n8n-assistant - INFO - 💬 [CHAT USER] Преоме и бавот.
+2025-08-09 21:48:45,357 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 21:48:47,100 - n8n-assistant - INFO - 👤 [USER FINAL] Vere en korc.
+2025-08-09 21:48:47,102 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 21:48:47,120 - n8n-assistant - INFO - 💬 [CHAT USER] Vere en korc.
+2025-08-09 21:48:47,790 - n8n-assistant - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-09 21:48:47,791 - n8n-assistant - INFO - 🛠️ [TOOL SUCCESS] unknown: id='item_9881092bba0b' type='function_call_output' name='search_web' call_id='dded2bdad' output="I found information about 'Preome and Bawot'. Preome and Bawot are luxury yacht charter companies offer...
+2025-08-09 21:48:49,180 - n8n-assistant - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-09 21:48:49,181 - n8n-assistant - INFO - 🛠️ [TOOL SUCCESS] unknown: id='item_6326822030c4' type='function_call_output' name='search_web' call_id='301a0df1c' output="I found information about 'Vevé in Cork'. Vibe Cork was a popular bar in Cork, but it has reportedly cl...
+2025-08-09 21:48:50,017 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-09 21:49:01,091 - n8n-assistant - INFO - 👤 [USER FINAL] Tell me about
+2025-08-09 21:49:01,618 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 21:49:01,636 - n8n-assistant - INFO - 💬 [CHAT USER] Tell me about
+2025-08-09 21:49:01,639 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 21:49:01,920 - n8n-assistant - INFO - 👤 [USER FINAL] Whether
+2025-08-09 21:49:02,424 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 21:49:02,443 - n8n-assistant - INFO - 💬 [CHAT USER] Whether
+2025-08-09 21:49:02,688 - n8n-assistant - INFO - 👤 [USER FINAL] Ункорк.
+2025-08-09 21:49:02,691 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 21:49:02,703 - n8n-assistant - INFO - 💬 [CHAT USER] Ункорк.
+2025-08-09 21:49:03,110 - n8n-assistant - INFO - 🌤️ [N8N WEATHER] Getting weather for 'Cork' in celsius
+2025-08-09 21:49:03,111 - n8n-assistant - INFO - 🌐 [N8N REQUEST] Sending to https://auto2025system.duckdns.org/webhook/smart-weather
+2025-08-09 21:49:03,112 - n8n-assistant - INFO - 🌐 [N8N PAYLOAD] {'action': 'weather', 'city': 'Cork', 'units': 'celsius', 'date': 'today', 'user_id': 'livekit_user'}
+2025-08-09 21:49:03,461 - n8n-assistant - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-09 21:49:03,462 - n8n-assistant - INFO - 🛠️ [TOOL SUCCESS] unknown: id='item_020d6ae3a6c8' type='function_call_output' name='search_web' call_id='357c1a839' output="I found information about 'Vevé in Cork'. Vibe Cork was a popular bar in Cork, but it has reportedly cl...
+2025-08-09 21:49:03,491 - n8n-assistant - INFO - 📡 [N8N RESPONSE] Status: 200
+2025-08-09 21:49:03,492 - n8n-assistant - INFO - 📊 [N8N DATA] Success: True
+2025-08-09 21:49:03,493 - n8n-assistant - INFO - 📊 [N8N MESSAGE] Weather in Cork, Ireland: Currently 15 degrees Celsius, partly cloudy. Very humid at 88%....
+2025-08-09 21:49:03,494 - n8n-assistant - INFO - ✅ [N8N SUCCESS] Weather retrieved for Cork
+2025-08-09 21:49:03,497 - n8n-assistant - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-09 21:49:03,498 - n8n-assistant - INFO - 🛠️ [TOOL SUCCESS] unknown: id='item_6bd596cf345b' type='function_call_output' name='get_weather_n8n' call_id='648de69e5' output='Weather in Cork, Ireland: Currently 15 degrees Celsius, partly cloudy. Very humid at 88%.' is_erro...
+2025-08-09 21:49:03,950 - n8n-assistant - INFO - 🌤️ [N8N WEATHER] Getting weather for 'Cork' in celsius
+2025-08-09 21:49:03,951 - n8n-assistant - INFO - 🌐 [N8N REQUEST] Sending to https://auto2025system.duckdns.org/webhook/smart-weather
+2025-08-09 21:49:03,952 - n8n-assistant - INFO - 🌐 [N8N PAYLOAD] {'action': 'weather', 'city': 'Cork', 'units': 'celsius', 'date': 'today', 'user_id': 'livekit_user'}
+2025-08-09 21:49:04,356 - n8n-assistant - INFO - 📡 [N8N RESPONSE] Status: 200
+2025-08-09 21:49:04,357 - n8n-assistant - INFO - 📊 [N8N DATA] Success: True
+2025-08-09 21:49:04,358 - n8n-assistant - INFO - 📊 [N8N MESSAGE] Weather in Cork, Ireland: Currently 15 degrees Celsius, partly cloudy. Very humid at 88%....
+2025-08-09 21:49:04,358 - n8n-assistant - INFO - ✅ [N8N SUCCESS] Weather retrieved for Cork
+2025-08-09 21:49:04,361 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-09 21:59:17,541 - n8n-assistant - INFO - ❌ [SESSION CLOSED] Agent session ended
+2025-08-09 21:59:24,713 - n8n-assistant - INFO - 🚀 Starting N8N Assistant LiveKit agent application
+2025-08-09 21:59:24,811 - n8n-assistant - INFO - 🚀 Starting N8N Assistant entrypoint
+2025-08-09 21:59:24,813 - n8n-assistant - INFO - 🧪 [N8N TEST] Testing connection to https://auto2025system.duckdns.org/webhook/smart-weather
+2025-08-09 21:59:26,200 - n8n-assistant - INFO - ✅ [N8N TEST] Connection successful
+2025-08-09 21:59:26,203 - n8n-assistant - INFO - ✅ Connected to room: fake_room
+2025-08-09 21:59:26,204 - n8n-assistant - INFO - N8N Assistant agent initialized with n8n weather, search, and email tools
+2025-08-09 22:01:13,925 - n8n-assistant - INFO - 🚀 Starting N8N Assistant LiveKit agent application
+2025-08-09 22:01:14,019 - n8n-assistant - INFO - 🚀 Starting N8N Assistant entrypoint
+2025-08-09 22:01:14,020 - n8n-assistant - INFO - 🧪 [N8N TEST] Testing connection to https://auto2025system.duckdns.org/webhook/smart-weather
+2025-08-09 22:01:14,363 - n8n-assistant - INFO - ✅ [N8N TEST] Connection successful
+2025-08-09 22:01:14,366 - n8n-assistant - INFO - ✅ Connected to room: fake_room
+2025-08-09 22:01:14,367 - n8n-assistant - INFO - N8N Assistant agent initialized with n8n weather, search, and email tools
+2025-08-09 22:02:37,697 - n8n-assistant - INFO - 🚀 Starting N8N Assistant LiveKit agent application
+2025-08-09 22:02:37,785 - n8n-assistant - INFO - 🚀 Starting N8N Assistant entrypoint
+2025-08-09 22:02:37,786 - n8n-assistant - INFO - 🧪 [N8N TEST] Testing connection to https://auto2025system.duckdns.org/webhook/smart-weather
+2025-08-09 22:02:38,450 - n8n-assistant - INFO - ✅ [N8N TEST] Connection successful
+2025-08-09 22:02:38,451 - n8n-assistant - INFO - ✅ Connected to room: fake_room
+2025-08-09 22:02:38,452 - n8n-assistant - INFO - N8N Assistant agent initialized with n8n weather, search, and email tools
+2025-08-09 22:03:53,367 - n8n-assistant - INFO - 🚀 Starting N8N Assistant LiveKit agent application
+2025-08-09 22:03:53,469 - n8n-assistant - INFO - 🚀 Starting N8N Assistant entrypoint
+2025-08-09 22:03:53,470 - n8n-assistant - INFO - 🧪 [N8N TEST] Testing connection to https://auto2025system.duckdns.org/webhook/smart-weather
+2025-08-09 22:03:53,856 - n8n-assistant - INFO - ✅ [N8N TEST] Connection successful
+2025-08-09 22:03:53,858 - n8n-assistant - INFO - ✅ Connected to room: fake_room
+2025-08-09 22:03:53,859 - n8n-assistant - INFO - N8N Assistant agent initialized with n8n weather, search, and email tools
+2025-08-09 22:03:55,608 - n8n-assistant - INFO - ✅ Session created: Whisper STT (EN) + Cerebras Llama-3.3-70B (AutoGen settings) + TTS + N8N Weather + Search + Email
+2025-08-09 22:03:55,990 - n8n-assistant - INFO - 🔄 [AGENT STATE] initializing -> listening
+2025-08-09 22:03:55,996 - n8n-assistant - INFO - ✅ Session started successfully
+2025-08-09 22:03:55,999 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 22:03:56,404 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 22:03:57,802 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 22:04:13,727 - n8n-assistant - INFO - 💬 [CHAT ASSISTANT] Hello! I'm a helpful voice assistant, and I'm here to provide you with useful information, including weather updates for any city you're interested in. I can also assist you with searching the web for the latest information on various topics and help you send emails. How can I assist you today?
+2025-08-09 22:04:13,729 - n8n-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 22:04:13,730 - n8n-assistant - INFO - ✅ Initial greeting generated
+2025-08-09 22:04:18,527 - n8n-assistant - INFO - 👤 [USER FINAL] Tell me about Wewi in Cork.
+2025-08-09 22:04:18,529 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 22:04:18,539 - n8n-assistant - INFO - 💬 [CHAT USER] Tell me about Wewi in Cork.
+2025-08-09 22:04:18,541 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 22:04:20,873 - n8n-assistant - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-09 22:04:20,874 - n8n-assistant - INFO - 🛠️ [TOOL SUCCESS] unknown: id='item_0d50699d560c' type='function_call_output' name='search_web' call_id='42b43d551' output="I found information about 'Wewi in Cork'. Wewi in Cork refers to West Cork, a tourist region in County ...
+2025-08-09 22:04:22,754 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-09 22:04:31,460 - n8n-assistant - INFO - 👤 [USER FINAL] Tell me about
+2025-08-09 22:04:32,145 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 22:04:32,161 - n8n-assistant - INFO - 💬 [CHAT USER] Tell me about
+2025-08-09 22:04:32,164 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 22:04:32,555 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-09 22:04:32,731 - n8n-assistant - INFO - 👤 [USER FINAL] Leve
+2025-08-09 22:04:32,936 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 22:04:32,951 - n8n-assistant - INFO - 💬 [CHAT USER] Leve
+2025-08-09 22:04:32,954 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 22:04:33,323 - n8n-assistant - INFO - 👤 [USER FINAL] енкорк
+2025-08-09 22:04:33,326 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 22:04:33,337 - n8n-assistant - INFO - 💬 [CHAT USER] енкорк
+2025-08-09 22:04:36,835 - n8n-assistant - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-09 22:04:36,836 - n8n-assistant - INFO - 🛠️ [TOOL SUCCESS] unknown: id='item_40cf5959b383' type='function_call_output' name='search_web' call_id='5f838ce4b' output="I found information about 'Leven Cork'. Leven Cork is a city in Foo, near the Veil Sea. It is known for...
+2025-08-09 22:04:38,792 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-09 22:04:46,560 - n8n-assistant - INFO - 👤 [USER FINAL] Hail me about
+2025-08-09 22:04:46,563 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 22:04:46,575 - n8n-assistant - INFO - 💬 [CHAT USER] Hail me about
+2025-08-09 22:04:46,576 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 22:04:49,184 - n8n-assistant - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-09 22:04:49,185 - n8n-assistant - INFO - 🛠️ [TOOL SUCCESS] unknown: id='item_3845b28f7a63' type='function_call_output' name='search_web' call_id='b0693b400' output="I found information about 'Hail in Cork'. Hail occurred in Cork City, Ireland, on February 16th. Recent...
+2025-08-09 22:04:49,581 - n8n-assistant - INFO - 👤 [USER FINAL] Ewe, in Cork.
+2025-08-09 22:04:49,584 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 22:04:49,604 - n8n-assistant - INFO - 💬 [CHAT USER] Ewe, in Cork.
+2025-08-09 22:04:51,303 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-09 22:04:51,678 - n8n-assistant - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-09 22:04:51,679 - n8n-assistant - INFO - 🛠️ [TOOL SUCCESS] unknown: id='item_f703b762a298' type='function_call_output' name='search_web' call_id='c42396f68' output="I found information about 'Ewe in Cork'. The Ewe Experience in Glengarriff, Co. Cork, combines art and ...
+2025-08-09 22:04:51,691 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 22:04:52,885 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 22:05:04,863 - n8n-assistant - INFO - 👤 [USER FINAL] Стоп.
+2025-08-09 22:05:04,866 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 22:05:04,877 - n8n-assistant - INFO - 💬 [CHAT ASSISTANT] I found information about 'Ewe in Cork'. The Ewe Experience in Glengarriff, Co. Cork, combines art and nature with interactive sculptures. It's located on Kenmare Road. Contact Sheena Wood & Kurt Lyndorff
+2025-08-09 22:05:04,879 - n8n-assistant - INFO - ⚠️ [INTERRUPTED] assistant was interrupted
+2025-08-09 22:05:04,880 - n8n-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 22:05:04,883 - n8n-assistant - INFO - 💬 [CHAT USER] Стоп.
+2025-08-09 22:05:04,884 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 22:05:06,129 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 22:05:06,268 - n8n-assistant - INFO - 💬 [CHAT ASSISTANT] It seems like you're referring to a sheep, as "ewe" is another word for an adult female sheep. Cork is a city located in Ireland, and it's known for its rich agricultural land and farming industry. If you're looking for information about sheep farming in Cork, I can tell you that it's a significant sector in the local economy. However, if you have any more specific questions or topics you'd like to discuss, feel free to ask!
+2025-08-09 22:05:06,270 - n8n-assistant - INFO - ⚠️ [INTERRUPTED] assistant was interrupted
+2025-08-09 22:05:06,271 - n8n-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 22:05:06,782 - n8n-assistant - INFO - 👤 [USER FINAL] Стоп.
+2025-08-09 22:05:06,785 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 22:05:06,800 - n8n-assistant - INFO - 💬 [CHAT USER] Стоп.
+2025-08-09 22:05:06,801 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 22:05:07,917 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 22:05:08,666 - n8n-assistant - INFO - 💬 [CHAT ASSISTANT] It seems like
+2025-08-09 22:05:08,668 - n8n-assistant - INFO - ⚠️ [INTERRUPTED] assistant was interrupted
+2025-08-09 22:05:08,669 - n8n-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 22:05:09,792 - n8n-assistant - INFO - 👤 [USER FINAL] Элнеебавад.
+2025-08-09 22:05:09,794 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 22:05:09,811 - n8n-assistant - INFO - 💬 [CHAT USER] Элнеебавад.
+2025-08-09 22:05:09,813 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 22:05:10,558 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-09 22:05:12,382 - n8n-assistant - INFO - 👤 [USER FINAL] Tell me about weather.
+2025-08-09 22:05:13,045 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 22:05:13,064 - n8n-assistant - INFO - 💬 [CHAT USER] Tell me about weather.
+2025-08-09 22:05:13,066 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 22:05:13,595 - n8n-assistant - INFO - 🌤️ [N8N WEATHER] Getting weather for 'London' in celsius
+2025-08-09 22:05:13,596 - n8n-assistant - INFO - 🌐 [N8N REQUEST] Sending to https://auto2025system.duckdns.org/webhook/smart-weather
+2025-08-09 22:05:13,597 - n8n-assistant - INFO - 🌐 [N8N PAYLOAD] {'action': 'weather', 'city': 'London', 'units': 'celsius', 'date': 'today', 'user_id': 'livekit_user'}
+2025-08-09 22:05:13,608 - n8n-assistant - INFO - 👤 [USER FINAL] In Cork.
+2025-08-09 22:05:13,611 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 22:05:13,630 - n8n-assistant - INFO - 💬 [CHAT USER] In Cork.
+2025-08-09 22:05:13,953 - n8n-assistant - INFO - 📡 [N8N RESPONSE] Status: 200
+2025-08-09 22:05:13,955 - n8n-assistant - INFO - 📊 [N8N DATA] Success: True
+2025-08-09 22:05:13,957 - n8n-assistant - INFO - 📊 [N8N MESSAGE] Weather in London, City of London, Greater London, United Kingdom: Currently 20 degrees Celsius, cle...
+2025-08-09 22:05:13,959 - n8n-assistant - INFO - ✅ [N8N SUCCESS] Weather retrieved for London
+2025-08-09 22:05:13,962 - n8n-assistant - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-09 22:05:13,963 - n8n-assistant - INFO - 🛠️ [TOOL SUCCESS] unknown: id='item_0db3ebf07124' type='function_call_output' name='get_weather_n8n' call_id='5119f0948' output='Weather in London, City of London, Greater London, United Kingdom: Currently 20 degrees Celsius, c...
+2025-08-09 22:05:13,986 - n8n-assistant - INFO - 🌤️ [N8N WEATHER] Getting weather for 'Cork' in celsius
+2025-08-09 22:05:13,987 - n8n-assistant - INFO - 🌐 [N8N REQUEST] Sending to https://auto2025system.duckdns.org/webhook/smart-weather
+2025-08-09 22:05:13,988 - n8n-assistant - INFO - 🌐 [N8N PAYLOAD] {'action': 'weather', 'city': 'Cork', 'units': 'celsius', 'date': 'today', 'user_id': 'livekit_user'}
+2025-08-09 22:05:14,364 - n8n-assistant - INFO - 📡 [N8N RESPONSE] Status: 200
+2025-08-09 22:05:14,366 - n8n-assistant - INFO - 📊 [N8N DATA] Success: True
+2025-08-09 22:05:14,367 - n8n-assistant - INFO - 📊 [N8N MESSAGE] Weather in Cork, Ireland: Currently 15 degrees Celsius, partly cloudy. Very humid at 82%....
+2025-08-09 22:05:14,368 - n8n-assistant - INFO - ✅ [N8N SUCCESS] Weather retrieved for Cork
+2025-08-09 22:05:14,372 - n8n-assistant - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-09 22:05:14,373 - n8n-assistant - INFO - 🛠️ [TOOL SUCCESS] unknown: id='item_41f7e0567500' type='function_call_output' name='get_weather_n8n' call_id='64c403ee8' output='Weather in Cork, Ireland: Currently 15 degrees Celsius, partly cloudy. Very humid at 82%.' is_erro...
+2025-08-09 22:05:14,462 - n8n-assistant - INFO - 🌤️ [N8N WEATHER] Getting weather for 'London' in celsius
+2025-08-09 22:05:14,463 - n8n-assistant - INFO - 🌐 [N8N REQUEST] Sending to https://auto2025system.duckdns.org/webhook/smart-weather
+2025-08-09 22:05:14,464 - n8n-assistant - INFO - 🌐 [N8N PAYLOAD] {'action': 'weather', 'city': 'London', 'units': 'celsius', 'date': 'today', 'user_id': 'livekit_user'}
+2025-08-09 22:05:14,805 - n8n-assistant - INFO - 📡 [N8N RESPONSE] Status: 200
+2025-08-09 22:05:14,807 - n8n-assistant - INFO - 📊 [N8N DATA] Success: True
+2025-08-09 22:05:14,808 - n8n-assistant - INFO - 📊 [N8N MESSAGE] Weather in London, City of London, Greater London, United Kingdom: Currently 20 degrees Celsius, cle...
+2025-08-09 22:05:14,809 - n8n-assistant - INFO - ✅ [N8N SUCCESS] Weather retrieved for London
+2025-08-09 22:05:15,768 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 22:05:23,098 - n8n-assistant - INFO - 💬 [CHAT ASSISTANT] The current weather in Cork, Ireland is 15 degrees Celsius, partly cloudy, and very humid at 82%.
+2025-08-09 22:05:23,100 - n8n-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 22:05:30,203 - n8n-assistant - INFO - ❌ [SESSION CLOSED] Agent session ended
+2025-08-09 22:13:04,885 - n8n-assistant - INFO - 🚀 Starting N8N Assistant LiveKit agent application
+2025-08-09 22:13:04,987 - n8n-assistant - INFO - 🚀 Starting N8N Assistant entrypoint
+2025-08-09 22:13:04,988 - n8n-assistant - INFO - 🧪 [N8N TEST] Testing connection to https://auto2025system.duckdns.org/webhook/smart-weather
+2025-08-09 22:13:06,634 - n8n-assistant - INFO - ✅ [N8N TEST] Connection successful
+2025-08-09 22:13:06,637 - n8n-assistant - INFO - ✅ Connected to room: fake_room
+2025-08-09 22:13:06,638 - n8n-assistant - INFO - N8N Assistant agent initialized with n8n weather, search, and email tools
+2025-08-09 22:13:08,330 - n8n-assistant - INFO - ✅ Session created: Whisper STT (EN) + Cerebras Llama-3.3-70B (AutoGen settings) + TTS + N8N Weather + Search + Email
+2025-08-09 22:13:09,549 - n8n-assistant - INFO - 🔄 [AGENT STATE] initializing -> listening
+2025-08-09 22:13:09,552 - n8n-assistant - INFO - ✅ Session started successfully
+2025-08-09 22:13:09,553 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 22:13:09,919 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 22:13:12,084 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 22:13:30,775 - n8n-assistant - INFO - 💬 [CHAT ASSISTANT] Hello! I'm a helpful voice assistant, and I'm here to provide you with useful information, including weather updates for various cities. I can also assist you with searching the web for the latest information on a wide range of topics and help you send emails. Feel free to ask me anything, and I'll do my best to help!
+2025-08-09 22:13:30,777 - n8n-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 22:13:30,778 - n8n-assistant - INFO - ✅ Initial greeting generated
+2025-08-09 22:13:36,486 - n8n-assistant - INFO - 👤 [USER FINAL] Tell me about the cork.
+2025-08-09 22:13:36,489 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 22:13:36,504 - n8n-assistant - INFO - 💬 [CHAT USER] Tell me about the cork.
+2025-08-09 22:13:36,505 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 22:13:37,960 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 22:13:46,929 - n8n-assistant - INFO - 💬 [CHAT ASSISTANT] Cork is a natural, impermeable, and buoyant material that comes from the bark of the cork oak tree, which is native to
+2025-08-09 22:13:46,931 - n8n-assistant - INFO - ⚠️ [INTERRUPTED] assistant was interrupted
+2025-08-09 22:13:46,932 - n8n-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 22:13:47,408 - n8n-assistant - INFO - 👤 [USER FINAL] Стоп
+2025-08-09 22:13:47,411 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 22:13:47,429 - n8n-assistant - INFO - 💬 [CHAT USER] Стоп
+2025-08-09 22:13:47,431 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 22:13:49,000 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 22:13:49,232 - n8n-assistant - INFO - 💬 [CHAT ASSISTANT] It
+2025-08-09 22:13:49,234 - n8n-assistant - INFO - ⚠️ [INTERRUPTED] assistant was interrupted
+2025-08-09 22:13:49,235 - n8n-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 22:13:51,607 - n8n-assistant - INFO - 👤 [USER FINAL] Elmiibaut zēva.
+2025-08-09 22:13:52,002 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 22:13:52,103 - n8n-assistant - INFO - 💬 [CHAT USER] Elmiibaut zēva.
+2025-08-09 22:13:52,105 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 22:13:52,460 - n8n-assistant - INFO - 👤 [USER FINAL] Enkork
+2025-08-09 22:13:52,466 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 22:13:52,482 - n8n-assistant - INFO - 💬 [CHAT USER] Enkork
+2025-08-09 22:13:53,801 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 22:14:02,074 - n8n-assistant - INFO - 💬 [CHAT ASSISTANT] It seems like you're trying to communicate, but I'm not sure what you're trying to say. Could you please provide more context or clarify your question? I'll do my best to help.
+2025-08-09 22:14:02,077 - n8n-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 22:14:04,374 - n8n-assistant - INFO - 👤 [USER FINAL] Зеве
+2025-08-09 22:14:04,377 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 22:14:04,390 - n8n-assistant - INFO - 💬 [CHAT USER] Зеве
+2025-08-09 22:14:04,391 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 22:14:05,322 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-09 22:14:06,295 - n8n-assistant - INFO - 👤 [USER FINAL] Вэ вэ инкорк.
+2025-08-09 22:14:06,297 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 22:14:06,309 - n8n-assistant - INFO - 💬 [CHAT USER] Вэ вэ инкорк.
+2025-08-09 22:14:06,311 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 22:14:07,743 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 22:14:13,120 - n8n-assistant - INFO - 💬 [CHAT ASSISTANT] It seems like you're speaking in a different language, but I'm here to help with any questions or topics you'd like
+2025-08-09 22:14:13,122 - n8n-assistant - INFO - ⚠️ [INTERRUPTED] assistant was interrupted
+2025-08-09 22:14:13,123 - n8n-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 22:14:13,859 - n8n-assistant - INFO - 👤 [USER FINAL] Pog.
+2025-08-09 22:14:13,861 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 22:14:13,881 - n8n-assistant - INFO - 💬 [CHAT USER] Pog.
+2025-08-09 22:14:13,883 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 22:14:15,746 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 22:14:16,922 - n8n-assistant - INFO - 💬 [CHAT ASSISTANT] It seems like you're
+2025-08-09 22:14:16,924 - n8n-assistant - INFO - ⚠️ [INTERRUPTED] assistant was interrupted
+2025-08-09 22:14:16,925 - n8n-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 22:14:17,450 - n8n-assistant - INFO - 👤 [USER FINAL] Eu.
+2025-08-09 22:14:17,454 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 22:14:17,472 - n8n-assistant - INFO - 💬 [CHAT USER] Eu.
+2025-08-09 22:14:17,474 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 22:14:18,622 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-09 22:14:20,211 - n8n-assistant - INFO - 👤 [USER FINAL] Me, about
+2025-08-09 22:14:20,215 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 22:14:20,235 - n8n-assistant - INFO - 💬 [CHAT USER] Me, about
+2025-08-09 22:14:20,237 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 22:14:21,392 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 22:14:22,130 - n8n-assistant - INFO - 💬 [CHAT ASSISTANT] It seems like
+2025-08-09 22:14:22,131 - n8n-assistant - INFO - ⚠️ [INTERRUPTED] assistant was interrupted
+2025-08-09 22:14:22,132 - n8n-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 22:14:22,821 - n8n-assistant - INFO - 👤 [USER FINAL] Зеве.
+2025-08-09 22:14:22,824 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 22:14:22,838 - n8n-assistant - INFO - 💬 [CHAT USER] Зеве.
+2025-08-09 22:14:22,839 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 22:14:23,822 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-09 22:14:24,564 - n8n-assistant - INFO - 👤 [USER FINAL] In Cork
+2025-08-09 22:14:24,567 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 22:14:24,582 - n8n-assistant - INFO - 💬 [CHAT USER] In Cork
+2025-08-09 22:14:24,585 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 22:14:25,829 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 22:14:36,021 - n8n-assistant - INFO - 💬 [CHAT ASSISTANT] Cork is a city located in the southern part of Ireland. It's known for its rich history, cultural attractions, and friendly people. If you're looking for information about the
+2025-08-09 22:14:36,022 - n8n-assistant - INFO - ⚠️ [INTERRUPTED] assistant was interrupted
+2025-08-09 22:14:36,023 - n8n-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 22:14:37,214 - n8n-assistant - INFO - 👤 [USER FINAL] About weather
+2025-08-09 22:14:37,219 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 22:14:37,240 - n8n-assistant - INFO - 💬 [CHAT USER] About weather
+2025-08-09 22:14:37,241 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 22:14:37,678 - n8n-assistant - INFO - 🌤️ [N8N WEATHER] Getting weather for 'Cork' in celsius
+2025-08-09 22:14:37,679 - n8n-assistant - INFO - 🌐 [N8N REQUEST] Sending to https://auto2025system.duckdns.org/webhook/smart-weather
+2025-08-09 22:14:37,680 - n8n-assistant - INFO - 🌐 [N8N PAYLOAD] {'action': 'weather', 'city': 'Cork', 'units': 'celsius', 'date': 'today', 'user_id': 'livekit_user'}
+2025-08-09 22:14:38,119 - n8n-assistant - INFO - 📡 [N8N RESPONSE] Status: 200
+2025-08-09 22:14:38,121 - n8n-assistant - INFO - 📊 [N8N DATA] Success: True
+2025-08-09 22:14:38,121 - n8n-assistant - INFO - 📊 [N8N MESSAGE] Weather in Cork, Ireland: Currently 15 degrees Celsius, partly cloudy. Very humid at 82%....
+2025-08-09 22:14:38,122 - n8n-assistant - INFO - ✅ [N8N SUCCESS] Weather retrieved for Cork
+2025-08-09 22:14:38,125 - n8n-assistant - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-09 22:14:38,126 - n8n-assistant - INFO - 🛠️ [TOOL SUCCESS] unknown: id='item_5e5dc061f7a8' type='function_call_output' name='get_weather_n8n' call_id='6ee0fbf42' output='Weather in Cork, Ireland: Currently 15 degrees Celsius, partly cloudy. Very humid at 82%.' is_erro...
+2025-08-09 22:14:38,496 - n8n-assistant - INFO - 🌤️ [N8N WEATHER] Getting weather for 'Cork' in celsius
+2025-08-09 22:14:38,496 - n8n-assistant - INFO - 🌐 [N8N REQUEST] Sending to https://auto2025system.duckdns.org/webhook/smart-weather
+2025-08-09 22:14:38,497 - n8n-assistant - INFO - 🌐 [N8N PAYLOAD] {'action': 'weather', 'city': 'Cork', 'units': 'celsius', 'date': 'today', 'user_id': 'livekit_user'}
+2025-08-09 22:14:38,923 - n8n-assistant - INFO - 📡 [N8N RESPONSE] Status: 200
+2025-08-09 22:14:38,924 - n8n-assistant - INFO - 📊 [N8N DATA] Success: True
+2025-08-09 22:14:38,925 - n8n-assistant - INFO - 📊 [N8N MESSAGE] Weather in Cork, Ireland: Currently 15 degrees Celsius, partly cloudy. Very humid at 82%....
+2025-08-09 22:14:38,926 - n8n-assistant - INFO - ✅ [N8N SUCCESS] Weather retrieved for Cork
+2025-08-09 22:14:38,929 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-09 22:15:02,633 - n8n-assistant - INFO - ❌ [SESSION CLOSED] Agent session ended
+2025-08-12 19:48:40,553 - n8n-assistant - INFO - 🚀 Starting N8N Assistant LiveKit agent application
+2025-08-12 19:48:40,651 - n8n-assistant - INFO - 🚀 Starting N8N Assistant entrypoint
+2025-08-12 19:48:41,323 - n8n-assistant - INFO - ✅ Connected to room: fake_room
+2025-08-12 19:48:41,323 - n8n-assistant - INFO - N8N Assistant agent initialized with n8n weather, search, and email tools
+2025-08-12 19:48:43,400 - n8n-assistant - INFO - ✅ Session created: Whisper STT (EN) + GPT-4o-mini + TTS + N8N Weather + Search + Email
+2025-08-12 19:48:44,631 - n8n-assistant - INFO - 🔄 [AGENT STATE] initializing -> listening
+2025-08-12 19:48:44,633 - n8n-assistant - INFO - ✅ Session started successfully
+2025-08-12 19:48:44,634 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-12 19:48:45,149 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-12 19:48:49,482 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-12 19:48:54,915 - n8n-assistant - INFO - 💬 [CHAT ASSISTANT] Hello! I'm your helpful voice assistant with access to weather information. How can I assist you today?
+2025-08-12 19:48:54,917 - n8n-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-12 19:48:54,918 - n8n-assistant - INFO - ✅ Initial greeting generated
+2025-08-12 19:49:08,255 - n8n-assistant - INFO - 👤 [USER FINAL] Tell me please about.
+2025-08-12 19:49:08,257 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-12 19:49:08,268 - n8n-assistant - INFO - 💬 [CHAT USER] Tell me please about.
+2025-08-12 19:49:08,269 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-12 19:49:09,049 - n8n-assistant - INFO - 👤 [USER FINAL] in the
+2025-08-12 19:49:09,052 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-12 19:49:09,063 - n8n-assistant - INFO - 💬 [CHAT USER] in the
+2025-08-12 19:49:09,965 - n8n-assistant - INFO - 👤 [USER FINAL] In Kilarny.
+2025-08-12 19:49:09,967 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-12 19:49:09,980 - n8n-assistant - INFO - 💬 [CHAT USER] In Kilarny.
+2025-08-12 19:49:12,024 - n8n-assistant - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-12 19:49:12,025 - n8n-assistant - INFO - 🛠️ [TOOL RESULT 1] unknown: no result...
+2025-08-12 19:49:15,724 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-12 19:49:20,979 - n8n-assistant - INFO - 💬 [CHAT ASSISTANT] The current weather in Killarney, Kerry, Ireland is 21 degrees Celsius and sunny.
+2025-08-12 19:49:20,980 - n8n-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-12 19:49:39,698 - n8n-assistant - INFO - 👤 [USER FINAL] Ok, thank you very much
+2025-08-12 19:49:39,702 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-12 19:49:39,716 - n8n-assistant - INFO - 💬 [CHAT USER] Ok, thank you very much
+2025-08-12 19:49:39,718 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-12 19:49:40,736 - n8n-assistant - INFO - 👤 [USER FINAL] Tell me last news about GPT.
+2025-08-12 19:49:40,738 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-12 19:49:40,752 - n8n-assistant - INFO - 💬 [CHAT USER] Tell me last news about GPT.
+2025-08-12 19:49:41,282 - n8n-assistant - INFO - 👤 [USER FINAL] Five
+2025-08-12 19:49:41,284 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-12 19:49:41,301 - n8n-assistant - INFO - 💬 [CHAT USER] Five
+2025-08-12 19:49:43,941 - n8n-assistant - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-12 19:49:43,942 - n8n-assistant - INFO - 🛠️ [TOOL RESULT 1] unknown: no result...
+2025-08-12 19:49:46,446 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-12 19:50:03,248 - n8n-assistant - INFO - 💬 [CHAT ASSISTANT] The latest news about GPT is that GPT-5 has been released, showing significant improvements in accuracy and reasoning. It is now the only available model, replacing older versions. Microsoft is integrating GPT-5 into various products.
+2025-08-12 19:50:03,249 - n8n-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-12 19:50:07,156 - n8n-assistant - INFO - ❌ [SESSION CLOSED] Agent session ended

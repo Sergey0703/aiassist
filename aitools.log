@@ -6003,3 +6003,931 @@ livekit.agents._exceptions.APIConnectionError: failed to generate LLM completion
 2025-08-09 20:52:35,321 - livekit.agents - DEBUG - session closed
 2025-08-09 20:52:35,321 - livekit.agents - DEBUG - http_session(): closing the httpclient ctx
 2025-08-09 20:52:35,322 - livekit.agents - DEBUG - http_session(): creating a new httpclient ctx
+2025-08-09 21:38:05,829 - n8n-assistant - INFO - 🚀 Starting N8N Assistant LiveKit agent application
+2025-08-09 21:38:05,833 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-09 21:38:05,838 - livekit.agents - INFO - starting worker
+2025-08-09 21:38:05,846 - livekit.agents - INFO - initializing job runner
+2025-08-09 21:38:05,847 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-09 21:38:05,847 - livekit.agents - INFO - job runner initialized
+2025-08-09 21:38:05,932 - n8n-assistant - INFO - 🚀 Starting N8N Assistant entrypoint
+2025-08-09 21:38:05,933 - n8n-assistant - INFO - 🧪 [N8N TEST] Testing connection to https://auto2025system.duckdns.org/webhook/smart-weather
+2025-08-09 21:38:06,495 - n8n-assistant - INFO - ✅ [N8N TEST] Connection successful
+2025-08-09 21:38:06,497 - n8n-assistant - INFO - ✅ Connected to room: fake_room
+2025-08-09 21:38:06,498 - n8n-assistant - INFO - N8N Assistant agent initialized with n8n weather, search, and email tools
+2025-08-09 21:38:08,018 - n8n-assistant - INFO - ✅ Session created: Whisper STT (EN) + Cerebras Llama3.1-70B + TTS + N8N Weather + Search + Email
+2025-08-09 21:38:09,175 - n8n-assistant - INFO - 🔄 [AGENT STATE] initializing -> listening
+2025-08-09 21:38:09,176 - livekit.agents - DEBUG - using audio io: `ChatCLI` -> `AgentSession` -> `TranscriptSynchronizer` -> `ChatCLI`
+2025-08-09 21:38:09,177 - livekit.agents - DEBUG - using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `ChatCLI`
+2025-08-09 21:38:09,178 - n8n-assistant - INFO - ✅ Session started successfully
+2025-08-09 21:38:09,179 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 21:38:09,698 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 21:38:10,050 - n8n-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754771890.049847 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 404 - {'message': 'Model llama3.1-70b does not exist or you do not have access to it.', 'type': 'not_found_error', 'param': 'model', 'code': 'model_not_found'}") recoverable=True (recoverable: True)
+2025-08-09 21:38:10,052 - livekit.agents - WARNING - failed to generate LLM completion, retrying in 0.1s
+Traceback (most recent call last):
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\llm\llm.py", line 177, in _main_task
+    return await self._run()
+           ^^^^^^^^^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\plugins\openai\llm.py", line 691, in _run
+    raise APIStatusError(
+    ...<5 lines>...
+    ) from None
+livekit.agents._exceptions.APIStatusError: Error code: 404 - {'message': 'Model llama3.1-70b does not exist or you do not have access to it.', 'type': 'not_found_error', 'param': 'model', 'code': 'model_not_found'} (status_code=404, request_id=None, body={'message': 'Model llama3.1-70b does not exist or you do not have access to it.', 'type': 'not_found_error', 'param': 'model', 'code': 'model_not_found'}, retryable=True)
+2025-08-09 21:38:10,419 - n8n-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754771890.4190671 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 404 - {'message': 'Model llama3.1-70b does not exist or you do not have access to it.', 'type': 'not_found_error', 'param': 'model', 'code': 'model_not_found'}") recoverable=True (recoverable: True)
+2025-08-09 21:38:10,420 - livekit.agents - WARNING - failed to generate LLM completion, retrying in 2.0s
+Traceback (most recent call last):
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\llm\llm.py", line 177, in _main_task
+    return await self._run()
+           ^^^^^^^^^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\plugins\openai\llm.py", line 691, in _run
+    raise APIStatusError(
+    ...<5 lines>...
+    ) from None
+livekit.agents._exceptions.APIStatusError: Error code: 404 - {'message': 'Model llama3.1-70b does not exist or you do not have access to it.', 'type': 'not_found_error', 'param': 'model', 'code': 'model_not_found'} (status_code=404, request_id=None, body={'message': 'Model llama3.1-70b does not exist or you do not have access to it.', 'type': 'not_found_error', 'param': 'model', 'code': 'model_not_found'}, retryable=True)
+2025-08-09 21:38:12,689 - n8n-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754771892.6893766 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 404 - {'message': 'Model llama3.1-70b does not exist or you do not have access to it.', 'type': 'not_found_error', 'param': 'model', 'code': 'model_not_found'}") recoverable=True (recoverable: True)
+2025-08-09 21:38:12,691 - livekit.agents - WARNING - failed to generate LLM completion, retrying in 2.0s
+Traceback (most recent call last):
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\llm\llm.py", line 177, in _main_task
+    return await self._run()
+           ^^^^^^^^^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\plugins\openai\llm.py", line 691, in _run
+    raise APIStatusError(
+    ...<5 lines>...
+    ) from None
+livekit.agents._exceptions.APIStatusError: Error code: 404 - {'message': 'Model llama3.1-70b does not exist or you do not have access to it.', 'type': 'not_found_error', 'param': 'model', 'code': 'model_not_found'} (status_code=404, request_id=None, body={'message': 'Model llama3.1-70b does not exist or you do not have access to it.', 'type': 'not_found_error', 'param': 'model', 'code': 'model_not_found'}, retryable=True)
+2025-08-09 21:38:14,963 - n8n-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754771894.9635358 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 404 - {'message': 'Model llama3.1-70b does not exist or you do not have access to it.', 'type': 'not_found_error', 'param': 'model', 'code': 'model_not_found'}") recoverable=False (recoverable: False)
+2025-08-09 21:38:14,966 - livekit.agents - ERROR - Error in _llm_inference_task
+Traceback (most recent call last):
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\llm\llm.py", line 177, in _main_task
+    return await self._run()
+           ^^^^^^^^^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\plugins\openai\llm.py", line 691, in _run
+    raise APIStatusError(
+    ...<5 lines>...
+    ) from None
+livekit.agents._exceptions.APIStatusError: Error code: 404 - {'message': 'Model llama3.1-70b does not exist or you do not have access to it.', 'type': 'not_found_error', 'param': 'model', 'code': 'model_not_found'} (status_code=404, request_id=None, body={'message': 'Model llama3.1-70b does not exist or you do not have access to it.', 'type': 'not_found_error', 'param': 'model', 'code': 'model_not_found'}, retryable=True)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
+    return await fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\opentelemetry\util\_decorator.py", line 71, in async_wrapper
+    return await func(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\voice\generation.py", line 124, in _llm_inference_task
+    async for chunk in llm_node:
+    ...<29 lines>...
+            )
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\voice\agent.py", line 378, in llm_node
+    async for chunk in stream:
+        yield chunk
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\llm\llm.py", line 326, in __anext__
+    raise exc  # noqa: B904
+    ^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\opentelemetry\util\_decorator.py", line 71, in async_wrapper
+    return await func(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\llm\llm.py", line 189, in _main_task
+    raise APIConnectionError(
+        f"failed to generate LLM completion after {self._conn_options.max_retry + 1} attempts",  # noqa: E501
+    ) from e
+livekit.agents._exceptions.APIConnectionError: failed to generate LLM completion after 4 attempts (body=None, retryable=True)
+2025-08-09 21:38:14,981 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-09 21:38:14,983 - n8n-assistant - INFO - ✅ Initial greeting generated
+2025-08-09 21:38:26,907 - livekit.agents - INFO - shutting down worker
+2025-08-09 21:38:26,909 - livekit.agents - DEBUG - shutting down job task
+2025-08-09 21:38:26,910 - livekit.agents - DEBUG - job exiting
+2025-08-09 21:38:26,912 - n8n-assistant - INFO - ❌ [SESSION CLOSED] Agent session ended
+2025-08-09 21:38:26,918 - livekit.agents - DEBUG - session closed
+2025-08-09 21:38:26,919 - livekit.agents - DEBUG - http_session(): closing the httpclient ctx
+2025-08-09 21:38:26,919 - livekit.agents - DEBUG - http_session(): creating a new httpclient ctx
+2025-08-09 21:43:23,125 - n8n-assistant - INFO - 🚀 Starting N8N Assistant LiveKit agent application
+2025-08-09 21:43:23,128 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-09 21:43:23,133 - livekit.agents - INFO - starting worker
+2025-08-09 21:43:23,142 - livekit.agents - INFO - initializing job runner
+2025-08-09 21:43:23,144 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-09 21:43:23,144 - livekit.agents - INFO - job runner initialized
+2025-08-09 21:43:23,222 - n8n-assistant - INFO - 🚀 Starting N8N Assistant entrypoint
+2025-08-09 21:43:23,223 - n8n-assistant - INFO - 🧪 [N8N TEST] Testing connection to https://auto2025system.duckdns.org/webhook/smart-weather
+2025-08-09 21:43:23,892 - n8n-assistant - INFO - ✅ [N8N TEST] Connection successful
+2025-08-09 21:43:23,896 - n8n-assistant - INFO - ✅ Connected to room: fake_room
+2025-08-09 21:43:23,898 - n8n-assistant - INFO - N8N Assistant agent initialized with n8n weather, search, and email tools
+2025-08-09 21:43:25,326 - n8n-assistant - INFO - ✅ Session created: Whisper STT (EN) + Cerebras Llama3.1-70B + TTS + N8N Weather + Search + Email
+2025-08-09 21:43:26,483 - n8n-assistant - INFO - 🔄 [AGENT STATE] initializing -> listening
+2025-08-09 21:43:26,485 - livekit.agents - DEBUG - using audio io: `ChatCLI` -> `AgentSession` -> `TranscriptSynchronizer` -> `ChatCLI`
+2025-08-09 21:43:26,486 - livekit.agents - DEBUG - using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `ChatCLI`
+2025-08-09 21:43:26,487 - n8n-assistant - INFO - ✅ Session started successfully
+2025-08-09 21:43:26,489 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 21:43:26,842 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 21:43:28,964 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 21:43:35,525 - n8n-assistant - INFO - 💬 [CHAT ASSISTANT] Hello, I'm a helpful voice assistant. I can provide you with weather information and assist you with various tasks.
+2025-08-09 21:43:35,527 - n8n-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 21:43:35,529 - n8n-assistant - INFO - ✅ Initial greeting generated
+2025-08-09 21:43:41,166 - n8n-assistant - INFO - 👤 [USER FINAL] Tell me please about weather in Cork.
+2025-08-09 21:43:41,168 - livekit.agents - DEBUG - received user transcript
+2025-08-09 21:43:41,169 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 21:43:41,180 - n8n-assistant - INFO - 💬 [CHAT USER] Tell me please about weather in Cork.
+2025-08-09 21:43:41,182 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 21:43:41,499 - livekit.agents - DEBUG - executing tool
+2025-08-09 21:43:41,501 - n8n-assistant - INFO - 🌤️ [N8N WEATHER] Getting weather for 'Cork' in celsius
+2025-08-09 21:43:41,503 - n8n-assistant - INFO - 🌐 [N8N REQUEST] Sending to https://auto2025system.duckdns.org/webhook/smart-weather
+2025-08-09 21:43:41,504 - n8n-assistant - INFO - 🌐 [N8N PAYLOAD] {'action': 'weather', 'city': 'Cork', 'units': 'celsius', 'date': 'today', 'user_id': 'livekit_user'}
+2025-08-09 21:43:41,846 - n8n-assistant - INFO - 📡 [N8N RESPONSE] Status: 200
+2025-08-09 21:43:41,847 - n8n-assistant - INFO - 📊 [N8N DATA] Success: True
+2025-08-09 21:43:41,848 - n8n-assistant - INFO - 📊 [N8N MESSAGE] Weather in Cork, Ireland: Currently 15 degrees Celsius, partly cloudy. Very humid at 88%....
+2025-08-09 21:43:41,850 - n8n-assistant - INFO - ✅ [N8N SUCCESS] Weather retrieved for Cork
+2025-08-09 21:43:41,855 - livekit.agents - DEBUG - tools execution completed
+2025-08-09 21:43:41,856 - n8n-assistant - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-09 21:43:41,858 - n8n-assistant - INFO - 🛠️ [TOOL SUCCESS] unknown: id='item_59a16b668858' type='function_call_output' name='get_weather_n8n' call_id='902dc15b4' output='Weather in Cork, Ireland: Currently 15 degrees Celsius, partly cloudy. Very humid at 88%.' is_erro...
+2025-08-09 21:43:42,281 - livekit.agents - DEBUG - executing tool
+2025-08-09 21:43:42,282 - n8n-assistant - INFO - 🌤️ [N8N WEATHER] Getting weather for 'Cork' in celsius
+2025-08-09 21:43:42,283 - n8n-assistant - INFO - 🌐 [N8N REQUEST] Sending to https://auto2025system.duckdns.org/webhook/smart-weather
+2025-08-09 21:43:42,284 - n8n-assistant - INFO - 🌐 [N8N PAYLOAD] {'action': 'weather', 'city': 'Cork', 'units': 'celsius', 'date': 'today', 'user_id': 'livekit_user'}
+2025-08-09 21:43:42,693 - n8n-assistant - INFO - 📡 [N8N RESPONSE] Status: 200
+2025-08-09 21:43:42,695 - n8n-assistant - INFO - 📊 [N8N DATA] Success: True
+2025-08-09 21:43:42,696 - n8n-assistant - INFO - 📊 [N8N MESSAGE] Weather in Cork, Ireland: Currently 15 degrees Celsius, partly cloudy. Very humid at 88%....
+2025-08-09 21:43:42,697 - n8n-assistant - INFO - ✅ [N8N SUCCESS] Weather retrieved for Cork
+2025-08-09 21:43:42,698 - livekit.agents - DEBUG - tools execution completed
+2025-08-09 21:43:42,699 - livekit.agents - WARNING - maximum number of function calls steps reached
+2025-08-09 21:43:42,700 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-09 21:43:51,987 - livekit.agents - INFO - shutting down worker
+2025-08-09 21:43:51,988 - livekit.agents - DEBUG - shutting down job task
+2025-08-09 21:43:51,989 - livekit.agents - DEBUG - job exiting
+2025-08-09 21:43:51,998 - n8n-assistant - INFO - ❌ [SESSION CLOSED] Agent session ended
+2025-08-09 21:43:51,999 - livekit.agents - DEBUG - session closed
+2025-08-09 21:43:51,999 - livekit.agents - DEBUG - http_session(): closing the httpclient ctx
+2025-08-09 21:43:52,000 - livekit.agents - DEBUG - http_session(): creating a new httpclient ctx
+2025-08-09 21:46:06,260 - n8n-assistant - INFO - 🚀 Starting N8N Assistant LiveKit agent application
+2025-08-09 21:46:06,264 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-09 21:46:06,270 - livekit.agents - INFO - starting worker
+2025-08-09 21:46:06,279 - livekit.agents - INFO - initializing job runner
+2025-08-09 21:46:06,281 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-09 21:46:06,281 - livekit.agents - INFO - job runner initialized
+2025-08-09 21:46:06,359 - n8n-assistant - INFO - 🚀 Starting N8N Assistant entrypoint
+2025-08-09 21:46:06,360 - n8n-assistant - INFO - 🧪 [N8N TEST] Testing connection to https://auto2025system.duckdns.org/webhook/smart-weather
+2025-08-09 21:46:06,871 - n8n-assistant - INFO - ✅ [N8N TEST] Connection successful
+2025-08-09 21:46:06,874 - n8n-assistant - INFO - ✅ Connected to room: fake_room
+2025-08-09 21:46:06,875 - n8n-assistant - INFO - N8N Assistant agent initialized with n8n weather, search, and email tools
+2025-08-09 21:46:08,301 - n8n-assistant - INFO - ✅ Session created: Whisper STT (EN) + Cerebras GPT-OSS-120B + TTS + N8N Weather + Search + Email
+2025-08-09 21:46:09,407 - n8n-assistant - INFO - 🔄 [AGENT STATE] initializing -> listening
+2025-08-09 21:46:09,409 - livekit.agents - DEBUG - using audio io: `ChatCLI` -> `AgentSession` -> `TranscriptSynchronizer` -> `ChatCLI`
+2025-08-09 21:46:09,410 - livekit.agents - DEBUG - using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `ChatCLI`
+2025-08-09 21:46:09,411 - n8n-assistant - INFO - ✅ Session started successfully
+2025-08-09 21:46:09,413 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 21:46:09,789 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 21:46:10,164 - n8n-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754772370.1646435 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 400 - {'message': 'Tools with strict=True are not supported by this model.', 'type': 'invalid_request_error', 'param': 'tools', 'code': 'wrong_api_format'}") recoverable=True (recoverable: True)
+2025-08-09 21:46:10,167 - livekit.agents - WARNING - failed to generate LLM completion, retrying in 0.1s
+Traceback (most recent call last):
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\llm\llm.py", line 177, in _main_task
+    return await self._run()
+           ^^^^^^^^^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\plugins\openai\llm.py", line 691, in _run
+    raise APIStatusError(
+    ...<5 lines>...
+    ) from None
+livekit.agents._exceptions.APIStatusError: Error code: 400 - {'message': 'Tools with strict=True are not supported by this model.', 'type': 'invalid_request_error', 'param': 'tools', 'code': 'wrong_api_format'} (status_code=400, request_id=None, body={'message': 'Tools with strict=True are not supported by this model.', 'type': 'invalid_request_error', 'param': 'tools', 'code': 'wrong_api_format'}, retryable=True)
+2025-08-09 21:46:10,580 - n8n-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754772370.5804756 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 400 - {'message': 'Tools with strict=True are not supported by this model.', 'type': 'invalid_request_error', 'param': 'tools', 'code': 'wrong_api_format'}") recoverable=True (recoverable: True)
+2025-08-09 21:46:10,582 - livekit.agents - WARNING - failed to generate LLM completion, retrying in 2.0s
+Traceback (most recent call last):
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\llm\llm.py", line 177, in _main_task
+    return await self._run()
+           ^^^^^^^^^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\plugins\openai\llm.py", line 691, in _run
+    raise APIStatusError(
+    ...<5 lines>...
+    ) from None
+livekit.agents._exceptions.APIStatusError: Error code: 400 - {'message': 'Tools with strict=True are not supported by this model.', 'type': 'invalid_request_error', 'param': 'tools', 'code': 'wrong_api_format'} (status_code=400, request_id=None, body={'message': 'Tools with strict=True are not supported by this model.', 'type': 'invalid_request_error', 'param': 'tools', 'code': 'wrong_api_format'}, retryable=True)
+2025-08-09 21:46:13,694 - n8n-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754772373.6938808 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 400 - {'message': 'Tools with strict=True are not supported by this model.', 'type': 'invalid_request_error', 'param': 'tools', 'code': 'wrong_api_format'}") recoverable=True (recoverable: True)
+2025-08-09 21:46:13,695 - livekit.agents - WARNING - failed to generate LLM completion, retrying in 2.0s
+Traceback (most recent call last):
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\llm\llm.py", line 177, in _main_task
+    return await self._run()
+           ^^^^^^^^^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\plugins\openai\llm.py", line 691, in _run
+    raise APIStatusError(
+    ...<5 lines>...
+    ) from None
+livekit.agents._exceptions.APIStatusError: Error code: 400 - {'message': 'Tools with strict=True are not supported by this model.', 'type': 'invalid_request_error', 'param': 'tools', 'code': 'wrong_api_format'} (status_code=400, request_id=None, body={'message': 'Tools with strict=True are not supported by this model.', 'type': 'invalid_request_error', 'param': 'tools', 'code': 'wrong_api_format'}, retryable=True)
+2025-08-09 21:46:16,050 - n8n-assistant - ERROR - ❌ [ERROR] type='llm_error' timestamp=1754772376.0495636 label='livekit.plugins.openai.llm.LLM' error=APIStatusError("Error code: 400 - {'message': 'Tools with strict=True are not supported by this model.', 'type': 'invalid_request_error', 'param': 'tools', 'code': 'wrong_api_format'}") recoverable=False (recoverable: False)
+2025-08-09 21:46:16,053 - livekit.agents - ERROR - Error in _llm_inference_task
+Traceback (most recent call last):
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\llm\llm.py", line 177, in _main_task
+    return await self._run()
+           ^^^^^^^^^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\plugins\openai\llm.py", line 691, in _run
+    raise APIStatusError(
+    ...<5 lines>...
+    ) from None
+livekit.agents._exceptions.APIStatusError: Error code: 400 - {'message': 'Tools with strict=True are not supported by this model.', 'type': 'invalid_request_error', 'param': 'tools', 'code': 'wrong_api_format'} (status_code=400, request_id=None, body={'message': 'Tools with strict=True are not supported by this model.', 'type': 'invalid_request_error', 'param': 'tools', 'code': 'wrong_api_format'}, retryable=True)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
+    return await fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\opentelemetry\util\_decorator.py", line 71, in async_wrapper
+    return await func(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\voice\generation.py", line 124, in _llm_inference_task
+    async for chunk in llm_node:
+    ...<29 lines>...
+            )
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\voice\agent.py", line 378, in llm_node
+    async for chunk in stream:
+        yield chunk
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\llm\llm.py", line 326, in __anext__
+    raise exc  # noqa: B904
+    ^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\opentelemetry\util\_decorator.py", line 71, in async_wrapper
+    return await func(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\llm\llm.py", line 189, in _main_task
+    raise APIConnectionError(
+        f"failed to generate LLM completion after {self._conn_options.max_retry + 1} attempts",  # noqa: E501
+    ) from e
+livekit.agents._exceptions.APIConnectionError: failed to generate LLM completion after 4 attempts (body=None, retryable=True)
+2025-08-09 21:46:16,072 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-09 21:46:16,074 - n8n-assistant - INFO - ✅ Initial greeting generated
+2025-08-09 21:46:19,677 - livekit.agents - INFO - shutting down worker
+2025-08-09 21:46:19,679 - livekit.agents - DEBUG - shutting down job task
+2025-08-09 21:46:19,680 - livekit.agents - DEBUG - job exiting
+2025-08-09 21:46:19,682 - n8n-assistant - INFO - ❌ [SESSION CLOSED] Agent session ended
+2025-08-09 21:46:19,686 - livekit.agents - DEBUG - session closed
+2025-08-09 21:46:19,687 - livekit.agents - DEBUG - http_session(): closing the httpclient ctx
+2025-08-09 21:46:19,687 - livekit.agents - DEBUG - http_session(): creating a new httpclient ctx
+2025-08-09 21:48:03,987 - n8n-assistant - INFO - 🚀 Starting N8N Assistant LiveKit agent application
+2025-08-09 21:48:03,991 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-09 21:48:03,996 - livekit.agents - INFO - starting worker
+2025-08-09 21:48:04,010 - livekit.agents - INFO - initializing job runner
+2025-08-09 21:48:04,013 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-09 21:48:04,013 - livekit.agents - INFO - job runner initialized
+2025-08-09 21:48:04,087 - n8n-assistant - INFO - 🚀 Starting N8N Assistant entrypoint
+2025-08-09 21:48:04,088 - n8n-assistant - INFO - 🧪 [N8N TEST] Testing connection to https://auto2025system.duckdns.org/webhook/smart-weather
+2025-08-09 21:48:05,108 - n8n-assistant - INFO - ✅ [N8N TEST] Connection successful
+2025-08-09 21:48:05,112 - n8n-assistant - INFO - ✅ Connected to room: fake_room
+2025-08-09 21:48:05,114 - n8n-assistant - INFO - N8N Assistant agent initialized with n8n weather, search, and email tools
+2025-08-09 21:48:06,726 - n8n-assistant - INFO - ✅ Session created: Whisper STT (EN) + Cerebras Llama-3.3-70B + TTS + N8N Weather + Search + Email
+2025-08-09 21:48:07,866 - n8n-assistant - INFO - 🔄 [AGENT STATE] initializing -> listening
+2025-08-09 21:48:07,868 - livekit.agents - DEBUG - using audio io: `ChatCLI` -> `AgentSession` -> `TranscriptSynchronizer` -> `ChatCLI`
+2025-08-09 21:48:07,869 - livekit.agents - DEBUG - using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `ChatCLI`
+2025-08-09 21:48:07,869 - n8n-assistant - INFO - ✅ Session started successfully
+2025-08-09 21:48:07,870 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 21:48:08,254 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 21:48:09,936 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 21:48:25,014 - n8n-assistant - INFO - 💬 [CHAT ASSISTANT] Hello, I'm a helpful voice assistant with access to weather information and other tools to assist you. I can provide you with the current weather in various cities, help you find information on the web, and even send emails. What can I help you with today?
+2025-08-09 21:48:25,016 - n8n-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 21:48:25,017 - n8n-assistant - INFO - ✅ Initial greeting generated
+2025-08-09 21:48:29,411 - n8n-assistant - INFO - 👤 [USER FINAL] Tell me about Vevé in Cork.
+2025-08-09 21:48:29,413 - livekit.agents - DEBUG - received user transcript
+2025-08-09 21:48:29,414 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 21:48:29,427 - n8n-assistant - INFO - 💬 [CHAT USER] Tell me about Vevé in Cork.
+2025-08-09 21:48:29,429 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 21:48:29,746 - livekit.agents - DEBUG - executing tool
+2025-08-09 21:48:29,747 - aitools - INFO - 🔍 [SEARCH TOOL STARTED] query='Vevé in Cork'
+2025-08-09 21:48:29,748 - aitools - INFO - 🔑 [TAVILY API KEY] Found
+2025-08-09 21:48:29,750 - aitools - INFO - 🌐 [SEARCH API] URL: https://api.tavily.com/search, payload: {'api_key': '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', 'query': 'Vevé in Cork', 'search_depth': 'basic', 'include_answer': True, 'include_images': False, 'include_raw_content': False, 'max_results': 3, 'include_domains': [], 'exclude_domains': []}
+2025-08-09 21:48:29,751 - aitools - INFO - 🔄 [SEARCH HTTP] Making HTTP request...
+2025-08-09 21:48:31,917 - aitools - INFO - 📡 [SEARCH RESPONSE] Status: 200
+2025-08-09 21:48:31,917 - aitools - INFO - 📊 [SEARCH DATA] Raw response keys: ['query', 'follow_up_questions', 'answer', 'images', 'results', 'response_time']
+2025-08-09 21:48:31,918 - aitools - INFO - 🤖 [SEARCH ANSWER] Vibe Cork was a popular bar in Cork, but it has reportedly closed down. Christian Veve, known as veveman215, is a local artist. The bar's closure was initially reported but later denied.
+2025-08-09 21:48:31,929 - aitools - INFO - 📄 [SEARCH SOURCE 1] Vibe Cork (2025) - All You Need to Know BEFORE You Go ... - https://www.tripadvisor.com/Attraction_Review-g186600-d28155637-Reviews-Vibe_Cork-Cork_County_Cork.html
+2025-08-09 21:48:31,930 - aitools - INFO - 📄 [SEARCH SOURCE 2] Vibe has been reportedly closed down by Clancys Group - https://www.reddit.com/r/cork/comments/1gzsg6d/vibe_has_been_reportedly_closed_down_by_clancys/
+2025-08-09 21:48:31,930 - aitools - INFO - ✅ [SEARCH SUCCESS] Web search completed successfully for: Vevé in Cork
+2025-08-09 21:48:31,931 - aitools - INFO - ✅ [SEARCH FINAL] I found information about 'Vevé in Cork'. Vibe Cork was a popular bar in Cork, but it has reportedly closed down. Christian Veve, known as veveman215, is a local artist. The bar's closure was initially reported but later denied. This information comes from sources including: Vibe Cork (2025) - All You Need to Know BEFORE You Go ..., Vibe has been reportedly closed down by Clancys Group.
+2025-08-09 21:48:31,935 - livekit.agents - DEBUG - tools execution completed
+2025-08-09 21:48:31,936 - n8n-assistant - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-09 21:48:31,937 - n8n-assistant - INFO - 🛠️ [TOOL SUCCESS] unknown: id='item_7b67ee792ff8' type='function_call_output' name='search_web' call_id='d7c7c7ecc' output="I found information about 'Vevé in Cork'. Vibe Cork was a popular bar in Cork, but it has reportedly cl...
+2025-08-09 21:48:32,335 - livekit.agents - DEBUG - executing tool
+2025-08-09 21:48:32,337 - aitools - INFO - 🔍 [SEARCH TOOL STARTED] query='Vevé in Cork'
+2025-08-09 21:48:32,339 - aitools - INFO - 🔑 [TAVILY API KEY] Found
+2025-08-09 21:48:32,341 - aitools - INFO - 🌐 [SEARCH API] URL: https://api.tavily.com/search, payload: {'api_key': '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', 'query': 'Vevé in Cork', 'search_depth': 'basic', 'include_answer': True, 'include_images': False, 'include_raw_content': False, 'max_results': 3, 'include_domains': [], 'exclude_domains': []}
+2025-08-09 21:48:32,343 - aitools - INFO - 🔄 [SEARCH HTTP] Making HTTP request...
+2025-08-09 21:48:33,870 - aitools - INFO - 📡 [SEARCH RESPONSE] Status: 200
+2025-08-09 21:48:33,871 - aitools - INFO - 📊 [SEARCH DATA] Raw response keys: ['query', 'follow_up_questions', 'answer', 'images', 'results', 'response_time']
+2025-08-09 21:48:33,872 - aitools - INFO - 🤖 [SEARCH ANSWER] Vibe Cork was a popular bar in Cork, but it has reportedly closed down. Christian Veve, known as veveman215, is a local artist. The bar's closure was initially reported but later denied.
+2025-08-09 21:48:33,873 - aitools - INFO - 📄 [SEARCH SOURCE 1] Vibe Cork (2025) - All You Need to Know BEFORE You Go ... - https://www.tripadvisor.com/Attraction_Review-g186600-d28155637-Reviews-Vibe_Cork-Cork_County_Cork.html
+2025-08-09 21:48:33,875 - aitools - INFO - 📄 [SEARCH SOURCE 2] Vibe has been reportedly closed down by Clancys Group - https://www.reddit.com/r/cork/comments/1gzsg6d/vibe_has_been_reportedly_closed_down_by_clancys/
+2025-08-09 21:48:33,876 - aitools - INFO - ✅ [SEARCH SUCCESS] Web search completed successfully for: Vevé in Cork
+2025-08-09 21:48:33,877 - aitools - INFO - ✅ [SEARCH FINAL] I found information about 'Vevé in Cork'. Vibe Cork was a popular bar in Cork, but it has reportedly closed down. Christian Veve, known as veveman215, is a local artist. The bar's closure was initially reported but later denied. This information comes from sources including: Vibe Cork (2025) - All You Need to Know BEFORE You Go ..., Vibe has been reportedly closed down by Clancys Group.
+2025-08-09 21:48:33,878 - livekit.agents - DEBUG - tools execution completed
+2025-08-09 21:48:33,879 - livekit.agents - WARNING - maximum number of function calls steps reached
+2025-08-09 21:48:33,880 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-09 21:48:45,342 - n8n-assistant - INFO - 👤 [USER FINAL] Преоме и бавот.
+2025-08-09 21:48:45,343 - livekit.agents - DEBUG - received user transcript
+2025-08-09 21:48:45,344 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 21:48:45,355 - n8n-assistant - INFO - 💬 [CHAT USER] Преоме и бавот.
+2025-08-09 21:48:45,357 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 21:48:45,719 - livekit.agents - DEBUG - executing tool
+2025-08-09 21:48:45,720 - aitools - INFO - 🔍 [SEARCH TOOL STARTED] query='Preome and Bawot'
+2025-08-09 21:48:45,721 - aitools - INFO - 🔑 [TAVILY API KEY] Found
+2025-08-09 21:48:45,722 - aitools - INFO - 🌐 [SEARCH API] URL: https://api.tavily.com/search, payload: {'api_key': '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', 'query': 'Preome and Bawot', 'search_depth': 'basic', 'include_answer': True, 'include_images': False, 'include_raw_content': False, 'max_results': 3, 'include_domains': [], 'exclude_domains': []}
+2025-08-09 21:48:45,724 - aitools - INFO - 🔄 [SEARCH HTTP] Making HTTP request...
+2025-08-09 21:48:47,100 - n8n-assistant - INFO - 👤 [USER FINAL] Vere en korc.
+2025-08-09 21:48:47,101 - livekit.agents - DEBUG - received user transcript
+2025-08-09 21:48:47,102 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 21:48:47,120 - n8n-assistant - INFO - 💬 [CHAT USER] Vere en korc.
+2025-08-09 21:48:47,453 - livekit.agents - DEBUG - executing tool
+2025-08-09 21:48:47,455 - aitools - INFO - 🔍 [SEARCH TOOL STARTED] query='Vevé in Cork'
+2025-08-09 21:48:47,456 - aitools - INFO - 🔑 [TAVILY API KEY] Found
+2025-08-09 21:48:47,457 - aitools - INFO - 🌐 [SEARCH API] URL: https://api.tavily.com/search, payload: {'api_key': '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', 'query': 'Vevé in Cork', 'search_depth': 'basic', 'include_answer': True, 'include_images': False, 'include_raw_content': False, 'max_results': 3, 'include_domains': [], 'exclude_domains': []}
+2025-08-09 21:48:47,459 - aitools - INFO - 🔄 [SEARCH HTTP] Making HTTP request...
+2025-08-09 21:48:47,780 - aitools - INFO - 📡 [SEARCH RESPONSE] Status: 200
+2025-08-09 21:48:47,782 - aitools - INFO - 📊 [SEARCH DATA] Raw response keys: ['query', 'follow_up_questions', 'answer', 'images', 'results', 'response_time']
+2025-08-09 21:48:47,783 - aitools - INFO - 🤖 [SEARCH ANSWER] Preome and Bawot are luxury yacht charter companies offering high-end boat rentals in Miami and South Florida. Prices start at $1450 for a 40′ yacht. Contact Prime Luxury Rentals for premium experiences.
+2025-08-09 21:48:47,784 - aitools - INFO - 📄 [SEARCH SOURCE 1] Prime Luxury Rentals: Yacht Charters Miami & Boat Rentals - https://www.primeluxuryrentals.com/
+2025-08-09 21:48:47,785 - aitools - INFO - 📄 [SEARCH SOURCE 2] Boat Collection | Prime Luxury Rentals - https://www.primeluxuryrentals.com/luxury-boats-collection/
+2025-08-09 21:48:47,786 - aitools - INFO - ✅ [SEARCH SUCCESS] Web search completed successfully for: Preome and Bawot
+2025-08-09 21:48:47,786 - aitools - INFO - ✅ [SEARCH FINAL] I found information about 'Preome and Bawot'. Preome and Bawot are luxury yacht charter companies offering high-end boat rentals in Miami and South Florida. Prices start at $1450 for a 40′ yacht. Contact Prime Luxury Rentals for premium experiences. This information comes from sources including: Prime Luxury Rentals: Yacht Charters Miami & Boat Rentals, Boat Collection | Prime Luxury Rentals.
+2025-08-09 21:48:47,789 - livekit.agents - DEBUG - tools execution completed
+2025-08-09 21:48:47,790 - n8n-assistant - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-09 21:48:47,791 - n8n-assistant - INFO - 🛠️ [TOOL SUCCESS] unknown: id='item_9881092bba0b' type='function_call_output' name='search_web' call_id='dded2bdad' output="I found information about 'Preome and Bawot'. Preome and Bawot are luxury yacht charter companies offer...
+2025-08-09 21:48:48,119 - livekit.agents - DEBUG - executing tool
+2025-08-09 21:48:48,121 - aitools - INFO - 🔍 [SEARCH TOOL STARTED] query='Preome and Bawot'
+2025-08-09 21:48:48,122 - aitools - INFO - 🔑 [TAVILY API KEY] Found
+2025-08-09 21:48:48,123 - aitools - INFO - 🌐 [SEARCH API] URL: https://api.tavily.com/search, payload: {'api_key': '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', 'query': 'Preome and Bawot', 'search_depth': 'basic', 'include_answer': True, 'include_images': False, 'include_raw_content': False, 'max_results': 3, 'include_domains': [], 'exclude_domains': []}
+2025-08-09 21:48:48,125 - aitools - INFO - 🔄 [SEARCH HTTP] Making HTTP request...
+2025-08-09 21:48:49,170 - aitools - INFO - 📡 [SEARCH RESPONSE] Status: 200
+2025-08-09 21:48:49,171 - aitools - INFO - 📊 [SEARCH DATA] Raw response keys: ['query', 'follow_up_questions', 'answer', 'images', 'results', 'response_time']
+2025-08-09 21:48:49,174 - aitools - INFO - 🤖 [SEARCH ANSWER] Vibe Cork was a popular bar in Cork, but it has reportedly closed down. Christian Veve, known as veveman215, is a local artist. The bar's closure was initially reported but later denied.
+2025-08-09 21:48:49,175 - aitools - INFO - 📄 [SEARCH SOURCE 1] Vibe Cork (2025) - All You Need to Know BEFORE You Go ... - https://www.tripadvisor.com/Attraction_Review-g186600-d28155637-Reviews-Vibe_Cork-Cork_County_Cork.html
+2025-08-09 21:48:49,176 - aitools - INFO - 📄 [SEARCH SOURCE 2] Vibe has been reportedly closed down by Clancys Group - https://www.reddit.com/r/cork/comments/1gzsg6d/vibe_has_been_reportedly_closed_down_by_clancys/
+2025-08-09 21:48:49,177 - aitools - INFO - ✅ [SEARCH SUCCESS] Web search completed successfully for: Vevé in Cork
+2025-08-09 21:48:49,177 - aitools - INFO - ✅ [SEARCH FINAL] I found information about 'Vevé in Cork'. Vibe Cork was a popular bar in Cork, but it has reportedly closed down. Christian Veve, known as veveman215, is a local artist. The bar's closure was initially reported but later denied. This information comes from sources including: Vibe Cork (2025) - All You Need to Know BEFORE You Go ..., Vibe has been reportedly closed down by Clancys Group.
+2025-08-09 21:48:49,179 - livekit.agents - DEBUG - tools execution completed
+2025-08-09 21:48:49,180 - n8n-assistant - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-09 21:48:49,181 - n8n-assistant - INFO - 🛠️ [TOOL SUCCESS] unknown: id='item_6326822030c4' type='function_call_output' name='search_web' call_id='301a0df1c' output="I found information about 'Vevé in Cork'. Vibe Cork was a popular bar in Cork, but it has reportedly cl...
+2025-08-09 21:48:49,687 - livekit.agents - DEBUG - executing tool
+2025-08-09 21:48:49,688 - aitools - INFO - 🔍 [SEARCH TOOL STARTED] query='Vevé in Cork'
+2025-08-09 21:48:49,689 - aitools - INFO - 🔑 [TAVILY API KEY] Found
+2025-08-09 21:48:49,690 - aitools - INFO - 🌐 [SEARCH API] URL: https://api.tavily.com/search, payload: {'api_key': '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', 'query': 'Vevé in Cork', 'search_depth': 'basic', 'include_answer': True, 'include_images': False, 'include_raw_content': False, 'max_results': 3, 'include_domains': [], 'exclude_domains': []}
+2025-08-09 21:48:49,692 - aitools - INFO - 🔄 [SEARCH HTTP] Making HTTP request...
+2025-08-09 21:48:50,007 - aitools - INFO - 📡 [SEARCH RESPONSE] Status: 200
+2025-08-09 21:48:50,008 - aitools - INFO - 📊 [SEARCH DATA] Raw response keys: ['query', 'follow_up_questions', 'answer', 'images', 'results', 'response_time']
+2025-08-09 21:48:50,009 - aitools - INFO - 🤖 [SEARCH ANSWER] Preome and Bawot are luxury yacht charter companies offering high-end boat rentals in Miami and South Florida. Prices start at $1450 for a 40′ yacht. Contact Prime Luxury Rentals for premium experiences.
+2025-08-09 21:48:50,010 - aitools - INFO - 📄 [SEARCH SOURCE 1] Prime Luxury Rentals: Yacht Charters Miami & Boat Rentals - https://www.primeluxuryrentals.com/
+2025-08-09 21:48:50,011 - aitools - INFO - 📄 [SEARCH SOURCE 2] Boat Collection | Prime Luxury Rentals - https://www.primeluxuryrentals.com/luxury-boats-collection/
+2025-08-09 21:48:50,012 - aitools - INFO - ✅ [SEARCH SUCCESS] Web search completed successfully for: Preome and Bawot
+2025-08-09 21:48:50,013 - aitools - INFO - ✅ [SEARCH FINAL] I found information about 'Preome and Bawot'. Preome and Bawot are luxury yacht charter companies offering high-end boat rentals in Miami and South Florida. Prices start at $1450 for a 40′ yacht. Contact Prime Luxury Rentals for premium experiences. This information comes from sources including: Prime Luxury Rentals: Yacht Charters Miami & Boat Rentals, Boat Collection | Prime Luxury Rentals.
+2025-08-09 21:48:50,015 - livekit.agents - DEBUG - tools execution completed
+2025-08-09 21:48:50,016 - livekit.agents - WARNING - maximum number of function calls steps reached
+2025-08-09 21:48:50,017 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-09 21:48:51,565 - aitools - INFO - 📡 [SEARCH RESPONSE] Status: 200
+2025-08-09 21:48:51,566 - aitools - INFO - 📊 [SEARCH DATA] Raw response keys: ['query', 'follow_up_questions', 'answer', 'images', 'results', 'response_time']
+2025-08-09 21:48:51,566 - aitools - INFO - 🤖 [SEARCH ANSWER] Vibe Cork was a popular bar in Cork, but it has reportedly closed down. Christian Veve, known as veveman215, is a local artist. The bar's closure was initially reported but later denied.
+2025-08-09 21:48:51,567 - aitools - INFO - 📄 [SEARCH SOURCE 1] Vibe Cork (2025) - All You Need to Know BEFORE You Go ... - https://www.tripadvisor.com/Attraction_Review-g186600-d28155637-Reviews-Vibe_Cork-Cork_County_Cork.html
+2025-08-09 21:48:51,568 - aitools - INFO - 📄 [SEARCH SOURCE 2] Vibe has been reportedly closed down by Clancys Group - https://www.reddit.com/r/cork/comments/1gzsg6d/vibe_has_been_reportedly_closed_down_by_clancys/
+2025-08-09 21:48:51,569 - aitools - INFO - ✅ [SEARCH SUCCESS] Web search completed successfully for: Vevé in Cork
+2025-08-09 21:48:51,570 - aitools - INFO - ✅ [SEARCH FINAL] I found information about 'Vevé in Cork'. Vibe Cork was a popular bar in Cork, but it has reportedly closed down. Christian Veve, known as veveman215, is a local artist. The bar's closure was initially reported but later denied. This information comes from sources including: Vibe Cork (2025) - All You Need to Know BEFORE You Go ..., Vibe has been reportedly closed down by Clancys Group.
+2025-08-09 21:48:51,573 - livekit.agents - DEBUG - tools execution completed
+2025-08-09 21:48:51,574 - livekit.agents - WARNING - maximum number of function calls steps reached
+2025-08-09 21:49:01,091 - n8n-assistant - INFO - 👤 [USER FINAL] Tell me about
+2025-08-09 21:49:01,098 - livekit.agents - DEBUG - received user transcript
+2025-08-09 21:49:01,618 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 21:49:01,636 - n8n-assistant - INFO - 💬 [CHAT USER] Tell me about
+2025-08-09 21:49:01,639 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 21:49:01,920 - n8n-assistant - INFO - 👤 [USER FINAL] Whether
+2025-08-09 21:49:01,921 - livekit.agents - DEBUG - received user transcript
+2025-08-09 21:49:01,950 - livekit.agents - DEBUG - executing tool
+2025-08-09 21:49:01,951 - aitools - INFO - 🔍 [SEARCH TOOL STARTED] query='Vevé in Cork'
+2025-08-09 21:49:01,952 - aitools - INFO - 🔑 [TAVILY API KEY] Found
+2025-08-09 21:49:01,953 - aitools - INFO - 🌐 [SEARCH API] URL: https://api.tavily.com/search, payload: {'api_key': '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', 'query': 'Vevé in Cork', 'search_depth': 'basic', 'include_answer': True, 'include_images': False, 'include_raw_content': False, 'max_results': 3, 'include_domains': [], 'exclude_domains': []}
+2025-08-09 21:49:01,955 - aitools - INFO - 🔄 [SEARCH HTTP] Making HTTP request...
+2025-08-09 21:49:02,424 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 21:49:02,443 - n8n-assistant - INFO - 💬 [CHAT USER] Whether
+2025-08-09 21:49:02,688 - n8n-assistant - INFO - 👤 [USER FINAL] Ункорк.
+2025-08-09 21:49:02,689 - livekit.agents - DEBUG - received user transcript
+2025-08-09 21:49:02,691 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 21:49:02,703 - n8n-assistant - INFO - 💬 [CHAT USER] Ункорк.
+2025-08-09 21:49:03,109 - livekit.agents - DEBUG - executing tool
+2025-08-09 21:49:03,110 - n8n-assistant - INFO - 🌤️ [N8N WEATHER] Getting weather for 'Cork' in celsius
+2025-08-09 21:49:03,111 - n8n-assistant - INFO - 🌐 [N8N REQUEST] Sending to https://auto2025system.duckdns.org/webhook/smart-weather
+2025-08-09 21:49:03,112 - n8n-assistant - INFO - 🌐 [N8N PAYLOAD] {'action': 'weather', 'city': 'Cork', 'units': 'celsius', 'date': 'today', 'user_id': 'livekit_user'}
+2025-08-09 21:49:03,452 - aitools - INFO - 📡 [SEARCH RESPONSE] Status: 200
+2025-08-09 21:49:03,453 - aitools - INFO - 📊 [SEARCH DATA] Raw response keys: ['query', 'follow_up_questions', 'answer', 'images', 'results', 'response_time']
+2025-08-09 21:49:03,454 - aitools - INFO - 🤖 [SEARCH ANSWER] Vibe Cork was a popular bar in Cork, but it has reportedly closed down. Christian Veve, known as veveman215, is a local artist. The bar's closure was initially reported but later denied.
+2025-08-09 21:49:03,456 - aitools - INFO - 📄 [SEARCH SOURCE 1] Vibe Cork (2025) - All You Need to Know BEFORE You Go ... - https://www.tripadvisor.com/Attraction_Review-g186600-d28155637-Reviews-Vibe_Cork-Cork_County_Cork.html
+2025-08-09 21:49:03,457 - aitools - INFO - 📄 [SEARCH SOURCE 2] Vibe has been reportedly closed down by Clancys Group - https://www.reddit.com/r/cork/comments/1gzsg6d/vibe_has_been_reportedly_closed_down_by_clancys/
+2025-08-09 21:49:03,458 - aitools - INFO - ✅ [SEARCH SUCCESS] Web search completed successfully for: Vevé in Cork
+2025-08-09 21:49:03,458 - aitools - INFO - ✅ [SEARCH FINAL] I found information about 'Vevé in Cork'. Vibe Cork was a popular bar in Cork, but it has reportedly closed down. Christian Veve, known as veveman215, is a local artist. The bar's closure was initially reported but later denied. This information comes from sources including: Vibe Cork (2025) - All You Need to Know BEFORE You Go ..., Vibe has been reportedly closed down by Clancys Group.
+2025-08-09 21:49:03,460 - livekit.agents - DEBUG - tools execution completed
+2025-08-09 21:49:03,461 - n8n-assistant - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-09 21:49:03,462 - n8n-assistant - INFO - 🛠️ [TOOL SUCCESS] unknown: id='item_020d6ae3a6c8' type='function_call_output' name='search_web' call_id='357c1a839' output="I found information about 'Vevé in Cork'. Vibe Cork was a popular bar in Cork, but it has reportedly cl...
+2025-08-09 21:49:03,491 - n8n-assistant - INFO - 📡 [N8N RESPONSE] Status: 200
+2025-08-09 21:49:03,492 - n8n-assistant - INFO - 📊 [N8N DATA] Success: True
+2025-08-09 21:49:03,493 - n8n-assistant - INFO - 📊 [N8N MESSAGE] Weather in Cork, Ireland: Currently 15 degrees Celsius, partly cloudy. Very humid at 88%....
+2025-08-09 21:49:03,494 - n8n-assistant - INFO - ✅ [N8N SUCCESS] Weather retrieved for Cork
+2025-08-09 21:49:03,496 - livekit.agents - DEBUG - tools execution completed
+2025-08-09 21:49:03,497 - n8n-assistant - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-09 21:49:03,498 - n8n-assistant - INFO - 🛠️ [TOOL SUCCESS] unknown: id='item_6bd596cf345b' type='function_call_output' name='get_weather_n8n' call_id='648de69e5' output='Weather in Cork, Ireland: Currently 15 degrees Celsius, partly cloudy. Very humid at 88%.' is_erro...
+2025-08-09 21:49:03,884 - livekit.agents - DEBUG - executing tool
+2025-08-09 21:49:03,886 - aitools - INFO - 🔍 [SEARCH TOOL STARTED] query='Vevé in Cork'
+2025-08-09 21:49:03,887 - aitools - INFO - 🔑 [TAVILY API KEY] Found
+2025-08-09 21:49:03,888 - aitools - INFO - 🌐 [SEARCH API] URL: https://api.tavily.com/search, payload: {'api_key': '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', 'query': 'Vevé in Cork', 'search_depth': 'basic', 'include_answer': True, 'include_images': False, 'include_raw_content': False, 'max_results': 3, 'include_domains': [], 'exclude_domains': []}
+2025-08-09 21:49:03,889 - aitools - INFO - 🔄 [SEARCH HTTP] Making HTTP request...
+2025-08-09 21:49:03,949 - livekit.agents - DEBUG - executing tool
+2025-08-09 21:49:03,950 - n8n-assistant - INFO - 🌤️ [N8N WEATHER] Getting weather for 'Cork' in celsius
+2025-08-09 21:49:03,951 - n8n-assistant - INFO - 🌐 [N8N REQUEST] Sending to https://auto2025system.duckdns.org/webhook/smart-weather
+2025-08-09 21:49:03,952 - n8n-assistant - INFO - 🌐 [N8N PAYLOAD] {'action': 'weather', 'city': 'Cork', 'units': 'celsius', 'date': 'today', 'user_id': 'livekit_user'}
+2025-08-09 21:49:04,356 - n8n-assistant - INFO - 📡 [N8N RESPONSE] Status: 200
+2025-08-09 21:49:04,357 - n8n-assistant - INFO - 📊 [N8N DATA] Success: True
+2025-08-09 21:49:04,358 - n8n-assistant - INFO - 📊 [N8N MESSAGE] Weather in Cork, Ireland: Currently 15 degrees Celsius, partly cloudy. Very humid at 88%....
+2025-08-09 21:49:04,358 - n8n-assistant - INFO - ✅ [N8N SUCCESS] Weather retrieved for Cork
+2025-08-09 21:49:04,360 - livekit.agents - DEBUG - tools execution completed
+2025-08-09 21:49:04,360 - livekit.agents - WARNING - maximum number of function calls steps reached
+2025-08-09 21:49:04,361 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-09 21:49:05,294 - aitools - INFO - 📡 [SEARCH RESPONSE] Status: 200
+2025-08-09 21:49:05,295 - aitools - INFO - 📊 [SEARCH DATA] Raw response keys: ['query', 'follow_up_questions', 'answer', 'images', 'results', 'response_time']
+2025-08-09 21:49:05,296 - aitools - INFO - 🤖 [SEARCH ANSWER] Vibe Cork was a popular bar in Cork, but it has reportedly closed down. Christian Veve, known as veveman215, is a local artist. The bar's closure was initially reported but later denied.
+2025-08-09 21:49:05,297 - aitools - INFO - 📄 [SEARCH SOURCE 1] Vibe Cork (2025) - All You Need to Know BEFORE You Go ... - https://www.tripadvisor.com/Attraction_Review-g186600-d28155637-Reviews-Vibe_Cork-Cork_County_Cork.html
+2025-08-09 21:49:05,298 - aitools - INFO - 📄 [SEARCH SOURCE 2] Vibe has been reportedly closed down by Clancys Group - https://www.reddit.com/r/cork/comments/1gzsg6d/vibe_has_been_reportedly_closed_down_by_clancys/
+2025-08-09 21:49:05,298 - aitools - INFO - ✅ [SEARCH SUCCESS] Web search completed successfully for: Vevé in Cork
+2025-08-09 21:49:05,299 - aitools - INFO - ✅ [SEARCH FINAL] I found information about 'Vevé in Cork'. Vibe Cork was a popular bar in Cork, but it has reportedly closed down. Christian Veve, known as veveman215, is a local artist. The bar's closure was initially reported but later denied. This information comes from sources including: Vibe Cork (2025) - All You Need to Know BEFORE You Go ..., Vibe has been reportedly closed down by Clancys Group.
+2025-08-09 21:49:05,301 - livekit.agents - DEBUG - tools execution completed
+2025-08-09 21:49:05,302 - livekit.agents - WARNING - maximum number of function calls steps reached
+2025-08-09 21:59:17,535 - livekit.agents - INFO - shutting down worker
+2025-08-09 21:59:17,537 - livekit.agents - DEBUG - shutting down job task
+2025-08-09 21:59:17,539 - livekit.agents - DEBUG - job exiting
+2025-08-09 21:59:17,541 - n8n-assistant - INFO - ❌ [SESSION CLOSED] Agent session ended
+2025-08-09 21:59:17,542 - livekit.agents - DEBUG - session closed
+2025-08-09 21:59:17,543 - livekit.agents - DEBUG - http_session(): closing the httpclient ctx
+2025-08-09 21:59:17,543 - livekit.agents - DEBUG - http_session(): creating a new httpclient ctx
+2025-08-09 21:59:24,713 - n8n-assistant - INFO - 🚀 Starting N8N Assistant LiveKit agent application
+2025-08-09 21:59:24,717 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-09 21:59:24,721 - livekit.agents - INFO - starting worker
+2025-08-09 21:59:24,730 - livekit.agents - INFO - initializing job runner
+2025-08-09 21:59:24,732 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-09 21:59:24,732 - livekit.agents - INFO - job runner initialized
+2025-08-09 21:59:24,811 - n8n-assistant - INFO - 🚀 Starting N8N Assistant entrypoint
+2025-08-09 21:59:24,813 - n8n-assistant - INFO - 🧪 [N8N TEST] Testing connection to https://auto2025system.duckdns.org/webhook/smart-weather
+2025-08-09 21:59:26,200 - n8n-assistant - INFO - ✅ [N8N TEST] Connection successful
+2025-08-09 21:59:26,203 - n8n-assistant - INFO - ✅ Connected to room: fake_room
+2025-08-09 21:59:26,204 - n8n-assistant - INFO - N8N Assistant agent initialized with n8n weather, search, and email tools
+2025-08-09 21:59:27,107 - livekit.agents - ERROR - unhandled exception while running the job task
+Traceback (most recent call last):
+  File "C:\projects\aiassist\venv\Lib\site-packages\opentelemetry\util\_decorator.py", line 71, in async_wrapper
+    return await func(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\ipc\job_proc_lazy_main.py", line 240, in _traceable_entrypoint
+    await self._job_entrypoint_fnc(job_ctx)
+  File "C:\projects\aiassist\agentn8n_cerebras.py", line 249, in entrypoint
+    llm=openai.LLM(
+        ~~~~~~~~~~^
+        base_url="https://api.cerebras.ai/v1",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+        seed=1234,  # Фиксированный seed для стабильности
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ),
+    ^
+TypeError: LLM.__init__() got an unexpected keyword argument 'top_p'
+2025-08-09 22:01:06,788 - livekit.agents - INFO - shutting down worker
+2025-08-09 22:01:06,791 - livekit.agents - DEBUG - shutting down job task
+2025-08-09 22:01:06,792 - livekit.agents - DEBUG - http_session(): closing the httpclient ctx
+2025-08-09 22:01:06,792 - livekit.agents - DEBUG - http_session(): creating a new httpclient ctx
+2025-08-09 22:01:06,794 - livekit.agents - DEBUG - job exiting
+2025-08-09 22:01:13,925 - n8n-assistant - INFO - 🚀 Starting N8N Assistant LiveKit agent application
+2025-08-09 22:01:13,928 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-09 22:01:13,931 - livekit.agents - INFO - starting worker
+2025-08-09 22:01:13,939 - livekit.agents - INFO - initializing job runner
+2025-08-09 22:01:13,941 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-09 22:01:13,941 - livekit.agents - INFO - job runner initialized
+2025-08-09 22:01:14,019 - n8n-assistant - INFO - 🚀 Starting N8N Assistant entrypoint
+2025-08-09 22:01:14,020 - n8n-assistant - INFO - 🧪 [N8N TEST] Testing connection to https://auto2025system.duckdns.org/webhook/smart-weather
+2025-08-09 22:01:14,363 - n8n-assistant - INFO - ✅ [N8N TEST] Connection successful
+2025-08-09 22:01:14,366 - n8n-assistant - INFO - ✅ Connected to room: fake_room
+2025-08-09 22:01:14,367 - n8n-assistant - INFO - N8N Assistant agent initialized with n8n weather, search, and email tools
+2025-08-09 22:01:15,030 - livekit.agents - ERROR - unhandled exception while running the job task
+Traceback (most recent call last):
+  File "C:\projects\aiassist\venv\Lib\site-packages\opentelemetry\util\_decorator.py", line 71, in async_wrapper
+    return await func(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\ipc\job_proc_lazy_main.py", line 240, in _traceable_entrypoint
+    await self._job_entrypoint_fnc(job_ctx)
+  File "C:\projects\aiassist\agentn8n_cerebras.py", line 249, in entrypoint
+    llm=openai.LLM(
+        ~~~~~~~~~~^
+        base_url="https://api.cerebras.ai/v1",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+        seed=1234,  # Фиксированный seed для стабильности
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ),
+    ^
+TypeError: LLM.__init__() got an unexpected keyword argument 'top_p'
+2025-08-09 22:02:32,825 - livekit.agents - INFO - shutting down worker
+2025-08-09 22:02:32,827 - livekit.agents - DEBUG - shutting down job task
+2025-08-09 22:02:32,829 - livekit.agents - DEBUG - http_session(): closing the httpclient ctx
+2025-08-09 22:02:32,830 - livekit.agents - DEBUG - http_session(): creating a new httpclient ctx
+2025-08-09 22:02:32,832 - livekit.agents - DEBUG - job exiting
+2025-08-09 22:02:37,697 - n8n-assistant - INFO - 🚀 Starting N8N Assistant LiveKit agent application
+2025-08-09 22:02:37,700 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-09 22:02:37,704 - livekit.agents - INFO - starting worker
+2025-08-09 22:02:37,713 - livekit.agents - INFO - initializing job runner
+2025-08-09 22:02:37,714 - livekit.agents - INFO - job runner initialized
+2025-08-09 22:02:37,715 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-09 22:02:37,785 - n8n-assistant - INFO - 🚀 Starting N8N Assistant entrypoint
+2025-08-09 22:02:37,786 - n8n-assistant - INFO - 🧪 [N8N TEST] Testing connection to https://auto2025system.duckdns.org/webhook/smart-weather
+2025-08-09 22:02:38,450 - n8n-assistant - INFO - ✅ [N8N TEST] Connection successful
+2025-08-09 22:02:38,451 - n8n-assistant - INFO - ✅ Connected to room: fake_room
+2025-08-09 22:02:38,452 - n8n-assistant - INFO - N8N Assistant agent initialized with n8n weather, search, and email tools
+2025-08-09 22:02:39,084 - livekit.agents - ERROR - unhandled exception while running the job task
+Traceback (most recent call last):
+  File "C:\projects\aiassist\venv\Lib\site-packages\opentelemetry\util\_decorator.py", line 71, in async_wrapper
+    return await func(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\ipc\job_proc_lazy_main.py", line 240, in _traceable_entrypoint
+    await self._job_entrypoint_fnc(job_ctx)
+  File "C:\projects\aiassist\agentn8n_cerebras.py", line 249, in entrypoint
+    llm=openai.LLM(
+        ~~~~~~~~~~^
+        base_url="https://api.cerebras.ai/v1",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+        # top_p убран - не поддерживается LiveKit OpenAI LLM
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ),
+    ^
+TypeError: LLM.__init__() got an unexpected keyword argument 'max_tokens'
+2025-08-09 22:03:47,755 - livekit.agents - INFO - shutting down worker
+2025-08-09 22:03:47,757 - livekit.agents - DEBUG - shutting down job task
+2025-08-09 22:03:47,758 - livekit.agents - DEBUG - http_session(): closing the httpclient ctx
+2025-08-09 22:03:47,759 - livekit.agents - DEBUG - http_session(): creating a new httpclient ctx
+2025-08-09 22:03:47,762 - livekit.agents - DEBUG - job exiting
+2025-08-09 22:03:53,367 - n8n-assistant - INFO - 🚀 Starting N8N Assistant LiveKit agent application
+2025-08-09 22:03:53,371 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-09 22:03:53,375 - livekit.agents - INFO - starting worker
+2025-08-09 22:03:53,385 - livekit.agents - INFO - initializing job runner
+2025-08-09 22:03:53,387 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-09 22:03:53,387 - livekit.agents - INFO - job runner initialized
+2025-08-09 22:03:53,469 - n8n-assistant - INFO - 🚀 Starting N8N Assistant entrypoint
+2025-08-09 22:03:53,470 - n8n-assistant - INFO - 🧪 [N8N TEST] Testing connection to https://auto2025system.duckdns.org/webhook/smart-weather
+2025-08-09 22:03:53,856 - n8n-assistant - INFO - ✅ [N8N TEST] Connection successful
+2025-08-09 22:03:53,858 - n8n-assistant - INFO - ✅ Connected to room: fake_room
+2025-08-09 22:03:53,859 - n8n-assistant - INFO - N8N Assistant agent initialized with n8n weather, search, and email tools
+2025-08-09 22:03:55,608 - n8n-assistant - INFO - ✅ Session created: Whisper STT (EN) + Cerebras Llama-3.3-70B (AutoGen settings) + TTS + N8N Weather + Search + Email
+2025-08-09 22:03:55,990 - n8n-assistant - INFO - 🔄 [AGENT STATE] initializing -> listening
+2025-08-09 22:03:55,992 - livekit.agents - DEBUG - using audio io: `ChatCLI` -> `AgentSession` -> `TranscriptSynchronizer` -> `ChatCLI`
+2025-08-09 22:03:55,994 - livekit.agents - DEBUG - using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `ChatCLI`
+2025-08-09 22:03:55,996 - n8n-assistant - INFO - ✅ Session started successfully
+2025-08-09 22:03:55,999 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 22:03:56,404 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 22:03:57,802 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 22:04:13,727 - n8n-assistant - INFO - 💬 [CHAT ASSISTANT] Hello! I'm a helpful voice assistant, and I'm here to provide you with useful information, including weather updates for any city you're interested in. I can also assist you with searching the web for the latest information on various topics and help you send emails. How can I assist you today?
+2025-08-09 22:04:13,729 - n8n-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 22:04:13,730 - n8n-assistant - INFO - ✅ Initial greeting generated
+2025-08-09 22:04:18,527 - n8n-assistant - INFO - 👤 [USER FINAL] Tell me about Wewi in Cork.
+2025-08-09 22:04:18,528 - livekit.agents - DEBUG - received user transcript
+2025-08-09 22:04:18,529 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 22:04:18,539 - n8n-assistant - INFO - 💬 [CHAT USER] Tell me about Wewi in Cork.
+2025-08-09 22:04:18,541 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 22:04:18,884 - livekit.agents - DEBUG - executing tool
+2025-08-09 22:04:18,886 - aitools - INFO - 🔍 [SEARCH TOOL STARTED] query='Wewi in Cork'
+2025-08-09 22:04:18,887 - aitools - INFO - 🔑 [TAVILY API KEY] Found
+2025-08-09 22:04:18,888 - aitools - INFO - 🌐 [SEARCH API] URL: https://api.tavily.com/search, payload: {'api_key': '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', 'query': 'Wewi in Cork', 'search_depth': 'basic', 'include_answer': True, 'include_images': False, 'include_raw_content': False, 'max_results': 3, 'include_domains': [], 'exclude_domains': []}
+2025-08-09 22:04:18,889 - aitools - INFO - 🔄 [SEARCH HTTP] Making HTTP request...
+2025-08-09 22:04:20,866 - aitools - INFO - 📡 [SEARCH RESPONSE] Status: 200
+2025-08-09 22:04:20,867 - aitools - INFO - 📊 [SEARCH DATA] Raw response keys: ['query', 'follow_up_questions', 'answer', 'images', 'results', 'response_time']
+2025-08-09 22:04:20,868 - aitools - INFO - 🤖 [SEARCH ANSWER] Wewi in Cork refers to West Cork, a tourist region in County Cork, Ireland, known for its scenic beauty and cultural attractions. It extends from the area west of Cork City to Mizen Head. West Cork Collective is a community hub in Kinsale.
+2025-08-09 22:04:20,869 - aitools - INFO - 📄 [SEARCH SOURCE 1] West Cork - Wikipedia - https://en.wikipedia.org/wiki/West_Cork
+2025-08-09 22:04:20,869 - aitools - INFO - 📄 [SEARCH SOURCE 2] West Cork - https://www.cork-guide.ie/west-cork/
+2025-08-09 22:04:20,870 - aitools - INFO - ✅ [SEARCH SUCCESS] Web search completed successfully for: Wewi in Cork
+2025-08-09 22:04:20,871 - aitools - INFO - ✅ [SEARCH FINAL] I found information about 'Wewi in Cork'. Wewi in Cork refers to West Cork, a tourist region in County Cork, Ireland, known for its scenic beauty and cultural attractions. It extends from the area west of Cork City to Mizen Head. West Cork Collective is a community hub in Kinsale. This information comes from sources including: West Cork - Wikipedia, West Cork.
+2025-08-09 22:04:20,873 - livekit.agents - DEBUG - tools execution completed
+2025-08-09 22:04:20,873 - n8n-assistant - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-09 22:04:20,874 - n8n-assistant - INFO - 🛠️ [TOOL SUCCESS] unknown: id='item_0d50699d560c' type='function_call_output' name='search_web' call_id='42b43d551' output="I found information about 'Wewi in Cork'. Wewi in Cork refers to West Cork, a tourist region in County ...
+2025-08-09 22:04:21,305 - livekit.agents - DEBUG - executing tool
+2025-08-09 22:04:21,307 - aitools - INFO - 🔍 [SEARCH TOOL STARTED] query='Wewi in Cork'
+2025-08-09 22:04:21,307 - aitools - INFO - 🔑 [TAVILY API KEY] Found
+2025-08-09 22:04:21,308 - aitools - INFO - 🌐 [SEARCH API] URL: https://api.tavily.com/search, payload: {'api_key': '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', 'query': 'Wewi in Cork', 'search_depth': 'basic', 'include_answer': True, 'include_images': False, 'include_raw_content': False, 'max_results': 3, 'include_domains': [], 'exclude_domains': []}
+2025-08-09 22:04:21,310 - aitools - INFO - 🔄 [SEARCH HTTP] Making HTTP request...
+2025-08-09 22:04:22,738 - aitools - INFO - 📡 [SEARCH RESPONSE] Status: 200
+2025-08-09 22:04:22,739 - aitools - INFO - 📊 [SEARCH DATA] Raw response keys: ['query', 'follow_up_questions', 'answer', 'images', 'results', 'response_time']
+2025-08-09 22:04:22,740 - aitools - INFO - 🤖 [SEARCH ANSWER] Wewi in Cork refers to West Cork, a tourist region in County Cork, Ireland, known for its scenic beauty and cultural attractions. It extends from the area west of Cork City to Mizen Head. West Cork Collective is a community hub in Kinsale.
+2025-08-09 22:04:22,741 - aitools - INFO - 📄 [SEARCH SOURCE 1] West Cork - Wikipedia - https://en.wikipedia.org/wiki/West_Cork
+2025-08-09 22:04:22,742 - aitools - INFO - 📄 [SEARCH SOURCE 2] West Cork - https://www.cork-guide.ie/west-cork/
+2025-08-09 22:04:22,743 - aitools - INFO - ✅ [SEARCH SUCCESS] Web search completed successfully for: Wewi in Cork
+2025-08-09 22:04:22,744 - aitools - INFO - ✅ [SEARCH FINAL] I found information about 'Wewi in Cork'. Wewi in Cork refers to West Cork, a tourist region in County Cork, Ireland, known for its scenic beauty and cultural attractions. It extends from the area west of Cork City to Mizen Head. West Cork Collective is a community hub in Kinsale. This information comes from sources including: West Cork - Wikipedia, West Cork.
+2025-08-09 22:04:22,750 - livekit.agents - DEBUG - tools execution completed
+2025-08-09 22:04:22,751 - livekit.agents - WARNING - maximum number of function calls steps reached
+2025-08-09 22:04:22,754 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-09 22:04:31,460 - n8n-assistant - INFO - 👤 [USER FINAL] Tell me about
+2025-08-09 22:04:31,462 - livekit.agents - DEBUG - received user transcript
+2025-08-09 22:04:32,145 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 22:04:32,161 - n8n-assistant - INFO - 💬 [CHAT USER] Tell me about
+2025-08-09 22:04:32,164 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 22:04:32,555 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-09 22:04:32,731 - n8n-assistant - INFO - 👤 [USER FINAL] Leve
+2025-08-09 22:04:32,732 - livekit.agents - DEBUG - received user transcript
+2025-08-09 22:04:32,936 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 22:04:32,951 - n8n-assistant - INFO - 💬 [CHAT USER] Leve
+2025-08-09 22:04:32,954 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 22:04:33,323 - n8n-assistant - INFO - 👤 [USER FINAL] енкорк
+2025-08-09 22:04:33,325 - livekit.agents - DEBUG - received user transcript
+2025-08-09 22:04:33,326 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 22:04:33,337 - n8n-assistant - INFO - 💬 [CHAT USER] енкорк
+2025-08-09 22:04:33,858 - livekit.agents - DEBUG - executing tool
+2025-08-09 22:04:33,861 - aitools - INFO - 🔍 [SEARCH TOOL STARTED] query='Leven Cork'
+2025-08-09 22:04:33,862 - aitools - INFO - 🔑 [TAVILY API KEY] Found
+2025-08-09 22:04:33,862 - aitools - INFO - 🌐 [SEARCH API] URL: https://api.tavily.com/search, payload: {'api_key': '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', 'query': 'Leven Cork', 'search_depth': 'basic', 'include_answer': True, 'include_images': False, 'include_raw_content': False, 'max_results': 3, 'include_domains': [], 'exclude_domains': []}
+2025-08-09 22:04:33,864 - aitools - INFO - 🔄 [SEARCH HTTP] Making HTTP request...
+2025-08-09 22:04:36,824 - aitools - INFO - 📡 [SEARCH RESPONSE] Status: 200
+2025-08-09 22:04:36,825 - aitools - INFO - 📊 [SEARCH DATA] Raw response keys: ['query', 'follow_up_questions', 'answer', 'images', 'results', 'response_time']
+2025-08-09 22:04:36,827 - aitools - INFO - 🤖 [SEARCH ANSWER] Leven Cork is a city in Foo, near the Veil Sea. It is known for its good people. The Loch Leven Eyed Cork is a fly box used by anglers.
+2025-08-09 22:04:36,828 - aitools - INFO - 📄 [SEARCH SOURCE 1] Cork | Leven Thumps Wiki | Fandom - https://leventhumps.fandom.com/wiki/Cork
+2025-08-09 22:04:36,829 - aitools - INFO - 📄 [SEARCH SOURCE 2] Leven baptisms in Cork Catholic parishes - Irish Ancestors - https://johngrenham.com/places/rc_map_county_surnames_mb.php?county=Cork&surname=Leven
+2025-08-09 22:04:36,831 - aitools - INFO - ✅ [SEARCH SUCCESS] Web search completed successfully for: Leven Cork
+2025-08-09 22:04:36,831 - aitools - INFO - ✅ [SEARCH FINAL] I found information about 'Leven Cork'. Leven Cork is a city in Foo, near the Veil Sea. It is known for its good people. The Loch Leven Eyed Cork is a fly box used by anglers. This information comes from sources including: Cork | Leven Thumps Wiki | Fandom, Leven baptisms in Cork Catholic parishes - Irish Ancestors.
+2025-08-09 22:04:36,834 - livekit.agents - DEBUG - tools execution completed
+2025-08-09 22:04:36,835 - n8n-assistant - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-09 22:04:36,836 - n8n-assistant - INFO - 🛠️ [TOOL SUCCESS] unknown: id='item_40cf5959b383' type='function_call_output' name='search_web' call_id='5f838ce4b' output="I found information about 'Leven Cork'. Leven Cork is a city in Foo, near the Veil Sea. It is known for...
+2025-08-09 22:04:37,200 - livekit.agents - DEBUG - executing tool
+2025-08-09 22:04:37,202 - aitools - INFO - 🔍 [SEARCH TOOL STARTED] query='Leven Cork'
+2025-08-09 22:04:37,203 - aitools - INFO - 🔑 [TAVILY API KEY] Found
+2025-08-09 22:04:37,205 - aitools - INFO - 🌐 [SEARCH API] URL: https://api.tavily.com/search, payload: {'api_key': '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', 'query': 'Leven Cork', 'search_depth': 'basic', 'include_answer': True, 'include_images': False, 'include_raw_content': False, 'max_results': 3, 'include_domains': [], 'exclude_domains': []}
+2025-08-09 22:04:37,206 - aitools - INFO - 🔄 [SEARCH HTTP] Making HTTP request...
+2025-08-09 22:04:38,783 - aitools - INFO - 📡 [SEARCH RESPONSE] Status: 200
+2025-08-09 22:04:38,784 - aitools - INFO - 📊 [SEARCH DATA] Raw response keys: ['query', 'follow_up_questions', 'answer', 'images', 'results', 'response_time']
+2025-08-09 22:04:38,785 - aitools - INFO - 🤖 [SEARCH ANSWER] Leven Cork is a city in Foo, near the Veil Sea. It is known for its good people. The Loch Leven Eyed Cork is a fly box used by anglers.
+2025-08-09 22:04:38,786 - aitools - INFO - 📄 [SEARCH SOURCE 1] Cork | Leven Thumps Wiki | Fandom - https://leventhumps.fandom.com/wiki/Cork
+2025-08-09 22:04:38,786 - aitools - INFO - 📄 [SEARCH SOURCE 2] Leven baptisms in Cork Catholic parishes - Irish Ancestors - https://johngrenham.com/places/rc_map_county_surnames_mb.php?county=Cork&surname=Leven
+2025-08-09 22:04:38,787 - aitools - INFO - ✅ [SEARCH SUCCESS] Web search completed successfully for: Leven Cork
+2025-08-09 22:04:38,788 - aitools - INFO - ✅ [SEARCH FINAL] I found information about 'Leven Cork'. Leven Cork is a city in Foo, near the Veil Sea. It is known for its good people. The Loch Leven Eyed Cork is a fly box used by anglers. This information comes from sources including: Cork | Leven Thumps Wiki | Fandom, Leven baptisms in Cork Catholic parishes - Irish Ancestors.
+2025-08-09 22:04:38,790 - livekit.agents - DEBUG - tools execution completed
+2025-08-09 22:04:38,791 - livekit.agents - WARNING - maximum number of function calls steps reached
+2025-08-09 22:04:38,792 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-09 22:04:46,560 - n8n-assistant - INFO - 👤 [USER FINAL] Hail me about
+2025-08-09 22:04:46,561 - livekit.agents - DEBUG - received user transcript
+2025-08-09 22:04:46,563 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 22:04:46,575 - n8n-assistant - INFO - 💬 [CHAT USER] Hail me about
+2025-08-09 22:04:46,576 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 22:04:46,929 - livekit.agents - DEBUG - executing tool
+2025-08-09 22:04:46,930 - aitools - INFO - 🔍 [SEARCH TOOL STARTED] query='Hail in Cork'
+2025-08-09 22:04:46,930 - aitools - INFO - 🔑 [TAVILY API KEY] Found
+2025-08-09 22:04:46,931 - aitools - INFO - 🌐 [SEARCH API] URL: https://api.tavily.com/search, payload: {'api_key': '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', 'query': 'Hail in Cork', 'search_depth': 'basic', 'include_answer': True, 'include_images': False, 'include_raw_content': False, 'max_results': 3, 'include_domains': [], 'exclude_domains': []}
+2025-08-09 22:04:46,932 - aitools - INFO - 🔄 [SEARCH HTTP] Making HTTP request...
+2025-08-09 22:04:49,177 - aitools - INFO - 📡 [SEARCH RESPONSE] Status: 200
+2025-08-09 22:04:49,177 - aitools - INFO - 📊 [SEARCH DATA] Raw response keys: ['query', 'follow_up_questions', 'answer', 'images', 'results', 'response_time']
+2025-08-09 22:04:49,178 - aitools - INFO - 🤖 [SEARCH ANSWER] Hail occurred in Cork City, Ireland, on February 16th. Recent weather reports indicate ongoing thunderstorms and hail in the region. This follows a severe hailstorm in February.
+2025-08-09 22:04:49,179 - aitools - INFO - 📄 [SEARCH SOURCE 1] Crazy hailstorm in Cork City during storm Dennis! - https://www.youtube.com/watch?v=7l5lcqFbyAc
+2025-08-09 22:04:49,180 - aitools - INFO - 📄 [SEARCH SOURCE 2] Some of my recent ancestors hail from Cork, Ireland up ... - https://www.instagram.com/p/DMspq6CMKye/
+2025-08-09 22:04:49,180 - aitools - INFO - ✅ [SEARCH SUCCESS] Web search completed successfully for: Hail in Cork
+2025-08-09 22:04:49,181 - aitools - INFO - ✅ [SEARCH FINAL] I found information about 'Hail in Cork'. Hail occurred in Cork City, Ireland, on February 16th. Recent weather reports indicate ongoing thunderstorms and hail in the region. This follows a severe hailstorm in February. This information comes from sources including: Crazy hailstorm in Cork City during storm Dennis!, Some of my recent ancestors hail from Cork, Ireland up ....
+2025-08-09 22:04:49,183 - livekit.agents - DEBUG - tools execution completed
+2025-08-09 22:04:49,184 - n8n-assistant - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-09 22:04:49,185 - n8n-assistant - INFO - 🛠️ [TOOL SUCCESS] unknown: id='item_3845b28f7a63' type='function_call_output' name='search_web' call_id='b0693b400' output="I found information about 'Hail in Cork'. Hail occurred in Cork City, Ireland, on February 16th. Recent...
+2025-08-09 22:04:49,572 - livekit.agents - DEBUG - executing tool
+2025-08-09 22:04:49,573 - aitools - INFO - 🔍 [SEARCH TOOL STARTED] query='Cork recent hail'
+2025-08-09 22:04:49,575 - aitools - INFO - 🔑 [TAVILY API KEY] Found
+2025-08-09 22:04:49,576 - aitools - INFO - 🌐 [SEARCH API] URL: https://api.tavily.com/search, payload: {'api_key': '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', 'query': 'Cork recent hail', 'search_depth': 'basic', 'include_answer': True, 'include_images': False, 'include_raw_content': False, 'max_results': 3, 'include_domains': [], 'exclude_domains': []}
+2025-08-09 22:04:49,578 - aitools - INFO - 🔄 [SEARCH HTTP] Making HTTP request...
+2025-08-09 22:04:49,581 - n8n-assistant - INFO - 👤 [USER FINAL] Ewe, in Cork.
+2025-08-09 22:04:49,582 - livekit.agents - DEBUG - received user transcript
+2025-08-09 22:04:49,584 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 22:04:49,602 - livekit.agents - DEBUG - waiting for function call to finish before fully cancelling
+2025-08-09 22:04:49,604 - n8n-assistant - INFO - 💬 [CHAT USER] Ewe, in Cork.
+2025-08-09 22:04:49,944 - livekit.agents - DEBUG - executing tool
+2025-08-09 22:04:49,946 - aitools - INFO - 🔍 [SEARCH TOOL STARTED] query='Ewe in Cork'
+2025-08-09 22:04:49,947 - aitools - INFO - 🔑 [TAVILY API KEY] Found
+2025-08-09 22:04:49,949 - aitools - INFO - 🌐 [SEARCH API] URL: https://api.tavily.com/search, payload: {'api_key': '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', 'query': 'Ewe in Cork', 'search_depth': 'basic', 'include_answer': True, 'include_images': False, 'include_raw_content': False, 'max_results': 3, 'include_domains': [], 'exclude_domains': []}
+2025-08-09 22:04:49,951 - aitools - INFO - 🔄 [SEARCH HTTP] Making HTTP request...
+2025-08-09 22:04:51,288 - aitools - INFO - 📡 [SEARCH RESPONSE] Status: 200
+2025-08-09 22:04:51,296 - aitools - INFO - 📊 [SEARCH DATA] Raw response keys: ['query', 'follow_up_questions', 'answer', 'images', 'results', 'response_time']
+2025-08-09 22:04:51,296 - aitools - INFO - 🤖 [SEARCH ANSWER] Recent hail occurred in Cork, Ireland. Heavy rain and hailstones were reported on August 6, 2025. This weather impacted parts of Cork.
+2025-08-09 22:04:51,297 - aitools - INFO - 📄 [SEARCH SOURCE 1] Some of my recent ancestors hail from Cork, Ireland up ... - Instagram - https://www.instagram.com/p/DMspq6CMKye/
+2025-08-09 22:04:51,298 - aitools - INFO - 📄 [SEARCH SOURCE 2] Current Weather Update in Cork City, Ireland | TikTok - https://www.tiktok.com/@irishdaily/video/7506558000019066134?lang=en
+2025-08-09 22:04:51,299 - aitools - INFO - ✅ [SEARCH SUCCESS] Web search completed successfully for: Cork recent hail
+2025-08-09 22:04:51,300 - aitools - INFO - ✅ [SEARCH FINAL] I found information about 'Cork recent hail'. Recent hail occurred in Cork, Ireland. Heavy rain and hailstones were reported on August 6, 2025. This weather impacted parts of Cork. This information comes from sources including: Some of my recent ancestors hail from Cork, Ireland up ... - Instagram, Current Weather Update in Cork City, Ireland | TikTok.
+2025-08-09 22:04:51,302 - livekit.agents - DEBUG - tools execution completed
+2025-08-09 22:04:51,303 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-09 22:04:51,669 - aitools - INFO - 📡 [SEARCH RESPONSE] Status: 200
+2025-08-09 22:04:51,669 - aitools - INFO - 📊 [SEARCH DATA] Raw response keys: ['query', 'follow_up_questions', 'answer', 'images', 'results', 'response_time']
+2025-08-09 22:04:51,670 - aitools - INFO - 🤖 [SEARCH ANSWER] The Ewe Experience in Glengarriff, Co. Cork, combines art and nature with interactive sculptures. It's located on Kenmare Road. Contact Sheena Wood & Kurt Lyndorff for further details.
+2025-08-09 22:04:51,671 - aitools - INFO - 📄 [SEARCH SOURCE 1] Ewe Garden Sculpture | Things to do in West Cork - https://seaviewhousehotel.com/ewe-garden-sculpture-2/
+2025-08-09 22:04:51,672 - aitools - INFO - 📄 [SEARCH SOURCE 2] The Ewe Experience: A Journey Through Nature and Art - Evendo - https://evendo.com/locations/ireland/mizen-head/attraction/the-ewe-experience
+2025-08-09 22:04:51,673 - aitools - INFO - ✅ [SEARCH SUCCESS] Web search completed successfully for: Ewe in Cork
+2025-08-09 22:04:51,674 - aitools - INFO - ✅ [SEARCH FINAL] I found information about 'Ewe in Cork'. The Ewe Experience in Glengarriff, Co. Cork, combines art and nature with interactive sculptures. It's located on Kenmare Road. Contact Sheena Wood & Kurt Lyndorff for further details. This information comes from sources including: Ewe Garden Sculpture | Things to do in West Cork, The Ewe Experience: A Journey Through Nature and Art - Evendo.
+2025-08-09 22:04:51,677 - livekit.agents - DEBUG - tools execution completed
+2025-08-09 22:04:51,678 - n8n-assistant - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-09 22:04:51,679 - n8n-assistant - INFO - 🛠️ [TOOL SUCCESS] unknown: id='item_f703b762a298' type='function_call_output' name='search_web' call_id='c42396f68' output="I found information about 'Ewe in Cork'. The Ewe Experience in Glengarriff, Co. Cork, combines art and ...
+2025-08-09 22:04:51,691 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 22:04:52,885 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 22:05:04,863 - n8n-assistant - INFO - 👤 [USER FINAL] Стоп.
+2025-08-09 22:05:04,864 - livekit.agents - DEBUG - received user transcript
+2025-08-09 22:05:04,866 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 22:05:04,877 - n8n-assistant - INFO - 💬 [CHAT ASSISTANT] I found information about 'Ewe in Cork'. The Ewe Experience in Glengarriff, Co. Cork, combines art and nature with interactive sculptures. It's located on Kenmare Road. Contact Sheena Wood & Kurt Lyndorff
+2025-08-09 22:05:04,879 - n8n-assistant - INFO - ⚠️ [INTERRUPTED] assistant was interrupted
+2025-08-09 22:05:04,880 - n8n-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 22:05:04,883 - n8n-assistant - INFO - 💬 [CHAT USER] Стоп.
+2025-08-09 22:05:04,884 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 22:05:06,129 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 22:05:06,268 - n8n-assistant - INFO - 💬 [CHAT ASSISTANT] It seems like you're referring to a sheep, as "ewe" is another word for an adult female sheep. Cork is a city located in Ireland, and it's known for its rich agricultural land and farming industry. If you're looking for information about sheep farming in Cork, I can tell you that it's a significant sector in the local economy. However, if you have any more specific questions or topics you'd like to discuss, feel free to ask!
+2025-08-09 22:05:06,270 - n8n-assistant - INFO - ⚠️ [INTERRUPTED] assistant was interrupted
+2025-08-09 22:05:06,271 - n8n-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 22:05:06,782 - n8n-assistant - INFO - 👤 [USER FINAL] Стоп.
+2025-08-09 22:05:06,784 - livekit.agents - DEBUG - received user transcript
+2025-08-09 22:05:06,785 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 22:05:06,800 - n8n-assistant - INFO - 💬 [CHAT USER] Стоп.
+2025-08-09 22:05:06,801 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 22:05:07,917 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 22:05:08,666 - n8n-assistant - INFO - 💬 [CHAT ASSISTANT] It seems like
+2025-08-09 22:05:08,668 - n8n-assistant - INFO - ⚠️ [INTERRUPTED] assistant was interrupted
+2025-08-09 22:05:08,669 - n8n-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 22:05:09,792 - n8n-assistant - INFO - 👤 [USER FINAL] Элнеебавад.
+2025-08-09 22:05:09,793 - livekit.agents - DEBUG - received user transcript
+2025-08-09 22:05:09,794 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 22:05:09,811 - n8n-assistant - INFO - 💬 [CHAT USER] Элнеебавад.
+2025-08-09 22:05:09,813 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 22:05:10,558 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-09 22:05:12,382 - n8n-assistant - INFO - 👤 [USER FINAL] Tell me about weather.
+2025-08-09 22:05:12,384 - livekit.agents - DEBUG - received user transcript
+2025-08-09 22:05:13,045 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 22:05:13,064 - n8n-assistant - INFO - 💬 [CHAT USER] Tell me about weather.
+2025-08-09 22:05:13,066 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 22:05:13,594 - livekit.agents - DEBUG - executing tool
+2025-08-09 22:05:13,595 - n8n-assistant - INFO - 🌤️ [N8N WEATHER] Getting weather for 'London' in celsius
+2025-08-09 22:05:13,596 - n8n-assistant - INFO - 🌐 [N8N REQUEST] Sending to https://auto2025system.duckdns.org/webhook/smart-weather
+2025-08-09 22:05:13,597 - n8n-assistant - INFO - 🌐 [N8N PAYLOAD] {'action': 'weather', 'city': 'London', 'units': 'celsius', 'date': 'today', 'user_id': 'livekit_user'}
+2025-08-09 22:05:13,608 - n8n-assistant - INFO - 👤 [USER FINAL] In Cork.
+2025-08-09 22:05:13,609 - livekit.agents - DEBUG - received user transcript
+2025-08-09 22:05:13,611 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 22:05:13,630 - n8n-assistant - INFO - 💬 [CHAT USER] In Cork.
+2025-08-09 22:05:13,953 - n8n-assistant - INFO - 📡 [N8N RESPONSE] Status: 200
+2025-08-09 22:05:13,955 - n8n-assistant - INFO - 📊 [N8N DATA] Success: True
+2025-08-09 22:05:13,957 - n8n-assistant - INFO - 📊 [N8N MESSAGE] Weather in London, City of London, Greater London, United Kingdom: Currently 20 degrees Celsius, cle...
+2025-08-09 22:05:13,959 - n8n-assistant - INFO - ✅ [N8N SUCCESS] Weather retrieved for London
+2025-08-09 22:05:13,961 - livekit.agents - DEBUG - tools execution completed
+2025-08-09 22:05:13,962 - n8n-assistant - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-09 22:05:13,963 - n8n-assistant - INFO - 🛠️ [TOOL SUCCESS] unknown: id='item_0db3ebf07124' type='function_call_output' name='get_weather_n8n' call_id='5119f0948' output='Weather in London, City of London, Greater London, United Kingdom: Currently 20 degrees Celsius, c...
+2025-08-09 22:05:13,985 - livekit.agents - DEBUG - executing tool
+2025-08-09 22:05:13,986 - n8n-assistant - INFO - 🌤️ [N8N WEATHER] Getting weather for 'Cork' in celsius
+2025-08-09 22:05:13,987 - n8n-assistant - INFO - 🌐 [N8N REQUEST] Sending to https://auto2025system.duckdns.org/webhook/smart-weather
+2025-08-09 22:05:13,988 - n8n-assistant - INFO - 🌐 [N8N PAYLOAD] {'action': 'weather', 'city': 'Cork', 'units': 'celsius', 'date': 'today', 'user_id': 'livekit_user'}
+2025-08-09 22:05:14,364 - n8n-assistant - INFO - 📡 [N8N RESPONSE] Status: 200
+2025-08-09 22:05:14,366 - n8n-assistant - INFO - 📊 [N8N DATA] Success: True
+2025-08-09 22:05:14,367 - n8n-assistant - INFO - 📊 [N8N MESSAGE] Weather in Cork, Ireland: Currently 15 degrees Celsius, partly cloudy. Very humid at 82%....
+2025-08-09 22:05:14,368 - n8n-assistant - INFO - ✅ [N8N SUCCESS] Weather retrieved for Cork
+2025-08-09 22:05:14,370 - livekit.agents - DEBUG - tools execution completed
+2025-08-09 22:05:14,372 - n8n-assistant - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-09 22:05:14,373 - n8n-assistant - INFO - 🛠️ [TOOL SUCCESS] unknown: id='item_41f7e0567500' type='function_call_output' name='get_weather_n8n' call_id='64c403ee8' output='Weather in Cork, Ireland: Currently 15 degrees Celsius, partly cloudy. Very humid at 82%.' is_erro...
+2025-08-09 22:05:14,461 - livekit.agents - DEBUG - executing tool
+2025-08-09 22:05:14,462 - n8n-assistant - INFO - 🌤️ [N8N WEATHER] Getting weather for 'London' in celsius
+2025-08-09 22:05:14,463 - n8n-assistant - INFO - 🌐 [N8N REQUEST] Sending to https://auto2025system.duckdns.org/webhook/smart-weather
+2025-08-09 22:05:14,464 - n8n-assistant - INFO - 🌐 [N8N PAYLOAD] {'action': 'weather', 'city': 'London', 'units': 'celsius', 'date': 'today', 'user_id': 'livekit_user'}
+2025-08-09 22:05:14,805 - n8n-assistant - INFO - 📡 [N8N RESPONSE] Status: 200
+2025-08-09 22:05:14,807 - n8n-assistant - INFO - 📊 [N8N DATA] Success: True
+2025-08-09 22:05:14,808 - n8n-assistant - INFO - 📊 [N8N MESSAGE] Weather in London, City of London, Greater London, United Kingdom: Currently 20 degrees Celsius, cle...
+2025-08-09 22:05:14,809 - n8n-assistant - INFO - ✅ [N8N SUCCESS] Weather retrieved for London
+2025-08-09 22:05:14,819 - livekit.agents - DEBUG - tools execution completed
+2025-08-09 22:05:14,820 - livekit.agents - WARNING - maximum number of function calls steps reached
+2025-08-09 22:05:15,768 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 22:05:23,098 - n8n-assistant - INFO - 💬 [CHAT ASSISTANT] The current weather in Cork, Ireland is 15 degrees Celsius, partly cloudy, and very humid at 82%.
+2025-08-09 22:05:23,100 - n8n-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 22:05:30,197 - livekit.agents - INFO - shutting down worker
+2025-08-09 22:05:30,199 - livekit.agents - DEBUG - shutting down job task
+2025-08-09 22:05:30,202 - livekit.agents - DEBUG - job exiting
+2025-08-09 22:05:30,203 - n8n-assistant - INFO - ❌ [SESSION CLOSED] Agent session ended
+2025-08-09 22:05:30,206 - livekit.agents - DEBUG - session closed
+2025-08-09 22:05:30,207 - livekit.agents - DEBUG - http_session(): closing the httpclient ctx
+2025-08-09 22:05:30,208 - livekit.agents - DEBUG - http_session(): creating a new httpclient ctx
+2025-08-09 22:13:04,885 - n8n-assistant - INFO - 🚀 Starting N8N Assistant LiveKit agent application
+2025-08-09 22:13:04,889 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-09 22:13:04,894 - livekit.agents - INFO - starting worker
+2025-08-09 22:13:04,903 - livekit.agents - INFO - initializing job runner
+2025-08-09 22:13:04,905 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-09 22:13:04,905 - livekit.agents - INFO - job runner initialized
+2025-08-09 22:13:04,987 - n8n-assistant - INFO - 🚀 Starting N8N Assistant entrypoint
+2025-08-09 22:13:04,988 - n8n-assistant - INFO - 🧪 [N8N TEST] Testing connection to https://auto2025system.duckdns.org/webhook/smart-weather
+2025-08-09 22:13:06,634 - n8n-assistant - INFO - ✅ [N8N TEST] Connection successful
+2025-08-09 22:13:06,637 - n8n-assistant - INFO - ✅ Connected to room: fake_room
+2025-08-09 22:13:06,638 - n8n-assistant - INFO - N8N Assistant agent initialized with n8n weather, search, and email tools
+2025-08-09 22:13:08,330 - n8n-assistant - INFO - ✅ Session created: Whisper STT (EN) + Cerebras Llama-3.3-70B (AutoGen settings) + TTS + N8N Weather + Search + Email
+2025-08-09 22:13:09,549 - n8n-assistant - INFO - 🔄 [AGENT STATE] initializing -> listening
+2025-08-09 22:13:09,551 - livekit.agents - DEBUG - using audio io: `ChatCLI` -> `AgentSession` -> `TranscriptSynchronizer` -> `ChatCLI`
+2025-08-09 22:13:09,552 - livekit.agents - DEBUG - using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `ChatCLI`
+2025-08-09 22:13:09,552 - n8n-assistant - INFO - ✅ Session started successfully
+2025-08-09 22:13:09,553 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 22:13:09,919 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 22:13:12,084 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 22:13:30,775 - n8n-assistant - INFO - 💬 [CHAT ASSISTANT] Hello! I'm a helpful voice assistant, and I'm here to provide you with useful information, including weather updates for various cities. I can also assist you with searching the web for the latest information on a wide range of topics and help you send emails. Feel free to ask me anything, and I'll do my best to help!
+2025-08-09 22:13:30,777 - n8n-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 22:13:30,778 - n8n-assistant - INFO - ✅ Initial greeting generated
+2025-08-09 22:13:36,486 - n8n-assistant - INFO - 👤 [USER FINAL] Tell me about the cork.
+2025-08-09 22:13:36,488 - livekit.agents - DEBUG - received user transcript
+2025-08-09 22:13:36,489 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 22:13:36,504 - n8n-assistant - INFO - 💬 [CHAT USER] Tell me about the cork.
+2025-08-09 22:13:36,505 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 22:13:37,960 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 22:13:46,929 - n8n-assistant - INFO - 💬 [CHAT ASSISTANT] Cork is a natural, impermeable, and buoyant material that comes from the bark of the cork oak tree, which is native to
+2025-08-09 22:13:46,931 - n8n-assistant - INFO - ⚠️ [INTERRUPTED] assistant was interrupted
+2025-08-09 22:13:46,932 - n8n-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 22:13:47,408 - n8n-assistant - INFO - 👤 [USER FINAL] Стоп
+2025-08-09 22:13:47,409 - livekit.agents - DEBUG - received user transcript
+2025-08-09 22:13:47,411 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 22:13:47,429 - n8n-assistant - INFO - 💬 [CHAT USER] Стоп
+2025-08-09 22:13:47,431 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 22:13:49,000 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 22:13:49,232 - n8n-assistant - INFO - 💬 [CHAT ASSISTANT] It
+2025-08-09 22:13:49,234 - n8n-assistant - INFO - ⚠️ [INTERRUPTED] assistant was interrupted
+2025-08-09 22:13:49,235 - n8n-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 22:13:51,607 - n8n-assistant - INFO - 👤 [USER FINAL] Elmiibaut zēva.
+2025-08-09 22:13:51,608 - livekit.agents - DEBUG - received user transcript
+2025-08-09 22:13:52,002 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 22:13:52,103 - n8n-assistant - INFO - 💬 [CHAT USER] Elmiibaut zēva.
+2025-08-09 22:13:52,105 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 22:13:52,460 - n8n-assistant - INFO - 👤 [USER FINAL] Enkork
+2025-08-09 22:13:52,461 - livekit.agents - DEBUG - received user transcript
+2025-08-09 22:13:52,466 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 22:13:52,482 - n8n-assistant - INFO - 💬 [CHAT USER] Enkork
+2025-08-09 22:13:53,801 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 22:14:02,074 - n8n-assistant - INFO - 💬 [CHAT ASSISTANT] It seems like you're trying to communicate, but I'm not sure what you're trying to say. Could you please provide more context or clarify your question? I'll do my best to help.
+2025-08-09 22:14:02,077 - n8n-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 22:14:04,374 - n8n-assistant - INFO - 👤 [USER FINAL] Зеве
+2025-08-09 22:14:04,375 - livekit.agents - DEBUG - received user transcript
+2025-08-09 22:14:04,377 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 22:14:04,390 - n8n-assistant - INFO - 💬 [CHAT USER] Зеве
+2025-08-09 22:14:04,391 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 22:14:05,322 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-09 22:14:06,295 - n8n-assistant - INFO - 👤 [USER FINAL] Вэ вэ инкорк.
+2025-08-09 22:14:06,296 - livekit.agents - DEBUG - received user transcript
+2025-08-09 22:14:06,297 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 22:14:06,309 - n8n-assistant - INFO - 💬 [CHAT USER] Вэ вэ инкорк.
+2025-08-09 22:14:06,311 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 22:14:07,743 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 22:14:13,120 - n8n-assistant - INFO - 💬 [CHAT ASSISTANT] It seems like you're speaking in a different language, but I'm here to help with any questions or topics you'd like
+2025-08-09 22:14:13,122 - n8n-assistant - INFO - ⚠️ [INTERRUPTED] assistant was interrupted
+2025-08-09 22:14:13,123 - n8n-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 22:14:13,859 - n8n-assistant - INFO - 👤 [USER FINAL] Pog.
+2025-08-09 22:14:13,860 - livekit.agents - DEBUG - received user transcript
+2025-08-09 22:14:13,861 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 22:14:13,881 - n8n-assistant - INFO - 💬 [CHAT USER] Pog.
+2025-08-09 22:14:13,883 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 22:14:15,746 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 22:14:16,922 - n8n-assistant - INFO - 💬 [CHAT ASSISTANT] It seems like you're
+2025-08-09 22:14:16,924 - n8n-assistant - INFO - ⚠️ [INTERRUPTED] assistant was interrupted
+2025-08-09 22:14:16,925 - n8n-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 22:14:17,450 - n8n-assistant - INFO - 👤 [USER FINAL] Eu.
+2025-08-09 22:14:17,452 - livekit.agents - DEBUG - received user transcript
+2025-08-09 22:14:17,454 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 22:14:17,472 - n8n-assistant - INFO - 💬 [CHAT USER] Eu.
+2025-08-09 22:14:17,474 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 22:14:18,622 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-09 22:14:20,211 - n8n-assistant - INFO - 👤 [USER FINAL] Me, about
+2025-08-09 22:14:20,213 - livekit.agents - DEBUG - received user transcript
+2025-08-09 22:14:20,215 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 22:14:20,235 - n8n-assistant - INFO - 💬 [CHAT USER] Me, about
+2025-08-09 22:14:20,237 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 22:14:21,392 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 22:14:22,130 - n8n-assistant - INFO - 💬 [CHAT ASSISTANT] It seems like
+2025-08-09 22:14:22,131 - n8n-assistant - INFO - ⚠️ [INTERRUPTED] assistant was interrupted
+2025-08-09 22:14:22,132 - n8n-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 22:14:22,821 - n8n-assistant - INFO - 👤 [USER FINAL] Зеве.
+2025-08-09 22:14:22,823 - livekit.agents - DEBUG - received user transcript
+2025-08-09 22:14:22,824 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 22:14:22,838 - n8n-assistant - INFO - 💬 [CHAT USER] Зеве.
+2025-08-09 22:14:22,839 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 22:14:23,822 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-09 22:14:24,564 - n8n-assistant - INFO - 👤 [USER FINAL] In Cork
+2025-08-09 22:14:24,565 - livekit.agents - DEBUG - received user transcript
+2025-08-09 22:14:24,567 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 22:14:24,582 - n8n-assistant - INFO - 💬 [CHAT USER] In Cork
+2025-08-09 22:14:24,585 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 22:14:25,829 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-09 22:14:36,021 - n8n-assistant - INFO - 💬 [CHAT ASSISTANT] Cork is a city located in the southern part of Ireland. It's known for its rich history, cultural attractions, and friendly people. If you're looking for information about the
+2025-08-09 22:14:36,022 - n8n-assistant - INFO - ⚠️ [INTERRUPTED] assistant was interrupted
+2025-08-09 22:14:36,023 - n8n-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-09 22:14:37,214 - n8n-assistant - INFO - 👤 [USER FINAL] About weather
+2025-08-09 22:14:37,216 - livekit.agents - DEBUG - received user transcript
+2025-08-09 22:14:37,219 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-09 22:14:37,240 - n8n-assistant - INFO - 💬 [CHAT USER] About weather
+2025-08-09 22:14:37,241 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-09 22:14:37,677 - livekit.agents - DEBUG - executing tool
+2025-08-09 22:14:37,678 - n8n-assistant - INFO - 🌤️ [N8N WEATHER] Getting weather for 'Cork' in celsius
+2025-08-09 22:14:37,679 - n8n-assistant - INFO - 🌐 [N8N REQUEST] Sending to https://auto2025system.duckdns.org/webhook/smart-weather
+2025-08-09 22:14:37,680 - n8n-assistant - INFO - 🌐 [N8N PAYLOAD] {'action': 'weather', 'city': 'Cork', 'units': 'celsius', 'date': 'today', 'user_id': 'livekit_user'}
+2025-08-09 22:14:38,119 - n8n-assistant - INFO - 📡 [N8N RESPONSE] Status: 200
+2025-08-09 22:14:38,121 - n8n-assistant - INFO - 📊 [N8N DATA] Success: True
+2025-08-09 22:14:38,121 - n8n-assistant - INFO - 📊 [N8N MESSAGE] Weather in Cork, Ireland: Currently 15 degrees Celsius, partly cloudy. Very humid at 82%....
+2025-08-09 22:14:38,122 - n8n-assistant - INFO - ✅ [N8N SUCCESS] Weather retrieved for Cork
+2025-08-09 22:14:38,124 - livekit.agents - DEBUG - tools execution completed
+2025-08-09 22:14:38,125 - n8n-assistant - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-09 22:14:38,126 - n8n-assistant - INFO - 🛠️ [TOOL SUCCESS] unknown: id='item_5e5dc061f7a8' type='function_call_output' name='get_weather_n8n' call_id='6ee0fbf42' output='Weather in Cork, Ireland: Currently 15 degrees Celsius, partly cloudy. Very humid at 82%.' is_erro...
+2025-08-09 22:14:38,495 - livekit.agents - DEBUG - executing tool
+2025-08-09 22:14:38,496 - n8n-assistant - INFO - 🌤️ [N8N WEATHER] Getting weather for 'Cork' in celsius
+2025-08-09 22:14:38,496 - n8n-assistant - INFO - 🌐 [N8N REQUEST] Sending to https://auto2025system.duckdns.org/webhook/smart-weather
+2025-08-09 22:14:38,497 - n8n-assistant - INFO - 🌐 [N8N PAYLOAD] {'action': 'weather', 'city': 'Cork', 'units': 'celsius', 'date': 'today', 'user_id': 'livekit_user'}
+2025-08-09 22:14:38,923 - n8n-assistant - INFO - 📡 [N8N RESPONSE] Status: 200
+2025-08-09 22:14:38,924 - n8n-assistant - INFO - 📊 [N8N DATA] Success: True
+2025-08-09 22:14:38,925 - n8n-assistant - INFO - 📊 [N8N MESSAGE] Weather in Cork, Ireland: Currently 15 degrees Celsius, partly cloudy. Very humid at 82%....
+2025-08-09 22:14:38,926 - n8n-assistant - INFO - ✅ [N8N SUCCESS] Weather retrieved for Cork
+2025-08-09 22:14:38,927 - livekit.agents - DEBUG - tools execution completed
+2025-08-09 22:14:38,928 - livekit.agents - WARNING - maximum number of function calls steps reached
+2025-08-09 22:14:38,929 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-09 22:15:02,628 - livekit.agents - INFO - shutting down worker
+2025-08-09 22:15:02,629 - livekit.agents - DEBUG - shutting down job task
+2025-08-09 22:15:02,631 - livekit.agents - DEBUG - job exiting
+2025-08-09 22:15:02,633 - n8n-assistant - INFO - ❌ [SESSION CLOSED] Agent session ended
+2025-08-09 22:15:02,635 - livekit.agents - DEBUG - session closed
+2025-08-09 22:15:02,636 - livekit.agents - DEBUG - http_session(): closing the httpclient ctx
+2025-08-09 22:15:02,636 - livekit.agents - DEBUG - http_session(): creating a new httpclient ctx
