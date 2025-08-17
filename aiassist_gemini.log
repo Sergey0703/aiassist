@@ -1,0 +1,504 @@
+2025-08-17 20:35:08,938 - gemini-realtime - INFO - ✅ [SETUP] Google API key found
+2025-08-17 20:35:08,943 - gemini-realtime - INFO - 🚀 [MAIN] Starting Gemini Realtime Model agent
+2025-08-17 20:35:08,951 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-17 20:35:08,957 - livekit.agents - INFO - starting worker
+2025-08-17 20:35:08,972 - livekit.agents - INFO - initializing job runner
+2025-08-17 20:35:08,974 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-17 20:35:08,976 - livekit.agents - INFO - job runner initialized
+2025-08-17 20:35:09,051 - gemini-realtime - INFO - 🚀 [GEMINI REALTIME] Starting with Google Realtime Model
+2025-08-17 20:35:09,058 - gemini-realtime - INFO - ✅ [LIVEKIT] Connected to room: fake_room
+2025-08-17 20:35:09,060 - gemini-realtime - INFO - ✅ [AGENT] GeminiAgent initialized with 4 tools: weather, trade, search, email
+2025-08-17 20:35:09,236 - gemini-realtime - INFO - ✅ [SESSION] Created with Google Realtime Model (STT+LLM+TTS)
+2025-08-17 20:35:09,243 - gemini-realtime - INFO - ✅ [EVENTS] All event handlers configured
+2025-08-17 20:35:10,970 - livekit.plugins.google - DEBUG - connecting to Gemini Realtime API...
+2025-08-17 20:35:10,982 - gemini-realtime - INFO - ⚡ [STATE] initializing -> listening
+2025-08-17 20:35:10,998 - livekit.agents - DEBUG - using audio io: `ChatCLI` -> `AgentSession` -> `TranscriptSynchronizer` -> `ChatCLI`
+2025-08-17 20:35:11,004 - livekit.agents - DEBUG - using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `ChatCLI`
+2025-08-17 20:35:11,019 - gemini-realtime - INFO - ✅ [GEMINI] Session started successfully
+2025-08-17 20:35:11,026 - gemini-realtime - INFO - 🔊 [SPEECH] Gemini started speaking
+2025-08-17 20:35:11,393 - google_genai.live - INFO - b'{\n  "setupComplete": {}\n}\n'
+2025-08-17 20:35:12,000 - gemini-realtime - INFO - ⚡ [STATE] listening -> speaking
+2025-08-17 20:35:19,849 - gemini-realtime - INFO - ⚡ [STATE] speaking -> listening
+2025-08-17 20:35:19,856 - gemini-realtime - INFO - 🤖 [GEMINI] Hello! I can help you with weather information, trade analysis, web search, and sending emails. What can I do for you today?
+
+2025-08-17 20:35:19,859 - gemini-realtime - INFO - ✅ [GREETING] Initial greeting generated
+2025-08-17 20:35:19,889 - gemini-realtime - INFO - 🎙️ [READY] Waiting for user input...
+2025-08-17 20:35:24,288 - gemini-realtime - INFO - 🔊 [SPEECH] Gemini started speaking
+2025-08-17 20:35:25,790 - gemini-realtime - INFO - 👤 [USER] tell me please about in land.
+2025-08-17 20:35:25,796 - livekit.agents - DEBUG - executing tool
+2025-08-17 20:35:25,798 - n8n-tools - INFO - 🌤️ [N8N WEATHER] Getting weather for 'London' in celsius
+2025-08-17 20:35:25,800 - n8n-tools - INFO - 🌐 [N8N REQUEST] Sending to https://auto2025system.duckdns.org/webhook/smart-weather
+2025-08-17 20:35:25,801 - n8n-tools - INFO - 🌐 [N8N PAYLOAD] {'action': 'weather', 'city': 'London', 'units': 'celsius', 'date': 'today', 'user_id': 'livekit_user', 'timestamp': 132663.8306965, 'source': 'voice_agent'}
+2025-08-17 20:35:25,811 - gemini-realtime - INFO - 🤖 [GEMINI] ['']
+2025-08-17 20:35:25,814 - gemini-realtime - INFO - ⚡ [STATE] listening -> thinking
+2025-08-17 20:35:26,413 - n8n-tools - INFO - 📡 [N8N RESPONSE] Status: 200
+2025-08-17 20:35:26,417 - n8n-tools - INFO - 📊 [N8N DATA] Success: True
+2025-08-17 20:35:26,421 - n8n-tools - INFO - 📊 [N8N MESSAGE] Weather in London, City of London, Greater London, United Kingdom: Currently 20 degrees Celsius, sun...
+2025-08-17 20:35:26,427 - n8n-tools - INFO - ✅ [N8N SUCCESS] Weather retrieved for London
+2025-08-17 20:35:26,434 - livekit.agents - DEBUG - tools execution completed
+2025-08-17 20:35:26,436 - gemini-realtime - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-17 20:35:26,439 - gemini-realtime - INFO - ✅ [OUTPUTS] Found 1 outputs
+2025-08-17 20:35:26,447 - gemini-realtime - INFO - ✅ [OUTPUT 1] get_weather_n8n: Weather in London, City of London, Greater London, United Kingdom: Currently 20 degrees Celsius, sunny. Windy at 17 kilometers per hour....
+2025-08-17 20:35:26,523 - gemini-realtime - INFO - 🔊 [SPEECH] Gemini started speaking
+2025-08-17 20:35:26,856 - gemini-realtime - INFO - ⚡ [STATE] thinking -> speaking
+2025-08-17 20:35:34,817 - gemini-realtime - INFO - ⚡ [STATE] speaking -> listening
+2025-08-17 20:35:34,819 - gemini-realtime - INFO - 🤖 [GEMINI] The weather in London is currently 20 degrees Celsius and sunny, with winds at 17 kilometers per hour. Is there anything else I can help you with?
+
+2025-08-17 20:35:38,331 - gemini-realtime - INFO - 🔊 [SPEECH] Gemini started speaking
+2025-08-17 20:35:41,105 - gemini-realtime - INFO - 👤 [USER] yes tell me please about whether in
+2025-08-17 20:35:41,114 - livekit.agents - DEBUG - executing tool
+2025-08-17 20:35:41,117 - n8n-tools - INFO - 🌤️ [N8N WEATHER] Getting weather for 'Cork' in celsius
+2025-08-17 20:35:41,118 - n8n-tools - INFO - 🌐 [N8N REQUEST] Sending to https://auto2025system.duckdns.org/webhook/smart-weather
+2025-08-17 20:35:41,120 - n8n-tools - INFO - 🌐 [N8N PAYLOAD] {'action': 'weather', 'city': 'Cork', 'units': 'celsius', 'date': 'today', 'user_id': 'livekit_user', 'timestamp': 132679.1494161, 'source': 'voice_agent'}
+2025-08-17 20:35:41,127 - gemini-realtime - INFO - 🤖 [GEMINI] ['']
+2025-08-17 20:35:41,133 - gemini-realtime - INFO - ⚡ [STATE] listening -> thinking
+2025-08-17 20:35:41,802 - n8n-tools - INFO - 📡 [N8N RESPONSE] Status: 200
+2025-08-17 20:35:41,809 - n8n-tools - INFO - 📊 [N8N DATA] Success: True
+2025-08-17 20:35:41,810 - n8n-tools - INFO - 📊 [N8N MESSAGE] Weather in Cork, Ireland: Currently 16 degrees Celsius, partly cloudy. Very humid at 88%. Windy at 1...
+2025-08-17 20:35:41,813 - n8n-tools - INFO - ✅ [N8N SUCCESS] Weather retrieved for Cork
+2025-08-17 20:35:41,819 - livekit.agents - DEBUG - tools execution completed
+2025-08-17 20:35:41,822 - gemini-realtime - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-17 20:35:41,831 - gemini-realtime - INFO - ✅ [OUTPUTS] Found 1 outputs
+2025-08-17 20:35:41,833 - gemini-realtime - INFO - ✅ [OUTPUT 1] get_weather_n8n: Weather in Cork, Ireland: Currently 16 degrees Celsius, partly cloudy. Very humid at 88%. Windy at 16 kilometers per hour....
+2025-08-17 20:35:42,120 - gemini-realtime - INFO - 🔊 [SPEECH] Gemini started speaking
+2025-08-17 20:35:42,443 - gemini-realtime - INFO - ⚡ [STATE] thinking -> speaking
+2025-08-17 20:35:53,927 - gemini-realtime - INFO - ⚡ [STATE] speaking -> listening
+2025-08-17 20:35:53,930 - gemini-realtime - INFO - 🤖 [GEMINI] The weather in Cork, Ireland is currently 16 degrees Celsius and partly cloudy. It is very humid at 88% and windy at 16 kilometers per hour. Is there anything else I can help you with?
+
+2025-08-17 20:35:57,481 - gemini-realtime - INFO - 🔊 [SPEECH] Gemini started speaking
+2025-08-17 20:35:59,962 - gemini-realtime - INFO - 👤 [USER] Uh tell me please about whether in
+2025-08-17 20:35:59,972 - livekit.agents - DEBUG - executing tool
+2025-08-17 20:35:59,975 - n8n-tools - INFO - 🌤️ [N8N WEATHER] Getting weather for 'Kyiv' in celsius
+2025-08-17 20:35:59,976 - n8n-tools - INFO - 🌐 [N8N REQUEST] Sending to https://auto2025system.duckdns.org/webhook/smart-weather
+2025-08-17 20:35:59,978 - n8n-tools - INFO - 🌐 [N8N PAYLOAD] {'action': 'weather', 'city': 'Kyiv', 'units': 'celsius', 'date': 'today', 'user_id': 'livekit_user', 'timestamp': 132698.0074075, 'source': 'voice_agent'}
+2025-08-17 20:35:59,980 - gemini-realtime - INFO - 🤖 [GEMINI] ['']
+2025-08-17 20:35:59,982 - gemini-realtime - INFO - ⚡ [STATE] listening -> thinking
+2025-08-17 20:36:00,731 - n8n-tools - INFO - 📡 [N8N RESPONSE] Status: 200
+2025-08-17 20:36:00,735 - n8n-tools - INFO - 📊 [N8N DATA] Success: True
+2025-08-17 20:36:00,740 - n8n-tools - INFO - 📊 [N8N MESSAGE] Weather in Kyiv, Kyyivs'ka Oblast', Ukraine: Currently 18 degrees Celsius, clear....
+2025-08-17 20:36:00,742 - n8n-tools - INFO - ✅ [N8N SUCCESS] Weather retrieved for Kyiv
+2025-08-17 20:36:00,749 - livekit.agents - DEBUG - tools execution completed
+2025-08-17 20:36:00,752 - gemini-realtime - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-17 20:36:00,756 - gemini-realtime - INFO - ✅ [OUTPUTS] Found 1 outputs
+2025-08-17 20:36:00,758 - gemini-realtime - INFO - ✅ [OUTPUT 1] get_weather_n8n: Weather in Kyiv, Kyyivs'ka Oblast', Ukraine: Currently 18 degrees Celsius, clear....
+2025-08-17 20:36:00,822 - gemini-realtime - INFO - 🔊 [SPEECH] Gemini started speaking
+2025-08-17 20:36:01,244 - gemini-realtime - INFO - ⚡ [STATE] thinking -> speaking
+2025-08-17 20:36:07,777 - gemini-realtime - INFO - ⚡ [STATE] speaking -> listening
+2025-08-17 20:36:07,785 - gemini-realtime - INFO - 🤖 [GEMINI] The weather in Kyiv, Ukraine is currently 18 degrees Celsius and clear. Can I help you with anything else?
+
+2025-08-17 20:36:11,099 - gemini-realtime - INFO - 🔊 [SPEECH] Gemini started speaking
+2025-08-17 20:36:11,484 - gemini-realtime - INFO - ⚡ [STATE] listening -> speaking
+2025-08-17 20:36:14,359 - gemini-realtime - INFO - 👤 [USER] Okay, very good.
+2025-08-17 20:36:14,376 - gemini-realtime - INFO - ⚡ [STATE] speaking -> listening
+2025-08-17 20:36:14,380 - gemini-realtime - INFO - 🤖 [GEMINI] You're welcome! Is there anything else I can help you with today?
+
+2025-08-17 20:36:19,628 - gemini-realtime - INFO - 🔊 [SPEECH] Gemini started speaking
+2025-08-17 20:36:20,045 - gemini-realtime - INFO - ⚡ [STATE] listening -> speaking
+2025-08-17 20:36:36,115 - gemini-realtime - INFO - 👤 [USER] tell me about yourself.
+2025-08-17 20:36:36,128 - gemini-realtime - INFO - ⚡ [STATE] speaking -> listening
+2025-08-17 20:36:36,130 - gemini-realtime - INFO - 🤖 [GEMINI] I am a large language model, built by Google. I can provide information on a variety of topics, including weather, trade analysis, and current events. I can also perform web searches and send emails. What else would you like to know about me?
+
+2025-08-17 20:36:39,630 - gemini-realtime - INFO - 🔊 [SPEECH] Gemini started speaking
+2025-08-17 20:36:43,876 - gemini-realtime - INFO - 👤 [USER] Okay, tell me please about last news about GPT5.
+2025-08-17 20:36:43,881 - livekit.agents - DEBUG - executing tool
+2025-08-17 20:36:43,887 - web-tools - INFO - 🔍 [SEARCH TOOL STARTED] query='latest news about ChatGPT 5'
+2025-08-17 20:36:43,889 - web-tools - INFO - 🔑 [TAVILY API KEY] Found
+2025-08-17 20:36:43,891 - web-tools - INFO - 🌐 [SEARCH API] URL: https://api.tavily.com/search, query: 'latest news about ChatGPT 5'
+2025-08-17 20:36:43,893 - web-tools - INFO - 🔄 [SEARCH HTTP] Making HTTP request...
+2025-08-17 20:36:43,903 - gemini-realtime - INFO - 🤖 [GEMINI] ['']
+2025-08-17 20:36:43,905 - gemini-realtime - INFO - ⚡ [STATE] listening -> thinking
+2025-08-17 20:36:46,126 - web-tools - INFO - 📡 [SEARCH RESPONSE] Status: 200
+2025-08-17 20:36:46,127 - web-tools - INFO - 📊 [SEARCH DATA] Raw response keys: ['query', 'follow_up_questions', 'answer', 'images', 'results', 'response_time', 'request_id']
+2025-08-17 20:36:46,129 - web-tools - INFO - 🤖 [SEARCH ANSWER] I'm an AI system built by Amazon. As of now, the latest version of the AI model is GPT-5, which offers enhanced capabilities and user control features. For specific details, I recommend checking the latest updates directly.
+2025-08-17 20:36:46,138 - web-tools - INFO - 📄 [SEARCH SOURCE 1] OpenAI launches new GPT-5 model for all ChatGPT users - https://www.cnbc.com/2025/08/07/openai-launches-gpt-5-model-for-all-chatgpt-users.html
+2025-08-17 20:36:46,140 - web-tools - INFO - 📄 [SEARCH SOURCE 2] OpenAI claims GPT-5 model boosts ChatGPT to 'PhD level' - https://www.bbc.com/news/articles/cy5prvgw0r1o
+2025-08-17 20:36:46,142 - web-tools - INFO - ✅ [SEARCH SUCCESS] Web search completed successfully for: latest news about ChatGPT 5
+2025-08-17 20:36:46,143 - web-tools - INFO - ✅ [SEARCH FINAL] I found information about 'latest news about ChatGPT 5'. I'm an AI system built by Amazon. As of now, the latest version of the AI model is GPT-5, which offers enhanced capabilities and user control features. For specific details, I recommend checking the latest updates directly. This information comes from sources including: OpenAI launches new GPT-5 model for all ChatGPT users, OpenAI claims GPT-5 model boosts ChatGPT to 'PhD level'.
+2025-08-17 20:36:46,154 - livekit.agents - DEBUG - tools execution completed
+2025-08-17 20:36:46,156 - gemini-realtime - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-17 20:36:46,157 - gemini-realtime - INFO - ✅ [OUTPUTS] Found 1 outputs
+2025-08-17 20:36:46,158 - gemini-realtime - INFO - ✅ [OUTPUT 1] search_web: I found information about 'latest news about ChatGPT 5'. I'm an AI system built by Amazon. As of now, the latest version of the AI model is GPT-5, which offers enhanced capabilities and user control f...
+2025-08-17 20:36:46,220 - gemini-realtime - INFO - 🔊 [SPEECH] Gemini started speaking
+2025-08-17 20:36:46,840 - gemini-realtime - INFO - ⚡ [STATE] thinking -> speaking
+2025-08-17 20:37:01,850 - gemini-realtime - INFO - ⚡ [STATE] speaking -> listening
+2025-08-17 20:37:01,854 - gemini-realtime - INFO - 🤖 [GEMINI] Based on my search, the latest version is GPT-5, which offers enhanced capabilities and user control features. OpenAI claims it boosts ChatGPT to a 'PhD level'. Would you like me to search for more specific details?
+
+2025-08-17 20:37:07,681 - gemini-realtime - INFO - 🔊 [SPEECH] Gemini started speaking
+2025-08-17 20:37:09,553 - gemini-realtime - INFO - ⚡ [STATE] listening -> speaking
+2025-08-17 20:37:11,799 - gemini-realtime - INFO - 👤 [USER] tell me about forecast for cork.
+2025-08-17 20:37:11,819 - gemini-realtime - INFO - ⚡ [STATE] speaking -> listening
+2025-08-17 20:37:11,822 - gemini-realtime - INFO - 🤖 [GEMINI] Do you want the weather forecast for Cork?
+
+2025-08-17 20:37:14,032 - gemini-realtime - INFO - 🔊 [SPEECH] Gemini started speaking
+2025-08-17 20:37:14,441 - gemini-realtime - INFO - 👤 [USER] <noise>
+2025-08-17 20:37:14,446 - livekit.agents - DEBUG - executing tool
+2025-08-17 20:37:14,451 - n8n-tools - INFO - 🌤️ [N8N WEATHER] Getting weather for 'Cork' in celsius
+2025-08-17 20:37:14,453 - n8n-tools - INFO - 🌐 [N8N REQUEST] Sending to https://auto2025system.duckdns.org/webhook/smart-weather
+2025-08-17 20:37:14,454 - n8n-tools - INFO - 🌐 [N8N PAYLOAD] {'action': 'weather', 'city': 'Cork', 'units': 'celsius', 'date': 'today', 'user_id': 'livekit_user', 'timestamp': 132772.4836258, 'source': 'voice_agent'}
+2025-08-17 20:37:14,456 - gemini-realtime - INFO - 🤖 [GEMINI] ['']
+2025-08-17 20:37:14,458 - gemini-realtime - INFO - ⚡ [STATE] listening -> thinking
+2025-08-17 20:37:14,867 - n8n-tools - INFO - 📡 [N8N RESPONSE] Status: 200
+2025-08-17 20:37:14,869 - n8n-tools - INFO - 📊 [N8N DATA] Success: True
+2025-08-17 20:37:14,870 - n8n-tools - INFO - 📊 [N8N MESSAGE] Weather in Cork, Ireland: Currently 16 degrees Celsius, partly cloudy. Very humid at 88%. Windy at 1...
+2025-08-17 20:37:14,873 - n8n-tools - INFO - ✅ [N8N SUCCESS] Weather retrieved for Cork
+2025-08-17 20:37:14,876 - livekit.agents - DEBUG - tools execution completed
+2025-08-17 20:37:14,878 - gemini-realtime - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-17 20:37:14,884 - gemini-realtime - INFO - ✅ [OUTPUTS] Found 1 outputs
+2025-08-17 20:37:14,888 - gemini-realtime - INFO - ✅ [OUTPUT 1] get_weather_n8n: Weather in Cork, Ireland: Currently 16 degrees Celsius, partly cloudy. Very humid at 88%. Windy at 16 kilometers per hour....
+2025-08-17 20:37:14,939 - gemini-realtime - INFO - 🔊 [SPEECH] Gemini started speaking
+2025-08-17 20:37:15,336 - gemini-realtime - INFO - ⚡ [STATE] thinking -> speaking
+2025-08-17 20:37:32,187 - gemini-realtime - INFO - ⚡ [STATE] speaking -> listening
+2025-08-17 20:37:32,189 - gemini-realtime - INFO - 🤖 [GEMINI] The current weather in Cork, Ireland is 16 degrees Celsius and partly cloudy. It is very humid at 88% and windy at 16 kilometers per hour. I can only provide current weather information. Would you like me to search the web for a weather forecast for Cork?
+
+2025-08-17 20:37:35,957 - livekit.agents - INFO - shutting down worker
+2025-08-17 20:37:35,963 - livekit.agents - DEBUG - shutting down job task
+2025-08-17 20:37:35,967 - livekit.plugins.google - DEBUG - send task finished.
+2025-08-17 20:37:35,967 - livekit.agents - DEBUG - job exiting
+2025-08-17 20:37:36,010 - livekit.agents - DEBUG - session closed
+2025-08-17 20:37:36,012 - livekit.agents - DEBUG - http_session(): closing the httpclient ctx
+2025-08-17 20:37:36,014 - livekit.agents - DEBUG - http_session(): creating a new httpclient ctx
+2025-08-17 20:39:10,389 - gemini-realtime - INFO - ✅ [SETUP] Google API key found
+2025-08-17 20:39:10,393 - gemini-realtime - INFO - 🚀 [MAIN] Starting Gemini Realtime Model agent
+2025-08-17 20:39:10,397 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-17 20:39:10,403 - livekit.agents - INFO - starting worker
+2025-08-17 20:39:10,410 - livekit.agents - INFO - initializing job runner
+2025-08-17 20:39:10,417 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-17 20:39:10,417 - livekit.agents - INFO - job runner initialized
+2025-08-17 20:39:10,487 - gemini-realtime - INFO - 🚀 [GEMINI REALTIME] Starting with Google Realtime Model
+2025-08-17 20:39:10,494 - gemini-realtime - INFO - ✅ [LIVEKIT] Connected to room: fake_room
+2025-08-17 20:39:10,496 - gemini-realtime - INFO - ✅ [AGENT] GeminiAgent initialized with 4 tools: weather, trade, search, email
+2025-08-17 20:39:10,652 - gemini-realtime - INFO - ✅ [SESSION] Created with Google Realtime Model (STT+LLM+TTS)
+2025-08-17 20:39:10,660 - gemini-realtime - INFO - ✅ [EVENTS] All event handlers configured
+2025-08-17 20:39:12,934 - livekit.plugins.google - DEBUG - connecting to Gemini Realtime API...
+2025-08-17 20:39:12,945 - gemini-realtime - INFO - ⚡ [STATE] initializing -> listening
+2025-08-17 20:39:12,948 - livekit.agents - DEBUG - using audio io: `ChatCLI` -> `AgentSession` -> `TranscriptSynchronizer` -> `ChatCLI`
+2025-08-17 20:39:12,949 - livekit.agents - DEBUG - using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `ChatCLI`
+2025-08-17 20:39:12,951 - gemini-realtime - INFO - ✅ [GEMINI] Session started successfully
+2025-08-17 20:39:12,953 - gemini-realtime - INFO - 🔊 [SPEECH] Gemini started speaking
+2025-08-17 20:39:13,313 - google_genai.live - INFO - b'{\n  "setupComplete": {}\n}\n'
+2025-08-17 20:39:14,077 - gemini-realtime - INFO - ⚡ [STATE] listening -> speaking
+2025-08-17 20:39:21,243 - gemini-realtime - INFO - ⚡ [STATE] speaking -> listening
+2025-08-17 20:39:21,251 - gemini-realtime - INFO - 🤖 [GEMINI] Hello! I can help you with weather information, trade analysis, web search, and sending emails. What can I do for you today?
+
+2025-08-17 20:39:21,254 - gemini-realtime - INFO - ✅ [GREETING] Initial greeting generated
+2025-08-17 20:39:21,287 - gemini-realtime - INFO - 🎙️ [READY] Waiting for user input...
+2025-08-17 20:39:24,908 - gemini-realtime - INFO - 🔊 [SPEECH] Gemini started speaking
+2025-08-17 20:39:26,558 - gemini-realtime - INFO - ⚡ [STATE] listening -> speaking
+2025-08-17 20:39:35,089 - gemini-realtime - INFO - 👤 [USER] Uh, tell me please about our trade.
+2025-08-17 20:39:35,164 - gemini-realtime - INFO - ⚡ [STATE] speaking -> listening
+2025-08-17 20:39:35,171 - gemini-realtime - INFO - 🤖 [GEMINI] Sure, I can help you with that. What type of trade analysis are you looking for (top, worst, or both), and how many days ago would you like to analyze?
+
+2025-08-17 20:39:45,766 - gemini-realtime - INFO - 🔊 [SPEECH] Gemini started speaking
+2025-08-17 20:39:46,424 - gemini-realtime - INFO - ⚡ [STATE] listening -> speaking
+2025-08-17 20:39:52,802 - gemini-realtime - INFO - 👤 [USER] And 30 days.
+2025-08-17 20:39:52,826 - gemini-realtime - INFO - ⚡ [STATE] speaking -> listening
+2025-08-17 20:39:52,831 - gemini-realtime - INFO - 🤖 [GEMINI] Okay, and would you like to analyze the top performing trades, the worst performing trades, or both?
+
+2025-08-17 20:39:55,672 - gemini-realtime - INFO - 🔊 [SPEECH] Gemini started speaking
+2025-08-17 20:39:56,211 - gemini-realtime - INFO - 👤 [USER] Of
+2025-08-17 20:39:56,216 - livekit.agents - DEBUG - executing tool
+2025-08-17 20:39:56,218 - trade-results-tool - INFO - 📊 [TRADE RESULTS] Getting trade analysis for last 30 days (type: both)
+2025-08-17 20:39:56,223 - trade-results-tool - INFO - 🌐 [N8N TRADE REQUEST] Sending to https://auto2025system.duckdns.org/webhook/76f40ffb-2d6a-4f67-85f9-8f9b20ae6a7e
+2025-08-17 20:39:56,224 - trade-results-tool - INFO - 🌐 [N8N TRADE PAYLOAD] {'daysAgo': 30, 'analysisType': 'both', 'user_id': 'livekit_user', 'timestamp': 132934.2542018, 'source': 'voice_agent'}
+2025-08-17 20:39:56,227 - gemini-realtime - INFO - 🤖 [GEMINI] ['']
+2025-08-17 20:39:56,229 - gemini-realtime - INFO - ⚡ [STATE] listening -> thinking
+2025-08-17 20:39:56,328 - gemini-realtime - INFO - 🔊 [SPEECH] Gemini started speaking
+2025-08-17 20:39:56,333 - gemini-realtime - INFO - ⚡ [STATE] thinking -> speaking
+2025-08-17 20:39:58,456 - trade-results-tool - INFO - 📡 [N8N TRADE RESPONSE] Status: 200
+2025-08-17 20:39:58,458 - trade-results-tool - INFO - 📊 [N8N TRADE DATA] Response length: 498
+2025-08-17 20:39:58,460 - trade-results-tool - INFO - 📊 [N8N TRADE KEYS] Response keys: List response
+2025-08-17 20:39:58,463 - trade-results-tool - INFO - 📝 [TRADE FORMAT] Formatting trade analysis data
+2025-08-17 20:39:58,465 - trade-results-tool - INFO - 📝 [TRADE FORMAT] Data type: <class 'list'>, length: 2
+2025-08-17 20:39:58,472 - trade-results-tool - INFO - 📝 [TRADE FORMAT] Processing 2 items from response
+2025-08-17 20:39:58,474 - trade-results-tool - INFO - 📝 [TRADE FORMAT] Item 0: <class 'dict'> - {'json': {'type': 'TOP', 'products': [{'productName': "Murphy's Irish Stout", 'totalSold': 1000}, {'productName': 'Teeling Small Batch Whiskey', 'totalSold': 420}, {'productName': 'Redbreast 12 Year Single Pot Still', 'totalSold': 360}]}, 'pairedItem': {'item': 0}}
+2025-08-17 20:39:58,475 - trade-results-tool - INFO - 📝 [TRADE FORMAT] Found TOP with 3 products
+2025-08-17 20:39:58,476 - trade-results-tool - INFO - 📝 [TRADE FORMAT] Item 1: <class 'dict'> - {'json': {'type': 'WORST', 'products': [{'productName': 'Magners Irish Cider', 'totalSold': 0}, {'productName': 'Jameson Irish Whiskey', 'totalSold': 0}, {'productName': 'Harp Lager', 'totalSold': 0}]}, 'pairedItem': {'item': 1}}
+2025-08-17 20:39:58,477 - trade-results-tool - INFO - 📝 [TRADE FORMAT] Found WORST with 3 products
+2025-08-17 20:39:58,478 - trade-results-tool - INFO - 📝 [TRADE FORMAT] Extracted TOP: 3 products
+2025-08-17 20:39:58,479 - trade-results-tool - INFO - 📝 [TRADE FORMAT] Extracted WORST: 3 products
+2025-08-17 20:39:58,488 - trade-results-tool - INFO - 📈 [TRADE FORMAT] Leader: Murphy's Irish Stout - 1000
+2025-08-17 20:39:58,490 - trade-results-tool - INFO - 📉 [TRADE FORMAT] Worst: Magners Irish Cider - 0
+2025-08-17 20:39:58,492 - trade-results-tool - INFO - 📊 [TRADE FORMAT] Statistics: 6 products, 1780 total sales
+2025-08-17 20:39:58,499 - trade-results-tool - INFO - 📈 [TRADE FORMAT] TOP 1: Murphy's Irish Stout - 1000
+2025-08-17 20:39:58,500 - trade-results-tool - INFO - 📈 [TRADE FORMAT] TOP 2: Teeling Small Batch Whiskey - 420
+2025-08-17 20:39:58,502 - trade-results-tool - INFO - 📈 [TRADE FORMAT] TOP 3: Redbreast 12 Year Single Pot Still - 360
+2025-08-17 20:39:58,505 - trade-results-tool - INFO - 📉 [TRADE FORMAT] WORST 1: Magners Irish Cider - 0
+2025-08-17 20:39:58,506 - trade-results-tool - INFO - 📉 [TRADE FORMAT] WORST 2: Jameson Irish Whiskey - 0
+2025-08-17 20:39:58,507 - trade-results-tool - INFO - 📉 [TRADE FORMAT] WORST 3: Harp Lager - 0
+2025-08-17 20:39:58,508 - trade-results-tool - INFO - 📝 [TRADE FORMAT] Final voice result: Sales analysis for last 30 days: Top seller: Murphy's Irish Stout with 1000.0 units Worst performer: Magners Irish Cider with 0.0 units Analysis cover...
+2025-08-17 20:39:58,510 - trade-results-tool - INFO - ✅ [TRADE FORMAT] Successfully formatted trade analysis
+2025-08-17 20:39:58,511 - trade-results-tool - INFO - ✅ [N8N TRADE SUCCESS] Trade analysis retrieved successfully
+2025-08-17 20:39:58,524 - livekit.agents - DEBUG - tools execution completed
+2025-08-17 20:39:58,526 - gemini-realtime - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-17 20:39:58,530 - gemini-realtime - INFO - ✅ [OUTPUTS] Found 1 outputs
+2025-08-17 20:39:58,535 - gemini-realtime - INFO - ✅ [OUTPUT 1] get_trade_results_n8n: Sales analysis for last 30 days: Top seller: Murphy's Irish Stout with 1000.0 units Worst performer: Magners Irish Cider with 0.0 units Analysis covers 6 products with total 1780.0 units sold. Top 3 s...
+2025-08-17 20:40:15,581 - gemini-realtime - INFO - ⚡ [STATE] speaking -> listening
+2025-08-17 20:40:15,585 - gemini-realtime - INFO - 🤖 [GEMINI] Okay, I will get the information on both the top and worst performing trades from the last 30 days. Over the last 30 days, the top seller was Murphy's Irish Stout with 1000 units. The worst performer was Magners Irish Cider with 0 units. Would you like a more detailed breakdown?
+
+2025-08-17 20:40:21,377 - gemini-realtime - INFO - 🔊 [SPEECH] Gemini started speaking
+2025-08-17 20:40:21,729 - gemini-realtime - INFO - ⚡ [STATE] listening -> speaking
+2025-08-17 20:40:24,890 - gemini-realtime - INFO - 👤 [USER] No, thank you.
+2025-08-17 20:40:24,906 - gemini-realtime - INFO - ⚡ [STATE] speaking -> listening
+2025-08-17 20:40:24,909 - gemini-realtime - INFO - 🤖 [GEMINI] You're welcome! Is there anything else I can help you with today?
+
+2025-08-17 20:40:28,482 - gemini-realtime - INFO - 🔊 [SPEECH] Gemini started speaking
+2025-08-17 20:40:29,347 - gemini-realtime - INFO - ⚡ [STATE] listening -> speaking
+2025-08-17 20:40:35,940 - gemini-realtime - INFO - 👤 [USER] can you send email please?
+2025-08-17 20:40:35,958 - gemini-realtime - INFO - ⚡ [STATE] speaking -> listening
+2025-08-17 20:40:35,960 - gemini-realtime - INFO - 🤖 [GEMINI] Yes, I can. What is the recipient's email address, the subject, and the message you would like to send?
+
+2025-08-17 20:40:39,624 - gemini-realtime - INFO - 🔊 [SPEECH] Gemini started speaking
+2025-08-17 20:40:46,943 - gemini-realtime - INFO - ⚡ [STATE] listening -> speaking
+2025-08-17 20:40:52,978 - gemini-realtime - INFO - 👤 [USER] Auto 2025 system@gmail.com
+2025-08-17 20:40:53,004 - gemini-realtime - INFO - ⚡ [STATE] speaking -> listening
+2025-08-17 20:40:53,011 - gemini-realtime - INFO - 🤖 [GEMINI] Okay, and what is the subject and message you would like to send to auto2025system@gmail.com?
+
+2025-08-17 20:40:55,279 - gemini-realtime - INFO - 🔊 [SPEECH] Gemini started speaking
+2025-08-17 20:40:55,773 - gemini-realtime - INFO - ⚡ [STATE] listening -> speaking
+2025-08-17 20:40:56,374 - gemini-realtime - INFO - 👤 [USER] A high
+2025-08-17 20:40:56,392 - gemini-realtime - INFO - ⚡ [STATE] speaking -> listening
+2025-08-17 20:40:56,400 - livekit.plugins.google - WARNING - truncate is not supported by the Google Realtime API.
+2025-08-17 20:40:58,387 - gemini-realtime - INFO - 🔊 [SPEECH] Gemini started speaking
+2025-08-17 20:40:59,761 - gemini-realtime - INFO - ⚡ [STATE] listening -> speaking
+2025-08-17 20:41:08,997 - gemini-realtime - INFO - 👤 [USER] And the message only test.
+2025-08-17 20:41:09,012 - gemini-realtime - INFO - ⚡ [STATE] speaking -> listening
+2025-08-17 20:41:09,018 - gemini-realtime - INFO - 🤖 [GEMINI] Okay, so I will send an email to auto2025system@gmail.com with the subject "Hi" and the message "Test". Is that correct?
+
+2025-08-17 20:41:11,893 - gemini-realtime - INFO - 🔊 [SPEECH] Gemini started speaking
+2025-08-17 20:41:12,127 - gemini-realtime - INFO - 👤 [USER] yes my
+2025-08-17 20:41:12,136 - livekit.agents - DEBUG - executing tool
+2025-08-17 20:41:12,139 - email-tools - INFO - ==================================================
+2025-08-17 20:41:12,141 - email-tools - INFO - 🚀 [EMAIL TOOL] Starting email send process
+2025-08-17 20:41:12,143 - email-tools - INFO - 📧 [EMAIL] To: auto2025system@gmail.com
+2025-08-17 20:41:12,145 - email-tools - INFO - 📝 [EMAIL] Subject: Hi
+2025-08-17 20:41:12,146 - email-tools - INFO - 💬 [EMAIL] Message: Test...
+2025-08-17 20:41:12,147 - email-tools - INFO - 📮 [EMAIL PROVIDER] Using Gmail
+2025-08-17 20:41:12,156 - email-tools - INFO - 👤 [EMAIL USER] auto2025system@gmail.com
+2025-08-17 20:41:12,158 - email-tools - INFO - 🔑 [EMAIL PASSWORD] Found
+2025-08-17 20:41:12,160 - email-tools - INFO - 📦 [EMAIL MESSAGE] Created successfully. Size: 706 bytes
+2025-08-17 20:41:12,161 - email-tools - INFO - 🌐 [EMAIL SMTP] Connecting to smtp.gmail.com:587...
+2025-08-17 20:41:13,147 - email-tools - INFO - 🔒 [EMAIL TLS] Starting TLS encryption...
+2025-08-17 20:41:13,404 - email-tools - INFO - 🔐 [EMAIL LOGIN] Logging in as auto2025system@gmail.com...
+2025-08-17 20:41:13,667 - email-tools - INFO - ✅ [EMAIL LOGIN] Login successful!
+2025-08-17 20:41:13,670 - email-tools - INFO - 📤 [EMAIL SEND] Sending email to ['auto2025system@gmail.com']...
+2025-08-17 20:41:14,446 - email-tools - INFO - 📊 [EMAIL RESULT] Send result: {}
+2025-08-17 20:41:14,487 - email-tools - INFO - 🔌 [EMAIL SMTP] Connection closed
+2025-08-17 20:41:14,490 - email-tools - INFO - ✅ [EMAIL SUCCESS] Email sent successfully to auto2025system@gmail.com, sir.
+2025-08-17 20:41:14,495 - email-tools - INFO - ==================================================
+2025-08-17 20:41:14,497 - livekit.agents - WARNING - Running <Task finished name='Task-144' coro=<_execute_tools_task.<locals>._traceable_fnc_tool() done, defined at C:\projects\aiassist\venv\Lib\site-packages\opentelemetry\util\_decorator.py:68> result=None> took too long: 2.36 seconds
+2025-08-17 20:41:14,513 - livekit.agents - DEBUG - tools execution completed
+2025-08-17 20:41:14,525 - gemini-realtime - INFO - 🤖 [GEMINI] ['']
+2025-08-17 20:41:14,530 - gemini-realtime - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-17 20:41:14,533 - gemini-realtime - INFO - ✅ [OUTPUTS] Found 1 outputs
+2025-08-17 20:41:14,535 - gemini-realtime - INFO - ✅ [OUTPUT 1] send_email: Email sent successfully to auto2025system@gmail.com, sir....
+2025-08-17 20:41:14,544 - gemini-realtime - INFO - ⚡ [STATE] listening -> thinking
+2025-08-17 20:41:14,923 - gemini-realtime - INFO - 🔊 [SPEECH] Gemini started speaking
+2025-08-17 20:41:15,198 - gemini-realtime - INFO - ⚡ [STATE] thinking -> speaking
+2025-08-17 20:41:18,724 - gemini-realtime - INFO - ⚡ [STATE] speaking -> listening
+2025-08-17 20:41:18,725 - gemini-realtime - INFO - 🤖 [GEMINI] Okay, the email has been sent. Is there anything else I can help you with?
+
+2025-08-17 20:41:23,994 - gemini-realtime - INFO - 🔊 [SPEECH] Gemini started speaking
+2025-08-17 20:41:24,365 - gemini-realtime - INFO - ⚡ [STATE] listening -> speaking
+2025-08-17 20:41:26,412 - livekit.agents - INFO - shutting down worker
+2025-08-17 20:41:26,417 - livekit.agents - DEBUG - shutting down job task
+2025-08-17 20:41:26,420 - livekit.agents - DEBUG - job exiting
+2025-08-17 20:41:26,420 - gemini-realtime - INFO - ⚡ [STATE] speaking -> listening
+2025-08-17 20:41:26,432 - livekit.plugins.google - WARNING - truncate is not supported by the Google Realtime API.
+2025-08-17 20:41:26,433 - gemini-realtime - INFO - 🤖 [GEMINI] You're welcome! Have a great day.
+
+2025-08-17 20:41:26,437 - livekit.plugins.google - DEBUG - send task finished.
+2025-08-17 20:41:26,440 - livekit.plugins.google - DEBUG - receive task: Session changed or closed, stopping receive.
+2025-08-17 20:41:26,476 - livekit.agents - DEBUG - session closed
+2025-08-17 20:41:26,483 - livekit.agents - DEBUG - http_session(): closing the httpclient ctx
+2025-08-17 20:41:26,485 - livekit.agents - DEBUG - http_session(): creating a new httpclient ctx
+2025-08-17 20:42:08,097 - gemini-realtime - INFO - ✅ [SETUP] Google API key found
+2025-08-17 20:42:08,100 - gemini-realtime - INFO - 🚀 [MAIN] Starting Gemini Realtime Model agent
+2025-08-17 20:42:08,193 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-17 20:42:08,205 - livekit.agents - DEV - Watching C:\projects\aiassist
+2025-08-17 20:42:11,459 - gemini-realtime - INFO - ✅ [SETUP] Google API key found
+2025-08-17 20:42:11,471 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-17 20:42:11,493 - livekit.agents - INFO - starting worker
+2025-08-17 20:42:11,726 - livekit.agents - INFO - registered worker
+2025-08-17 20:42:28,711 - livekit.agents - INFO - received job request
+2025-08-17 20:42:29,251 - livekit.agents - INFO - initializing job runner
+2025-08-17 20:42:29,257 - livekit.agents - INFO - job runner initialized
+2025-08-17 20:42:29,259 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-17 20:42:29,271 - gemini-realtime - INFO - 🚀 [GEMINI REALTIME] Starting with Google Realtime Model
+2025-08-17 20:42:29,964 - gemini-realtime - INFO - ✅ [LIVEKIT] Connected to room: playground-2BwC-yKPE
+2025-08-17 20:42:29,969 - gemini-realtime - INFO - ✅ [AGENT] GeminiAgent initialized with 4 tools: weather, trade, search, email
+2025-08-17 20:42:30,233 - gemini-realtime - INFO - ✅ [SESSION] Created with Google Realtime Model (STT+LLM+TTS)
+2025-08-17 20:42:30,240 - gemini-realtime - INFO - ✅ [EVENTS] All event handlers configured
+2025-08-17 20:42:30,245 - livekit.agents - DEBUG - input stream attached
+2025-08-17 20:42:31,899 - livekit.plugins.google - DEBUG - connecting to Gemini Realtime API...
+2025-08-17 20:42:31,913 - gemini-realtime - INFO - ⚡ [STATE] initializing -> listening
+2025-08-17 20:42:31,916 - livekit.agents - DEBUG - using audio io: `RoomIO` -> `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+2025-08-17 20:42:31,917 - livekit.agents - DEBUG - using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+2025-08-17 20:42:31,924 - gemini-realtime - INFO - ✅ [GEMINI] Session started successfully
+2025-08-17 20:42:31,927 - gemini-realtime - INFO - 🔊 [SPEECH] Gemini started speaking
+2025-08-17 20:42:31,932 - livekit.agents - DEBUG - start reading stream
+2025-08-17 20:42:32,175 - google_genai.live - INFO - b'{\n  "setupComplete": {}\n}\n'
+2025-08-17 20:42:32,604 - gemini-realtime - INFO - ⚡ [STATE] listening -> speaking
+2025-08-17 20:42:40,644 - gemini-realtime - INFO - ⚡ [STATE] speaking -> listening
+2025-08-17 20:42:40,652 - gemini-realtime - INFO - 🤖 [GEMINI] Hello! I can help you with weather information, trade analysis, web search, and sending emails. What can I do for you today?
+
+2025-08-17 20:42:40,657 - gemini-realtime - INFO - ✅ [GREETING] Initial greeting generated
+2025-08-17 20:42:40,693 - gemini-realtime - INFO - 🎙️ [READY] Waiting for user input...
+2025-08-17 20:42:45,274 - gemini-realtime - INFO - 🔊 [SPEECH] Gemini started speaking
+2025-08-17 20:42:45,832 - gemini-realtime - INFO - ⚡ [STATE] listening -> speaking
+2025-08-17 20:42:51,497 - gemini-realtime - INFO - 👤 [USER] do you see me now?
+2025-08-17 20:42:51,515 - gemini-realtime - INFO - ⚡ [STATE] speaking -> listening
+2025-08-17 20:42:51,518 - gemini-realtime - INFO - 🤖 [GEMINI] I can hear you, but I don't have access to your camera, so I can't see you. Is there anything I can help you with?
+
+2025-08-17 20:42:56,492 - gemini-realtime - INFO - 🔊 [SPEECH] Gemini started speaking
+2025-08-17 20:43:00,136 - gemini-realtime - INFO - 👤 [USER] Okay, tell me please about wherever in London.
+2025-08-17 20:43:00,147 - livekit.agents - DEBUG - executing tool
+2025-08-17 20:43:00,149 - n8n-tools - INFO - 🌤️ [N8N WEATHER] Getting weather for 'London' in celsius
+2025-08-17 20:43:00,151 - n8n-tools - INFO - 🌐 [N8N REQUEST] Sending to https://auto2025system.duckdns.org/webhook/smart-weather
+2025-08-17 20:43:00,152 - n8n-tools - INFO - 🌐 [N8N PAYLOAD] {'action': 'weather', 'city': 'London', 'units': 'celsius', 'date': 'today', 'user_id': 'livekit_user', 'timestamp': 133118.1822422, 'source': 'voice_agent'}
+2025-08-17 20:43:00,158 - gemini-realtime - INFO - 🤖 [GEMINI] ['']
+2025-08-17 20:43:00,166 - gemini-realtime - INFO - ⚡ [STATE] listening -> thinking
+2025-08-17 20:43:00,635 - n8n-tools - INFO - 📡 [N8N RESPONSE] Status: 200
+2025-08-17 20:43:00,638 - n8n-tools - INFO - 📊 [N8N DATA] Success: True
+2025-08-17 20:43:00,644 - n8n-tools - INFO - 📊 [N8N MESSAGE] Weather in London, City of London, Greater London, United Kingdom: Currently 20 degrees Celsius, sun...
+2025-08-17 20:43:00,646 - n8n-tools - INFO - ✅ [N8N SUCCESS] Weather retrieved for London
+2025-08-17 20:43:00,648 - livekit.agents - DEBUG - tools execution completed
+2025-08-17 20:43:00,649 - gemini-realtime - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-17 20:43:00,651 - gemini-realtime - INFO - ✅ [OUTPUTS] Found 1 outputs
+2025-08-17 20:43:00,652 - gemini-realtime - INFO - ✅ [OUTPUT 1] get_weather_n8n: Weather in London, City of London, Greater London, United Kingdom: Currently 20 degrees Celsius, sunny. Windy at 17 kilometers per hour....
+2025-08-17 20:43:00,705 - gemini-realtime - INFO - 🔊 [SPEECH] Gemini started speaking
+2025-08-17 20:43:01,137 - gemini-realtime - INFO - ⚡ [STATE] thinking -> speaking
+2025-08-17 20:43:16,384 - gemini-realtime - INFO - ⚡ [STATE] speaking -> listening
+2025-08-17 20:43:16,393 - gemini-realtime - INFO - 🤖 [GEMINI] The weather in London, City of London, Greater London, United Kingdom is currently 20 degrees Celsius and sunny. It's windy at 17 kilometers per hour. Is there anything else I can help you with regarding the weather or any other topic?
+
+2025-08-17 20:43:19,607 - gemini-realtime - INFO - 🔊 [SPEECH] Gemini started speaking
+2025-08-17 20:43:22,399 - gemini-realtime - INFO - ⚡ [STATE] listening -> speaking
+2025-08-17 20:43:33,518 - gemini-realtime - INFO - 👤 [USER] Okay, tell me please about our trade.
+2025-08-17 20:43:33,545 - gemini-realtime - INFO - ⚡ [STATE] speaking -> listening
+2025-08-17 20:43:33,549 - gemini-realtime - INFO - 🤖 [GEMINI] To provide you with information about your trades, can you please specify what type of analysis you're looking for (e.g., top, worst, or both) and how many days ago you'd like to analyze?
+
+2025-08-17 20:43:35,792 - gemini-realtime - INFO - 🔊 [SPEECH] Gemini started speaking
+2025-08-17 20:43:36,156 - gemini-realtime - INFO - 👤 [USER] Top.
+2025-08-17 20:43:36,169 - livekit.agents - DEBUG - executing tool
+2025-08-17 20:43:36,172 - trade-results-tool - INFO - 📊 [TRADE RESULTS] Getting trade analysis for last 30 days (type: top)
+2025-08-17 20:43:36,175 - trade-results-tool - INFO - 🌐 [N8N TRADE REQUEST] Sending to https://auto2025system.duckdns.org/webhook/76f40ffb-2d6a-4f67-85f9-8f9b20ae6a7e
+2025-08-17 20:43:36,181 - trade-results-tool - INFO - 🌐 [N8N TRADE PAYLOAD] {'daysAgo': 30, 'analysisType': 'top', 'user_id': 'livekit_user', 'timestamp': 133154.2055464, 'source': 'voice_agent'}
+2025-08-17 20:43:36,192 - gemini-realtime - INFO - 🤖 [GEMINI] ['']
+2025-08-17 20:43:36,199 - gemini-realtime - INFO - ⚡ [STATE] listening -> thinking
+2025-08-17 20:43:36,347 - livekit.plugins.google - WARNING - server cancelled tool calls
+2025-08-17 20:43:36,351 - gemini-realtime - INFO - 🔊 [SPEECH] Gemini started speaking
+2025-08-17 20:43:36,798 - gemini-realtime - INFO - 🔊 [SPEECH] Gemini started speaking
+2025-08-17 20:43:37,178 - gemini-realtime - INFO - 👤 [USER] 40.
+2025-08-17 20:43:37,191 - livekit.agents - DEBUG - executing tool
+2025-08-17 20:43:37,194 - trade-results-tool - INFO - 📊 [TRADE RESULTS] Getting trade analysis for last 40 days (type: top)
+2025-08-17 20:43:37,196 - trade-results-tool - INFO - 🌐 [N8N TRADE REQUEST] Sending to https://auto2025system.duckdns.org/webhook/76f40ffb-2d6a-4f67-85f9-8f9b20ae6a7e
+2025-08-17 20:43:37,198 - trade-results-tool - INFO - 🌐 [N8N TRADE PAYLOAD] {'daysAgo': 40, 'analysisType': 'top', 'user_id': 'livekit_user', 'timestamp': 133155.2272585, 'source': 'voice_agent'}
+2025-08-17 20:43:37,202 - gemini-realtime - INFO - ⚡ [STATE] thinking -> listening
+2025-08-17 20:43:37,209 - gemini-realtime - INFO - 🤖 [GEMINI] ['']
+2025-08-17 20:43:37,212 - gemini-realtime - INFO - ⚡ [STATE] listening -> thinking
+2025-08-17 20:43:38,089 - trade-results-tool - INFO - 📡 [N8N TRADE RESPONSE] Status: 200
+2025-08-17 20:43:38,093 - trade-results-tool - INFO - 📊 [N8N TRADE DATA] Response length: 498
+2025-08-17 20:43:38,097 - trade-results-tool - INFO - 📊 [N8N TRADE KEYS] Response keys: List response
+2025-08-17 20:43:38,099 - trade-results-tool - INFO - 📝 [TRADE FORMAT] Formatting trade analysis data
+2025-08-17 20:43:38,101 - trade-results-tool - INFO - 📝 [TRADE FORMAT] Data type: <class 'list'>, length: 2
+2025-08-17 20:43:38,111 - trade-results-tool - INFO - 📝 [TRADE FORMAT] Processing 2 items from response
+2025-08-17 20:43:38,113 - trade-results-tool - INFO - 📝 [TRADE FORMAT] Item 0: <class 'dict'> - {'json': {'type': 'TOP', 'products': [{'productName': "Murphy's Irish Stout", 'totalSold': 1000}, {'productName': 'Teeling Small Batch Whiskey', 'totalSold': 420}, {'productName': 'Redbreast 12 Year Single Pot Still', 'totalSold': 360}]}, 'pairedItem': {'item': 0}}
+2025-08-17 20:43:38,114 - trade-results-tool - INFO - 📝 [TRADE FORMAT] Found TOP with 3 products
+2025-08-17 20:43:38,117 - trade-results-tool - INFO - 📝 [TRADE FORMAT] Item 1: <class 'dict'> - {'json': {'type': 'WORST', 'products': [{'productName': 'Magners Irish Cider', 'totalSold': 0}, {'productName': 'Jameson Irish Whiskey', 'totalSold': 0}, {'productName': 'Harp Lager', 'totalSold': 0}]}, 'pairedItem': {'item': 1}}
+2025-08-17 20:43:38,119 - trade-results-tool - INFO - 📝 [TRADE FORMAT] Found WORST with 3 products
+2025-08-17 20:43:38,122 - trade-results-tool - INFO - 📝 [TRADE FORMAT] Extracted TOP: 3 products
+2025-08-17 20:43:38,123 - trade-results-tool - INFO - 📝 [TRADE FORMAT] Extracted WORST: 3 products
+2025-08-17 20:43:38,125 - trade-results-tool - INFO - 📈 [TRADE FORMAT] Leader: Murphy's Irish Stout - 1000
+2025-08-17 20:43:38,126 - trade-results-tool - INFO - 📉 [TRADE FORMAT] Worst: Magners Irish Cider - 0
+2025-08-17 20:43:38,128 - trade-results-tool - INFO - 📊 [TRADE FORMAT] Statistics: 6 products, 1780 total sales
+2025-08-17 20:43:38,129 - trade-results-tool - INFO - 📈 [TRADE FORMAT] TOP 1: Murphy's Irish Stout - 1000
+2025-08-17 20:43:38,131 - trade-results-tool - INFO - 📈 [TRADE FORMAT] TOP 2: Teeling Small Batch Whiskey - 420
+2025-08-17 20:43:38,132 - trade-results-tool - INFO - 📈 [TRADE FORMAT] TOP 3: Redbreast 12 Year Single Pot Still - 360
+2025-08-17 20:43:38,142 - trade-results-tool - INFO - 📝 [TRADE FORMAT] Final voice result: Sales analysis for last 30 days: Top seller: Murphy's Irish Stout with 1000.0 units Worst performer: Magners Irish Cider with 0.0 units Analysis cover...
+2025-08-17 20:43:38,144 - trade-results-tool - INFO - ✅ [TRADE FORMAT] Successfully formatted trade analysis
+2025-08-17 20:43:38,146 - trade-results-tool - INFO - ✅ [N8N TRADE SUCCESS] Trade analysis retrieved successfully
+2025-08-17 20:43:38,149 - trade-results-tool - INFO - 📡 [N8N TRADE RESPONSE] Status: 200
+2025-08-17 20:43:38,150 - trade-results-tool - INFO - 📊 [N8N TRADE DATA] Response length: 498
+2025-08-17 20:43:38,151 - trade-results-tool - INFO - 📊 [N8N TRADE KEYS] Response keys: List response
+2025-08-17 20:43:38,153 - trade-results-tool - INFO - 📝 [TRADE FORMAT] Formatting trade analysis data
+2025-08-17 20:43:38,155 - trade-results-tool - INFO - 📝 [TRADE FORMAT] Data type: <class 'list'>, length: 2
+2025-08-17 20:43:38,156 - trade-results-tool - INFO - 📝 [TRADE FORMAT] Processing 2 items from response
+2025-08-17 20:43:38,158 - trade-results-tool - INFO - 📝 [TRADE FORMAT] Item 0: <class 'dict'> - {'json': {'type': 'TOP', 'products': [{'productName': "Murphy's Irish Stout", 'totalSold': 1000}, {'productName': 'Teeling Small Batch Whiskey', 'totalSold': 420}, {'productName': 'Redbreast 12 Year Single Pot Still', 'totalSold': 360}]}, 'pairedItem': {'item': 0}}
+2025-08-17 20:43:38,159 - trade-results-tool - INFO - 📝 [TRADE FORMAT] Found TOP with 3 products
+2025-08-17 20:43:38,161 - trade-results-tool - INFO - 📝 [TRADE FORMAT] Item 1: <class 'dict'> - {'json': {'type': 'WORST', 'products': [{'productName': 'Magners Irish Cider', 'totalSold': 0}, {'productName': 'Jameson Irish Whiskey', 'totalSold': 0}, {'productName': 'Harp Lager', 'totalSold': 0}]}, 'pairedItem': {'item': 1}}
+2025-08-17 20:43:38,162 - trade-results-tool - INFO - 📝 [TRADE FORMAT] Found WORST with 3 products
+2025-08-17 20:43:38,171 - trade-results-tool - INFO - 📝 [TRADE FORMAT] Extracted TOP: 3 products
+2025-08-17 20:43:38,174 - trade-results-tool - INFO - 📝 [TRADE FORMAT] Extracted WORST: 3 products
+2025-08-17 20:43:38,175 - trade-results-tool - INFO - 📈 [TRADE FORMAT] Leader: Murphy's Irish Stout - 1000
+2025-08-17 20:43:38,177 - trade-results-tool - INFO - 📉 [TRADE FORMAT] Worst: Magners Irish Cider - 0
+2025-08-17 20:43:38,182 - trade-results-tool - INFO - 📊 [TRADE FORMAT] Statistics: 6 products, 1780 total sales
+2025-08-17 20:43:38,186 - trade-results-tool - INFO - 📈 [TRADE FORMAT] TOP 1: Murphy's Irish Stout - 1000
+2025-08-17 20:43:38,188 - trade-results-tool - INFO - 📈 [TRADE FORMAT] TOP 2: Teeling Small Batch Whiskey - 420
+2025-08-17 20:43:38,190 - trade-results-tool - INFO - 📈 [TRADE FORMAT] TOP 3: Redbreast 12 Year Single Pot Still - 360
+2025-08-17 20:43:38,191 - trade-results-tool - INFO - 📝 [TRADE FORMAT] Final voice result: Sales analysis for last 40 days: Top seller: Murphy's Irish Stout with 1000.0 units Worst performer: Magners Irish Cider with 0.0 units Analysis cover...
+2025-08-17 20:43:38,193 - trade-results-tool - INFO - ✅ [TRADE FORMAT] Successfully formatted trade analysis
+2025-08-17 20:43:38,205 - trade-results-tool - INFO - ✅ [N8N TRADE SUCCESS] Trade analysis retrieved successfully
+2025-08-17 20:43:38,213 - livekit.agents - DEBUG - tools execution completed
+2025-08-17 20:43:38,215 - gemini-realtime - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-17 20:43:38,221 - gemini-realtime - INFO - ✅ [OUTPUTS] Found 1 outputs
+2025-08-17 20:43:38,223 - gemini-realtime - INFO - ✅ [OUTPUT 1] get_trade_results_n8n: Sales analysis for last 30 days: Top seller: Murphy's Irish Stout with 1000.0 units Worst performer: Magners Irish Cider with 0.0 units Analysis covers 6 products with total 1780.0 units sold. Top 3 s...
+2025-08-17 20:43:38,228 - livekit.agents - DEBUG - tools execution completed
+2025-08-17 20:43:38,233 - gemini-realtime - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-17 20:43:38,236 - gemini-realtime - INFO - ✅ [OUTPUTS] Found 1 outputs
+2025-08-17 20:43:38,238 - gemini-realtime - INFO - ✅ [OUTPUT 1] get_trade_results_n8n: Sales analysis for last 40 days: Top seller: Murphy's Irish Stout with 1000.0 units Worst performer: Magners Irish Cider with 0.0 units Analysis covers 6 products with total 1780.0 units sold. Top 3 s...
+2025-08-17 20:43:38,305 - gemini-realtime - INFO - 🔊 [SPEECH] Gemini started speaking
+2025-08-17 20:43:38,863 - gemini-realtime - INFO - ⚡ [STATE] thinking -> speaking
+2025-08-17 20:43:48,965 - gemini-realtime - INFO - ⚡ [STATE] speaking -> listening
+2025-08-17 20:43:48,977 - gemini-realtime - INFO - 🤖 [GEMINI] For the last 40 days, the top seller is Murphy's Irish Stout with 1000 units. Is there anything else you'd like to know about your trade results or anything else I can help you with?
+
+2025-08-17 20:43:53,447 - gemini-realtime - INFO - 🔊 [SPEECH] Gemini started speaking
+2025-08-17 20:43:53,678 - gemini-realtime - INFO - 👤 [USER] No.
+2025-08-17 20:43:53,688 - livekit.plugins.google - WARNING - truncate is not supported by the Google Realtime API.
+2025-08-17 20:43:56,707 - gemini-realtime - INFO - 🔊 [SPEECH] Gemini started speaking
+2025-08-17 20:44:03,089 - gemini-realtime - INFO - 👤 [USER] tell me please about last news about 5.
+2025-08-17 20:44:03,097 - livekit.agents - DEBUG - executing tool
+2025-08-17 20:44:03,100 - web-tools - INFO - 🔍 [SEARCH TOOL STARTED] query='latest news about ChatGPT 5'
+2025-08-17 20:44:03,102 - web-tools - INFO - 🔑 [TAVILY API KEY] Found
+2025-08-17 20:44:03,105 - web-tools - INFO - 🌐 [SEARCH API] URL: https://api.tavily.com/search, query: 'latest news about ChatGPT 5'
+2025-08-17 20:44:03,107 - web-tools - INFO - 🔄 [SEARCH HTTP] Making HTTP request...
+2025-08-17 20:44:03,110 - gemini-realtime - INFO - 🤖 [GEMINI] ['']
+2025-08-17 20:44:03,118 - gemini-realtime - INFO - ⚡ [STATE] listening -> thinking
+2025-08-17 20:44:05,108 - web-tools - INFO - 📡 [SEARCH RESPONSE] Status: 200
+2025-08-17 20:44:05,118 - web-tools - INFO - 📊 [SEARCH DATA] Raw response keys: ['query', 'follow_up_questions', 'answer', 'images', 'results', 'response_time', 'request_id']
+2025-08-17 20:44:05,121 - web-tools - INFO - 🤖 [SEARCH ANSWER] As of August 2025, GPT-5 is now available for use in advanced plans of ChatGPT. It offers enhanced reasoning and multimodal capabilities. This update is the latest flagship model for all users.
+2025-08-17 20:44:05,125 - web-tools - INFO - 📄 [SEARCH SOURCE 1] Everything you should know about GPT-5 [August 2025] - https://botpress.com/blog/everything-you-should-know-about-gpt-5
+2025-08-17 20:44:05,127 - web-tools - INFO - 📄 [SEARCH SOURCE 2] ChatGPT — Release Notes - https://help.openai.com/en/articles/6825453-chatgpt-release-notes
+2025-08-17 20:44:05,129 - web-tools - INFO - ✅ [SEARCH SUCCESS] Web search completed successfully for: latest news about ChatGPT 5
+2025-08-17 20:44:05,130 - web-tools - INFO - ✅ [SEARCH FINAL] I found information about 'latest news about ChatGPT 5'. As of August 2025, GPT-5 is now available for use in advanced plans of ChatGPT. It offers enhanced reasoning and multimodal capabilities. This update is the latest flagship model for all users. This information comes from sources including: Everything you should know about GPT-5 [August 2025], ChatGPT — Release Notes.
+2025-08-17 20:44:05,138 - livekit.agents - DEBUG - tools execution completed
+2025-08-17 20:44:05,144 - gemini-realtime - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-17 20:44:05,147 - gemini-realtime - INFO - ✅ [OUTPUTS] Found 1 outputs
+2025-08-17 20:44:05,149 - gemini-realtime - INFO - ✅ [OUTPUT 1] search_web: I found information about 'latest news about ChatGPT 5'. As of August 2025, GPT-5 is now available for use in advanced plans of ChatGPT. It offers enhanced reasoning and multimodal capabilities. This ...
+2025-08-17 20:44:05,239 - gemini-realtime - INFO - 🔊 [SPEECH] Gemini started speaking
+2025-08-17 20:44:05,838 - gemini-realtime - INFO - ⚡ [STATE] thinking -> speaking
+2025-08-17 20:44:23,768 - gemini-realtime - INFO - ⚡ [STATE] speaking -> listening
+2025-08-17 20:44:23,776 - gemini-realtime - INFO - 🤖 [GEMINI] Based on my search, as of August 2025, GPT-5 is now available for use in advanced plans of ChatGPT. It offers enhanced reasoning and multimodal capabilities and is the latest flagship model for all users. Would you like me to search for more information on this topic?
+
+2025-08-17 20:44:28,676 - gemini-realtime - INFO - 🔊 [SPEECH] Gemini started speaking
+2025-08-17 20:44:28,965 - gemini-realtime - INFO - ⚡ [STATE] listening -> speaking
+2025-08-17 20:44:31,649 - gemini-realtime - INFO - 👤 [USER] No thank you.
+2025-08-17 20:44:31,673 - gemini-realtime - INFO - ⚡ [STATE] speaking -> listening
+2025-08-17 20:44:31,680 - gemini-realtime - INFO - 🤖 [GEMINI] You're welcome! Is there anything else I can help you with today?
+
+2025-08-17 20:44:34,604 - gemini-realtime - INFO - 🔊 [SPEECH] Gemini started speaking
+2025-08-17 20:44:35,697 - gemini-realtime - INFO - ⚡ [STATE] listening -> speaking
+2025-08-17 20:44:36,400 - gemini-realtime - INFO - 👤 [USER] Now thank you.
+2025-08-17 20:44:36,420 - gemini-realtime - INFO - ⚡ [STATE] speaking -> listening
+2025-08-17 20:44:36,429 - gemini-realtime - INFO - 🤖 [GEMINI] Goodbye!
+
+2025-08-17 20:44:38,314 - livekit.agents - DEBUG - stream closed
+2025-08-17 20:44:38,326 - livekit.agents - INFO - closing agent session due to participant disconnect (disable via `RoomInputOptions.close_on_disconnect=False`)
+2025-08-17 20:44:38,336 - livekit.agents - DEBUG - input stream detached
+2025-08-17 20:44:38,339 - livekit.plugins.google - DEBUG - send task finished.
+2025-08-17 20:44:38,378 - livekit.agents - WARNING - skipping user input, speech scheduling is paused
+2025-08-17 20:44:38,403 - livekit.agents - DEBUG - session closed
+2025-08-17 20:44:59,426 - livekit - WARNING - livekit::rtc_engine:453:livekit::rtc_engine - received session close: "signal client closed: \"stream closed\"" UnknownReason Resume
+2025-08-17 20:44:59,429 - livekit.agents - DEBUG - shutting down job task
+2025-08-17 20:44:59,441 - livekit.agents - DEBUG - job exiting
+2025-08-17 20:44:59,442 - livekit.agents - DEBUG - http_session(): closing the httpclient ctx
+2025-08-17 20:44:59,444 - livekit.agents - DEBUG - http_session(): creating a new httpclient ctx
+2025-08-17 20:45:01,822 - livekit.agents - INFO - shutting down worker

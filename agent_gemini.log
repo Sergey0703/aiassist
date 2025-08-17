@@ -1,0 +1,158 @@
+2025-08-15 23:25:32,398 - gemini-agent - INFO - 🚀 [MAIN] Starting GEMINI stack experiment - Google AI alternative to Groq
+2025-08-15 23:25:32,499 - gemini-agent - INFO - 🚀 [GEMINI] Starting - Gemini stack experiment
+2025-08-15 23:25:32,503 - gemini-agent - INFO - ✅ [LIVEKIT] Connected to room
+2025-08-15 23:25:32,507 - gemini-agent - INFO - 🔍 [STACK SELECTION] Building Gemini-based stack...
+2025-08-15 23:25:32,509 - gemini-agent - INFO - 🧪 [STT] Trying Google STT...
+2025-08-15 23:25:35,456 - gemini-agent - WARNING - ⚠️ [STT] Google STT failed: Application default credentials must be available when using Google STT without explicitly passing credentials through credentials_info or credentials_file.
+2025-08-15 23:25:35,996 - gemini-agent - INFO - ℹ️ [STT] Using OpenAI STT as fallback
+2025-08-15 23:25:36,001 - gemini-agent - INFO - 🧪 [LLM] Trying Google LLM...
+2025-08-15 23:25:37,319 - gemini-agent - INFO - ✅ [LLM] Selected Google LLM
+2025-08-15 23:25:37,322 - gemini-agent - INFO - 🧪 [TTS] Trying Google TTS...
+2025-08-15 23:25:37,327 - gemini-agent - INFO - ✅ [TTS] Selected Google TTS
+2025-08-15 23:25:37,506 - gemini-agent - INFO - ✅ [EVENTS] Event handlers added for Gemini debugging
+2025-08-15 23:25:41,381 - gemini-agent - INFO - 🤖 [GEMINI] Hello! How can I help you today?
+
+2025-08-15 23:25:41,386 - gemini-agent - INFO - ✅ [GEMINI] Started successfully with stack: OpenAI STT (Google STT failed) + Google LLM + Google TTS
+2025-08-15 23:28:05,129 - gemini-agent - INFO - 👤 [USER] Hi.
+2025-08-15 23:28:09,822 - gemini-agent - INFO - 👤 [USER] Tell me about weather in London.
+2025-08-15 23:28:11,136 - gemini-agent - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-15 23:28:11,138 - gemini-agent - INFO - ✅ [OUTPUTS] Found 1 outputs
+2025-08-15 23:28:11,140 - gemini-agent - INFO - ✅ [OUTPUT 1] get_weather_n8n: Weather in London, City of London, Greater London, United Kingdom: Currently 20 degrees Celsius, clear. Humid at 78%....
+2025-08-15 23:28:14,984 - gemini-agent - INFO - 🤖 [GEMINI] OK. Weather in London, City of London, Greater London, United Kingdom: Currently 20 degrees Celsius, clear. Humid at 78%.
+
+2025-08-15 23:35:33,334 - gemini-agent - INFO - 🚀 [MAIN] Starting GEMINI stack experiment - Google AI alternative to Groq
+2025-08-15 23:35:33,421 - gemini-agent - INFO - 🚀 [GEMINI] Starting - Gemini stack experiment
+2025-08-15 23:35:33,424 - gemini-agent - INFO - ✅ [LIVEKIT] Connected to room
+2025-08-15 23:35:33,429 - gemini-agent - INFO - 🔍 [STACK SELECTION] Building Gemini-based stack...
+2025-08-15 23:35:33,430 - gemini-agent - INFO - 🧪 [STT] Trying Google STT...
+2025-08-15 23:35:36,430 - gemini-agent - WARNING - ⚠️ [STT] Google STT failed: Application default credentials must be available when using Google STT without explicitly passing credentials through credentials_info or credentials_file.
+2025-08-15 23:35:36,964 - gemini-agent - INFO - ℹ️ [STT] Using OpenAI STT as fallback
+2025-08-15 23:35:36,967 - gemini-agent - INFO - 🧪 [LLM] Trying Google LLM...
+2025-08-15 23:35:38,226 - gemini-agent - INFO - ✅ [LLM] Selected Google LLM
+2025-08-15 23:35:38,230 - gemini-agent - INFO - 🧪 [TTS] Trying ElevenLabs TTS...
+2025-08-15 23:35:38,235 - gemini-agent - INFO - ✅ [TTS] Selected ElevenLabs TTS
+2025-08-15 23:35:38,418 - gemini-agent - INFO - ✅ [EVENTS] Event handlers added for Gemini debugging
+2025-08-15 23:35:41,360 - gemini-agent - INFO - 🤖 [GEMINI] Hello! How can I help you today?
+
+2025-08-15 23:35:41,363 - gemini-agent - INFO - ✅ [GEMINI] Started successfully with stack: OpenAI STT (Google STT failed) + Google LLM + ElevenLabs TTS
+2025-08-15 23:35:57,794 - gemini-agent - INFO - 👤 [USER] A teume plies about weve in London.
+2025-08-15 23:36:02,250 - gemini-agent - INFO - 👤 [USER] Tell me please about weather in London.
+2025-08-15 23:36:05,349 - gemini-agent - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-15 23:36:05,351 - gemini-agent - INFO - ✅ [OUTPUTS] Found 1 outputs
+2025-08-15 23:36:05,352 - gemini-agent - INFO - ✅ [OUTPUT 1] get_weather_n8n: Weather in London, City of London, Greater London, United Kingdom: Currently 20 degrees Celsius, clear. Humid at 78%....
+2025-08-15 23:36:15,369 - gemini-agent - INFO - 🤖 [GEMINI] Weather in London, City of London, Greater London, United Kingdom: Currently 20 degrees Celsius, clear. Humid at 78%.
+
+2025-08-15 23:36:22,124 - gemini-agent - INFO - 👤 [USER] Help me please about.
+2025-08-15 23:36:22,483 - gemini-agent - INFO - 👤 [USER] Корк.
+2025-08-15 23:36:24,109 - gemini-agent - INFO - 👤 [USER] I don't
+2025-08-15 23:36:28,152 - gemini-agent - INFO - 🤖 [GEMINI] Can you please clarify what you need help with regarding "Корк"?
+
+2025-08-15 23:36:35,251 - gemini-agent - INFO - 👤 [USER] Ebaotveve.
+2025-08-15 23:36:38,672 - gemini-agent - INFO - 🤖 [GEMINI] Can you please clarify your request?
+
+2025-08-15 23:36:44,267 - gemini-agent - INFO - 👤 [USER] Tell me please about this.
+2025-08-15 23:36:44,859 - gemini-agent - INFO - 👤 [USER] Корк
+2025-08-15 23:36:46,063 - gemini-agent - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-15 23:36:46,065 - gemini-agent - INFO - ✅ [OUTPUTS] Found 1 outputs
+2025-08-15 23:36:46,067 - gemini-agent - INFO - ✅ [OUTPUT 1] get_weather_n8n: Weather in Корк, Cork, Ирландия: Currently 16 degrees Celsius, clear. Very humid at 82%....
+2025-08-15 23:36:54,466 - gemini-agent - INFO - 🤖 [GEMINI] Weather in Корк, Cork, Ирландия: Currently 16 degrees Celsius, clear. Very humid at 82%.
+
+2025-08-17 20:02:24,078 - gemini-agent - INFO - 🚀 [MAIN] Starting GEMINI stack experiment - Google AI alternative to Groq
+2025-08-17 20:02:24,168 - gemini-agent - INFO - 🚀 [GEMINI] Starting - Gemini stack experiment
+2025-08-17 20:02:24,172 - gemini-agent - INFO - ✅ [LIVEKIT] Connected to room
+2025-08-17 20:02:24,176 - gemini-agent - INFO - 🔍 [STACK SELECTION] Building Gemini-based stack...
+2025-08-17 20:02:24,178 - gemini-agent - INFO - 🧪 [STT] Trying Google STT...
+2025-08-17 20:02:27,068 - gemini-agent - WARNING - ⚠️ [STT] Google STT failed: Application default credentials must be available when using Google STT without explicitly passing credentials through credentials_info or credentials_file.
+2025-08-17 20:02:27,590 - gemini-agent - INFO - ℹ️ [STT] Using OpenAI STT as fallback
+2025-08-17 20:02:27,594 - gemini-agent - INFO - 🧪 [LLM] Trying Google LLM...
+2025-08-17 20:02:28,657 - gemini-agent - INFO - ✅ [LLM] Selected Google LLM
+2025-08-17 20:02:28,661 - gemini-agent - INFO - 🧪 [TTS] Trying ElevenLabs TTS...
+2025-08-17 20:02:28,666 - gemini-agent - INFO - ✅ [TTS] Selected ElevenLabs TTS
+2025-08-17 20:02:28,890 - gemini-agent - INFO - ✅ [EVENTS] Event handlers added for Gemini debugging
+2025-08-17 20:02:33,218 - gemini-agent - INFO - 🤖 [GEMINI] Hello! How can I help you today?
+
+2025-08-17 20:02:33,222 - gemini-agent - INFO - ✅ [GEMINI] Started successfully with stack: OpenAI STT (Google STT failed) + Google LLM + ElevenLabs TTS
+2025-08-17 20:02:40,818 - gemini-agent - INFO - 👤 [USER] Tell me please about weather in London.
+2025-08-17 20:02:42,147 - gemini-agent - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-17 20:02:42,150 - gemini-agent - INFO - ✅ [OUTPUTS] Found 1 outputs
+2025-08-17 20:02:42,151 - gemini-agent - INFO - ✅ [OUTPUT 1] get_weather_n8n: Weather in London, City of London, Greater London, United Kingdom: Currently 22 degrees Celsius, sunny. Feels like 25 degrees. Windy at 17 kilometers per hour....
+2025-08-17 20:02:54,303 - gemini-agent - INFO - 🤖 [GEMINI] Weather in London, City of London, Greater London, United Kingdom: Currently 22 degrees Celsius, sunny. Feels like 25 degrees. Windy at 17 kilometers per hour.
+
+2025-08-17 20:02:57,547 - gemini-agent - INFO - 👤 [USER] Окей
+2025-08-17 20:03:00,455 - gemini-agent - INFO - 👤 [USER] Tell me please about weather in Cork.
+2025-08-17 20:03:01,594 - gemini-agent - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-17 20:03:01,597 - gemini-agent - INFO - ✅ [OUTPUTS] Found 1 outputs
+2025-08-17 20:03:01,599 - gemini-agent - INFO - ✅ [OUTPUT 1] get_weather_n8n: Weather in Cork, Ireland: Currently 17 degrees Celsius, partly cloudy. Very humid at 83%. Windy at 16 kilometers per hour....
+2025-08-17 20:03:11,710 - gemini-agent - INFO - 🤖 [GEMINI] Weather in Cork, Ireland: Currently 17 degrees Celsius, partly cloudy. Very humid at 83%. Windy at 16 kilometers per hour.
+
+2025-08-17 20:03:17,141 - gemini-agent - INFO - 👤 [USER] Окей
+2025-08-17 20:03:22,076 - gemini-agent - INFO - 👤 [USER] Tell me about weather in Killarney Island.
+2025-08-17 20:03:22,101 - gemini-agent - INFO - 🤖 [GEMINI] Is
+2025-08-17 20:03:33,162 - gemini-agent - INFO - 🤖 [GEMINI] I'm sorry, I cannot fulfill this request. The city name is invalid. Please provide a valid city name like "London", "Paris", or "Tokyo".
+
+2025-08-17 20:03:35,627 - gemini-agent - INFO - 👤 [USER] Ok, Paris.
+2025-08-17 20:03:36,282 - gemini-agent - INFO - 👤 [USER] Певиц.
+2025-08-17 20:03:37,226 - gemini-agent - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-17 20:03:37,228 - gemini-agent - INFO - ✅ [OUTPUTS] Found 1 outputs
+2025-08-17 20:03:37,229 - gemini-agent - INFO - ✅ [OUTPUT 1] get_weather_n8n: Weather in Paris, Ile-de-France, France: Currently 25 degrees Celsius, sunny....
+2025-08-17 20:03:43,634 - gemini-agent - INFO - 🤖 [GEMINI] Weather in Paris, Ile-de-France, France: Currently 25 degrees Celsius, sunny.
+
+2025-08-17 20:03:52,806 - gemini-agent - INFO - 👤 [USER] Окей, tell me please about weather in Trolly.
+2025-08-17 20:04:00,417 - gemini-agent - INFO - 🤖 [GEMINI] I am sorry, I cannot fulfill this request. The city name is invalid. Please
+2025-08-17 20:04:01,791 - gemini-agent - INFO - 👤 [USER] Ok, tell me
+2025-08-17 20:04:04,087 - gemini-agent - INFO - 👤 [USER] Please about weather
+2025-08-17 20:04:04,651 - gemini-agent - INFO - 👤 [USER] Київ.
+2025-08-17 20:04:05,843 - gemini-agent - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-17 20:04:05,846 - gemini-agent - INFO - ✅ [OUTPUTS] Found 1 outputs
+2025-08-17 20:04:05,847 - gemini-agent - INFO - ✅ [OUTPUT 1] get_weather_n8n: An unexpected error occurred while getting weather information for Київ. Please try again....
+2025-08-17 20:04:12,021 - gemini-agent - INFO - 🤖 [GEMINI] An unexpected error occurred while getting weather information for Київ. Please try again.
+
+2025-08-17 20:04:15,086 - gemini-agent - INFO - 👤 [USER] Ok.
+2025-08-17 20:04:18,962 - gemini-agent - INFO - 👤 [USER] Tell me please about...
+2025-08-17 20:04:20,530 - gemini-agent - INFO - 👤 [USER] In
+2025-08-17 20:04:21,582 - gemini-agent - INFO - 👤 [USER] Орк.
+2025-08-17 20:04:32,212 - gemini-agent - INFO - 🤖 [GEMINI] I am sorry, I cannot fulfill this request. The city name is invalid. Please provide a valid city name like "London", "Paris", or "Tokyo".
+
+2025-08-17 20:04:34,099 - gemini-agent - INFO - 👤 [USER] 東京
+2025-08-17 20:04:35,125 - gemini-agent - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-17 20:04:35,127 - gemini-agent - INFO - ✅ [OUTPUTS] Found 1 outputs
+2025-08-17 20:04:35,128 - gemini-agent - INFO - ✅ [OUTPUT 1] get_weather_n8n: Weather in 東京都, Tokyo, 日本: Currently 28 degrees Celsius, patchy rain nearby. Feels like 32 degrees. Very humid at 84%....
+2025-08-17 20:04:47,687 - gemini-agent - INFO - 🤖 [GEMINI] Weather in 東京都, Tokyo, 日本: Currently 28 degrees Celsius, patchy rain nearby. Feels like 32 degrees. Very humid at 84%.
+
+2025-08-17 20:04:54,555 - gemini-agent - INFO - 👤 [USER] Окей, tell me about our business.
+2025-08-17 20:05:00,098 - gemini-agent - INFO - 🤖 [GEMINI] I am sorry, I am not able to answer this question. I can only check weather for you.
+
+2025-08-17 20:05:04,063 - gemini-agent - INFO - 👤 [USER] Ok
+2025-08-17 20:05:06,615 - gemini-agent - INFO - 🤖 [GEMINI] How
+2025-08-17 20:05:08,800 - gemini-agent - INFO - 👤 [USER] полный.
+2025-08-17 20:05:11,239 - gemini-agent - INFO - 👤 [USER] Tell me please about weather in London.
+2025-08-17 20:05:12,342 - gemini-agent - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-17 20:05:12,343 - gemini-agent - INFO - ✅ [OUTPUTS] Found 1 outputs
+2025-08-17 20:05:12,345 - gemini-agent - INFO - ✅ [OUTPUT 1] get_weather_n8n: Weather in London, City of London, Greater London, United Kingdom: Currently 22 degrees Celsius, sunny. Feels like 25 degrees. Windy at 17 kilometers per hour....
+2025-08-17 20:05:24,073 - gemini-agent - INFO - 🤖 [GEMINI] Weather in London, City of London, Greater London, United Kingdom: Currently 22 degrees Celsius, sunny. Feels like 25 degrees. Windy at 17 kilometers per hour.
+
+2025-08-17 20:05:27,295 - gemini-agent - INFO - 👤 [USER] Ok.
+2025-08-17 20:05:29,902 - gemini-agent - INFO - 🤖 [GEMINI] How else can I help?
+
+2025-08-17 20:05:34,153 - gemini-agent - INFO - 👤 [USER] Tell me about where in
+2025-08-17 20:05:35,337 - gemini-agent - INFO - 🤖 [GEMINI] I am sorry, I am not able to answer this question. I can only check weather for you.
+
+2025-08-17 20:05:35,891 - gemini-agent - INFO - 👤 [USER] Корк.
+2025-08-17 20:05:37,087 - gemini-agent - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-17 20:05:37,089 - gemini-agent - INFO - ✅ [OUTPUTS] Found 1 outputs
+2025-08-17 20:05:37,091 - gemini-agent - INFO - ✅ [OUTPUT 1] get_weather_n8n: Weather in Корк, Cork, Ирландия: Currently 17 degrees Celsius, partly cloudy. Very humid at 83%. Windy at 16 kilometers per hour....
+2025-08-17 20:05:49,921 - gemini-agent - INFO - 🤖 [GEMINI] Weather in Корк, Cork, Ирландия: Currently 17 degrees Celsius, partly cloudy. Very humid at 83%. Windy at 16 kilometers per hour.
+
+2025-08-17 20:05:56,937 - gemini-agent - INFO - 👤 [USER] Ok.
+2025-08-17 20:15:17,727 - gemini-agent - INFO - 🚀 [MAIN] Starting GEMINI stack experiment - Google AI alternative to Groq
+2025-08-17 20:15:17,802 - gemini-agent - INFO - 🚀 [GEMINI] Starting - Gemini stack experiment
+2025-08-17 20:15:17,803 - gemini-agent - INFO - ✅ [LIVEKIT] Connected to room
+2025-08-17 20:15:17,803 - gemini-agent - INFO - 🔍 [STACK SELECTION] Building Gemini-based stack...
+2025-08-17 20:15:17,804 - gemini-agent - INFO - 🧪 [STT] Trying Google STT...
+2025-08-17 20:15:20,938 - gemini-agent - WARNING - ⚠️ [STT] Google STT failed: Application default credentials must be available when using Google STT without explicitly passing credentials through credentials_info or credentials_file.
+2025-08-17 20:24:09,699 - gemini-agent - INFO - 🚀 [MAIN] Starting pure GEMINI/Google stack - no OpenAI dependencies
+2025-08-17 20:24:09,799 - gemini-agent - INFO - 🚀 [GEMINI] Starting - Pure Google/Gemini stack
+2025-08-17 20:24:09,803 - gemini-agent - INFO - ✅ [LIVEKIT] Connected to room
+2025-08-17 20:24:09,808 - gemini-agent - INFO - 🔍 [STACK SELECTION] Building pure Gemini-based stack...
+2025-08-17 20:24:09,809 - gemini-agent - INFO - 🧪 [STT] Trying Google STT...
+2025-08-17 20:24:13,066 - gemini-agent - ERROR - ❌ [STT] Google STT failed: Application default credentials must be available when using Google STT without explicitly passing credentials through credentials_info or credentials_file.

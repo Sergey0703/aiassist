@@ -6931,3 +6931,321 @@ TypeError: LLM.__init__() got an unexpected keyword argument 'max_tokens'
 2025-08-09 22:15:02,635 - livekit.agents - DEBUG - session closed
 2025-08-09 22:15:02,636 - livekit.agents - DEBUG - http_session(): closing the httpclient ctx
 2025-08-09 22:15:02,636 - livekit.agents - DEBUG - http_session(): creating a new httpclient ctx
+2025-08-15 17:53:40,489 - __main__ - INFO - Starting AIAssist LiveKit agent application
+2025-08-15 17:53:40,492 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-15 17:53:40,504 - livekit.agents - INFO - starting worker
+2025-08-15 17:53:40,517 - livekit.agents - INFO - initializing job runner
+2025-08-15 17:53:40,519 - livekit.agents - INFO - job runner initialized
+2025-08-15 17:53:40,520 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-15 17:53:40,598 - __main__ - INFO - Starting AIAssist entrypoint
+2025-08-15 17:53:40,602 - __main__ - INFO - Connected to room: fake_room
+2025-08-15 17:53:40,608 - __main__ - INFO - AIAssist agent initialized with tools: weather, search, email
+2025-08-15 17:53:40,787 - __main__ - INFO - AIAssist session created with Google Realtime Model + Tools
+2025-08-15 17:53:42,410 - livekit.plugins.google - DEBUG - connecting to Gemini Realtime API...
+2025-08-15 17:53:42,421 - __main__ - INFO - [AGENT STATE] initializing -> listening
+2025-08-15 17:53:42,426 - livekit.agents - DEBUG - using audio io: `ChatCLI` -> `AgentSession` -> `TranscriptSynchronizer` -> `ChatCLI`
+2025-08-15 17:53:42,432 - livekit.agents - DEBUG - using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `ChatCLI`
+2025-08-15 17:53:42,434 - __main__ - INFO - AIAssist session started successfully
+2025-08-15 17:53:42,436 - __main__ - INFO - [AIASSIST] Speech created - starting to speak
+2025-08-15 17:53:42,897 - google_genai.live - INFO - b'{\n  "setupComplete": {}\n}\n'
+2025-08-15 17:53:43,479 - __main__ - INFO - [AGENT STATE] listening -> speaking
+2025-08-15 17:53:48,695 - __main__ - INFO - [AGENT STATE] speaking -> listening
+2025-08-15 17:53:48,698 - __main__ - INFO - [CONVERSATION] assistant: Hi my name is AIassist, your personal assistant, how may I help you?
+ (interrupted: False)
+2025-08-15 17:53:48,705 - __main__ - INFO - Initial AIAssist greeting generated
+2025-08-15 17:53:54,057 - __main__ - INFO - [AIASSIST] Speech created - starting to speak
+2025-08-15 17:53:54,065 - __main__ - INFO - [USER TRANSCRIBED] I (final: False)
+2025-08-15 17:53:54,571 - __main__ - INFO - [USER TRANSCRIBED] I te (final: False)
+2025-08-15 17:53:54,692 - __main__ - INFO - [USER TRANSCRIBED] I tell (final: False)
+2025-08-15 17:53:54,861 - __main__ - INFO - [USER TRANSCRIBED] I tell me (final: False)
+2025-08-15 17:53:55,027 - __main__ - INFO - [USER TRANSCRIBED] I tell me about (final: False)
+2025-08-15 17:54:00,101 - __main__ - INFO - [USER TRANSCRIBED] I tell me about in. (final: False)
+2025-08-15 17:54:00,454 - __main__ - INFO - [AGENT STATE] listening -> speaking
+2025-08-15 17:54:00,486 - __main__ - INFO - [USER TRANSCRIBED] I tell me about in. (final: True)
+2025-08-15 17:54:00,492 - __main__ - INFO - [CONVERSATION] user: I tell me about in. (interrupted: False)
+2025-08-15 17:54:00,512 - livekit.agents - DEBUG - executing tool
+2025-08-15 17:54:00,517 - aitools - INFO - 🌤️ [WEATHER TOOL STARTED] city='Kork', days=1
+2025-08-15 17:54:00,520 - aitools - INFO - 🔑 [WEATHER API KEY] Found
+2025-08-15 17:54:00,524 - aitools - INFO - 📅 [WEATHER DAYS] Adjusted to 1 days
+2025-08-15 17:54:00,527 - aitools - INFO - 🌐 [WEATHER API] URL: http://api.weatherapi.com/v1/forecast.json, params: {'key': '75225e91714c4104861143421241904', 'q': 'Kork', 'days': 1, 'aqi': 'no', 'alerts': 'no'}
+2025-08-15 17:54:00,529 - aitools - INFO - 🔄 [WEATHER HTTP] Making HTTP request...
+2025-08-15 17:54:00,542 - __main__ - INFO - [AIASSIST] Speech created - starting to speak
+2025-08-15 17:54:00,553 - __main__ - INFO - [AGENT STATE] speaking -> listening
+2025-08-15 17:54:00,556 - livekit.plugins.google - WARNING - truncate is not supported by the Google Realtime API.
+2025-08-15 17:54:00,558 - __main__ - INFO - [CONVERSATION] assistant: Certai (interrupted: True)
+2025-08-15 17:54:00,565 - livekit.agents - DEBUG - waiting for function call to finish before fully cancelling
+2025-08-15 17:54:00,571 - __main__ - INFO - [AGENT STATE] listening -> speaking
+2025-08-15 17:54:00,771 - aitools - INFO - 📡 [WEATHER RESPONSE] Status: 200
+2025-08-15 17:54:00,780 - aitools - INFO - 📊 [WEATHER DATA] Raw response keys: ['location', 'current', 'forecast']
+2025-08-15 17:54:00,783 - aitools - INFO - 📍 [WEATHER LOCATION] {'name': 'Korkino', 'region': 'Chelyabinsk', 'country': 'Russia', 'lat': 54.8939, 'lon': 61.3964, 'tz_id': 'Asia/Yekaterinburg', 'localtime_epoch': 1755276858, 'localtime': '2025-08-15 21:54'}
+2025-08-15 17:54:00,785 - aitools - INFO - 🌡️ [WEATHER CURRENT] {'last_updated_epoch': 1755276300, 'last_updated': '2025-08-15 21:45', 'temp_c': 14.3, 'temp_f': 57.7, 'is_day': 0, 'condition': {'text': 'Thundery outbreaks in nearby', 'icon': '//cdn.weatherapi.com/weather/64x64/night/200.png', 'code': 1087}, 'wind_mph': 2.9, 'wind_kph': 4.7, 'wind_degree': 68, 'wind_dir': 'ENE', 'pressure_mb': 1001.0, 'pressure_in': 29.56, 'precip_mm': 0.03, 'precip_in': 0.0, 'humidity': 88, 'cloud': 25, 'feelslike_c': 14.7, 'feelslike_f': 58.5, 'windchill_c': 16.0, 'windchill_f': 60.9, 'heatindex_c': 16.0, 'heatindex_f': 60.9, 'dewpoint_c': 10.6, 'dewpoint_f': 51.1, 'vis_km': 10.0, 'vis_miles': 6.0, 'uv': 0.0, 'gust_mph': 6.1, 'gust_kph': 9.8}
+2025-08-15 17:54:00,790 - aitools - INFO - ✅ [WEATHER SUCCESS] Weather data retrieved successfully for Kork
+2025-08-15 17:54:00,800 - aitools - INFO - ✅ [WEATHER FINAL] Weather in Korkino, Russia: Currently 14 degrees Celsius, thundery outbreaks in nearby.
+2025-08-15 17:54:00,805 - livekit.agents - DEBUG - tools execution completed
+2025-08-15 17:54:18,861 - livekit.agents - INFO - shutting down worker
+2025-08-15 17:54:18,865 - livekit.agents - DEBUG - shutting down job task
+2025-08-15 17:54:18,867 - __main__ - INFO - [AGENT STATE] speaking -> listening
+2025-08-15 17:54:18,868 - livekit.agents - DEBUG - job exiting
+2025-08-15 17:54:18,881 - livekit.plugins.google - WARNING - truncate is not supported by the Google Realtime API.
+2025-08-15 17:54:18,883 - __main__ - INFO - [CONVERSATION] assistant: nly, sir, if you insist. I will retrieve the weather information for Kork now.
+ (interrupted: True)
+2025-08-15 17:54:19,185 - livekit.plugins.google - DEBUG - send task finished.
+2025-08-15 17:54:19,513 - livekit.agents - WARNING - exiting forcefully
+2025-08-15 18:01:08,301 - __main__ - INFO - Starting AIAssist LiveKit agent application with Groq
+2025-08-15 18:01:08,306 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-15 18:01:08,320 - livekit.agents - INFO - starting worker
+2025-08-15 18:01:08,331 - livekit.agents - INFO - initializing job runner
+2025-08-15 18:01:08,335 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-15 18:01:08,336 - livekit.agents - INFO - job runner initialized
+2025-08-15 18:01:08,405 - __main__ - INFO - Starting AIAssist entrypoint with Groq
+2025-08-15 18:01:08,409 - __main__ - INFO - Connected to room: fake_room
+2025-08-15 18:01:08,414 - __main__ - INFO - AIAssist agent initialized with Groq + tools: weather, search, email
+2025-08-15 18:01:09,159 - livekit.agents - ERROR - unhandled exception while running the job task
+Traceback (most recent call last):
+  File "C:\projects\aiassist\venv\Lib\site-packages\opentelemetry\util\_decorator.py", line 71, in async_wrapper
+    return await func(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\ipc\job_proc_lazy_main.py", line 240, in _traceable_entrypoint
+    await self._job_entrypoint_fnc(job_ctx)
+  File "C:\projects\aiassist\agent_groq.py", line 72, in entrypoint
+    llm=groq.LLM(
+        ~~~~~~~~^
+        model="llama-3.3-70b-versatile",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        temperature=0.7,
+        ^^^^^^^^^^^^^^^^
+    ),
+    ^
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\plugins\groq\services.py", line 49, in __init__
+    super().__init__(
+    ~~~~~~~~~~~~~~~~^
+        model=model,
+        ^^^^^^^^^^^^
+    ...<10 lines>...
+        reasoning_effort=reasoning_effort,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+TypeError: LLM.__init__() got an unexpected keyword argument 'safety_identifier'
+2025-08-15 18:01:45,150 - livekit.agents - INFO - shutting down worker
+2025-08-15 18:01:45,152 - livekit.agents - DEBUG - shutting down job task
+2025-08-15 18:01:45,154 - livekit.agents - DEBUG - http_session(): closing the httpclient ctx
+2025-08-15 18:01:45,154 - livekit.agents - DEBUG - http_session(): creating a new httpclient ctx
+2025-08-15 18:01:45,155 - livekit.agents - DEBUG - job exiting
+2025-08-15 18:07:55,432 - __main__ - INFO - Starting AIAssist LiveKit agent application with Groq
+2025-08-15 18:07:55,436 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-15 18:07:55,448 - livekit.agents - INFO - starting worker
+2025-08-15 18:07:55,455 - livekit.agents - INFO - initializing job runner
+2025-08-15 18:07:55,457 - livekit.agents - INFO - job runner initialized
+2025-08-15 18:07:55,457 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-15 18:07:55,541 - __main__ - INFO - Starting AIAssist entrypoint with Groq
+2025-08-15 18:07:55,548 - __main__ - INFO - Connected to room: fake_room
+2025-08-15 18:07:55,550 - __main__ - INFO - AIAssist agent initialized with Groq + tools: weather, search, email
+2025-08-15 18:07:56,286 - livekit.agents - ERROR - unhandled exception while running the job task
+Traceback (most recent call last):
+  File "C:\projects\aiassist\venv\Lib\site-packages\opentelemetry\util\_decorator.py", line 71, in async_wrapper
+    return await func(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\ipc\job_proc_lazy_main.py", line 240, in _traceable_entrypoint
+    await self._job_entrypoint_fnc(job_ctx)
+  File "C:\projects\aiassist\agent_groq.py", line 72, in entrypoint
+    llm=groq.LLM(
+        ~~~~~~~~^
+        model="llama-3.3-70b-versatile",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        temperature=0.7,
+        ^^^^^^^^^^^^^^^^
+    ),
+    ^
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\plugins\groq\services.py", line 49, in __init__
+    super().__init__(
+    ~~~~~~~~~~~~~~~~^
+        model=model,
+        ^^^^^^^^^^^^
+    ...<10 lines>...
+        reasoning_effort=reasoning_effort,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+TypeError: LLM.__init__() got an unexpected keyword argument 'safety_identifier'
+2025-08-15 18:08:56,342 - livekit.agents - INFO - shutting down worker
+2025-08-15 18:08:56,344 - livekit.agents - DEBUG - shutting down job task
+2025-08-15 18:08:56,344 - livekit.agents - DEBUG - http_session(): closing the httpclient ctx
+2025-08-15 18:08:56,344 - livekit.agents - DEBUG - http_session(): creating a new httpclient ctx
+2025-08-15 18:08:56,345 - livekit.agents - DEBUG - job exiting
+2025-08-15 18:09:02,455 - __main__ - INFO - Starting AIAssist LiveKit agent application with Groq
+2025-08-15 18:09:02,459 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-15 18:09:02,470 - livekit.agents - INFO - starting worker
+2025-08-15 18:09:02,484 - livekit.agents - INFO - initializing job runner
+2025-08-15 18:09:02,487 - livekit.agents - INFO - job runner initialized
+2025-08-15 18:09:02,487 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-15 18:09:02,562 - __main__ - INFO - Starting AIAssist entrypoint with Groq
+2025-08-15 18:09:02,566 - __main__ - INFO - Connected to room: fake_room
+2025-08-15 18:09:02,570 - __main__ - INFO - AIAssist agent initialized with Groq + tools: weather, search, email
+2025-08-15 18:09:03,281 - livekit.agents - ERROR - unhandled exception while running the job task
+Traceback (most recent call last):
+  File "C:\projects\aiassist\venv\Lib\site-packages\opentelemetry\util\_decorator.py", line 71, in async_wrapper
+    return await func(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\ipc\job_proc_lazy_main.py", line 240, in _traceable_entrypoint
+    await self._job_entrypoint_fnc(job_ctx)
+  File "C:\projects\aiassist\agent_groq.py", line 72, in entrypoint
+    llm=groq.LLM(model="llama-3.3-70b-versatile"),
+        ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\plugins\groq\services.py", line 49, in __init__
+    super().__init__(
+    ~~~~~~~~~~~~~~~~^
+        model=model,
+        ^^^^^^^^^^^^
+    ...<10 lines>...
+        reasoning_effort=reasoning_effort,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+TypeError: LLM.__init__() got an unexpected keyword argument 'safety_identifier'
+2025-08-15 18:10:42,876 - livekit.agents - INFO - shutting down worker
+2025-08-15 18:10:42,877 - livekit.agents - DEBUG - shutting down job task
+2025-08-15 18:10:42,878 - livekit.agents - DEBUG - http_session(): closing the httpclient ctx
+2025-08-15 18:10:42,878 - livekit.agents - DEBUG - http_session(): creating a new httpclient ctx
+2025-08-15 18:10:42,879 - livekit.agents - DEBUG - job exiting
+2025-08-15 18:13:03,687 - __main__ - INFO - Starting AIAssist LiveKit agent application with Groq via OpenAI
+2025-08-15 18:13:03,691 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-15 18:13:03,699 - livekit.agents - INFO - starting worker
+2025-08-15 18:13:03,708 - livekit.agents - INFO - initializing job runner
+2025-08-15 18:13:03,710 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-15 18:13:03,711 - livekit.agents - INFO - job runner initialized
+2025-08-15 18:13:03,785 - __main__ - INFO - Starting AIAssist entrypoint with Groq via OpenAI plugin
+2025-08-15 18:13:03,789 - __main__ - INFO - Connected to room: fake_room
+2025-08-15 18:13:03,793 - __main__ - INFO - AIAssist agent initialized with Groq via OpenAI + tools: weather, search, email
+2025-08-15 18:13:04,549 - livekit.agents - ERROR - unhandled exception while running the job task
+Traceback (most recent call last):
+  File "C:\projects\aiassist\venv\Lib\site-packages\opentelemetry\util\_decorator.py", line 71, in async_wrapper
+    return await func(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\ipc\job_proc_lazy_main.py", line 240, in _traceable_entrypoint
+    await self._job_entrypoint_fnc(job_ctx)
+  File "C:\projects\aiassist\agent_groq.py", line 72, in entrypoint
+    llm=openai.LLM.with_groq(model="llama-3.3-70b-versatile"),
+        ^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'LLM' has no attribute 'with_groq'
+2025-08-15 18:14:33,667 - livekit.agents - INFO - shutting down worker
+2025-08-15 18:14:33,671 - livekit.agents - DEBUG - shutting down job task
+2025-08-15 18:14:33,676 - livekit.agents - DEBUG - http_session(): closing the httpclient ctx
+2025-08-15 18:14:33,677 - livekit.agents - DEBUG - http_session(): creating a new httpclient ctx
+2025-08-15 18:14:33,679 - livekit.agents - DEBUG - job exiting
+2025-08-15 18:14:39,615 - __main__ - INFO - Starting AIAssist LiveKit agent application with Groq via OpenAI
+2025-08-15 18:14:39,619 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-15 18:14:39,636 - livekit.agents - INFO - starting worker
+2025-08-15 18:14:39,646 - livekit.agents - INFO - initializing job runner
+2025-08-15 18:14:39,649 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-15 18:14:39,649 - livekit.agents - INFO - job runner initialized
+2025-08-15 18:14:39,725 - __main__ - INFO - Starting AIAssist entrypoint with Groq via OpenAI plugin
+2025-08-15 18:14:39,729 - __main__ - INFO - Connected to room: fake_room
+2025-08-15 18:14:39,735 - __main__ - INFO - AIAssist agent initialized with Groq via OpenAI + tools: weather, search, email
+2025-08-15 18:14:40,454 - livekit.agents - ERROR - unhandled exception while running the job task
+Traceback (most recent call last):
+  File "C:\projects\aiassist\venv\Lib\site-packages\opentelemetry\util\_decorator.py", line 71, in async_wrapper
+    return await func(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\ipc\job_proc_lazy_main.py", line 240, in _traceable_entrypoint
+    await self._job_entrypoint_fnc(job_ctx)
+  File "C:\projects\aiassist\agent_groq.py", line 72, in entrypoint
+    llm=openai.LLM.with_groq(model="llama-3.3-70b-versatile"),
+        ^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'LLM' has no attribute 'with_groq'
+2025-08-15 18:17:32,751 - livekit.agents - INFO - shutting down worker
+2025-08-15 18:17:32,759 - livekit.agents - DEBUG - shutting down job task
+2025-08-15 18:17:32,761 - livekit.agents - DEBUG - http_session(): closing the httpclient ctx
+2025-08-15 18:17:32,763 - livekit.agents - DEBUG - http_session(): creating a new httpclient ctx
+2025-08-15 18:17:32,765 - livekit.agents - DEBUG - job exiting
+2025-08-15 18:17:40,123 - __main__ - INFO - Starting AIAssist LiveKit agent application with Groq (simple)
+2025-08-15 18:17:40,130 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-15 18:17:40,141 - livekit.agents - INFO - starting worker
+2025-08-15 18:17:40,155 - livekit.agents - INFO - initializing job runner
+2025-08-15 18:17:40,161 - livekit.agents - INFO - job runner initialized
+2025-08-15 18:17:40,161 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-15 18:17:40,238 - __main__ - INFO - Starting AIAssist entrypoint with Groq (simple)
+2025-08-15 18:17:40,242 - __main__ - INFO - Connected to room: fake_room
+2025-08-15 18:17:40,247 - __main__ - INFO - AIAssist agent initialized with Groq + tools: weather, search, email
+2025-08-15 18:17:40,951 - livekit.agents - ERROR - unhandled exception while running the job task
+Traceback (most recent call last):
+  File "C:\projects\aiassist\venv\Lib\site-packages\opentelemetry\util\_decorator.py", line 71, in async_wrapper
+    return await func(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\ipc\job_proc_lazy_main.py", line 240, in _traceable_entrypoint
+    await self._job_entrypoint_fnc(job_ctx)
+  File "C:\projects\aiassist\agent_groq.py", line 62, in entrypoint
+    llm=groq.LLM(model="llama-3.3-70b-versatile"),  # ТОЛЬКО model
+        ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\plugins\groq\services.py", line 49, in __init__
+    super().__init__(
+    ~~~~~~~~~~~~~~~~^
+        model=model,
+        ^^^^^^^^^^^^
+    ...<10 lines>...
+        reasoning_effort=reasoning_effort,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+TypeError: LLM.__init__() got an unexpected keyword argument 'safety_identifier'
+2025-08-15 18:19:59,084 - livekit.agents - INFO - shutting down worker
+2025-08-15 18:19:59,090 - livekit.agents - DEBUG - shutting down job task
+2025-08-15 18:19:59,094 - livekit.agents - DEBUG - http_session(): closing the httpclient ctx
+2025-08-15 18:19:59,096 - livekit.agents - DEBUG - http_session(): creating a new httpclient ctx
+2025-08-15 18:19:59,099 - livekit.agents - DEBUG - job exiting
+2025-08-17 20:27:11,797 - __main__ - INFO - Starting AIAssist LiveKit agent application
+2025-08-17 20:27:11,801 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-17 20:27:11,811 - livekit.agents - INFO - starting worker
+2025-08-17 20:27:11,818 - livekit.agents - INFO - initializing job runner
+2025-08-17 20:27:11,824 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-17 20:27:11,824 - livekit.agents - INFO - job runner initialized
+2025-08-17 20:27:11,895 - __main__ - INFO - Starting AIAssist entrypoint
+2025-08-17 20:27:11,898 - __main__ - INFO - Connected to room: fake_room
+2025-08-17 20:27:11,902 - __main__ - INFO - AIAssist agent initialized with tools: weather, search, email
+2025-08-17 20:27:12,061 - __main__ - INFO - AIAssist session created with Google Realtime Model + Tools
+2025-08-17 20:27:14,392 - livekit.plugins.google - DEBUG - connecting to Gemini Realtime API...
+2025-08-17 20:27:14,403 - __main__ - INFO - [AGENT STATE] initializing -> listening
+2025-08-17 20:27:14,405 - livekit.agents - DEBUG - using audio io: `ChatCLI` -> `AgentSession` -> `TranscriptSynchronizer` -> `ChatCLI`
+2025-08-17 20:27:14,407 - livekit.agents - DEBUG - using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `ChatCLI`
+2025-08-17 20:27:14,410 - __main__ - INFO - AIAssist session started successfully
+2025-08-17 20:27:14,411 - __main__ - INFO - [AIASSIST] Speech created - starting to speak
+2025-08-17 20:27:15,784 - google_genai.live - INFO - b'{\n  "setupComplete": {}\n}\n'
+2025-08-17 20:27:16,427 - __main__ - INFO - [AGENT STATE] listening -> speaking
+2025-08-17 20:27:21,515 - __main__ - INFO - [AGENT STATE] speaking -> listening
+2025-08-17 20:27:21,522 - __main__ - INFO - [CONVERSATION] assistant: Hi my name is AIassist, your personal assistant, how may I help you?
+ (interrupted: False)
+2025-08-17 20:27:21,535 - __main__ - INFO - Initial AIAssist greeting generated
+2025-08-17 20:27:28,599 - __main__ - INFO - [AIASSIST] Speech created - starting to speak
+2025-08-17 20:27:28,602 - __main__ - INFO - [USER TRANSCRIBED] abo (final: False)
+2025-08-17 20:27:28,738 - __main__ - INFO - [USER TRANSCRIBED] about (final: False)
+2025-08-17 20:27:29,136 - __main__ - INFO - [USER TRANSCRIBED] about in London. (final: False)
+2025-08-17 20:27:29,454 - __main__ - INFO - [USER TRANSCRIBED] about in London. (final: True)
+2025-08-17 20:27:29,463 - __main__ - INFO - [CONVERSATION] user: about in London. (interrupted: False)
+2025-08-17 20:27:29,468 - livekit.agents - DEBUG - executing tool
+2025-08-17 20:27:29,478 - aitools - INFO - 🌤️ [WEATHER TOOL STARTED] city='London', days=1
+2025-08-17 20:27:29,480 - aitools - INFO - 🔑 [WEATHER API KEY] Found
+2025-08-17 20:27:29,483 - aitools - INFO - 📅 [WEATHER DAYS] Adjusted to 1 days
+2025-08-17 20:27:29,485 - aitools - INFO - 🌐 [WEATHER API] URL: http://api.weatherapi.com/v1/forecast.json, params: {'key': '75225e91714c4104861143421241904', 'q': 'London', 'days': 1, 'aqi': 'no', 'alerts': 'no'}
+2025-08-17 20:27:29,494 - aitools - INFO - 🔄 [WEATHER HTTP] Making HTTP request...
+2025-08-17 20:27:29,498 - __main__ - INFO - [AIASSIST] Speech created - starting to speak
+2025-08-17 20:27:29,502 - livekit.plugins.google - WARNING - truncate is not supported by the Google Realtime API.
+2025-08-17 20:27:29,503 - livekit.agents - DEBUG - waiting for function call to finish before fully cancelling
+2025-08-17 20:27:29,512 - __main__ - INFO - [AGENT STATE] listening -> speaking
+2025-08-17 20:27:29,694 - aitools - INFO - 📡 [WEATHER RESPONSE] Status: 200
+2025-08-17 20:27:29,701 - aitools - INFO - 📊 [WEATHER DATA] Raw response keys: ['location', 'current', 'forecast']
+2025-08-17 20:27:29,704 - aitools - INFO - 📍 [WEATHER LOCATION] {'name': 'London', 'region': 'City of London, Greater London', 'country': 'United Kingdom', 'lat': 51.5171, 'lon': -0.1062, 'tz_id': 'Europe/London', 'localtime_epoch': 1755458876, 'localtime': '2025-08-17 20:27'}
+2025-08-17 20:27:29,706 - aitools - INFO - 🌡️ [WEATHER CURRENT] {'last_updated_epoch': 1755458100, 'last_updated': '2025-08-17 20:15', 'temp_c': 22.2, 'temp_f': 72.0, 'is_day': 0, 'condition': {'text': 'Sunny', 'icon': '//cdn.weatherapi.com/weather/64x64/night/113.png', 'code': 1000}, 'wind_mph': 10.3, 'wind_kph': 16.6, 'wind_degree': 90, 'wind_dir': 'E', 'pressure_mb': 1022.0, 'pressure_in': 30.18, 'precip_mm': 0.0, 'precip_in': 0.0, 'humidity': 61, 'cloud': 0, 'feelslike_c': 24.6, 'feelslike_f': 76.3, 'windchill_c': 19.0, 'windchill_f': 66.1, 'heatindex_c': 19.0, 'heatindex_f': 66.1, 'dewpoint_c': 14.0, 'dewpoint_f': 57.1, 'vis_km': 10.0, 'vis_miles': 6.0, 'uv': 0.0, 'gust_mph': 13.2, 'gust_kph': 21.2}
+2025-08-17 20:27:29,710 - aitools - INFO - ✅ [WEATHER SUCCESS] Weather data retrieved successfully for London
+2025-08-17 20:27:29,711 - aitools - INFO - ✅ [WEATHER FINAL] Weather in London, United Kingdom: Currently 22 degrees Celsius, sunny.
+2025-08-17 20:27:29,726 - livekit.agents - DEBUG - tools execution completed
+2025-08-17 20:27:39,828 - livekit.agents - INFO - shutting down worker
+2025-08-17 20:27:39,835 - livekit.agents - DEBUG - shutting down job task
+2025-08-17 20:27:39,838 - __main__ - INFO - [AGENT STATE] speaking -> listening
+2025-08-17 20:27:39,839 - livekit.agents - DEBUG - job exiting
+2025-08-17 20:27:39,852 - livekit.plugins.google - WARNING - truncate is not supported by the Google Realtime API.
+2025-08-17 20:27:39,860 - __main__ - INFO - [CONVERSATION] assistant: Of course, Sir. I will retrieve the weather information for London.
+ (interrupted: True)
+2025-08-17 20:27:39,865 - livekit.plugins.google - DEBUG - send task finished.
+2025-08-17 20:27:39,903 - livekit.agents - DEBUG - session closed
+2025-08-17 20:27:39,904 - livekit.agents - DEBUG - http_session(): closing the httpclient ctx
+2025-08-17 20:27:39,906 - livekit.agents - DEBUG - http_session(): creating a new httpclient ctx

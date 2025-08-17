@@ -730,3 +730,71 @@
 3. Harp Lager: 0.0 units
 2025-08-12 22:18:11,879 - n8n-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
 2025-08-12 22:18:14,585 - n8n-assistant - INFO - ❌ [SESSION CLOSED] Agent session ended
+2025-08-15 20:44:08,437 - n8n-assistant - INFO - 🚀 [MAIN] Starting N8N Assistant LiveKit agent application with Groq
+2025-08-15 20:44:08,438 - n8n-assistant - INFO - 📦 [TOOLS] Loading N8N Tools v1.1.0
+2025-08-15 20:44:08,441 - n8n-assistant - INFO - 🔧 [TOOLS] 4 active tools in 6 categories
+2025-08-15 20:44:08,546 - n8n-assistant - INFO - 🚀 [ENTRYPOINT] Starting N8N Assistant with Groq and modular tools
+2025-08-15 20:44:08,552 - n8n-assistant - INFO - 🧪 [STARTUP] Starting comprehensive tool validation...
+2025-08-15 20:44:13,985 - n8n-assistant - INFO - 📊 [VALIDATION] Complete: 4 working, 0 failed
+2025-08-15 20:44:13,989 - n8n-assistant - INFO - ✅ [VALIDATION] All tools validated successfully
+2025-08-15 20:44:13,990 - n8n-assistant - INFO - ✅ [LIVEKIT] Connected to room: fake_room
+2025-08-15 20:44:13,991 - n8n-assistant - INFO - ✅ [AGENT INIT] N8N Assistant initialized with 4 tools
+2025-08-15 20:44:13,992 - n8n-assistant - INFO - 📂 [AGENT INIT] Tool categories: weather, analytics, communication, information, n8n_integrated, web_services
+2025-08-15 20:44:15,215 - n8n-assistant - INFO - ✅ [SESSION] Created: Groq Whisper STT + Llama-3.3-70B + PlayAI TTS + Modular Tools
+2025-08-15 20:44:15,516 - n8n-assistant - INFO - 🔄 [AGENT STATE] initializing -> listening
+2025-08-15 20:44:15,520 - n8n-assistant - INFO - ✅ [SESSION] Started successfully
+2025-08-15 20:44:15,521 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-15 20:44:15,923 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-15 20:44:17,063 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-15 20:44:34,376 - n8n-assistant - INFO - 💬 [CHAT ASSISTANT] Hello, I'm a helpful voice assistant, and I'm here to assist you with a variety of tasks. I can provide you with current weather information and forecasts, search the web for the latest news and answers, and even send emails on your behalf. What can I help you with today?
+2025-08-15 20:44:34,384 - n8n-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-15 20:44:34,387 - n8n-assistant - INFO - ✅ [GREETING] Initial greeting generated
+2025-08-15 20:44:37,146 - n8n-assistant - INFO - 👤 [USER FINAL]  Okay,
+2025-08-15 20:44:39,304 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-15 20:44:39,322 - n8n-assistant - INFO - 💬 [CHAT USER] Okay,
+2025-08-15 20:44:39,331 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-15 20:44:39,715 - n8n-assistant - INFO - 👤 [USER FINAL]  Tell me, please, about last news...
+2025-08-15 20:44:39,895 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-15 20:44:41,396 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-15 20:44:41,420 - n8n-assistant - INFO - 💬 [CHAT USER] Tell me, please, about last news...
+2025-08-15 20:44:41,425 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-15 20:44:41,790 - n8n-assistant - INFO - 👤 [USER FINAL]  about ChatGPT5.
+2025-08-15 20:44:41,796 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-15 20:44:41,814 - n8n-assistant - INFO - 💬 [CHAT USER] about ChatGPT5.
+2025-08-15 20:44:44,541 - n8n-assistant - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-15 20:44:44,544 - n8n-assistant - INFO - 🛠️ [TOOL RESULT 1] unknown: no result...
+2025-08-15 20:44:46,938 - n8n-assistant - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-15 20:44:46,940 - n8n-assistant - INFO - 🛠️ [TOOL RESULT 1] unknown: no result...
+2025-08-15 20:44:47,706 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-15 20:44:51,843 - n8n-assistant - INFO - 💬 [CHAT ASSISTANT] <function=search>
+2025-08-15 20:44:51,846 - n8n-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-15 20:45:08,745 - n8n-assistant - INFO - 👤 [USER FINAL]  And where is your answer?
+2025-08-15 20:45:08,753 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-15 20:45:08,771 - n8n-assistant - INFO - 💬 [CHAT USER] And where is your answer?
+2025-08-15 20:45:08,773 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-15 20:45:11,096 - n8n-assistant - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-15 20:45:11,098 - n8n-assistant - INFO - 🛠️ [TOOL RESULT 1] unknown: no result...
+2025-08-15 20:45:12,206 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-15 20:45:16,327 - n8n-assistant - INFO - 💬 [CHAT ASSISTANT] <function=search>
+2025-08-15 20:45:16,335 - n8n-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-15 20:45:23,135 - n8n-assistant - INFO - 👤 [USER FINAL]  Okay.
+2025-08-15 20:45:23,146 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-15 20:45:23,164 - n8n-assistant - INFO - 💬 [CHAT USER] Okay.
+2025-08-15 20:45:23,167 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-15 20:45:23,691 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> listening
+2025-08-15 20:45:26,338 - n8n-assistant - INFO - 👤 [USER FINAL]  Tell me please about
+2025-08-15 20:45:27,790 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-15 20:45:27,817 - n8n-assistant - INFO - 💬 [CHAT USER] Tell me please about
+2025-08-15 20:45:27,820 - n8n-assistant - INFO - 🔄 [AGENT STATE] listening -> thinking
+2025-08-15 20:45:28,174 - n8n-assistant - INFO - 👤 [USER FINAL]  Weather in Cork
+2025-08-15 20:45:28,183 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-15 20:45:28,205 - n8n-assistant - INFO - 💬 [CHAT USER] Weather in Cork
+2025-08-15 20:45:29,296 - n8n-assistant - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-15 20:45:29,300 - n8n-assistant - INFO - 🛠️ [TOOL RESULT 1] unknown: no result...
+2025-08-15 20:45:29,327 - n8n-assistant - INFO - 👤 [USER FINAL]  Ireland
+2025-08-15 20:45:29,339 - n8n-assistant - INFO - 🔊 [SPEECH CREATED] Agent is about to speak
+2025-08-15 20:45:29,359 - n8n-assistant - INFO - 💬 [CHAT USER] Ireland
+2025-08-15 20:45:30,230 - n8n-assistant - INFO - 🔄 [AGENT STATE] thinking -> speaking
+2025-08-15 20:45:33,861 - n8n-assistant - INFO - 💬 [CHAT ASSISTANT] <function=get>
+2025-08-15 20:45:33,869 - n8n-assistant - INFO - 🔄 [AGENT STATE] speaking -> listening
+2025-08-15 20:46:13,054 - n8n-assistant - INFO - ❌ [SESSION CLOSED] Agent session ended

@@ -661,3 +661,257 @@ NameError: name 'get_weather' is not defined
 2025-08-08 06:20:17,619 - livekit.agents - DEBUG - session closed
 2025-08-08 06:20:17,620 - livekit.agents - DEBUG - http_session(): closing the httpclient ctx
 2025-08-08 06:20:17,621 - livekit.agents - DEBUG - http_session(): creating a new httpclient ctx
+2025-08-15 17:48:59,745 - __main__ - INFO - Starting AIAssist in console mode
+2025-08-15 17:49:00,185 - __main__ - INFO - AIAssist Console initialized with Groq
+2025-08-15 17:49:01,084 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/audio/speech "HTTP/1.1 200 OK"
+2025-08-15 17:49:27,429 - __main__ - INFO - Console mode terminated by user
+2025-08-15 17:52:16,461 - __main__ - INFO - Starting AIAssist LiveKit agent application
+2025-08-15 17:52:16,464 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-15 17:52:16,475 - livekit.agents - INFO - starting worker
+2025-08-15 17:52:16,485 - livekit.agents - INFO - initializing job runner
+2025-08-15 17:52:16,487 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-15 17:52:16,488 - livekit.agents - INFO - job runner initialized
+2025-08-15 17:52:16,579 - __main__ - INFO - Starting AIAssist entrypoint
+2025-08-15 17:52:16,583 - __main__ - INFO - Connected to room: fake_room
+2025-08-15 17:52:16,588 - __main__ - INFO - AIAssist agent initialized
+2025-08-15 17:52:16,846 - __main__ - INFO - AIAssist session created with Google Realtime Model
+2025-08-15 17:52:18,749 - livekit.plugins.google - DEBUG - connecting to Gemini Realtime API...
+2025-08-15 17:52:18,767 - __main__ - INFO - [AGENT STATE] initializing -> listening
+2025-08-15 17:52:18,774 - livekit.agents - DEBUG - using audio io: `ChatCLI` -> `AgentSession` -> `TranscriptSynchronizer` -> `ChatCLI`
+2025-08-15 17:52:18,779 - livekit.agents - DEBUG - using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `ChatCLI`
+2025-08-15 17:52:18,781 - __main__ - INFO - AIAssist session started successfully
+2025-08-15 17:52:18,783 - __main__ - INFO - [AIASSIST] Speech created - starting to speak
+2025-08-15 17:52:23,816 - livekit.agents - ERROR - Error in _realtime_reply_task
+Traceback (most recent call last):
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
+    return await fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\voice\agent_activity.py", line 1752, in _realtime_reply_task
+    generation_ev = await self._rt_session.generate_reply(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        instructions=instructions or NOT_GIVEN
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+livekit.agents.llm.realtime.RealtimeError: generate_reply timed out waiting for generation_created event.
+2025-08-15 17:52:23,854 - __main__ - INFO - Initial AIAssist greeting generated
+2025-08-15 17:52:28,760 - livekit.plugins.google - ERROR - Gemini Realtime API error: timed out during opening handshake
+Traceback (most recent call last):
+  File "C:\projects\aiassist\venv\Lib\site-packages\websockets\asyncio\client.py", line 541, in __await_impl__
+    self.connection = await self.create_connection()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\websockets\asyncio\client.py", line 467, in create_connection
+    _, connection = await loop.create_connection(factory, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\asyncio\base_events.py", line 1111, in create_connection
+    infos = await self._ensure_resolved(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        (host, port), family=family,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        type=socket.SOCK_STREAM, proto=proto, flags=flags, loop=self)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\asyncio\base_events.py", line 1494, in _ensure_resolved
+    return await loop.getaddrinfo(host, port, family=family, type=type,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                  proto=proto, flags=flags)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\asyncio\base_events.py", line 933, in getaddrinfo
+    return await self.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        None, getaddr_func, host, port, family, type, proto, flags)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\projects\aiassist\venv\Lib\site-packages\websockets\asyncio\client.py", line 539, in __await_impl__
+    async with asyncio_timeout(self.open_timeout):
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\asyncio\timeouts.py", line 116, in __aexit__
+    raise TimeoutError from exc_val
+TimeoutError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\plugins\google\beta\realtime\realtime_api.py", line 589, in _main_task
+    async with self._client.aio.live.connect(
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        model=self._opts.model, config=config
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ) as session:
+    ^
+  File "C:\Python313\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\google\genai\live.py", line 1047, in connect
+    async with ws_connect(
+               ~~~~~~~~~~^
+        uri, additional_headers=headers, **self._api_client._websocket_ssl_ctx
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ) as ws:
+    ^
+  File "C:\projects\aiassist\venv\Lib\site-packages\websockets\asyncio\client.py", line 587, in __aenter__
+    return await self
+           ^^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\websockets\asyncio\client.py", line 578, in __await_impl__
+    raise TimeoutError("timed out during opening handshake") from exc
+TimeoutError: timed out during opening handshake
+2025-08-15 17:52:28,902 - __main__ - ERROR - [ERROR] type='realtime_model_error' timestamp=1755276748.9015334 label='livekit.plugins.google.beta.realtime.realtime_api.RealtimeModel' error=TimeoutError('timed out during opening handshake') recoverable=False (recoverable: False)
+2025-08-15 17:52:28,904 - livekit.agents - ERROR - AgentSession is closing due to unrecoverable error
+Traceback (most recent call last):
+  File "C:\projects\aiassist\venv\Lib\site-packages\websockets\asyncio\client.py", line 541, in __await_impl__
+    self.connection = await self.create_connection()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\websockets\asyncio\client.py", line 467, in create_connection
+    _, connection = await loop.create_connection(factory, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\asyncio\base_events.py", line 1111, in create_connection
+    infos = await self._ensure_resolved(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        (host, port), family=family,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        type=socket.SOCK_STREAM, proto=proto, flags=flags, loop=self)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\asyncio\base_events.py", line 1494, in _ensure_resolved
+    return await loop.getaddrinfo(host, port, family=family, type=type,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                  proto=proto, flags=flags)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\asyncio\base_events.py", line 933, in getaddrinfo
+    return await self.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        None, getaddr_func, host, port, family, type, proto, flags)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\projects\aiassist\venv\Lib\site-packages\websockets\asyncio\client.py", line 539, in __await_impl__
+    async with asyncio_timeout(self.open_timeout):
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\asyncio\timeouts.py", line 116, in __aexit__
+    raise TimeoutError from exc_val
+TimeoutError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\plugins\google\beta\realtime\realtime_api.py", line 589, in _main_task
+    async with self._client.aio.live.connect(
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        model=self._opts.model, config=config
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ) as session:
+    ^
+  File "C:\Python313\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\google\genai\live.py", line 1047, in connect
+    async with ws_connect(
+               ~~~~~~~~~~^
+        uri, additional_headers=headers, **self._api_client._websocket_ssl_ctx
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ) as ws:
+    ^
+  File "C:\projects\aiassist\venv\Lib\site-packages\websockets\asyncio\client.py", line 587, in __aenter__
+    return await self
+           ^^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\websockets\asyncio\client.py", line 578, in __await_impl__
+    raise TimeoutError("timed out during opening handshake") from exc
+TimeoutError: timed out during opening handshake
+2025-08-15 17:52:28,912 - livekit.plugins.google - ERROR - Error in _main_task
+Traceback (most recent call last):
+  File "C:\projects\aiassist\venv\Lib\site-packages\websockets\asyncio\client.py", line 541, in __await_impl__
+    self.connection = await self.create_connection()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\websockets\asyncio\client.py", line 467, in create_connection
+    _, connection = await loop.create_connection(factory, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\asyncio\base_events.py", line 1111, in create_connection
+    infos = await self._ensure_resolved(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        (host, port), family=family,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        type=socket.SOCK_STREAM, proto=proto, flags=flags, loop=self)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\asyncio\base_events.py", line 1494, in _ensure_resolved
+    return await loop.getaddrinfo(host, port, family=family, type=type,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                  proto=proto, flags=flags)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\asyncio\base_events.py", line 933, in getaddrinfo
+    return await self.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        None, getaddr_func, host, port, family, type, proto, flags)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\projects\aiassist\venv\Lib\site-packages\websockets\asyncio\client.py", line 539, in __await_impl__
+    async with asyncio_timeout(self.open_timeout):
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\asyncio\timeouts.py", line 116, in __aexit__
+    raise TimeoutError from exc_val
+TimeoutError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\plugins\google\beta\realtime\realtime_api.py", line 589, in _main_task
+    async with self._client.aio.live.connect(
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        model=self._opts.model, config=config
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ) as session:
+    ^
+  File "C:\Python313\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\google\genai\live.py", line 1047, in connect
+    async with ws_connect(
+               ~~~~~~~~~~^
+        uri, additional_headers=headers, **self._api_client._websocket_ssl_ctx
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ) as ws:
+    ^
+  File "C:\projects\aiassist\venv\Lib\site-packages\websockets\asyncio\client.py", line 587, in __aenter__
+    return await self
+           ^^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\websockets\asyncio\client.py", line 578, in __await_impl__
+    raise TimeoutError("timed out during opening handshake") from exc
+TimeoutError: timed out during opening handshake
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
+    return await fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\plugins\google\beta\realtime\realtime_api.py", line 639, in _main_task
+    raise APIConnectionError(message="Failed to connect to Gemini Live") from e
+livekit.agents._exceptions.APIConnectionError: Failed to connect to Gemini Live (body=None, retryable=True)
+2025-08-15 17:52:28,931 - livekit.agents - DEBUG - session closed
+2025-08-15 17:52:38,969 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='AgentActivity.realtime_reply' coro=<AgentActivity._realtime_reply_task() done, defined at C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\utils\log.py:13> exception=RealtimeError('generate_reply timed out waiting for generation_created event.')>
+Traceback (most recent call last):
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
+    return await fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\aiassist\venv\Lib\site-packages\livekit\agents\voice\agent_activity.py", line 1752, in _realtime_reply_task
+    generation_ev = await self._rt_session.generate_reply(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        instructions=instructions or NOT_GIVEN
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+livekit.agents.llm.realtime.RealtimeError: generate_reply timed out waiting for generation_created event.
+2025-08-15 17:52:46,553 - livekit.agents - INFO - shutting down worker
+2025-08-15 17:52:46,554 - livekit.agents - DEBUG - shutting down job task
+2025-08-15 17:52:46,557 - livekit.agents - DEBUG - http_session(): closing the httpclient ctx
+2025-08-15 17:52:46,558 - livekit.agents - DEBUG - job exiting
+2025-08-15 17:52:46,564 - livekit.agents - DEBUG - http_session(): creating a new httpclient ctx

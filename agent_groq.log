@@ -1,0 +1,187 @@
+2025-08-15 21:16:50,685 - groq-agent - INFO - 🚀 [GROQ MAIN] Starting Groq N8N Assistant LiveKit agent with logging
+2025-08-15 21:16:50,772 - groq-agent - INFO - 🚀 [GROQ ENTRYPOINT] Starting Groq N8N Assistant with logging
+2025-08-15 21:16:50,776 - groq-agent - INFO - ✅ [GROQ LIVEKIT] Connected to room: fake_room
+2025-08-15 21:16:50,780 - groq-agent - INFO - ✅ [GROQ AGENT INIT] Groq N8N Assistant initialized with weather tool
+2025-08-15 21:16:51,889 - groq-agent - INFO - ✅ [GROQ SESSION] Created: Groq STT + Llama-3.3-70b + PlayAI TTS + 1 Tool
+2025-08-15 21:16:51,892 - groq-agent - INFO - ✅ [GROQ EVENTS] Event handlers configured for Groq debugging
+2025-08-15 21:16:52,148 - groq-agent - INFO - 🔄 [GROQ AGENT STATE] initializing -> listening
+2025-08-15 21:16:52,151 - groq-agent - INFO - ✅ [GROQ SESSION] Started successfully
+2025-08-15 21:16:52,153 - groq-agent - INFO - 🔊 [GROQ TTS] Creating speech...
+2025-08-15 21:16:52,473 - groq-agent - INFO - 🔄 [GROQ AGENT STATE] listening -> thinking
+2025-08-15 21:16:53,467 - groq-agent - INFO - 🔄 [GROQ AGENT STATE] thinking -> speaking
+2025-08-15 21:17:02,787 - groq-agent - INFO - 💬 [GROQ CHAT ASSISTANT] Hello, I'm here to help you with your weather queries. How can I assist you today? Would you like to know the weather for a specific city?
+2025-08-15 21:17:02,790 - groq-agent - INFO - 🔄 [GROQ AGENT STATE] speaking -> listening
+2025-08-15 21:17:02,793 - groq-agent - INFO - ✅ [GROQ GREETING] Initial greeting generated
+2025-08-15 21:17:07,448 - groq-agent - INFO - 👤 [GROQ STT FINAL]  Yes, I need a waiver for...
+2025-08-15 21:17:07,458 - groq-agent - INFO - 🔊 [GROQ TTS] Creating speech...
+2025-08-15 21:17:07,470 - groq-agent - INFO - 💬 [GROQ CHAT USER] Yes, I need a waiver for...
+2025-08-15 21:17:07,473 - groq-agent - INFO - 🔄 [GROQ AGENT STATE] listening -> thinking
+2025-08-15 21:17:08,032 - groq-agent - INFO - 🔄 [GROQ AGENT STATE] thinking -> listening
+2025-08-15 21:17:08,659 - groq-agent - INFO - 👤 [GROQ STT FINAL]  Dublin.
+2025-08-15 21:17:08,663 - groq-agent - INFO - 🔊 [GROQ TTS] Creating speech...
+2025-08-15 21:17:08,671 - groq-agent - INFO - 💬 [GROQ CHAT USER] Dublin.
+2025-08-15 21:17:08,673 - groq-agent - INFO - 🔄 [GROQ AGENT STATE] listening -> thinking
+2025-08-15 21:17:09,818 - groq-agent - INFO - ==================================================
+2025-08-15 21:17:09,823 - groq-agent - INFO - 🛠️ [GROQ TOOLS EXECUTED] Function tools completed - ANALYZING...
+2025-08-15 21:17:09,825 - groq-agent - INFO - 🔍 [GROQ EVENT TYPE] <class 'livekit.agents.voice.events.FunctionToolsExecutedEvent'>
+2025-08-15 21:17:09,826 - groq-agent - INFO - 🔍 [GROQ EVENT ATTRS] ['__abstractmethods__', '__annotations__', '__class__', '__class_getitem__', '__class_vars__', '__copy__', '__deepcopy__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__fields__', '__fields_set__', '__firstlineno__', '__format__', '__ge__', '__get_pydantic_core_schema__', '__get_pydantic_json_schema__', '__getattr__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__pretty__', '__private_attributes__', '__pydantic_complete__', '__pydantic_computed_fields__', '__pydantic_core_schema__', '__pydantic_custom_init__', '__pydantic_decorators__', '__pydantic_extra__', '__pydantic_fields__', '__pydantic_fields_set__', '__pydantic_generic_metadata__', '__pydantic_init_subclass__', '__pydantic_parent_namespace__', '__pydantic_post_init__', '__pydantic_private__', '__pydantic_root_model__', '__pydantic_serializer__', '__pydantic_setattr_handlers__', '__pydantic_validator__', '__reduce__', '__reduce_ex__', '__replace__', '__repr__', '__repr_args__', '__repr_name__', '__repr_recursion__', '__repr_str__', '__rich_repr__', '__setattr__', '__setstate__', '__signature__', '__sizeof__', '__slots__', '__static_attributes__', '__str__', '__subclasshook__', '__weakref__', '_abc_impl', '_calculate_keys', '_copy_and_set_values', '_get_value', '_iter', '_setattr_handler', 'construct', 'copy', 'created_at', 'dict', 'from_orm', 'function_call_outputs', 'function_calls', 'json', 'model_computed_fields', 'model_config', 'model_construct', 'model_copy', 'model_dump', 'model_dump_json', 'model_extra', 'model_fields', 'model_fields_set', 'model_json_schema', 'model_parametrized_name', 'model_post_init', 'model_rebuild', 'model_validate', 'model_validate_json', 'model_validate_strings', 'parse_file', 'parse_obj', 'parse_raw', 'schema', 'schema_json', 'type', 'update_forward_refs', 'validate', 'verify_lists_length', 'zipped']
+2025-08-15 21:17:09,828 - groq-agent - INFO - 🛠️ [GROQ FUNCTION_CALLS] Found 1 function calls
+2025-08-15 21:17:09,830 - groq-agent - INFO - 🛠️ [GROQ CALL 1] Function: unknown
+2025-08-15 21:17:09,841 - groq-agent - INFO - 🛠️ [GROQ ARGS 1] Arguments: {"city":"Dublin","units":"celsius"}
+2025-08-15 21:17:09,842 - groq-agent - INFO - 🛠️ [GROQ RESULT 1] Result: no result...
+2025-08-15 21:17:09,845 - groq-agent - INFO - ==================================================
+2025-08-15 21:17:10,483 - groq-agent - INFO - ==================================================
+2025-08-15 21:17:10,485 - groq-agent - INFO - 🛠️ [GROQ TOOLS EXECUTED] Function tools completed - ANALYZING...
+2025-08-15 21:17:10,487 - groq-agent - INFO - 🔍 [GROQ EVENT TYPE] <class 'livekit.agents.voice.events.FunctionToolsExecutedEvent'>
+2025-08-15 21:17:10,489 - groq-agent - INFO - 🔍 [GROQ EVENT ATTRS] ['__abstractmethods__', '__annotations__', '__class__', '__class_getitem__', '__class_vars__', '__copy__', '__deepcopy__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__fields__', '__fields_set__', '__firstlineno__', '__format__', '__ge__', '__get_pydantic_core_schema__', '__get_pydantic_json_schema__', '__getattr__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__pretty__', '__private_attributes__', '__pydantic_complete__', '__pydantic_computed_fields__', '__pydantic_core_schema__', '__pydantic_custom_init__', '__pydantic_decorators__', '__pydantic_extra__', '__pydantic_fields__', '__pydantic_fields_set__', '__pydantic_generic_metadata__', '__pydantic_init_subclass__', '__pydantic_parent_namespace__', '__pydantic_post_init__', '__pydantic_private__', '__pydantic_root_model__', '__pydantic_serializer__', '__pydantic_setattr_handlers__', '__pydantic_validator__', '__reduce__', '__reduce_ex__', '__replace__', '__repr__', '__repr_args__', '__repr_name__', '__repr_recursion__', '__repr_str__', '__rich_repr__', '__setattr__', '__setstate__', '__signature__', '__sizeof__', '__slots__', '__static_attributes__', '__str__', '__subclasshook__', '__weakref__', '_abc_impl', '_calculate_keys', '_copy_and_set_values', '_get_value', '_iter', '_setattr_handler', 'construct', 'copy', 'created_at', 'dict', 'from_orm', 'function_call_outputs', 'function_calls', 'json', 'model_computed_fields', 'model_config', 'model_construct', 'model_copy', 'model_dump', 'model_dump_json', 'model_extra', 'model_fields', 'model_fields_set', 'model_json_schema', 'model_parametrized_name', 'model_post_init', 'model_rebuild', 'model_validate', 'model_validate_json', 'model_validate_strings', 'parse_file', 'parse_obj', 'parse_raw', 'schema', 'schema_json', 'type', 'update_forward_refs', 'validate', 'verify_lists_length', 'zipped']
+2025-08-15 21:17:10,491 - groq-agent - INFO - 🛠️ [GROQ FUNCTION_CALLS] Found 1 function calls
+2025-08-15 21:17:10,493 - groq-agent - INFO - 🛠️ [GROQ CALL 1] Function: unknown
+2025-08-15 21:17:10,494 - groq-agent - INFO - 🛠️ [GROQ ARGS 1] Arguments: {"city":"Dublin","units":"fahrenheit"}
+2025-08-15 21:17:10,503 - groq-agent - INFO - 🛠️ [GROQ RESULT 1] Result: no result...
+2025-08-15 21:17:10,507 - groq-agent - INFO - ==================================================
+2025-08-15 21:17:10,973 - groq-agent - ERROR - ❌ [GROQ ERROR] type='tts_error' timestamp=1755289030.972449 label='livekit.plugins.groq.tts.TTS' error=APIStatusError('Too Many Requests') recoverable=True
+2025-08-15 21:17:11,179 - groq-agent - ERROR - ❌ [GROQ ERROR] type='tts_error' timestamp=1755289031.1792364 label='livekit.plugins.groq.tts.TTS' error=APIStatusError('Too Many Requests') recoverable=True
+2025-08-15 21:17:13,371 - groq-agent - ERROR - ❌ [GROQ ERROR] type='tts_error' timestamp=1755289033.3706315 label='livekit.plugins.groq.tts.TTS' error=APIStatusError('Too Many Requests') recoverable=True
+2025-08-15 21:17:15,469 - groq-agent - ERROR - ❌ [GROQ ERROR] type='tts_error' timestamp=1755289035.4697096 label='livekit.plugins.groq.tts.TTS' error=APIStatusError('Too Many Requests') recoverable=False
+2025-08-15 21:17:15,484 - groq-agent - INFO - 💬 [GROQ CHAT ASSISTANT] The weather in Dublin is 59 degrees Fahrenheit, clear, and very humid at 88%.
+2025-08-15 21:17:15,490 - groq-agent - INFO - 🔄 [GROQ AGENT STATE] thinking -> listening
+2025-08-15 21:17:19,631 - groq-agent - INFO - ❌ [GROQ SESSION CLOSED] Agent session ended
+2025-08-15 21:23:55,550 - groq-agent - INFO - 🚀 [GROQ MAIN] Starting Groq N8N Assistant LiveKit agent with logging
+2025-08-15 21:23:55,653 - groq-agent - INFO - 🚀 [GROQ ENTRYPOINT] Starting Groq N8N Assistant with logging
+2025-08-15 21:23:55,656 - groq-agent - INFO - ✅ [GROQ LIVEKIT] Connected to room: fake_room
+2025-08-15 21:23:55,662 - groq-agent - INFO - ✅ [GROQ AGENT INIT] Groq N8N Assistant initialized with weather tool
+2025-08-15 21:26:37,816 - groq-agent - INFO - 🚀 [GROQ MAIN] Starting Groq N8N Assistant LiveKit agent with logging
+2025-08-15 21:26:37,912 - groq-agent - INFO - 🚀 [GROQ ENTRYPOINT] Starting Groq N8N Assistant with logging
+2025-08-15 21:26:37,918 - groq-agent - INFO - ✅ [GROQ LIVEKIT] Connected to room: fake_room
+2025-08-15 21:26:37,920 - groq-agent - INFO - ✅ [GROQ AGENT INIT] Groq N8N Assistant initialized with weather tool
+2025-08-15 21:26:39,497 - groq-agent - INFO - ✅ [GROQ SESSION] Created: Groq STT + Llama-3.3-70b + OpenAI TTS + 1 Tool
+2025-08-15 21:26:39,506 - groq-agent - INFO - ✅ [GROQ EVENTS] Event handlers configured for Groq debugging
+2025-08-15 21:26:39,824 - groq-agent - INFO - 🔄 [GROQ AGENT STATE] initializing -> listening
+2025-08-15 21:26:39,828 - groq-agent - INFO - ✅ [GROQ SESSION] Started successfully
+2025-08-15 21:26:39,831 - groq-agent - INFO - 🔊 [GROQ TTS] Creating speech...
+2025-08-15 21:26:40,268 - groq-agent - INFO - 🔄 [GROQ AGENT STATE] listening -> thinking
+2025-08-15 21:26:42,020 - groq-agent - INFO - 🔄 [GROQ AGENT STATE] thinking -> speaking
+2025-08-15 21:26:46,940 - groq-agent - INFO - 💬 [GROQ CHAT ASSISTANT] Hello, I'm here to help. How can I assist you with weather information today?
+2025-08-15 21:26:46,948 - groq-agent - INFO - 🔄 [GROQ AGENT STATE] speaking -> listening
+2025-08-15 21:26:46,952 - groq-agent - INFO - ✅ [GROQ GREETING] Initial greeting generated
+2025-08-15 21:26:51,842 - groq-agent - INFO - 👤 [GROQ STT FINAL]  Tell me please about VV in
+2025-08-15 21:26:51,859 - groq-agent - INFO - 🔊 [GROQ TTS] Creating speech...
+2025-08-15 21:26:51,869 - groq-agent - INFO - 💬 [GROQ CHAT USER] Tell me please about VV in
+2025-08-15 21:26:51,871 - groq-agent - INFO - 🔄 [GROQ AGENT STATE] listening -> thinking
+2025-08-15 21:26:52,504 - groq-agent - INFO - 🔄 [GROQ AGENT STATE] thinking -> listening
+2025-08-15 21:26:53,015 - groq-agent - INFO - 👤 [GROQ STT FINAL]  Dublin
+2025-08-15 21:26:53,021 - groq-agent - INFO - 🔊 [GROQ TTS] Creating speech...
+2025-08-15 21:26:53,037 - groq-agent - INFO - 💬 [GROQ CHAT USER] Dublin
+2025-08-15 21:26:53,049 - groq-agent - INFO - 🔄 [GROQ AGENT STATE] listening -> thinking
+2025-08-15 21:26:53,881 - groq-agent - INFO - ==================================================
+2025-08-15 21:26:53,882 - groq-agent - INFO - 🛠️ [GROQ TOOLS EXECUTED] Function tools completed - ANALYZING...
+2025-08-15 21:26:53,884 - groq-agent - INFO - 🎯 [GROQ OUTPUTS] Found function_call_outputs: 1
+2025-08-15 21:26:53,886 - groq-agent - INFO - 🔍 [GROQ OUTPUT 1] Type: <class 'livekit.agents.llm.chat_context.FunctionCallOutput'>
+2025-08-15 21:26:53,887 - groq-agent - INFO - 🔍 [GROQ OUTPUT 1] Content: id='item_150c0a8ba20a' type='function_call_output' name='get_weather_n8n' call_id='00s3d17ca' output='Weather in Dublin, Ireland: Currently 15 degrees Celsius, clear. Very humid at 88%.' is_error=False created_at=1755289613.8807654...
+2025-08-15 21:26:53,889 - groq-agent - INFO - 🔍 [GROQ OUTPUT ATTRS 1] ['__abstractmethods__', '__annotations__', '__class__', '__class_getitem__', '__class_vars__', '__copy__', '__deepcopy__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__fields__', '__fields_set__', '__firstlineno__', '__format__', '__ge__', '__get_pydantic_core_schema__', '__get_pydantic_json_schema__', '__getattr__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__pretty__', '__private_attributes__', '__pydantic_complete__', '__pydantic_computed_fields__', '__pydantic_core_schema__', '__pydantic_custom_init__', '__pydantic_decorators__', '__pydantic_extra__', '__pydantic_fields__', '__pydantic_fields_set__', '__pydantic_generic_metadata__', '__pydantic_init_subclass__', '__pydantic_parent_namespace__', '__pydantic_post_init__', '__pydantic_private__', '__pydantic_root_model__', '__pydantic_serializer__', '__pydantic_setattr_handlers__', '__pydantic_validator__', '__reduce__', '__reduce_ex__', '__replace__', '__repr__', '__repr_args__', '__repr_name__', '__repr_recursion__', '__repr_str__', '__rich_repr__', '__setattr__', '__setstate__', '__signature__', '__sizeof__', '__slots__', '__static_attributes__', '__str__', '__subclasshook__', '__weakref__', '_abc_impl', '_calculate_keys', '_copy_and_set_values', '_get_value', '_iter', '_setattr_handler', 'call_id', 'construct', 'copy', 'created_at', 'dict', 'from_orm', 'id', 'is_error', 'json', 'model_computed_fields', 'model_config', 'model_construct', 'model_copy', 'model_dump', 'model_dump_json', 'model_extra', 'model_fields', 'model_fields_set', 'model_json_schema', 'model_parametrized_name', 'model_post_init', 'model_rebuild', 'model_validate', 'model_validate_json', 'model_validate_strings', 'name', 'output', 'parse_file', 'parse_obj', 'parse_raw', 'schema', 'schema_json', 'type', 'update_forward_refs', 'validate']
+2025-08-15 21:26:53,891 - groq-agent - INFO - 🛠️ [GROQ FUNCTION_CALLS] Found 1 function calls
+2025-08-15 21:26:53,901 - groq-agent - INFO - 🛠️ [GROQ CALL 1] Function: get_weather_n8n
+2025-08-15 21:26:53,903 - groq-agent - INFO - 🛠️ [GROQ ARGS 1] Arguments: {"city":"Dublin","units":"celsius"}
+2025-08-15 21:26:53,904 - groq-agent - INFO - 🛠️ [GROQ RESULT 1] Result: no result...
+2025-08-15 21:26:53,907 - groq-agent - INFO - 🔍 [GROQ CALL ATTRS 1] ['__abstractmethods__', '__annotations__', '__class__', '__class_getitem__', '__class_vars__', '__copy__', '__deepcopy__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__fields__', '__fields_set__', '__firstlineno__', '__format__', '__ge__', '__get_pydantic_core_schema__', '__get_pydantic_json_schema__', '__getattr__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__pretty__', '__private_attributes__', '__pydantic_complete__', '__pydantic_computed_fields__', '__pydantic_core_schema__', '__pydantic_custom_init__', '__pydantic_decorators__', '__pydantic_extra__', '__pydantic_fields__', '__pydantic_fields_set__', '__pydantic_generic_metadata__', '__pydantic_init_subclass__', '__pydantic_parent_namespace__', '__pydantic_post_init__', '__pydantic_private__', '__pydantic_root_model__', '__pydantic_serializer__', '__pydantic_setattr_handlers__', '__pydantic_validator__', '__reduce__', '__reduce_ex__', '__replace__', '__repr__', '__repr_args__', '__repr_name__', '__repr_recursion__', '__repr_str__', '__rich_repr__', '__setattr__', '__setstate__', '__signature__', '__sizeof__', '__slots__', '__static_attributes__', '__str__', '__subclasshook__', '__weakref__', '_abc_impl', '_calculate_keys', '_copy_and_set_values', '_get_value', '_iter', '_setattr_handler', 'arguments', 'call_id', 'construct', 'copy', 'created_at', 'dict', 'from_orm', 'id', 'json', 'model_computed_fields', 'model_config', 'model_construct', 'model_copy', 'model_dump', 'model_dump_json', 'model_extra', 'model_fields', 'model_fields_set', 'model_json_schema', 'model_parametrized_name', 'model_post_init', 'model_rebuild', 'model_validate', 'model_validate_json', 'model_validate_strings', 'name', 'parse_file', 'parse_obj', 'parse_raw', 'schema', 'schema_json', 'type', 'update_forward_refs', 'validate']
+2025-08-15 21:26:53,909 - groq-agent - INFO - 🔍 [GROQ ATTR] function_call_outputs: [FunctionCallOutput(id='item_150c0a8ba20a', type='function_call_output', name='get_weather_n8n', call_id='00s3d17ca', output='Weather in Dublin, Ireland: Currently 15 degrees Celsius, clear. Very humi...
+2025-08-15 21:26:53,911 - groq-agent - INFO - ==================================================
+2025-08-15 21:26:55,441 - groq-agent - INFO - 🔄 [GROQ AGENT STATE] thinking -> speaking
+2025-08-15 21:26:56,904 - groq-agent - INFO - 💬 [GROQ CHAT ASSISTANT] <function=get>
+2025-08-15 21:26:56,907 - groq-agent - INFO - 🔄 [GROQ AGENT STATE] speaking -> listening
+2025-08-15 21:27:10,442 - groq-agent - INFO - ❌ [GROQ SESSION CLOSED] Agent session ended
+2025-08-15 21:32:57,076 - groq-agent - INFO - 🚀 [MAIN] Starting Groq agent with YOUR working code
+2025-08-15 21:32:57,158 - groq-agent - INFO - 🚀 [GROQ] Starting - using YOUR working code structure
+2025-08-15 21:32:57,161 - groq-agent - INFO - ✅ [LIVEKIT] Connected to room
+2025-08-15 21:32:58,252 - groq-agent - INFO - ✅ [EVENTS] Event handlers added for debugging
+2025-08-15 21:33:01,329 - groq-agent - INFO - 🤖 [ASSISTANT] Hello, how can I help you today?
+2025-08-15 21:33:01,334 - groq-agent - INFO - ✅ [GROQ] Started successfully with your working configuration
+2025-08-15 21:33:08,976 - groq-agent - INFO - 👤 [USER]  Tell me please about whether in
+2025-08-15 21:33:11,936 - groq-agent - INFO - 👤 [USER]  Deadpool
+2025-08-15 21:33:16,766 - groq-agent - INFO - 🤖 [ASSISTANT] I'm not aware of a city called "Deadpool". Could you please provide a real city name so I can check the weather for you?
+2025-08-15 21:35:49,744 - groq-agent - INFO - 🚀 [MAIN] Starting Groq agent with YOUR working code
+2025-08-15 21:35:49,834 - groq-agent - INFO - 🚀 [GROQ] Starting - using YOUR working code structure
+2025-08-15 21:35:49,839 - groq-agent - INFO - ✅ [LIVEKIT] Connected to room
+2025-08-15 21:35:51,329 - groq-agent - INFO - ✅ [EVENTS] Event handlers added for debugging
+2025-08-15 21:35:55,014 - groq-agent - INFO - 🤖 [ASSISTANT] Hello, how can I help you today?
+2025-08-15 21:35:55,016 - groq-agent - INFO - ✅ [GROQ] Started successfully with your working configuration
+2025-08-15 21:36:00,205 - groq-agent - INFO - 👤 [USER]  Tell me about where we were in London.
+2025-08-15 21:36:15,817 - groq-agent - INFO - 🤖 [ASSISTANT] I don't have any information about our previous location in London. I'm a text-based AI assistant, I don't have personal experiences or memories. If you'd like to know the weather in London, I can try to help you with that. 
+
+
+2025-08-15 21:36:15,821 - groq-agent - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-15 21:36:15,825 - groq-agent - INFO - ✅ [OUTPUTS] Found 1 outputs
+2025-08-15 21:36:15,827 - groq-agent - INFO - ✅ [OUTPUT 1] get_weather_n8n: Weather in London, City of London, Greater London, United Kingdom: Currently 24 degrees Celsius, clear....
+2025-08-15 21:36:16,427 - groq-agent - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-15 21:36:16,429 - groq-agent - INFO - ✅ [OUTPUTS] Found 1 outputs
+2025-08-15 21:36:16,431 - groq-agent - INFO - ✅ [OUTPUT 1] get_weather_n8n: Weather in London, City of London, Greater London, United Kingdom: Currently 24 degrees Celsius, clear....
+2025-08-15 21:36:18,427 - groq-agent - INFO - 🤖 [ASSISTANT] The weather
+2025-08-15 21:36:24,807 - groq-agent - INFO - 👤 [USER]  Yes, please.
+2025-08-15 21:36:25,479 - groq-agent - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-15 21:36:25,481 - groq-agent - INFO - ✅ [OUTPUTS] Found 1 outputs
+2025-08-15 21:36:25,482 - groq-agent - INFO - ✅ [OUTPUT 1] get_weather_n8n: Weather in London, City of London, Greater London, United Kingdom: Currently 24 degrees Celsius, clear....
+2025-08-15 21:36:30,618 - groq-agent - INFO - 🤖 [ASSISTANT] The weather in London is currently 24 degrees Celsius and clear.
+2025-08-15 23:01:24,781 - groq-agent - INFO - 🚀 [MAIN] Starting NON-OPENAI stack experiment - Groq + Google/Gemini
+2025-08-15 23:01:24,876 - groq-agent - INFO - 🚀 [GROQ] Starting - using YOUR working code structure
+2025-08-15 23:01:24,880 - groq-agent - INFO - ✅ [LIVEKIT] Connected to room
+2025-08-15 23:01:24,886 - groq-agent - INFO - 🔍 [TTS SELECTION] Checking available TTS options...
+2025-08-15 23:01:24,887 - groq-agent - INFO - ✅ [TTS] Selected Google TTS
+2025-08-15 23:01:26,178 - groq-agent - INFO - ✅ [EVENTS] Event handlers added for debugging
+2025-08-15 23:01:30,615 - groq-agent - INFO - 🤖 [ASSISTANT] Hello, I'm here to help. How can I assist you today?
+2025-08-15 23:01:30,620 - groq-agent - INFO - ✅ [GROQ] Started successfully with your working configuration
+2025-08-15 23:04:30,715 - groq-agent - INFO - 🚀 [MAIN] Starting NON-OPENAI stack experiment - Groq + Google/Gemini
+2025-08-15 23:04:30,813 - groq-agent - INFO - 🚀 [GROQ] Starting - using YOUR working code structure
+2025-08-15 23:04:30,823 - groq-agent - INFO - ✅ [LIVEKIT] Connected to room
+2025-08-15 23:04:30,826 - groq-agent - INFO - 🔍 [TTS SELECTION] Checking available TTS options...
+2025-08-15 23:04:30,827 - groq-agent - INFO - 🧪 [TTS] Trying ElevenLabs TTS...
+2025-08-15 23:04:30,829 - groq-agent - INFO - ✅ [TTS] Selected ElevenLabs TTS
+2025-08-15 23:04:31,931 - groq-agent - INFO - ✅ [EVENTS] Event handlers added for debugging
+2025-08-15 23:04:35,253 - groq-agent - INFO - 🤖 [ASSISTANT] Hello, how can I assist you today?
+2025-08-15 23:04:35,258 - groq-agent - INFO - ✅ [GROQ] Started successfully with your working configuration
+2025-08-15 23:04:38,457 - groq-agent - INFO - 👤 [USER]  Hi.
+2025-08-15 23:04:40,107 - groq-agent - INFO - 👤 [USER]  Tell me about
+2025-08-15 23:04:41,315 - groq-agent - INFO - 👤 [USER]  www.inna.com
+2025-08-15 23:04:42,587 - groq-agent - INFO - 🤖 [ASSISTANT] I'm
+2025-08-15 23:04:42,982 - groq-agent - INFO - 👤 [USER]  Yeah, blin.
+2025-08-15 23:04:50,000 - groq-agent - INFO - 🤖 [ASSISTANT] I don't think you've asked about the weather. If you'd like to know the weather in a specific city, I can help you with that.
+2025-08-15 23:04:51,418 - groq-agent - INFO - 👤 [USER]  Yes, Dublin.
+2025-08-15 23:04:52,374 - groq-agent - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-15 23:04:52,384 - groq-agent - INFO - ✅ [OUTPUTS] Found 1 outputs
+2025-08-15 23:04:52,385 - groq-agent - INFO - ✅ [OUTPUT 1] get_weather_n8n: Weather in Dublin, Ireland: Currently 12 degrees Celsius, clear. Very humid at 94%....
+2025-08-15 23:04:53,275 - groq-agent - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-15 23:04:53,277 - groq-agent - INFO - ✅ [OUTPUTS] Found 1 outputs
+2025-08-15 23:04:53,278 - groq-agent - INFO - ✅ [OUTPUT 1] get_weather_n8n: Weather in Dublin, Ireland: Currently 12 degrees Celsius, clear. Very humid at 94%....
+2025-08-15 23:05:05,412 - groq-agent - INFO - 🤖 [ASSISTANT] The weather in Dublin is currently 12 degrees Celsius with clear skies and a humidity level of 94%. If you'd like to know the temperature in Fahrenheit, it is 53.6 degrees.
+2025-08-15 23:05:10,474 - groq-agent - INFO - 👤 [USER]  Okay.
+2025-08-15 23:05:13,997 - groq-agent - INFO - 👤 [USER]  Tell me about Veve in Cork.
+2025-08-15 23:05:14,185 - groq-agent - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-15 23:05:14,188 - groq-agent - INFO - ✅ [OUTPUTS] Found 1 outputs
+2025-08-15 23:05:14,189 - groq-agent - INFO - ✅ [OUTPUT 1] get_weather_n8n: Weather in Dublin, Ireland: Currently 12 degrees Celsius, clear. Very humid at 94%....
+2025-08-15 23:05:22,260 - groq-agent - INFO - 🤖 [ASSISTANT] I'm not aware of any information about Veve in Cork. Could you provide more context or details about what Veve refers to? Is it a
+2025-08-15 23:05:22,489 - groq-agent - INFO - 🤖 [ASSISTANT] The
+2025-08-15 23:05:23,101 - groq-agent - INFO - 👤 [USER]  Okay.
+2025-08-15 23:05:25,468 - groq-agent - INFO - 👤 [USER]  Tell me about where we are in London.
+2025-08-15 23:05:26,253 - groq-agent - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-15 23:05:26,262 - groq-agent - INFO - ✅ [OUTPUTS] Found 1 outputs
+2025-08-15 23:05:26,266 - groq-agent - INFO - ✅ [OUTPUT 1] get_weather_n8n: Weather in London, City of London, Greater London, United Kingdom: Currently 21 degrees Celsius, clear. Humid at 73%....
+2025-08-15 23:05:33,879 - groq-agent - INFO - 🤖 [ASSISTANT] The weather in London is currently 21 degrees Celsius with clear skies and a humidity level of 73%.
+2025-08-15 23:20:04,058 - groq-agent - INFO - 🚀 [MAIN] Starting PURE NON-OPENAI stack - NO FALLBACK!
+2025-08-15 23:20:04,139 - groq-agent - INFO - 🚀 [GROQ] Starting - using YOUR working code structure
+2025-08-15 23:20:04,139 - groq-agent - INFO - ✅ [LIVEKIT] Connected to room
+2025-08-15 23:20:04,140 - groq-agent - INFO - 🔍 [TTS SELECTION] Checking available non-OpenAI TTS options...
+2025-08-15 23:20:04,140 - groq-agent - INFO - 🧪 [TTS] Trying ElevenLabs TTS...
+2025-08-15 23:20:04,140 - groq-agent - INFO - ✅ [TTS] Selected ElevenLabs TTS
+2025-08-15 23:20:05,189 - groq-agent - INFO - ✅ [EVENTS] Event handlers added for debugging
+2025-08-15 23:20:08,812 - groq-agent - INFO - 🤖 [ASSISTANT] Hello, how can I help you today?
+2025-08-15 23:20:08,813 - groq-agent - INFO - ✅ [GROQ] Started successfully with your working configuration
+2025-08-15 23:20:13,482 - groq-agent - INFO - 👤 [USER]  Tell me please about where in London.
+2025-08-15 23:20:17,198 - groq-agent - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-15 23:20:17,200 - groq-agent - INFO - ✅ [OUTPUTS] Found 1 outputs
+2025-08-15 23:20:17,202 - groq-agent - INFO - ✅ [OUTPUT 1] get_weather_n8n: Weather in London, City of London, Greater London, United Kingdom: Currently 20 degrees Celsius, clear. Humid at 78%....
+2025-08-15 23:20:19,257 - groq-agent - INFO - 🤖 [ASSISTANT] <function=get>
+2025-08-15 23:20:25,227 - groq-agent - INFO - 👤 [USER]  Tell me please about the
+2025-08-15 23:20:27,665 - groq-agent - INFO - 👤 [USER]  weather in London.
+2025-08-15 23:20:28,430 - groq-agent - INFO - 🛠️ [TOOLS EXECUTED] Function tools completed
+2025-08-15 23:20:28,438 - groq-agent - INFO - ✅ [OUTPUTS] Found 1 outputs
+2025-08-15 23:20:28,445 - groq-agent - INFO - ✅ [OUTPUT 1] get_weather_n8n: Weather in London, City of London, Greater London, United Kingdom: Currently 20 degrees Celsius, clear. Humid at 78%....
+2025-08-15 23:20:30,705 - groq-agent - INFO - 🤖 [ASSISTANT] <function=get>
