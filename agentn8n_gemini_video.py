@@ -82,7 +82,7 @@ class GeminiAgent(Agent):
             
             # 🔑 LLM В AGENT - НОВАЯ АРХИТЕКТУРА!
             llm=google.beta.realtime.RealtimeModel(
-                model="gemini-2.0-flash-exp",  # Последняя Gemini модель
+                model="gemini-live-2.5-flash-preview",  # Последняя Gemini модель
                 voice="Aoede",                 # Красивый женский голос
                 temperature=0.7,
                 api_key=google_api_key,
