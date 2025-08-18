@@ -4,6 +4,7 @@ N8N Tools Package - Модульная система инструментов �
 Этот пакет содержит все инструменты для голосового агента, организованные по категориям:
 - n8n_tools: Инструменты интеграции с n8n workflows
 - n8n_trade_tools: Торговая аналитика через n8n
+- n8n_calendar_tools: Работа с календарем через n8n
 - web_tools: Веб-поиск и работа с интернет-ресурсами  
 - email_tools: Отправка email и уведомлений
 - file_tools: Работа с файлами и документами (в будущем)
@@ -31,6 +32,12 @@ from .n8n_trade_tools import (
     test_trade_results_connection
 )
 
+# N8N календарные инструменты
+from .n8n_calendar_tools import (
+    get_calendar_data_n8n,
+    test_calendar_connection
+)
+
 # Веб инструменты  
 from .web_tools import (
     search_web,
@@ -48,6 +55,7 @@ AVAILABLE_TOOLS = [
     # N8N интеграции
     get_weather_n8n,        # Погода через n8n workflow
     get_trade_results_n8n,  # Торговая аналитика через n8n
+    get_calendar_data_n8n,  # Календарные данные через n8n
     
     # Веб сервисы
     search_web,             # Поиск через Tavily AI
@@ -67,10 +75,12 @@ DEVELOPMENT_TOOLS = [
 TOOL_CATEGORIES = {
     "weather": [get_weather_n8n],
     "analytics": [get_trade_results_n8n],
+    "calendar": [get_calendar_data_n8n],
     "communication": [send_email, send_notification_n8n], 
     "information": [search_web],
-    "n8n_integrated": [get_weather_n8n, get_trade_results_n8n, send_notification_n8n],
+    "n8n_integrated": [get_weather_n8n, get_trade_results_n8n, get_calendar_data_n8n, send_notification_n8n],
     "web_services": [search_web, send_email],
+    "productivity": [get_calendar_data_n8n, send_email],
 }
 
 # -------------------- Информация о пакете --------------------
@@ -83,14 +93,19 @@ def get_package_info() -> Dict[str, Any]:
     """
     return {
         "package": "N8N Tools",
-        "version": "1.1.0",
+        "version": "1.2.0",  # Обновили версию для календаря
         "active_tools": len(AVAILABLE_TOOLS),
         "development_tools": len(DEVELOPMENT_TOOLS),
         "categories": list(TOOL_CATEGORIES.keys()),
         "tools_by_category": {
             category: [tool.__name__ for tool in tools] 
             for category, tools in TOOL_CATEGORIES.items()
-        }
+        },
+        "new_features": [
+            "Calendar integration via n8n",
+            "Enhanced productivity tools",
+            "Multi-calendar support"
+        ]
     }
 
 # -------------------- Валидация всех инструментов --------------------
@@ -105,6 +120,7 @@ async def validate_all_tools() -> Dict[str, Any]:
         "timestamp": asyncio.get_event_loop().time(),
         "n8n_tools": {},
         "n8n_trade_tools": {},
+        "n8n_calendar_tools": {},  # Новая секция для календаря
         "web_tools": {},
         "email_tools": {},
         "summary": {
@@ -142,6 +158,19 @@ async def validate_all_tools() -> Dict[str, Any]:
         results["n8n_trade_tools"]["trade_analysis"] = False
         results["summary"]["failed_tools"] += 1
     
+    # Валидируем N8N календарные инструменты
+    try:
+        calendar_status = await test_calendar_connection()
+        results["n8n_calendar_tools"]["calendar_service"] = calendar_status
+        if calendar_status:
+            results["summary"]["working_tools"] += 1
+        else:
+            results["summary"]["failed_tools"] += 1
+    except Exception as e:
+        logger.error(f"❌ [VALIDATION] N8N Calendar validation failed: {e}")
+        results["n8n_calendar_tools"]["calendar_service"] = False
+        results["summary"]["failed_tools"] += 1
+    
     # Валидируем веб инструменты
     try:
         web_status = await validate_web_tools()
@@ -173,6 +202,52 @@ async def validate_all_tools() -> Dict[str, Any]:
     
     return results
 
+# -------------------- Быстрая проверка инструментов --------------------
+async def quick_tools_check() -> Dict[str, bool]:
+    """
+    Быстрая проверка всех основных инструментов
+    
+    Returns:
+        Dict: Быстрый статус каждого инструмента
+    """
+    quick_status = {}
+    
+    logger.info("⚡ [QUICK CHECK] Running quick tools validation...")
+    
+    # Проверяем каждый инструмент с таймаутом
+    checks = [
+        ("weather", test_n8n_connection()),
+        ("trade_analysis", test_trade_results_connection()),
+        ("calendar", test_calendar_connection()),
+    ]
+    
+    for tool_name, check_coro in checks:
+        try:
+            result = await asyncio.wait_for(check_coro, timeout=5.0)
+            quick_status[tool_name] = result
+        except asyncio.TimeoutError:
+            quick_status[tool_name] = False
+            logger.warning(f"⏰ [QUICK CHECK] {tool_name} check timed out")
+        except Exception as e:
+            quick_status[tool_name] = False
+            logger.error(f"❌ [QUICK CHECK] {tool_name} check failed: {e}")
+    
+    # Проверяем веб и email инструменты (упрощенно)
+    try:
+        import os
+        quick_status["web_search"] = bool(os.getenv("TAVILY_API_KEY"))
+        quick_status["email"] = bool(os.getenv("GMAIL_USER")) or bool(os.getenv("EMAIL_DEMO_MODE"))
+    except:
+        quick_status["web_search"] = False
+        quick_status["email"] = False
+    
+    working_count = sum(1 for status in quick_status.values() if status)
+    total_count = len(quick_status)
+    
+    logger.info(f"⚡ [QUICK CHECK] Complete: {working_count}/{total_count} tools working")
+    
+    return quick_status
+
 # -------------------- Инициализация пакета --------------------
 def initialize_tools() -> bool:
     """
@@ -191,16 +266,78 @@ def initialize_tools() -> bool:
         logger.info(f"⚗️ [INIT] Development tools: {package_info['development_tools']}")
         logger.info(f"📂 [INIT] Categories: {', '.join(package_info['categories'])}")
         
+        # Показываем новые функции
+        if package_info.get('new_features'):
+            logger.info(f"✨ [INIT] New features: {', '.join(package_info['new_features'])}")
+        
         for category, tools in package_info['tools_by_category'].items():
             logger.info(f"   📁 {category}: {', '.join(tools)}")
         
         print("🛠️ [TOOLS] N8N Tools package initialized successfully")
+        print(f"   📦 Version: {package_info['version']}")
+        print(f"   🔧 Active tools: {package_info['active_tools']}")
+        print(f"   📂 Categories: {len(package_info['categories'])}")
+        
         return True
         
     except Exception as e:
         logger.error(f"❌ [INIT] Failed to initialize tools package: {e}")
         print(f"❌ [TOOLS] Initialization failed: {e}")
         return False
+
+# -------------------- Получение инструмента по имени --------------------
+def get_tool_by_name(tool_name: str):
+    """
+    Получить инструмент по имени
+    
+    Args:
+        tool_name: Имя инструмента
+    
+    Returns:
+        function: Функция инструмента или None
+    """
+    tool_mapping = {
+        "get_weather_n8n": get_weather_n8n,
+        "get_trade_results_n8n": get_trade_results_n8n,
+        "get_calendar_data_n8n": get_calendar_data_n8n,
+        "search_web": search_web,
+        "send_email": send_email,
+        "send_notification_n8n": send_notification_n8n,
+    }
+    
+    return tool_mapping.get(tool_name)
+
+# -------------------- Получение инструментов по категории --------------------
+def get_tools_by_category(category: str) -> List:
+    """
+    Получить все инструменты определенной категории
+    
+    Args:
+        category: Название категории
+    
+    Returns:
+        List: Список инструментов в категории
+    """
+    return TOOL_CATEGORIES.get(category, [])
+
+# -------------------- Статистика использования инструментов --------------------
+def get_tools_statistics() -> Dict[str, Any]:
+    """
+    Получить статистику по инструментам
+    
+    Returns:
+        Dict: Статистика использования инструментов
+    """
+    return {
+        "total_tools": len(AVAILABLE_TOOLS),
+        "development_tools": len(DEVELOPMENT_TOOLS),
+        "categories_count": len(TOOL_CATEGORIES),
+        "n8n_tools": len([tool for tool in AVAILABLE_TOOLS if "n8n" in tool.__name__]),
+        "web_tools": len([tool for tool in AVAILABLE_TOOLS if tool in [search_web]]),
+        "communication_tools": len([tool for tool in AVAILABLE_TOOLS if tool in [send_email]]),
+        "tool_names": [tool.__name__ for tool in AVAILABLE_TOOLS],
+        "categories": list(TOOL_CATEGORIES.keys())
+    }
 
 # -------------------- Экспорт основных элементов --------------------
 __all__ = [
@@ -212,11 +349,16 @@ __all__ = [
     # Функции управления
     'get_package_info',
     'validate_all_tools',
+    'quick_tools_check',
     'initialize_tools',
+    'get_tool_by_name',
+    'get_tools_by_category',
+    'get_tools_statistics',
     
     # Отдельные инструменты (для прямого импорта)
     'get_weather_n8n',
     'get_trade_results_n8n',
+    'get_calendar_data_n8n',  # Новый календарный инструмент
     'search_web',
     'send_email',
     'send_notification_n8n',
@@ -232,12 +374,38 @@ if __name__ == "__main__":
     print(f"   ⚗️ Development tools: {info['development_tools']}")
     print(f"   📂 Categories: {', '.join(info['categories'])}")
     
+    # Показываем новые функции
+    if info.get('new_features'):
+        print(f"   ✨ New features: {', '.join(info['new_features'])}")
+    
     # Показываем инструменты по категориям
     for category, tools in info['tools_by_category'].items():
         print(f"      📁 {category}: {', '.join(tools)}")
     
-    # Запускаем валидацию
-    async def run_validation():
+    # Показываем статистику
+    print("\n📊 [STATISTICS] Tools Statistics:")
+    stats = get_tools_statistics()
+    print(f"   🔧 Total tools: {stats['total_tools']}")
+    print(f"   🔗 N8N tools: {stats['n8n_tools']}")
+    print(f"   🌐 Web tools: {stats['web_tools']}")
+    print(f"   📧 Communication tools: {stats['communication_tools']}")
+    
+    # Запускаем быструю проверку
+    async def run_quick_check():
+        print("\n⚡ [QUICK CHECK] Running quick tool validation...")
+        results = await quick_tools_check()
+        print(f"📊 [RESULTS] Quick check complete:")
+        
+        for tool_name, status in results.items():
+            status_emoji = "✅" if status else "❌"
+            print(f"   {status_emoji} {tool_name}: {'Working' if status else 'Failed'}")
+        
+        working_count = sum(1 for status in results.values() if status)
+        total_count = len(results)
+        print(f"\n📈 [SUMMARY] {working_count}/{total_count} tools are working")
+    
+    # Запускаем полную валидацию
+    async def run_full_validation():
         print("\n🧪 [TESTING] Running full tool validation...")
         results = await validate_all_tools()
         print(f"📊 [RESULTS] Validation complete:")
@@ -245,6 +413,7 @@ if __name__ == "__main__":
         print(f"   ❌ Failed: {results['summary']['failed_tools']}")
         
         # Детали по модулям
+        print("\n📋 [DETAILS] Module details:")
         if results.get('n8n_tools'):
             weather_status = results['n8n_tools'].get('weather_service', False)
             print(f"   🌤️ N8N Weather: {'✅ Working' if weather_status else '❌ Failed'}")
@@ -252,6 +421,10 @@ if __name__ == "__main__":
         if results.get('n8n_trade_tools'):
             trade_status = results['n8n_trade_tools'].get('trade_analysis', False)
             print(f"   📊 N8N Trade: {'✅ Working' if trade_status else '❌ Failed'}")
+            
+        if results.get('n8n_calendar_tools'):
+            calendar_status = results['n8n_calendar_tools'].get('calendar_service', False)
+            print(f"   📅 N8N Calendar: {'✅ Working' if calendar_status else '❌ Failed'}")
             
         if results.get('web_tools'):
             web_status = results['web_tools'].get('search_web', False)
@@ -261,7 +434,12 @@ if __name__ == "__main__":
             email_status = results['email_tools'].get('send_email', False)
             print(f"   📧 Email Send: {'✅ Working' if email_status else '❌ Failed'}")
     
-    asyncio.run(run_validation())
+    # Выбираем тип проверки
+    import sys
+    if "--quick" in sys.argv:
+        asyncio.run(run_quick_check())
+    else:
+        asyncio.run(run_full_validation())
 else:
     # При импорте - просто инициализируем
     initialize_tools()
