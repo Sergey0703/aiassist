@@ -23,10 +23,10 @@ cd gemini-voice-assistant
 Method 1: Using Python venv (Recommended)
 
 # Create virtual environment
-python -m venv gemini_env
+python -m venv venv
 
 # Activate virtual environment
-gemini_env\Scripts\activate
+venv\Scripts\activate
 
 # You should see (gemini_env) in your command prompt
 
@@ -35,7 +35,7 @@ cmd# If you have multiple Python versions
 py -3.11 -m venv gemini_env
 
 # Activate
-gemini_env\Scripts\activate
+venv\Scripts\activate
 
 ###Step 3: Install Dependencies
 cmd# Make sure virtual environment is activated

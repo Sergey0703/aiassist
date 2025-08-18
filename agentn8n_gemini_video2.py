@@ -19,6 +19,7 @@ from livekit.plugins import (
 # Импортируем ваши инструменты
 from tools.n8n_tools import get_weather_n8n
 from tools.n8n_trade_tools import get_trade_results_n8n
+from tools.n8n_calendar_tools import get_calendar_data_n8n
 from tools.web_tools import search_web
 from tools.email_tools import send_email
 
@@ -53,7 +54,8 @@ You are a helpful voice assistant powered by Google Gemini Realtime Model.
 You can help users with various tasks using these tools:
 
 🌤️ Weather Information: Use get_weather_n8n to get current weather for any city
-📊 Trade Analysis: Use get_trade_results_n8n to analyze sales data and product performance  
+📊 Trade Analysis: Use get_trade_results_n8n to analyze sales data and product performance
+📅 Calendar Data: Use get_calendar_data_n8n to get calendar events and schedule information
 🔍 Web Search: Use search_web to find information on the internet
 📧 Email Sending: Use send_email to send emails through SMTP
 
@@ -68,7 +70,7 @@ Keep responses conversational and natural for voice interaction.
 
 SESSION_INSTRUCTION = """
 Greet the user warmly and let them know you're ready to help. 
-Briefly mention you can assist with weather, trade analysis, web search, and sending emails.
+Briefly mention you can assist with weather, trade analysis, calendar events, web search, and sending emails.
 Also mention that you can see and analyze anything they show you via video.
 """
 
@@ -92,12 +94,13 @@ class GeminiAgent(Agent):
             # ✅ ВСЕ ИНСТРУМЕНТЫ В AGENT
             tools=[
                 get_weather_n8n,        # N8N погода
-                get_trade_results_n8n,  # N8N торговая аналитика  
+                get_trade_results_n8n,  # N8N торговая аналитика
+                get_calendar_data_n8n,  # N8N календарные данные
                 search_web,             # Tavily поиск
                 send_email,             # SMTP email
             ],
         )
-        logger.info("✅ [AGENT] GeminiAgent initialized with Google Realtime Model + 4 tools")
+        logger.info("✅ [AGENT] GeminiAgent initialized with Google Realtime Model + 5 tools")
 
 # -------------------- EVENT HANDLERS --------------------
 def setup_session_events(session: AgentSession):
@@ -253,12 +256,15 @@ async def entrypoint(ctx: JobContext):
     print("📋 [ARCHITECTURE] Agent-LLM (LLM inside Agent, not Session)")
     print("🎥 [MULTIMODAL] Voice + Video + Text support")
     print("🔊 [VOICE] Google Realtime Model with Aoede voice")
-    print("🛠️ [TOOLS] Weather (N8N) | Trade Analysis (N8N) | Web Search | Email")
+    print("🛠️ [TOOLS] Weather (N8N) | Trade Analysis (N8N) | Calendar (N8N) | Web Search | Email")
     print("🎚️ [AUDIO] Enhanced noise cancellation (BVC)")
     print("")
     print("🎯 [TEST COMMANDS]:")
     print("   • 'What's the weather in Dublin?'")
     print("   • 'Show me trade results for last 30 days'")
+    print("   • 'What's on my calendar today?'")
+    print("   • 'Show me this week's meetings'")
+    print("   • 'What's my schedule for tomorrow?'")
     print("   • 'Search for latest AI news'")
     print("   • 'Send email to test@example.com saying hello'")
     print("   • 📹 Show your screen/camera for visual analysis!")

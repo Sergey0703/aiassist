@@ -1,10 +1,160 @@
-livekit-agents
-livekit-plugins-openai
-livekit-plugins-silero
-livekit-plugins-google
-livekit-plugins-noise-cancellation
-mem0ai
-duckduckgo-search
-langchain_community
-requests
-python-dotenv
+# =====================================
+# LiveKit Voice Agent with Gemini Live API
+# Проект: AI Assistant with N8N Integration
+# ПОЛНАЯ СИНХРОНИЗАЦИЯ С РАБОЧИМ ОКРУЖЕНИЕМ
+# =====================================
+
+# ---- CORE LIVEKIT PACKAGES ----
+# Основной фреймворк для голосовых агентов
+livekit-agents==1.2.4
+livekit-plugins-google==1.2.3
+livekit-plugins-silero==1.2.3
+livekit-api==1.0.5
+livekit==1.0.12
+
+# ---- LIVEKIT ADDITIONAL PLUGINS ----
+# Дополнительные плагины для улучшенного качества
+livekit-plugins-assemblyai==1.2.4
+livekit-plugins-deepgram==1.2.3
+livekit-plugins-elevenlabs==1.2.3
+livekit-plugins-groq==1.2.4
+livekit-plugins-openai==1.2.4
+
+# ---- GOOGLE AI / GEMINI ----
+# Google GenAI SDK для Gemini Live API
+google-genai==1.28.0
+google-auth==2.40.3
+google-api-core==2.25.1
+
+# ---- WEB & HTTP ----
+# Async HTTP клиент и WebSocket
+aiohttp==3.12.15
+websockets==15.0.1
+httpx-sse==0.4.1
+
+# ---- MEDIA PROCESSING ----
+# Обработка изображений и видео (критично для видео распознавания)
+pillow==11.3.0
+
+# ---- SYSTEM & UTILITIES ----
+# Системные пакеты и утилиты
+python-dotenv==1.0.1
+packaging==25.0
+numpy==2.3.2
+setuptools==80.9.0
+wheel==0.45.1
+
+# ---- WINDOWS SUPPORT ----
+# Поддержка Windows системных функций
+pywin32==311
+pypiwin32==223
+comtypes==1.4.11
+
+# ---- DATA PROCESSING ----
+# Обработка JSON, XML, и других форматов данных
+orjson==3.11.1
+pyyaml==6.0.2
+lxml==6.0.0
+beautifulsoup4==4.13.4
+soupsieve==2.7
+
+# ---- DATE & TIME ----
+# Работа с датами и временем
+python-dateutil==2.9.0.post0
+pytz==2025.2
+
+# ---- HTTP & API CLIENTS ----
+# HTTP клиенты и API обработчики
+requests-toolbelt==1.0.0
+backoff==2.2.1
+h2==4.2.0
+hpack==4.1.0
+hyperframe==6.1.0
+
+# ---- AI & LLM INTEGRATION ----
+# AI сервисы и инструменты
+openai==1.99.9
+groq==0.31.0
+cerebras_cloud_sdk==1.46.0
+
+# ---- LANGCHAIN ECOSYSTEM ----
+# LangChain для расширенной работы с LLM
+langchain==0.3.27
+langchain-community==0.3.27
+langchain-core==0.3.72
+langchain-text-splitters==0.3.9
+langsmith==0.4.11
+
+# ---- DATABASE & STORAGE ----
+# Базы данных и хранилища
+sqlalchemy==2.0.42
+qdrant-client==1.15.1
+mem0ai==0.1.115
+
+# ---- SEARCH & WEB SCRAPING ----
+# Поиск и парсинг веб-содержимого
+duckduckgo_search==8.1.1
+
+# ---- VALIDATION & SERIALIZATION ----
+# Валидация данных и сериализация
+pydantic-settings==2.10.1
+marshmallow==3.26.1
+dataclasses-json==0.6.7
+
+# ---- PROGRESS & MONITORING ----
+# Прогресс бары и мониторинг
+tqdm==4.67.1
+posthog==6.3.3
+
+# ---- AUDIO & VOICE ----
+# Дополнительные аудио возможности
+pyttsx3==2.99
+
+# ---- ASYNC & CONCURRENCY ----
+# Асинхронные операции
+greenlet==3.2.3
+
+# ---- COMPRESSION & ENCODING ----
+# Сжатие и кодирование данных
+zstandard==0.23.0
+
+# ---- SYSTEM UTILITIES ----
+# Системные утилиты
+distro==1.9.0
+portalocker==3.2.0
+primp==0.15.0
+
+# ---- TYPE CHECKING & VALIDATION ----
+# Проверка типов
+mypy_extensions==1.1.0
+typing-inspect==0.9.0
+
+# ---- JSON PROCESSING ----
+# Продвинутая работа с JSON
+jsonpatch==1.33
+jsonpointer==3.0.0
+jiter==0.10.0
+
+# ---- COMPATIBILITY ----
+# Совместимость с различными системами
+six==1.17.0
+
+# =====================================
+# ВАЖНО: 
+# Это ПОЛНЫЙ набор пакетов из рабочего окружения!
+# Все версии зафиксированы для стабильности.
+# 
+# ПРОТЕСТИРОВАНО:
+# ✅ gemini-live-2.5-flash-preview
+# ✅ Отличное качество видео распознавания
+# ✅ Все N8N инструменты работают
+# ✅ Мультимодальные возможности
+# 
+# УСТАНОВКА:
+# pip install -r requirements.txt
+# 
+# ПРОВЕРКА:
+# python livekit_version_check.py
+# python gemini_model_test.py
+# python agentn8n_gemini_video.py dev
+# =====================================
